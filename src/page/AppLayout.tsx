@@ -12,7 +12,7 @@ const AppLayout: FC = () => {
             <div className={'col-span-1'}>Header</div>
 
             <div className={'overflow-auto bg-gray-50'}>
-                <main className={'flex justify-center'}>
+                <main className={'max-w-6xl mx-auto h-full pb-4'}>
                     <Outlet />
                 </main>
             </div>

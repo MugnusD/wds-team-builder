@@ -1,82 +1,173 @@
-import {FC} from 'react';
+import {FC, useEffect, useRef, useState} from 'react';
 import {IoMenu} from 'react-icons/io5';
 import {GiDiamondRing} from 'react-icons/gi';
 import {useDispatch, useSelector} from "react-redux";
-import {selectLeaderIndex, selectSlotByIndex, setAsLeader, SlotIndex} from "./teamSlice.ts";
+import {
+    selectFocusedItem,
+    selectLeaderIndex,
+    selectSlotByIndex,
+    setAsLeader,
+    setFocusedItem,
+    SlotIndex,
+    swapSlot
+} from "./teamSlice.ts";
 import {BsFileImage} from "react-icons/bs";
-import {useDrag} from "react-dnd";
-import {ItemTypes} from "../../itemTypes.ts";
+import {useDrag, useDrop} from "react-dnd";
+import {DraggedItemType} from "../../DragItemType.ts";
+import useCharacters from "./useCharacters.ts";
+import toast from "react-hot-toast";
+import {Spinner} from "@material-tailwind/react";
+import {GameItemType, setTabType} from "../tabs/selectTabsSlice.ts";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
 }> = ({slotIndex}) => {
-    const [, drag, preview] = useDrag(() => ({
-        type: ItemTypes.CHARACTER,
-        collect: (monitor) => ({
-            isDragging: monitor.isDragging(),
-        })
-    }))
-
+    // Redux
     const {
               characterId,
               posterId,
           } = useSelector(state => selectSlotByIndex(state, slotIndex));
     const leaderIndex = useSelector(selectLeaderIndex);
-
+    const selectedItem = useSelector(selectFocusedItem);
     const dispatch = useDispatch();
 
+    // Derive selected item
+    const currentSlotFocusedItem = selectedItem?.slotIndex === slotIndex ? selectedItem.itemType : 'none';
+
+    // Fetch character data & find
+    const {
+              isLoading,
+              isError,
+              characters
+          } = useCharacters();
+    const [characterDetail, setCharacterDetail] = useState<CharacterDetail>();
+    useEffect(() => {
+        if (characterId && characters) {
+            const character = characters?.find(character => character.id === characterId) ?? {} as CharacterDetail;
+            setCharacterDetail(character);
+        }
+    }, [characterId, characters]);
+
+    // DnD
+    const [{isDragging}, drag, preview] = useDrag({
+        type: DraggedItemType.SLOT,
+        item: {
+            index: slotIndex,
+        },
+        collect: monitor => ({
+            isDragging: monitor.isDragging(),
+        })
+    });
+    const [, drop] = useDrop<{ index: SlotIndex }>({
+        accept: DraggedItemType.SLOT,
+        drop: (item) => {
+            dispatch(swapSlot({
+                to: item.index,
+                from: slotIndex
+            }));
+        }
+    });
+    const dndRef = useRef<HTMLDivElement>(null);
+    drag(drop(dndRef));
+
+    // Handler functions
     const handleSetLeader = () => {
         dispatch(setAsLeader(slotIndex));
     }
+    const handleFocus = (gameItem: GameItemType) => {
+        dispatch(setFocusedItem({
+            slotIndex,
+            itemType: gameItem
+        }));
+        dispatch(setTabType(gameItem));
+    }
+
+    if (isLoading) {
+        return (
+            <div className='flex h-20 w-[24rem] flex-row items-center justify-center rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4'>
+                <Spinner className={'h-16 w-16'} />
+            </div>
+        )
+    }
+
+    if (isError) {
+        toast.error('Fetching data wrong')
+        return null;
+    }
+
+    // CT
+    let bloom: number;
+    if (!characterDetail) {
+        bloom = 0;
+    } else {
+        bloom = characterDetail.sense.coolTime.bloom;
+    }
 
     return (
-            <div ref={preview} className='flex h-20 w-[24rem] flex-row items-center justify-between  rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4'>
-                <div ref={drag} className={'flex h-20 w-16 items-center justify-center'}>
-                    <IoMenu size={50} color={'rgb(158 158 158'} />
-                </div>
-                <div className='h-16 w-16 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1'>
-                    <img
-                        src={`/characterIcons/${characterId}_0.png`}
-                        alt={characterId.toString()}
-                    />
-                </div>
-                <div className='h-16 w-16  rounded-full bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1'>
-                    {posterId === 0
-                        ? (
-                            <div className={'w-full h-full bg-white rounded-full flex items-center justify-center'}>
-                                <BsFileImage size={35} color={'#78909c'} />
-                            </div>
-                        )
-                        : (
-                            <img
-                                src={`/posterIcons/${posterId}.png`}
-                                alt={posterId.toString()}
-                                className={'rounded-full'}
-                            />
-                        )
+        <div
+            ref={preview}
+            className={`flex h-20 w-[24rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 ${isDragging ? 'opacity-100' : ''}`}
+        >
+            <div ref={dndRef} className={'flex h-20 w-16 items-center justify-center cursor-pointer'}>
+                <IoMenu size={50} color={'rgb(158 158 158'} />
+            </div>
 
-                    }
-                </div>
-                <div className='flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-300' >
-                    <GiDiamondRing size={50} color={'#78909c'} />
-                </div>
-                <div className={'w-16flex h-16 flex-col gap-y-3 select-none cursor-pointer'} onClick={handleSetLeader}>
-                    {leaderIndex === slotIndex
-                        ? (
-                            <div className={'mt-2 rounded-md bg-red-500 text-center text-white'}>
-                                Leader
-                            </div>
-                        )
-                        : (
-                            <div className={'mt-2 rounded-md bg-gray-300 text-center'}>
-                                &mdash; &mdash;
-                            </div>
-                        )}
-                    <div className={'text-center'}>
-                        CT <span className={'text-2xl'}>60</span> 秒
-                    </div>
+            <div
+                className={`h-16 w-16 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1
+                 ${currentSlotFocusedItem === 'character' ? 'ring-2 ring-red-500' : ''}`}
+                onClick={() => handleFocus('character')}
+            >
+                <img
+                    src={`/characterIcons/${characterId}_0.png`}
+                    alt={characterId.toString()}
+                />
+            </div>
+
+            <div className={'h-16 w-16  rounded-full bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1 ' +
+                `${currentSlotFocusedItem === 'poster' ? ' ring-2 ring-red-500' : ''}`}
+                 onClick={() => handleFocus('poster')}
+            >
+                {posterId === 0
+                    ? (
+                        <div className={'w-full h-full bg-white rounded-full flex items-center justify-center'}>
+                            <BsFileImage size={35} color={'#78909c'} />
+                        </div>
+                    )
+                    : (
+                        <img
+                            src={`/posterIcons/${posterId}.png`}
+                            alt={posterId.toString()}
+                            className={'rounded-full'}
+                        />
+                    )
+
+                }
+            </div>
+
+            <div className={'flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-300' +
+                `${currentSlotFocusedItem === 'accessory' ? ' ring-2 ring-red-500' : ''}`}
+                 onClick={() => handleFocus('accessory')}
+            >
+                <GiDiamondRing size={50} color={'#78909c'} />
+            </div>
+
+            <div className={'w-16flex h-16 flex-col gap-y-3 select-none cursor-pointer'} onClick={handleSetLeader}>
+                {leaderIndex === slotIndex
+                    ? (
+                        <div className={'mt-2 rounded-md bg-red-500 text-center text-white'}>
+                            Leader
+                        </div>
+                    )
+                    : (
+                        <div className={'mt-2 rounded-md bg-gray-300 text-center'}>
+                            &mdash; &mdash;
+                        </div>
+                    )}
+                <div className={'text-center'}>
+                    CT <span className={'text-2xl w-6 inline-block'}>{bloom}</span> 秒
                 </div>
             </div>
+        </div>
     );
 };
 

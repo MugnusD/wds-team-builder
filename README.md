@@ -1,30 +1,12 @@
-# React + TypeScript + Vite
+# WDS Team Builder
+This is an app designed for WDS (World Dai Star) to provide team building functionality. The aim is to clone an in-game team matching interface and then consider additional features such as score calculation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It's a personal project and may have many issues. I hope to receive valuable feedback and assistance with debugging！
 
-Currently, two official plugins are available:
+## To-do List
+- Character can be duplicated in the same team (as different cards), to be fixed later.
+- Finish tabs sections, and implement interaction between tabs and team builder.
+- Add filter options for tabs sections.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contact
+如有任何其他问题请联系 [WorldDaiStar观星部（bilibili）](https://space.bilibili.com/79157636/dynamic) 的官方群中的 [wds攻略组（bilibili)](https://space.bilibili.com/3546591206050050/dynamic) 的人员。
