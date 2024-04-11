@@ -1,5 +1,5 @@
 import {useQuery} from "@tanstack/react-query";
-import {getCharacters} from "../../servers/fetchCharacters.ts";
+import {getCharacters} from "../../servers/fetchData.ts";
 
 const useCharacters = () => {
     const {isLoading, data: characters, isError} =useQuery({

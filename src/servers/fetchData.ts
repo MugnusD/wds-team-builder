@@ -9,3 +9,15 @@ export const getCharacters = async () => {
 
     return data;
 }
+
+export const getPosters = async () => {
+    const response = await fetch('/json/all_poster.json');
+    const data = await response.json() as PosterDetail[];
+
+    if (!data) {
+        throw new Error('Data fetching failed');
+    }
+
+    return data;
+}
+

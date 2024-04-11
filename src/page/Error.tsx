@@ -6,7 +6,8 @@ function Error() {
 
     return (
         <div>
-            <h1>Something went wrong 😢</h1>
+            <h1>Something went wrong</h1>
+            <img src={'/40203.png'} alt={'dokidoki'} />
         </div>
     );
 }

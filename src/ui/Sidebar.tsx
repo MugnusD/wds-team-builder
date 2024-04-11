@@ -9,6 +9,7 @@ import {FC, ReactNode} from "react";
 import {NavLink} from "react-router-dom";
 
 import {HiHome, HiMiniSquare3Stack3D} from "react-icons/hi2";
+import {TbError404} from "react-icons/tb";
 
 const Sidebar: FC = () => {
     return (
@@ -23,6 +24,7 @@ const Sidebar: FC = () => {
             <List className={'w-60 '}>
                 <SidebarListItem icon={<HiHome />} to={'/home'} context={'Home'} />
                 <SidebarListItem icon={<HiMiniSquare3Stack3D />} to={'/team-builder'} context={'Team Builder'} />
+                <SidebarListItem icon={<TbError404 />} to={'/404'} context={'404 Test'} />
             </List>
         </Card>
     );

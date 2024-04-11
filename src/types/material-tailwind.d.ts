@@ -36,4 +36,10 @@ declare module '@material-tailwind/react' {
         onPointerEnterCapture?,
         onPointerLeaveCapture?,
     }
+
+    interface ButtonProps {
+        placeholder?
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
 }
