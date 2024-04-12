@@ -2,8 +2,10 @@ import {ChangeEventHandler, FC} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {GameItemType, selectGameItemType, setTabType} from "./selectTabsSlice.ts";
 import {resetFocusItem} from "../teamBuilder/teamSlice.ts";
+import useBigScreenQuery from "../../hooks/useBigScreenQuery.ts";
 
 const SelectTabsHeader: FC = () => {
+    const isBigScreen = useBigScreenQuery();
     const currentType = useSelector(selectGameItemType);
     const dispatch = useDispatch();
 
@@ -16,7 +18,7 @@ const SelectTabsHeader: FC = () => {
 
     return (
         <div className={'flex flex-col'}>
-            <div className="grid w-[24rem] grid-cols-3 gap-2 rounded-xl bg-gray-200 p-2">
+            <div className="grid md:w-[24rem] w-[18rem] grid-cols-3 gap-2 rounded-xl bg-gray-200 p-2">
                 <div>
                     <input
                         type="radio"
@@ -65,9 +67,9 @@ const SelectTabsHeader: FC = () => {
                     >accessory</label>
                 </div>
             </div>
-            <div>
+            {isBigScreen ? (<div>
                 Filter Area
-            </div>
+            </div>) : null}
         </div>
     )
 }

@@ -18,10 +18,14 @@ import useCharacters from "../../hooks/useCharacters.ts";
 import toast from "react-hot-toast";
 import {Spinner} from "@material-tailwind/react";
 import {GameItemType, setTabType} from "../tabs/selectTabsSlice.ts";
+import useBigScreenQuery from "../../hooks/useBigScreenQuery.ts";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
 }> = ({slotIndex}) => {
+    // Media Query
+    const isBigScreen = useBigScreenQuery();
+
     // Redux
     const {
               character: {
@@ -86,7 +90,7 @@ const Slot: FC<{
 
     if (isLoading) {
         return (
-            <div className='flex h-20 w-[24rem] flex-row items-center justify-center rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4'>
+            <div className={'flex h-20 w-[24rem] flex-row items-center justify-center rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4'}>
                 <Spinner className={'h-16 w-16'} />
             </div>
         )
@@ -108,31 +112,34 @@ const Slot: FC<{
     return (
         <div
             ref={preview}
-            className={`flex h-20 w-[24rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 ${isDragging ? 'opacity-0' : ''}`}
+            className={'flex h-20 md:w-[24rem] w-[20rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 '
+                + `${isDragging ? 'opacity-0' : ''}`}
         >
-            <div ref={dndRef} className={'flex h-20 w-16 items-center justify-center cursor-pointer'}>
-                <IoMenu size={50} color={'rgb(158 158 158'} />
+            <div ref={dndRef} className={'flex h-20 md:w-16 w-12 items-center justify-center cursor-pointer'}>
+                <IoMenu size={isBigScreen ? 50 : 40} color={'rgb(158 158 158'} />
             </div>
 
             <div
-                className={`h-16 w-16 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1
+                className={`md:h-16 md:w-16 h-14 w-14 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] md:p-1 p-[3px]
                  ${currentSlotFocusedItem === 'character' ? 'ring-2 ring-red-500' : ''}`}
                 onClick={() => handleFocus('character')}
             >
                 <img
                     src={`/characterIcons/${characterId}_0.png`}
                     alt={characterId.toString()}
+                    className={'rounded-md'}
                 />
             </div>
 
-            <div className={'h-16 w-16  rounded-full bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1 ' +
-                `${currentSlotFocusedItem === 'poster' ? ' ring-2 ring-red-500' : ''}`}
-                 onClick={() => handleFocus('poster')}
+            <div
+                className={'md:h-16 md:w-16 h-14 w-14 rounded-full bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1 ' +
+                    `${currentSlotFocusedItem === 'poster' ? ' ring-2 ring-red-500' : ''}`}
+                onClick={() => handleFocus('poster')}
             >
                 {posterId === 0
                     ? (
                         <div className={'w-full h-full bg-white rounded-full flex items-center justify-center'}>
-                            <BsFileImage size={35} color={'#78909c'} />
+                            <BsFileImage size={isBigScreen ? 35 : 28} color={'#78909c'} />
                         </div>
                     )
                     : (
@@ -146,11 +153,12 @@ const Slot: FC<{
                 }
             </div>
 
-            <div className={'flex h-16 w-16 items-center justify-center rounded-full border-2 border-gray-300' +
-                `${currentSlotFocusedItem === 'accessory' ? ' ring-2 ring-red-500' : ''}`}
-                 onClick={() => handleFocus('accessory')}
+            <div
+                className={'flex md:h-16 md:w-16 h-14 w-14 items-center justify-center rounded-full border-2 border-gray-300' +
+                    `${currentSlotFocusedItem === 'accessory' ? ' ring-2 ring-red-500' : ''}`}
+                onClick={() => handleFocus('accessory')}
             >
-                <GiDiamondRing size={50} color={'#78909c'} />
+                <GiDiamondRing size={isBigScreen ? 35 : 28} color={'#78909c'} />
             </div>
 
             <div className={'w-16 flex h-16 flex-col gap-y-3 select-none cursor-pointer'} onClick={handleSetLeader}>
@@ -165,7 +173,7 @@ const Slot: FC<{
                             &mdash; &mdash;
                         </div>
                     )}
-                <div className={'text-center text-nowrap relative bottom-2.5 text-nowrap'} >
+                <div className={'text-center text-nowrap relative bottom-2.5 text-nowrap'}>
                     CT <span className={'text-2xl w-6 inline-block'}>{bloom}</span> 秒
                 </div>
             </div>

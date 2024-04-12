@@ -5,7 +5,7 @@ import {HiOutlineChevronDoubleLeft} from "react-icons/hi";
 import {NavLink} from "react-router-dom";
 
 const SmallSidebar: FC = () => {
-    const [isSpanned, setIsSpanned] = useState(true);
+    const [isSpanned, setIsSpanned] = useState(false);
 
     if (isSpanned)
         return (
@@ -16,16 +16,16 @@ const SmallSidebar: FC = () => {
                     <SmallNavIcon icon={<TbError404 size={40} />} to={'/404'} />
                 </ul>
                 <div className={'flex w-16 justify-center pb-4'}>
-                    <HiOutlineChevronDoubleLeft size={40} onClick={() => setIsSpanned(state => !state)} />
+                    <HiOutlineChevronDoubleLeft className={'bg-stone-200 rounded-md'} size={40} onClick={() => setIsSpanned(state => !state)} />
                 </div>
             </div>
         );
 
     if (!isSpanned)
         return (
-            <div className={'fixed bottom-4 left-2 bg-stone-200 rounded-full w-16 h-16 flex content-center items-center'}>
+            <div className={'fixed bottom-4 left-3  flex content-center items-center'}>
                 <HiOutlineChevronDoubleRight
-                    className={'flex-1'}
+                    className={'flex-1 bg-stone-200 rounded-md'}
                     size={40}
                     onClick={() => setIsSpanned(state => !state)}
                 />
