@@ -14,7 +14,7 @@ import {
 import {BsFileImage} from "react-icons/bs";
 import {useDrag, useDrop} from "react-dnd";
 import {DraggedItemType} from "../../DragItemType.ts";
-import useCharacters from "./useCharacters.ts";
+import useCharacters from "../../hooks/useCharacters.ts";
 import toast from "react-hot-toast";
 import {Spinner} from "@material-tailwind/react";
 import {GameItemType, setTabType} from "../tabs/selectTabsSlice.ts";
@@ -24,7 +24,9 @@ const Slot: FC<{
 }> = ({slotIndex}) => {
     // Redux
     const {
-              characterId,
+              character: {
+                  characterId,
+              },
               posterId,
           } = useSelector(state => selectSlotByIndex(state, slotIndex));
     const leaderIndex = useSelector(selectLeaderIndex);
@@ -106,7 +108,7 @@ const Slot: FC<{
     return (
         <div
             ref={preview}
-            className={`flex h-20 w-[24rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 ${isDragging ? 'opacity-100' : ''}`}
+            className={`flex h-20 w-[24rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 ${isDragging ? 'opacity-0' : ''}`}
         >
             <div ref={dndRef} className={'flex h-20 w-16 items-center justify-center cursor-pointer'}>
                 <IoMenu size={50} color={'rgb(158 158 158'} />
@@ -151,7 +153,7 @@ const Slot: FC<{
                 <GiDiamondRing size={50} color={'#78909c'} />
             </div>
 
-            <div className={'w-16flex h-16 flex-col gap-y-3 select-none cursor-pointer'} onClick={handleSetLeader}>
+            <div className={'w-16 flex h-16 flex-col gap-y-3 select-none cursor-pointer'} onClick={handleSetLeader}>
                 {leaderIndex === slotIndex
                     ? (
                         <div className={'mt-2 rounded-md bg-red-500 text-center text-white'}>
@@ -163,7 +165,7 @@ const Slot: FC<{
                             &mdash; &mdash;
                         </div>
                     )}
-                <div className={'text-center'}>
+                <div className={'text-center text-nowrap relative bottom-2.5'} >
                     CT <span className={'text-2xl w-6 inline-block'}>{bloom}</span> 秒
                 </div>
             </div>

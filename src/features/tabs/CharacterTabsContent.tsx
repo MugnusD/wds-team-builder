@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import useCharacters from "../teamBuilder/useCharacters.ts";
+import useCharacters from "../../hooks/useCharacters.ts";
 import GameItem from "./GameItem.tsx";
 
 const CharacterTabsContent: FC = () => {
@@ -11,12 +11,13 @@ const CharacterTabsContent: FC = () => {
 
     const renderItems = characters.map(character => ({
         id: character.id,
+        characterBase: character.characterBase,
     }))
 
     return (
         <>
             {renderItems.map(item => (
-                <GameItem id={item.id} key={item.id} type={'character'} />
+                <GameItem id={item.id} key={item.id} type={'character'} characterBase={item.characterBase}/>
             ))}
         </>
     )

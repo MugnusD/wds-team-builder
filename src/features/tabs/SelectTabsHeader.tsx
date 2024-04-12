@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {GameItemType, selectGameItemType, setTabType} from "./selectTabsSlice.ts";
 import {resetFocusItem} from "../teamBuilder/teamSlice.ts";
 
-const TypeTabsHeader: FC = () => {
+const SelectTabsHeader: FC = () => {
     const currentType = useSelector(selectGameItemType);
     const dispatch = useDispatch();
 
@@ -72,4 +72,4 @@ const TypeTabsHeader: FC = () => {
     )
 }
 
-export default TypeTabsHeader;
+export default SelectTabsHeader;
