@@ -1,13 +1,13 @@
 {
   "rewrites": [
     {
-      "source": "/",
+      "source": "/(.*)",
       "destination": "/"
     }
   ],
   "headers": [
     {
-      "source": "/images/*.jpg",
+      "source": "/images/.*.jpg",
       "headers": [
         {
           "key": "Cache-Control",
