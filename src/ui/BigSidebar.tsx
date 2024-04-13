@@ -3,6 +3,7 @@ import {Card, List, ListItem, ListItemPrefix, Typography} from "@material-tailwi
 import {HiHome, HiMiniSquare3Stack3D} from "react-icons/hi2";
 import {TbError404} from "react-icons/tb";
 import {NavLink} from "react-router-dom";
+import {GiCardPick} from "react-icons/gi";
 
 const BigSidebar: FC = () => {
     return (
@@ -21,6 +22,7 @@ const BigSidebar: FC = () => {
                     to={'/team-builder'}
                     content={'Team Builder'}
                 />
+                <SidebarListItem icon={<GiCardPick />} to={'/detail'} content={'Card Detail'} />
                 <SidebarListItem icon={<TbError404 />} to={'/404'} content={'404 Test'} />
             </List>
         </Card>

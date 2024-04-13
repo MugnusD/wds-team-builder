@@ -1,7 +1,7 @@
 import {useQuery} from "@tanstack/react-query";
 import { getPosters} from "../servers/fetchData.ts";
 
-const useCharacters = () => {
+const usePosters = () => {
     const {isLoading, data: posters, isError} =useQuery({
         queryKey: ['poster'],
         queryFn: getPosters,
@@ -10,4 +10,4 @@ const useCharacters = () => {
     return {isLoading, posters, isError};
 }
 
-export default useCharacters;
+export default usePosters;

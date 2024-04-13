@@ -12,7 +12,7 @@ const PageNotFount: FC = () => {
                     </Typography>
                     <p className="text-2xl md:text-3xl dark:text-gray-300">Page Not Found</p>
                     <img src={'/40204.png'} alt={'ei...'} />
-                    <Link to={'/home'} replace={true}>
+                    <Link to={'/team-builder'} replace={true}>
                         <Button>
                             Back Home
                         </Button>

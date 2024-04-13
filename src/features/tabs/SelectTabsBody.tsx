@@ -16,7 +16,6 @@ const SelectTabsBody: FC = () => {
             {gameItemType === 'character' && <CharacterTabsContent />}
             {gameItemType === 'poster' && <PosterTabsContent />}
             {gameItemType === 'accessory' && null}
-
         </div>
     );
 };

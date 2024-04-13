@@ -3,9 +3,10 @@ import {HiHome, HiMiniSquare3Stack3D, HiOutlineChevronDoubleRight} from "react-i
 import {TbError404} from "react-icons/tb";
 import {HiOutlineChevronDoubleLeft} from "react-icons/hi";
 import {NavLink} from "react-router-dom";
+import {GiCardPick} from "react-icons/gi";
 
 const SmallSidebar: FC = () => {
-    const [isSpanned, setIsSpanned] = useState(false);
+    const [isSpanned, setIsSpanned] = useState(true);
 
     if (isSpanned)
         return (
@@ -13,6 +14,7 @@ const SmallSidebar: FC = () => {
                 <ul className={'flex w-16 flex-col items-center pt-4 gap-4 divide-y-4'}>
                     <SmallNavIcon icon={<HiHome size={40} />} to={'/home'} />
                     <SmallNavIcon icon={<HiMiniSquare3Stack3D size={40} />} to={'/team-builder'} />
+                    <SmallNavIcon icon={<GiCardPick size={40} />} to={'/detail'} />
                     <SmallNavIcon icon={<TbError404 size={40} />} to={'/404'} />
                 </ul>
                 <div className={'flex w-16 justify-center pb-4'}>

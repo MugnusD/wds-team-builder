@@ -173,7 +173,7 @@ const Slot: FC<{
                             &mdash; &mdash;
                         </div>
                     )}
-                <div className={'text-center text-nowrap relative bottom-2.5 text-nowrap'}>
+                <div className={'text-center text-nowrap relative bottom-2.5'}>
                     CT <span className={'text-2xl w-6 inline-block'}>{bloom}</span> 秒
                 </div>
             </div>

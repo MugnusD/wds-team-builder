@@ -15,6 +15,8 @@ import Error from "./page/Error.tsx";
 import Home from "./page/Home.tsx";
 import PageNotFount from "./page/PageNotFount.tsx";
 import TeamBuilder from "./page/TeamBuilder.tsx";
+import Detail from "./page/Detail.tsx";
+import CardDetail from "./features/detail/CardDetail.tsx";
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -41,6 +43,16 @@ const router = createBrowserRouter([
             {
                 path: 'team-builder',
                 element: <TeamBuilder />
+            },
+            {
+                path: 'detail',
+                element: <Detail />,
+                children: [
+                    {
+                        path: ':id',
+                        element: <CardDetail />
+                    }
+                ]
             }
         ]
     },

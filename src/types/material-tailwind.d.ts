@@ -42,4 +42,11 @@ declare module '@material-tailwind/react' {
         onPointerEnterCapture?,
         onPointerLeaveCapture?,
     }
+
+    interface SwitchProps {
+        crossOrigin?,
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
+
 }

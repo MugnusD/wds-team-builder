@@ -1,7 +1,8 @@
 import {FC} from 'react';
-import {GameItemType} from "./selectTabsSlice.ts";
-import {useDispatch} from "react-redux";
+import {GameItemType, selectISDetailMode} from "./selectTabsSlice.ts";
+import {useDispatch, useSelector} from "react-redux";
 import {resetFocusItem, swapFocusItemFromTab} from "../teamBuilder/teamSlice.ts";
+import {useNavigate} from "react-router-dom";
 
 /**
  * Render a game item. If it is a character, then props must have a characterBase(character's name)
@@ -17,8 +18,10 @@ const GameItem: FC<{
     characterBase?: string,
 }> = ({id, type, characterBase = ''}) => {
     const dispatch = useDispatch();
+    const isDetailMode = useSelector(selectISDetailMode);
+    const navigate = useNavigate();
 
-    const handleClick = () => {
+    const handleSwapToTeam = () => {
         if (type === 'accessory' || type === 'poster') {
             dispatch(swapFocusItemFromTab({id, type}));
         } else {
@@ -27,6 +30,11 @@ const GameItem: FC<{
 
         dispatch(resetFocusItem());
     }
+
+    const handleGoToDetail = () => {
+        navigate(`/detail/${id}`);
+    }
+
 
     let sourcePath: string;
 
@@ -46,7 +54,7 @@ const GameItem: FC<{
     }
 
     return (
-        <div className={'h-16 w-16'} onClick={handleClick}>
+        <div className={'h-16 w-16'} onClick={isDetailMode ? handleGoToDetail : handleSwapToTeam}>
             <img
                 src={sourcePath}
                 alt={id.toString()}
