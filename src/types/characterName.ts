@@ -22,7 +22,7 @@ export const characterFilterRecord: Record<CharacterName, boolean> = {
     "本巣叶羽": true,
 }
 
-export const allCharacterFilter: CharacterName[] = [
+export const allCharacterNames: CharacterName[] = [
     "鳳ここな",
     "静香",
     "カトリナ・グリーベル",

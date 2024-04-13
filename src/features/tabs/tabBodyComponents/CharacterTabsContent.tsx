@@ -2,12 +2,13 @@ import {FC} from 'react';
 import useCharacters from "../../../hooks/useCharacters.ts";
 import GameItem from "./GameItem.tsx";
 import {useSelector} from "react-redux";
-import {selectCardNameFilterArray, selectSortAndFilter} from "../selectTabsSlice.ts";
+import {selectCardNameFilterArray, selectCardRarityFilterArray, selectSortAndFilter} from "../selectTabsSlice.ts";
 
 const CharacterTabsContent: FC = () => {
     const {characters, isLoading, isError} = useCharacters();
     const {sortBy} = useSelector(selectSortAndFilter);
     const filteredNames = useSelector(selectCardNameFilterArray);
+    const filterRarities = useSelector(selectCardRarityFilterArray);
 
     if (isLoading || isError || !characters) {
         return null;
@@ -37,6 +38,9 @@ const CharacterTabsContent: FC = () => {
 
     // filtered by name
     items = items.filter(character => filteredNames.includes(character.characterBase));
+
+    // filtered by rarity
+    items = items.filter(characters => filterRarities.includes(characters.rarity));
 
     // Finally mapped to GameItem props type
     const renderItems = items.map(character => ({

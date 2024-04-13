@@ -11,18 +11,21 @@ import {
 } from "@material-tailwind/react";
 import {useDispatch, useSelector} from "react-redux";
 import {
-    selectCardNameFilterArray,
+    selectCardNameFilterArray, selectCardRarityFilterArray,
     selectSortAndFilter,
     setCardSortBy,
     SortBy,
-    switchCardFilterByName
+    switchCardFilterByName, switchCardFilterByRarity
 } from "../selectTabsSlice.ts";
-import {allCharacterFilter} from "../../../types/characterName.ts";
+import {allCharacterNames} from "../../../types/characterName.ts";
+import {IoIosStar} from "react-icons/io";
+import {allRarities} from "../../../types/characterRarity.ts";
 
 const TabsSortAndFilterDialogButton: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const {sortBy} = useSelector(selectSortAndFilter);
     const checkedNames = useSelector(selectCardNameFilterArray);
+    const checkedRarities = useSelector(selectCardRarityFilterArray);
     const dispatch = useDispatch();
 
     const handleOpen = () => {
@@ -37,10 +40,10 @@ const TabsSortAndFilterDialogButton: FC = () => {
             <Dialog
                 handler={handleOpen}
                 open={isOpen}
-                size={'xs'}
+                size={'md'}
             >
                 <DialogHeader>Sort & Filter</DialogHeader>
-                <DialogBody className="flex flex-col gap-4">
+                <DialogBody className="flex flex-col gap-4 divide-y-2 divide-blue-gray-200">
                     <Select
                         label="Sort By"
                         value={sortBy}
@@ -49,9 +52,9 @@ const TabsSortAndFilterDialogButton: FC = () => {
                         <Option value="time">Sort by time (descending)</Option>
                         <Option value="rarity">Sort by rarity (descending)</Option>
                     </Select>
-                    <div className={'flex flex-col divide-y-2 divide-blue-gray-200 border-y-2 border-blue-gray-200'}>
+                    <div className={'flex flex-col divide-y-2 divide-blue-gray-200'}>
                         <div className={'flex flex-row flex-wrap'}>
-                            {allCharacterFilter.slice(0, 6).map(name =>
+                            {allCharacterNames.slice(0, 6).map(name =>
                                 <Checkbox
                                     checked={checkedNames.includes(name)}
                                     onChange={() => dispatch(switchCardFilterByName(name))}
@@ -60,7 +63,7 @@ const TabsSortAndFilterDialogButton: FC = () => {
                                 />)}
                         </div>
                         <div className={'flex flex-row flex-wrap'}>
-                            {allCharacterFilter.slice(6, 11).map(name =>
+                            {allCharacterNames.slice(6, 11).map(name =>
                                 <Checkbox
                                     checked={checkedNames.includes(name)}
                                     onChange={() => dispatch(switchCardFilterByName(name))}
@@ -69,7 +72,7 @@ const TabsSortAndFilterDialogButton: FC = () => {
                                 />)}
                         </div>
                         <div className={'flex flex-row flex-wrap'}>
-                            {allCharacterFilter.slice(11, 16).map(name =>
+                            {allCharacterNames.slice(11, 16).map(name =>
                                 <Checkbox
                                     checked={checkedNames.includes(name)}
                                     onChange={() => dispatch(switchCardFilterByName(name))}
@@ -78,7 +81,7 @@ const TabsSortAndFilterDialogButton: FC = () => {
                                 />)}
                         </div>
                         <div className={'flex flex-row flex-wrap'}>
-                            {allCharacterFilter.slice(16, 21).map(name =>
+                            {allCharacterNames.slice(16, 21).map(name =>
                                 <Checkbox
                                     checked={checkedNames.includes(name)}
                                     onChange={() => dispatch(switchCardFilterByName(name))}
@@ -86,6 +89,15 @@ const TabsSortAndFilterDialogButton: FC = () => {
                                     key={name}
                                 />)}
                         </div>
+                    </div>
+                    <div className={'flex flex-row flex-wrap'}>
+                        {allRarities.map(rarity => <Checkbox
+                            label={<>{rarity[4]} <IoIosStar className={'inline-block'} /></>}
+                            key={rarity}
+                            checked={checkedRarities.includes(rarity)}
+                            onChange={() => dispatch(switchCardFilterByRarity(rarity))}
+                        />)}
+
                     </div>
                 </DialogBody>
                 <DialogFooter className={'flex flex-col items-end'}>

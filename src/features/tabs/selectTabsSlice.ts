@@ -1,5 +1,6 @@
 import {createSelector, createSlice} from "@reduxjs/toolkit";
 import {characterFilterRecord} from "../../types/characterName.ts";
+import {characterRarityRecord} from "../../types/characterRarity.ts";
 
 export type GameItemType = 'character' | 'poster' | 'accessory';
 
@@ -11,6 +12,7 @@ type State = {
     cardSortFilter: {
         sortBy: SortBy
         filterByCharacter: Record<CharacterName, boolean>,
+        filterByRarity: Record<CharacterRarity, boolean>,
     }
 }
 
@@ -20,6 +22,7 @@ const initialState: State = {
     cardSortFilter: {
         sortBy: 'time',
         filterByCharacter: characterFilterRecord,
+        filterByRarity: characterRarityRecord,
     }
 }
 
@@ -39,6 +42,10 @@ const selectedGameItemSlice = createSlice({
         switchCardFilterByName: (state, action: { payload: CharacterName }) => {
             const name = action.payload;
             state.cardSortFilter.filterByCharacter[name] = !state.cardSortFilter.filterByCharacter[name];
+        },
+        switchCardFilterByRarity: (state, action: { payload: CharacterRarity }) => {
+            const rarity = action.payload;
+            state.cardSortFilter.filterByRarity[rarity] = !state.cardSortFilter.filterByRarity[rarity];
         }
     },
     selectors: {
@@ -53,9 +60,14 @@ export const {
                  setTabType,
                  switchDetailMode,
                  setCardSortBy,
-                 switchCardFilterByName
+                 switchCardFilterByName,
+                 switchCardFilterByRarity
              } = selectedGameItemSlice.actions;
-export const {selectGameItemType, selectISDetailMode, selectSortAndFilter} = selectedGameItemSlice.selectors;
+export const {
+                 selectGameItemType,
+                 selectISDetailMode,
+                 selectSortAndFilter
+             } = selectedGameItemSlice.selectors;
 
 export const selectCardNameFilterArray = createSelector(
     [selectSortAndFilter],
@@ -65,6 +77,19 @@ export const selectCardNameFilterArray = createSelector(
             if (chosen)
                 // Apparently name is an instance of CharacterName
                 filterArray.push(name as CharacterName);
+        }
+        return filterArray;
+    }
+);
+
+export const selectCardRarityFilterArray = createSelector(
+    [selectSortAndFilter],
+    (sortAndFilter) => {
+        const filterArray: CharacterRarity[] = [];
+        for (const [rarity, chosen] of Object.entries(sortAndFilter.filterByRarity)) {
+            if (chosen)
+                // Apparently name is an instance of CharacterName
+                filterArray.push(rarity as CharacterRarity);
         }
         return filterArray;
     }

@@ -1,7 +1,7 @@
 interface CharacterDetail {
     id: number;
     name: string;
-    rarity: string;
+    rarity: CharacterRarity;
     attribute: string;
     status: CharacterStatusDetail[];
     characterBase: CharacterName;
@@ -37,6 +37,8 @@ type CharacterName =
     | "阿岐留カミラ"
     | "猫足蕾"
     | "本巣叶羽";
+
+type CharacterRarity = 'Rare1' | 'Rare2' | 'Rare3' | 'Rare4';
 
 interface BloomBonusDetail {
     phase: number;
