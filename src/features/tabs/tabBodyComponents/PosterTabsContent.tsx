@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import GameItem from "./GameItem.tsx";
-import usePosters from "../../hooks/usePosters.ts";
+import usePosters from "../../../hooks/usePosters.ts";
 
 const PosterTabsContent: FC = () => {
     const {posters, isLoading, isError} = usePosters();

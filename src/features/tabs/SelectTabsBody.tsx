@@ -1,8 +1,8 @@
 import {FC} from 'react';
 import {useSelector} from 'react-redux';
 import {selectGameItemType} from './selectTabsSlice.ts';
-import CharacterTabsContent from './CharacterTabsContent.tsx';
-import PosterTabsContent from "./PosterTabsContent.tsx";
+import CharacterTabsContent from './tabBodyComponents/CharacterTabsContent.tsx';
+import PosterTabsContent from "./tabBodyComponents/PosterTabsContent.tsx";
 
 const SelectTabsBody: FC = () => {
     const gameItemType = useSelector(selectGameItemType);

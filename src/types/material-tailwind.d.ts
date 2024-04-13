@@ -49,4 +49,47 @@ declare module '@material-tailwind/react' {
         onPointerLeaveCapture?,
     }
 
+    interface CheckboxProps {
+        crossOrigin?,
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
+
+
+    interface DialogProps {
+        placeholder?
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+        open: boolean,
+    }
+
+    interface DialogHeaderProps {
+        placeholder?
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
+
+    interface DialogFooterProps {
+        placeholder?
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
+
+    interface DialogBodyProps {
+        placeholder?
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
+
+    interface SelectProps {
+        placeholder?
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
+
+    interface OptionProps {
+        placeholder?
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
 }

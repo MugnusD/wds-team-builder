@@ -4,7 +4,7 @@ interface CharacterDetail {
     rarity: string;
     attribute: string;
     status: CharacterStatusDetail[];
-    characterBase: string;
+    characterBase: CharacterName;
     characterBaseChinese: string;
     starAct: StarActDetail;
     sense: SenseDetail;
@@ -14,6 +14,29 @@ interface CharacterDetail {
     gacha: string;
     episodes: CharacterEpisodeDetail[];
 }
+
+type CharacterName =
+    | "鳳ここな"
+    | "静香"
+    | "カトリナ・グリーベル"
+    | "新妻八恵"
+    | "柳場ぱんだ"
+    | "流石知冴"
+    | "連尺野初魅"
+    | "烏森大黒"
+    | "舎人仁花子"
+    | "萬容"
+    | "筆島しぐれ"
+    | "千寿暦"
+    | "ラモーナ・ウォルフ"
+    | "王雪"
+    | "リリヤ・クルトベイ"
+    | "与那国緋花里"
+    | "千寿いろは"
+    | "白丸美兎"
+    | "阿岐留カミラ"
+    | "猫足蕾"
+    | "本巣叶羽";
 
 interface BloomBonusDetail {
     phase: number;

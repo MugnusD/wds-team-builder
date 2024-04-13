@@ -1,7 +1,7 @@
 import {FC} from 'react';
-import {GameItemType, selectISDetailMode} from "./selectTabsSlice.ts";
+import {GameItemType, selectISDetailMode} from "../selectTabsSlice.ts";
 import {useDispatch, useSelector} from "react-redux";
-import {resetFocusItem, swapFocusItemFromTab} from "../teamBuilder/teamSlice.ts";
+import {resetFocusItem, swapFocusItemFromTab} from "../../teamBuilder/teamSlice.ts";
 import {useNavigate} from "react-router-dom";
 
 /**

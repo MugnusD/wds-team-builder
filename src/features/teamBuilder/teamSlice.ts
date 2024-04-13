@@ -90,20 +90,14 @@ const teamSlice = createSlice({
             state.slots[action.payload].isLeader = true;
         },
         swapSlot: (state, action: { payload: { from: SlotIndex, to: SlotIndex } }) => {
-            const {
-                      from,
-                      to
-                  } = action.payload;
+            const {from, to} = action.payload;
 
             const temp = state.slots.at(from);
             state.slots[from] = state.slots.at(to) as Slot;
             state.slots[to] = temp as Slot;
         },
         setFocusedItem: (state, action: { payload: { slotIndex: SlotIndex, itemType: GameItemType } }) => {
-            const {
-                      slotIndex,
-                      itemType
-                  } = action.payload;
+            const {slotIndex, itemType} = action.payload;
             // If try to focus the focused item, defocus it
             if (slotIndex === state.focusedItem?.slotIndex && itemType === state.focusedItem?.itemType) {
                 state.focusedItem = null;
@@ -119,18 +113,12 @@ const teamSlice = createSlice({
         },
         swapFocusItemFromTab: (state, action: { payload: SwapPayload }) => {
             let characterBase = '';
-            const {
-                      id,
-                      type,
-                  } = action.payload;
+            const {id, type,} = action.payload;
             // If it is a character, it's characterBase is needed
             if (type === 'character') {
                 characterBase = action.payload.characterBase;
             }
-            const {
-                      focusedItem,
-                      slots
-                  } = state;
+            const {focusedItem, slots} = state;
 
             if (focusedItem && focusedItem.itemType === type) {
                 const focusSlot = slots.at(focusedItem.slotIndex) as Slot;
