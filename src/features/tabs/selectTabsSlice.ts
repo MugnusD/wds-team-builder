@@ -1,6 +1,7 @@
 import {createSelector, createSlice} from "@reduxjs/toolkit";
-import {characterFilterRecord} from "../../types/characterName.ts";
-import {characterRarityRecord} from "../../types/characterRarity.ts";
+import {characterNameFilterRecord} from "../../types/characterName.ts";
+import {characterRarityFilterRecord} from "../../types/characterRarity.ts";
+import {characterSenseTypeFilterRecord} from "../../types/characterSenseType.ts";
 
 export type GameItemType = 'character' | 'poster' | 'accessory';
 
@@ -10,9 +11,10 @@ type State = {
     type: GameItemType,
     isDetailMode: boolean,
     cardSortFilter: {
-        sortBy: SortBy
+        sortBy: SortBy,
         filterByCharacter: Record<CharacterName, boolean>,
         filterByRarity: Record<CharacterRarity, boolean>,
+        filterBySenseType: Record<SenseType, boolean>,
     }
 }
 
@@ -21,8 +23,9 @@ const initialState: State = {
     isDetailMode: false,
     cardSortFilter: {
         sortBy: 'time',
-        filterByCharacter: characterFilterRecord,
-        filterByRarity: characterRarityRecord,
+        filterByCharacter: characterNameFilterRecord,
+        filterByRarity: characterRarityFilterRecord,
+        filterBySenseType: characterSenseTypeFilterRecord,
     }
 }
 
@@ -46,12 +49,19 @@ const selectedGameItemSlice = createSlice({
         switchCardFilterByRarity: (state, action: { payload: CharacterRarity }) => {
             const rarity = action.payload;
             state.cardSortFilter.filterByRarity[rarity] = !state.cardSortFilter.filterByRarity[rarity];
+        },
+        switchCardFilterBySenseType: (state, action: { payload: SenseType }) => {
+            const senseType = action.payload;
+            state.cardSortFilter.filterBySenseType[senseType] = !state.cardSortFilter.filterBySenseType[senseType];
         }
     },
     selectors: {
         selectGameItemType: sliceState => sliceState.type,
         selectISDetailMode: sliceState => sliceState.isDetailMode,
-        selectSortAndFilter: sliceState => sliceState.cardSortFilter,
+        selectCardSortAndFilter: sliceState => sliceState.cardSortFilter,
+        selectCardFilterByName: sliceState => sliceState.cardSortFilter.filterByCharacter,
+        selectCardFilterByRarity: sliceState => sliceState.cardSortFilter.filterByRarity,
+        selectCardFilterBySenseType: sliceState => sliceState.cardSortFilter.filterBySenseType,
     },
 })
 
@@ -61,19 +71,23 @@ export const {
                  switchDetailMode,
                  setCardSortBy,
                  switchCardFilterByName,
-                 switchCardFilterByRarity
+                 switchCardFilterByRarity,
+                 switchCardFilterBySenseType
              } = selectedGameItemSlice.actions;
 export const {
                  selectGameItemType,
                  selectISDetailMode,
-                 selectSortAndFilter
+                 selectCardSortAndFilter,
+                 selectCardFilterByName,
+                 selectCardFilterBySenseType,
+                 selectCardFilterByRarity
              } = selectedGameItemSlice.selectors;
 
 export const selectCardNameFilterArray = createSelector(
-    [selectSortAndFilter],
-    (sortAndFilter) => {
+    [selectCardFilterByName],
+    (filteredName) => {
         const filterArray: CharacterName[] = [];
-        for (const [name, chosen] of Object.entries(sortAndFilter.filterByCharacter)) {
+        for (const [name, chosen] of Object.entries(filteredName)) {
             if (chosen)
                 // Apparently name is an instance of CharacterName
                 filterArray.push(name as CharacterName);
@@ -83,13 +97,26 @@ export const selectCardNameFilterArray = createSelector(
 );
 
 export const selectCardRarityFilterArray = createSelector(
-    [selectSortAndFilter],
-    (sortAndFilter) => {
+    [selectCardFilterByRarity],
+    (filteredRarities) => {
         const filterArray: CharacterRarity[] = [];
-        for (const [rarity, chosen] of Object.entries(sortAndFilter.filterByRarity)) {
+        for (const [rarity, chosen] of Object.entries(filteredRarities)) {
             if (chosen)
-                // Apparently name is an instance of CharacterName
+                // Apparently rarity is an instance of CharacterRarity
                 filterArray.push(rarity as CharacterRarity);
+        }
+        return filterArray;
+    }
+);
+
+export const selectCardSenseTypeFilterArray = createSelector(
+    [selectCardFilterBySenseType],
+    (filteredSenseTypes) => {
+        const filterArray: SenseType[] = [];
+        for (const [senseType, chosen] of Object.entries(filteredSenseTypes)) {
+            if (chosen)
+                // Apparently senseType is an instance of SenseType
+                filterArray.push(senseType as SenseType);
         }
         return filterArray;
     }

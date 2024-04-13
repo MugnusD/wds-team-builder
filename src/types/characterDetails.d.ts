@@ -40,6 +40,8 @@ type CharacterName =
 
 type CharacterRarity = 'Rare1' | 'Rare2' | 'Rare3' | 'Rare4';
 
+type SenseType = 'Support' | 'Amplification' | 'Special' | 'Control' | 'None' | 'Alternative';
+
 interface BloomBonusDetail {
     phase: number;
     descriptions: string[];
@@ -49,7 +51,7 @@ interface BloomBonusDetail {
 interface SenseDetail {
     descriptions: string[];
     descriptionsChinese: string[];
-    type: string;
+    type: SenseType;
     lightCount: number;
     acquirableGauge: number;
     coolTime: {

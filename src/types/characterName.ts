@@ -1,4 +1,4 @@
-export const characterFilterRecord: Record<CharacterName, boolean> = {
+export const characterNameFilterRecord: Record<CharacterName, boolean> = {
     "鳳ここな": true,
     "静香": true,
     "カトリナ・グリーベル": true,
