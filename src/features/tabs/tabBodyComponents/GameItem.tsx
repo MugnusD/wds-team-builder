@@ -21,7 +21,8 @@ const GameItem: FC<{
     characterBase?: string,
     attribute?: AttributeType,
     sense?: SenseType,
-}> = ({id, type, characterBase = '', attribute, sense}) => {
+    rarity?: CharacterRarity,
+}> = ({id, type, characterBase = '', attribute, sense, rarity}) => {
     const dispatch = useDispatch();
     const isDetailMode = useSelector(selectISDetailMode);
     const navigate = useNavigate();
@@ -70,7 +71,11 @@ const GameItem: FC<{
 
     switch (type) {
         case "character": {
-            sourcePath = `/${type}Icons/${id}_0.png`;
+            if (rarity === 'Rare4') {
+                sourcePath = `/${type}Icons/${id}_1.png`;
+            } else {
+                sourcePath = `/${type}Icons/${id}_0.png`;
+            }
             break;
         }
         case "poster": {

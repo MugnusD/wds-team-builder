@@ -59,7 +59,7 @@ const CharacterTabsContent: FC = () => {
     return (
         <>
             {items.map(item => (
-                <GameItem id={item.id} key={item.id} type={'character'} characterBase={item.characterBase} attribute={item.attribute} sense={item.sense.type}/>
+                <GameItem id={item.id} key={item.id} type={'character'} characterBase={item.characterBase} attribute={item.attribute} sense={item.sense.type} rarity={item.rarity}/>
             ))}
         </>
     )
