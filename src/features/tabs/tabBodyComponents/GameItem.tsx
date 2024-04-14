@@ -88,6 +88,7 @@ const GameItem: FC<{
         }
     }
 
+    // DUPLICATE: These icon may be seperated components
     let AttributeIcon: ReactNode;
 
     switch (attribute) {

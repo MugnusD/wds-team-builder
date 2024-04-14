@@ -1,0 +1,31 @@
+import {Tooltip, Typography} from "@material-tailwind/react";
+import {FC} from "react";
+import {FaRegCircleQuestion} from "react-icons/fa6";
+
+const TooltipWithHelperIcon: FC = () => {
+    return (
+        <Tooltip
+            content={
+                <div className="w-80">
+                    <Typography color="white" className="font-medium">
+                        使用方法
+                    </Typography>
+                    <Typography
+                        variant="small"
+                        color="white"
+                        className="font-normal opacity-80"
+                    >
+                        可以直接从下方选择框中拖动卡片放置到上方（建议使用鼠标）；或者点击上方卡片（可以看到高亮），此时点击下方
+                        卡片可以更换。
+                    </Typography>
+                </div>
+            }
+        >
+            <div>
+                <FaRegCircleQuestion size={20} />
+            </div>
+        </Tooltip>
+    );
+}
+
+export default TooltipWithHelperIcon;

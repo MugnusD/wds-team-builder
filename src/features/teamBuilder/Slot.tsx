@@ -1,6 +1,6 @@
-import {FC, useEffect, useRef, useState} from 'react';
+import {FC, ReactNode, useEffect, useRef, useState} from 'react';
 import {IoMenu} from 'react-icons/io5';
-import {GiDiamondRing} from 'react-icons/gi';
+import {GiBowTieRibbon, GiChestnutLeaf, GiDiamondRing} from 'react-icons/gi';
 import {useDispatch, useSelector} from "react-redux";
 import {
     resetFocusItem,
@@ -20,6 +20,8 @@ import toast from "react-hot-toast";
 import {Spinner} from "@material-tailwind/react";
 import {GameItemType, setTabType} from "../tabs/selectTabsSlice.ts";
 import useBigScreenQuery from "../../hooks/useBigScreenQuery.ts";
+import {BiSolidMoon} from "react-icons/bi";
+import {PiStarFourFill, PiSunFill} from "react-icons/pi";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
@@ -45,7 +47,7 @@ const Slot: FC<{
     const {
               isLoading,
               isError,
-              characters
+              characters,
           } = useCharacters();
     const [characterDetail, setCharacterDetail] = useState<CharacterDetail>();
     useEffect(() => {
@@ -133,11 +135,65 @@ const Slot: FC<{
     }
 
     // CT
-    let bloom: number;
+    let bloom: number,
+        rarity: CharacterRarity,
+        attribute: AttributeType,
+        senseType: SenseType;
+
     if (!characterDetail) {
         bloom = 0;
+        rarity = 'Rare1';
+        attribute = 'Cute';
+        senseType = 'None';
     } else {
         bloom = characterDetail.sense.coolTime.bloom;
+        rarity = characterDetail.rarity;
+        attribute = characterDetail.attribute;
+        senseType = characterDetail.sense.type;
+    }
+
+    // DUPLICATE: These icon may be seperated components
+    // noinspection DuplicatedCode
+    let AttributeIcon: ReactNode;
+
+    switch (attribute) {
+        case "Cute": {
+            AttributeIcon = <GiBowTieRibbon color={'deeppink'} />;
+            break;
+        }
+        case "Cool": {
+            AttributeIcon = <BiSolidMoon color={'deepskyblue'} />;
+            break;
+        }
+        case "Colorful": {
+            AttributeIcon = <GiChestnutLeaf color={'limegreen'} />;
+            break;
+        }
+        case "Cheerful": {
+            AttributeIcon = <PiSunFill color={'orangered'} />;
+            break;
+        }
+    }
+
+    let SenseIcon: ReactNode = null;
+
+    switch (senseType) {
+        case "Support": {
+            SenseIcon = <PiStarFourFill color={'limegreen'} />;
+            break;
+        }
+        case "Amplification": {
+            SenseIcon = <PiStarFourFill color={'#FF3838'} />;
+            break;
+        }
+        case "Special": {
+            SenseIcon = <PiStarFourFill color={'gold'} />;
+            break;
+        }
+        case "Control": {
+            SenseIcon = <PiStarFourFill color={'#3498DB'} />;
+            break;
+        }
     }
 
     return (
@@ -156,7 +212,7 @@ const Slot: FC<{
 
             {/* Character card display, can drop from tab and focus */}
             <div
-                className={'md:h-16 md:w-16 h-14 w-14 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] md:p-1 p-[3px] ' +
+                className={'md:h-16 md:w-16 h-14 w-14 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] md:p-1 p-[3px] relative ' +
                     `${currentSlotFocusedItem === 'character' ? 'ring-2 ring-red-500 ' : ' '}` +
                     `${canDropCharacter ? 'ring-4 ring-orange-300 ' : ' '}`
                 }
@@ -164,10 +220,16 @@ const Slot: FC<{
                 ref={characterDrop}
             >
                 <img
-                    src={`/characterIcons/${characterId}_0.png`}
+                    src={`/characterIcons/${characterId}_${rarity === 'Rare4' ? '1' : '0'}.png`}
                     alt={characterId.toString()}
                     className={'rounded-md'}
                 />
+                <div className={'absolute top-0 left-0 bg-stone-600 border-stone-300 border-2 rounded-full'}>
+                    {AttributeIcon}
+                </div>
+                <div className={'absolute bottom-0 left-0 bg-stone-600 border-stone-300 border-2 rounded-full'}>
+                    {SenseIcon}
+                </div>
             </div>
 
             {/* Poster display, can drop from tab and focus */}
@@ -216,7 +278,7 @@ const Slot: FC<{
                             &mdash; &mdash;
                         </div>
                     )}
-                <div className={'text-center text-nowrap relative bottom-2.5'}>
+                <div className={'text-center relative bottom-2.5 text-nowrap'}>
                     CT <span className={'text-2xl w-6 inline-block'}>{bloom}</span> 秒
                 </div>
             </div>
