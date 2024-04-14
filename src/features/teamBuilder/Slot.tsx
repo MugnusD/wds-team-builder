@@ -150,7 +150,7 @@ const Slot: FC<{
                 <IoMenu
                     size={isBigScreen ? 50 : 40}
                     color={'rgb(158 158 158'}
-                    className={'rounded-xl ' + `${canDrop && !isDragging ? 'bg-green-100 ' : ' '}` + `${isOver ? 'bg-fuchsia-200 ' : ' '}`}
+                    className={'rounded-xl ' + `${canDrop && !isDragging ? 'bg-green-100 ' : ' '}` + `${isOver ? ' bg-fuchsia-200 ' : ' '}`}
                 />
             </div>
 

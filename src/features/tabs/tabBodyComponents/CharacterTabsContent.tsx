@@ -56,16 +56,10 @@ const CharacterTabsContent: FC = () => {
     // filtered by attributeType
     items = items.filter(characters => filteredAttributeType.includes(characters.attribute));
 
-    // Finally mapped to GameItem props type
-    const renderItems = items.map(character => ({
-        id: character.id,
-        characterBase: character.characterBase,
-    }));
-
     return (
         <>
-            {renderItems.map(item => (
-                <GameItem id={item.id} key={item.id} type={'character'} characterBase={item.characterBase} />
+            {items.map(item => (
+                <GameItem id={item.id} key={item.id} type={'character'} characterBase={item.characterBase} attribute={item.attribute} sense={item.sense.type}/>
             ))}
         </>
     )

@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import {Navigate, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {Typography} from "@material-tailwind/react";
 import useCharacters from "../../hooks/useCharacters.ts";
 
@@ -13,7 +13,7 @@ const CardDetail: FC = () => {
     const character = characters.find(item => item.id.toString() === id);
 
     if (!character)
-        return<Navigate to={'/404'} replace={true} />
+        return null;
 
     const {name, characterBase, sense: {descriptionsChinese}, starAct: {descriptionChinese: SADesc}} = character;
 
