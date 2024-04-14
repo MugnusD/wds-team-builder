@@ -22,7 +22,7 @@ type State = {
 
 const initialState: State = {
     type: 'character',
-    isDetailMode: true,
+    isDetailMode: false,
     cardSortFilter: {
         sortBy: 'time',
         filterByCharacter: characterNameFilterRecord,
