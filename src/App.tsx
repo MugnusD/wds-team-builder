@@ -10,12 +10,12 @@ import {HTML5Backend} from "react-dnd-html5-backend";
 
 import {Toaster} from "react-hot-toast";
 
-import AppLayout from "./page/AppLayout.tsx";
-import Error from "./page/Error.tsx";
-import Home from "./page/Home.tsx";
-import PageNotFount from "./page/PageNotFount.tsx";
-import TeamBuilder from "./page/TeamBuilder.tsx";
-import Detail from "./page/Detail.tsx";
+import AppLayout from "./pages/AppLayout.tsx";
+import Error from "./pages/Error.tsx";
+import Home from "./pages/Home.tsx";
+import PageNotFount from "./pages/PageNotFount.tsx";
+import TeamBuilder from "./pages/TeamBuilder.tsx";
+import Detail from "./pages/Detail.tsx";
 import CardDetail from "./features/detail/CardDetail.tsx";
 
 const queryClient = new QueryClient({

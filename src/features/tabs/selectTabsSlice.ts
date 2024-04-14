@@ -2,6 +2,7 @@ import {createSelector, createSlice} from "@reduxjs/toolkit";
 import {characterNameFilterRecord} from "../../types/characterName.ts";
 import {characterRarityFilterRecord} from "../../types/characterRarity.ts";
 import {characterSenseTypeFilterRecord} from "../../types/characterSenseType.ts";
+import {characterAttributeFilterRecord} from "../../types/characterAttribute.ts";
 
 export type GameItemType = 'character' | 'poster' | 'accessory';
 
@@ -15,6 +16,7 @@ type State = {
         filterByCharacter: Record<CharacterName, boolean>,
         filterByRarity: Record<CharacterRarity, boolean>,
         filterBySenseType: Record<SenseType, boolean>,
+        filterByAttributeType: Record<AttributeType, boolean>
     }
 }
 
@@ -26,6 +28,7 @@ const initialState: State = {
         filterByCharacter: characterNameFilterRecord,
         filterByRarity: characterRarityFilterRecord,
         filterBySenseType: characterSenseTypeFilterRecord,
+        filterByAttributeType: characterAttributeFilterRecord,
     }
 }
 
@@ -53,7 +56,11 @@ const selectedGameItemSlice = createSlice({
         switchCardFilterBySenseType: (state, action: { payload: SenseType }) => {
             const senseType = action.payload;
             state.cardSortFilter.filterBySenseType[senseType] = !state.cardSortFilter.filterBySenseType[senseType];
-        }
+        },
+        switchCardFilterByAttributeType: (state, action: { payload: AttributeType }) => {
+            const attributeType = action.payload;
+            state.cardSortFilter.filterByAttributeType[attributeType] = !state.cardSortFilter.filterByAttributeType[attributeType];
+        },
     },
     selectors: {
         selectGameItemType: sliceState => sliceState.type,
@@ -62,6 +69,7 @@ const selectedGameItemSlice = createSlice({
         selectCardFilterByName: sliceState => sliceState.cardSortFilter.filterByCharacter,
         selectCardFilterByRarity: sliceState => sliceState.cardSortFilter.filterByRarity,
         selectCardFilterBySenseType: sliceState => sliceState.cardSortFilter.filterBySenseType,
+        selectCardFilterByAttributeType: sliceState => sliceState.cardSortFilter.filterByAttributeType,
     },
 })
 
@@ -72,7 +80,8 @@ export const {
                  setCardSortBy,
                  switchCardFilterByName,
                  switchCardFilterByRarity,
-                 switchCardFilterBySenseType
+                 switchCardFilterBySenseType,
+                 switchCardFilterByAttributeType
              } = selectedGameItemSlice.actions;
 export const {
                  selectGameItemType,
@@ -80,7 +89,8 @@ export const {
                  selectCardSortAndFilter,
                  selectCardFilterByName,
                  selectCardFilterBySenseType,
-                 selectCardFilterByRarity
+                 selectCardFilterByRarity,
+                 selectCardFilterByAttributeType
              } = selectedGameItemSlice.selectors;
 
 export const selectCardNameFilterArray = createSelector(
@@ -117,6 +127,19 @@ export const selectCardSenseTypeFilterArray = createSelector(
             if (chosen)
                 // Apparently senseType is an instance of SenseType
                 filterArray.push(senseType as SenseType);
+        }
+        return filterArray;
+    }
+);
+
+export const selectCardAttributeTypeFilterArray = createSelector(
+    [selectCardFilterByAttributeType],
+    (filteredAttributeTypes) => {
+        const filterArray: AttributeType[] = [];
+        for (const [attributeType, chosen] of Object.entries(filteredAttributeTypes)) {
+            if (chosen)
+                // Apparently attributeType is an instance of AttributeType
+                filterArray.push(attributeType as AttributeType);
         }
         return filterArray;
     }

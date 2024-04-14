@@ -3,6 +3,7 @@ import useCharacters from "../../../hooks/useCharacters.ts";
 import GameItem from "./GameItem.tsx";
 import {useSelector} from "react-redux";
 import {
+    selectCardAttributeTypeFilterArray,
     selectCardNameFilterArray,
     selectCardRarityFilterArray,
     selectCardSenseTypeFilterArray,
@@ -13,8 +14,9 @@ const CharacterTabsContent: FC = () => {
     const {characters, isLoading, isError} = useCharacters();
     const {sortBy} = useSelector(selectCardSortAndFilter);
     const filteredNames = useSelector(selectCardNameFilterArray);
-    const filterRarities = useSelector(selectCardRarityFilterArray);
-    const filterSenseType = useSelector(selectCardSenseTypeFilterArray);
+    const filteredRarities = useSelector(selectCardRarityFilterArray);
+    const filteredSenseType = useSelector(selectCardSenseTypeFilterArray);
+    const filteredAttributeType = useSelector(selectCardAttributeTypeFilterArray);
 
     if (isLoading || isError || !characters) {
         return null;
@@ -46,10 +48,13 @@ const CharacterTabsContent: FC = () => {
     items = items.filter(character => filteredNames.includes(character.characterBase));
 
     // filtered by rarity
-    items = items.filter(characters => filterRarities.includes(characters.rarity));
+    items = items.filter(characters => filteredRarities.includes(characters.rarity));
 
     // filtered by senseType
-    items = items.filter(characters => filterSenseType.includes(characters.sense.type));
+    items = items.filter(characters => filteredSenseType.includes(characters.sense.type));
+
+    // filtered by attributeType
+    items = items.filter(characters => filteredAttributeType.includes(characters.attribute));
 
     // Finally mapped to GameItem props type
     const renderItems = items.map(character => ({

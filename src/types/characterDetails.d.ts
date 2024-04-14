@@ -2,7 +2,7 @@ interface CharacterDetail {
     id: number;
     name: string;
     rarity: CharacterRarity;
-    attribute: string;
+    attribute: AttributeType;
     status: CharacterStatusDetail[];
     characterBase: CharacterName;
     characterBaseChinese: string;
@@ -41,6 +41,8 @@ type CharacterName =
 type CharacterRarity = 'Rare1' | 'Rare2' | 'Rare3' | 'Rare4';
 
 type SenseType = 'Support' | 'Amplification' | 'Special' | 'Control' | 'None' | 'Alternative';
+
+type AttributeType = 'Cute' | 'Cool' | 'Colorful' | 'Cheerful';
 
 interface BloomBonusDetail {
     phase: number;

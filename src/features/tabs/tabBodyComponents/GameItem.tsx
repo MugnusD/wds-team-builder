@@ -1,8 +1,9 @@
 import {FC} from 'react';
 import {GameItemType, selectISDetailMode} from "../selectTabsSlice.ts";
 import {useDispatch, useSelector} from "react-redux";
-import {resetFocusItem, swapFocusItemFromTab} from "../../teamBuilder/teamSlice.ts";
+import {resetFocusItem, swapFocusItemFromTab, SwapPayload} from "../../teamBuilder/teamSlice.ts";
 import {useNavigate} from "react-router-dom";
+import {useDrag} from "react-dnd";
 
 /**
  * Render a game item. If it is a character, then props must have a characterBase(character's name)
@@ -20,6 +21,31 @@ const GameItem: FC<{
     const dispatch = useDispatch();
     const isDetailMode = useSelector(selectISDetailMode);
     const navigate = useNavigate();
+
+    // DnD
+    const [{isDragging}, drag] = useDrag<SwapPayload ,void,{isDragging: boolean}>({
+        type,
+        item: () => {
+            switch (type) {
+                case "character": {
+                    return {
+                        type,
+                        id,
+                        characterBase,
+                    }
+                }
+                case "poster": {
+                    return {type, id}
+                }
+                case "accessory": {
+                    return {type, id}
+                }
+            }
+        },
+        collect: (monitor) => ({
+            isDragging: monitor.isDragging(),
+        })
+    })
 
     const handleSwapToTeam = () => {
         if (type === 'accessory' || type === 'poster') {
@@ -54,7 +80,7 @@ const GameItem: FC<{
     }
 
     return (
-        <div className={'h-16 w-16'} onClick={isDetailMode ? handleGoToDetail : handleSwapToTeam}>
+        <div className={'h-16 w-16 ' + `${isDragging ? 'opacity-0' : ''}`} onClick={isDetailMode ? handleGoToDetail : handleSwapToTeam} ref={drag}>
             <img
                 src={sourcePath}
                 alt={id.toString()}

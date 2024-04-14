@@ -21,11 +21,12 @@ type State = {
     } | null;
 }
 
-type SwapPayload =
+export type SwapPayload =
     | {
     id: number,
     type: 'poster' | 'accessory',
-} | {
+}
+    | {
     id: number,
     characterBase: string,
     type: 'character'
