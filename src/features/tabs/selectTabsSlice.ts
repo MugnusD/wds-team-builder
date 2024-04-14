@@ -8,16 +8,18 @@ export type GameItemType = 'character' | 'poster' | 'accessory';
 
 export type SortBy = 'time' | 'rarity';
 
+type CardSortFilter = {
+    sortBy: SortBy,
+    filterByCharacter: Record<CharacterName, boolean>,
+    filterByRarity: Record<CharacterRarity, boolean>,
+    filterBySenseType: Record<SenseType, boolean>,
+    filterByAttributeType: Record<AttributeType, boolean>
+}
+
 type State = {
     type: GameItemType,
     isDetailMode: boolean,
-    cardSortFilter: {
-        sortBy: SortBy,
-        filterByCharacter: Record<CharacterName, boolean>,
-        filterByRarity: Record<CharacterRarity, boolean>,
-        filterBySenseType: Record<SenseType, boolean>,
-        filterByAttributeType: Record<AttributeType, boolean>
-    }
+    cardSortFilter: CardSortFilter
 }
 
 const initialState: State = {
@@ -42,25 +44,9 @@ const selectedGameItemSlice = createSlice({
         switchDetailMode: (state) => {
             state.isDetailMode = !state.isDetailMode;
         },
-        setCardSortBy: (state, action: { payload: SortBy }) => {
-            state.cardSortFilter.sortBy = action.payload;
-        },
-        switchCardFilterByName: (state, action: { payload: CharacterName }) => {
-            const name = action.payload;
-            state.cardSortFilter.filterByCharacter[name] = !state.cardSortFilter.filterByCharacter[name];
-        },
-        switchCardFilterByRarity: (state, action: { payload: CharacterRarity }) => {
-            const rarity = action.payload;
-            state.cardSortFilter.filterByRarity[rarity] = !state.cardSortFilter.filterByRarity[rarity];
-        },
-        switchCardFilterBySenseType: (state, action: { payload: SenseType }) => {
-            const senseType = action.payload;
-            state.cardSortFilter.filterBySenseType[senseType] = !state.cardSortFilter.filterBySenseType[senseType];
-        },
-        switchCardFilterByAttributeType: (state, action: { payload: AttributeType }) => {
-            const attributeType = action.payload;
-            state.cardSortFilter.filterByAttributeType[attributeType] = !state.cardSortFilter.filterByAttributeType[attributeType];
-        },
+        setCardSortFilter: (state, action: {payload: CardSortFilter}) => {
+            state.cardSortFilter = action.payload;
+        }
     },
     selectors: {
         selectGameItemType: sliceState => sliceState.type,
@@ -77,11 +63,7 @@ export const selectedGameItemReducer = selectedGameItemSlice.reducer;
 export const {
                  setTabType,
                  switchDetailMode,
-                 setCardSortBy,
-                 switchCardFilterByName,
-                 switchCardFilterByRarity,
-                 switchCardFilterBySenseType,
-                 switchCardFilterByAttributeType
+                 setCardSortFilter,
              } = selectedGameItemSlice.actions;
 export const {
                  selectGameItemType,

@@ -5,4 +5,4 @@ export const characterAttributeFilterRecord: Record<AttributeType, boolean> = {
     Cheerful: true,
 };
 
-export const allAttributes: AttributeType[] = ["Cute", "Cool", "Colorful", "Cheerful"];
+export const allCharacterAttributes: AttributeType[] = ["Cute", "Cool", "Colorful", "Cheerful"];

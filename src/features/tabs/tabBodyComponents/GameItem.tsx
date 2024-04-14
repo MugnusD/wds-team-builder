@@ -9,6 +9,8 @@ import {BiSolidMoon} from "react-icons/bi";
 import {PiStarFourFill, PiSunFill} from "react-icons/pi";
 
 
+
+
 /**
  * Render a game item. If it is a character, then props must have a characterBase(character's name)
  * in order to make sure no duplicate character(as different cards' avatar) in the team.
