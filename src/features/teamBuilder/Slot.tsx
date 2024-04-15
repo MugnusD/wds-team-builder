@@ -22,6 +22,9 @@ import {GameItemType, setTabType} from "../tabs/selectTabsSlice.ts";
 import useBigScreenQuery from "../../hooks/useBigScreenQuery.ts";
 import {BiSolidMoon} from "react-icons/bi";
 import {PiStarFourFill, PiSunFill} from "react-icons/pi";
+import AttributeIcon from "../../ui/AttributeIcon.tsx";
+import SenseIcon from "../../ui/SenseIcon.tsx";
+import senseIcon from "../../ui/SenseIcon.tsx";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
@@ -152,50 +155,6 @@ const Slot: FC<{
         senseType = characterDetail.sense.type;
     }
 
-    // DUPLICATE: These icon may be seperated components
-    // noinspection DuplicatedCode
-    let AttributeIcon: ReactNode;
-
-    switch (attribute) {
-        case "Cute": {
-            AttributeIcon = <GiBowTieRibbon color={'deeppink'} />;
-            break;
-        }
-        case "Cool": {
-            AttributeIcon = <BiSolidMoon color={'deepskyblue'} />;
-            break;
-        }
-        case "Colorful": {
-            AttributeIcon = <GiChestnutLeaf color={'limegreen'} />;
-            break;
-        }
-        case "Cheerful": {
-            AttributeIcon = <PiSunFill color={'orangered'} />;
-            break;
-        }
-    }
-
-    let SenseIcon: ReactNode = null;
-
-    switch (senseType) {
-        case "Support": {
-            SenseIcon = <PiStarFourFill color={'limegreen'} />;
-            break;
-        }
-        case "Amplification": {
-            SenseIcon = <PiStarFourFill color={'#FF3838'} />;
-            break;
-        }
-        case "Special": {
-            SenseIcon = <PiStarFourFill color={'gold'} />;
-            break;
-        }
-        case "Control": {
-            SenseIcon = <PiStarFourFill color={'#3498DB'} />;
-            break;
-        }
-    }
-
     return (
         <div
             ref={preview}
@@ -225,10 +184,10 @@ const Slot: FC<{
                     className={'rounded-md'}
                 />
                 <div className={'absolute top-0 left-0 bg-stone-600 border-stone-300 border-2 rounded-full'}>
-                    {AttributeIcon}
+                    <AttributeIcon attribute={attribute} />
                 </div>
                 <div className={'absolute bottom-0 left-0 bg-stone-600 border-stone-300 border-2 rounded-full'}>
-                    {SenseIcon}
+                    <SenseIcon senseType={senseType} />
                 </div>
             </div>
 
