@@ -106,7 +106,7 @@ const Slot: FC<{
         },
         collect: (monitor) => ({
             canDropPoster: monitor.canDrop(),
-        })
+        }),
     });
 
     // Handler functions

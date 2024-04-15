@@ -22,6 +22,7 @@ const TooltipWithHelperIcon: FC = () => {
             }
         >
             <div>
+
                 <FaRegCircleQuestion size={20} />
             </div>
         </Tooltip>
