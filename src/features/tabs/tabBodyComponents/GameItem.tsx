@@ -1,11 +1,10 @@
 import  {FC} from 'react';
-import {GameItemType, selectISDetailMode} from "../selectTabsSlice.ts";
+import { selectIsDetailMode} from "../selectTabsSlice.ts";
 import {useDispatch, useSelector} from "react-redux";
 import {resetFocusItem, swapFocusItemFromTab, SwapPayload} from "../../teamBuilder/teamSlice.ts";
 import {useNavigate} from "react-router-dom";
 import {useDrag} from "react-dnd";
-import AttributeIcon from "../../../ui/AttributeIcon.tsx";
-import SenseIcon from "../../../ui/SenseIcon.tsx";
+import GameItemIcon, { IconRenderDetails} from "../../../ui/GameItemIcon.tsx";
 
 /**
  * Render a game item. If it is a character, then props must have a characterBase(character's name)
@@ -13,14 +12,13 @@ import SenseIcon from "../../../ui/SenseIcon.tsx";
  */
 const GameItem: FC<{
     id: number,
-    type: GameItemType,
     characterBase?: string,
-    attribute?: AttributeType,
-    sense?: SenseType,
-    rarity?: CharacterRarity,
-}> = ({id, type, characterBase = '', attribute, sense, rarity}) => {
+    detail: IconRenderDetails
+}> = ({id, characterBase = '', detail}) => {
+    const type = detail.type;
+
     const dispatch = useDispatch();
-    const isDetailMode = useSelector(selectISDetailMode);
+    const isDetailMode = useSelector(selectIsDetailMode);
     const navigate = useNavigate();
 
     // DnD
@@ -64,45 +62,13 @@ const GameItem: FC<{
         navigate(`/detail/${id}`);
     }
 
-
-    let sourcePath: string;
-
-    switch (type) {
-        case "character": {
-            if (rarity === 'Rare4') {
-                sourcePath = `/${type}Icons/${id}_1.png`;
-            } else {
-                sourcePath = `/${type}Icons/${id}_0.png`;
-            }
-            break;
-        }
-        case "poster": {
-            sourcePath = `/${type}Icons/${id}.png`;
-            break;
-        }
-        case 'accessory': {
-            sourcePath = '';
-            break;
-        }
-    }
-
     return (
         <div
-            className={'h-16 w-16 relative ' + `${isDragging ? 'opacity-0' : ''}`}
+            className={`${isDragging ? 'opacity-0' : ''}`}
             onClick={isDetailMode ? handleGoToDetail : handleSwapToTeam}
             ref={drag}
         >
-
-            <img
-                src={sourcePath}
-                alt={id.toString()}
-            />
-            <div className={'absolute top-0 left-0 bg-stone-600 border-stone-300 border-2 rounded-full'}>
-                <AttributeIcon attribute={attribute} />
-            </div>
-            <div className={'absolute bottom-0 left-0 bg-stone-600 border-stone-300 border-2 rounded-full'}>
-                <SenseIcon senseType={sense} />
-            </div>
+            <GameItemIcon  id={id} detail={detail} />
         </div>
     )
 }

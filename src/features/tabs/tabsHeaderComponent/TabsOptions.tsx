@@ -1,10 +1,10 @@
 import {FC} from 'react';
 import {Switch, Typography} from "@material-tailwind/react";
 import {useDispatch, useSelector} from "react-redux";
-import {selectISDetailMode, switchDetailMode} from "../selectTabsSlice.ts";
+import {selectIsDetailMode, switchDetailMode} from "../selectTabsSlice.ts";
 
 const TabsOptions: FC = () => {
-    const isDetailMode = useSelector(selectISDetailMode);
+    const isDetailMode = useSelector(selectIsDetailMode);
     const dispatch = useDispatch();
 
     return (

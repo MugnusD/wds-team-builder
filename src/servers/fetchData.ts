@@ -10,6 +10,10 @@ export const getCharacters = async () => {
         throw new Error('Data fetching failed');
     }
 
+/*    (data as CharacterDetail[]).sort((a, b) => {
+        return b.id - a.id;
+    });*/
+
     return data as CharacterDetail[];
 }
 
@@ -23,6 +27,10 @@ export const getPosters = async () => {
     if (!data) {
         throw new Error('Data fetching failed');
     }
+
+/*    (data as PosterDetail[]).sort((a, b) => {
+        return b.id - a.id;
+    });*/
 
     return data as PosterDetail[];
 }

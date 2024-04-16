@@ -10,9 +10,8 @@ import {
     setAsLeader,
     setFocusedItem,
     SlotIndex, swapFocusItemFromTab, SwapPayload,
-    swapSlot
+    swapSlot,
 } from "./teamSlice.ts";
-import {BsFileImage} from "react-icons/bs";
 import {useDrag, useDrop} from "react-dnd";
 import {DraggedItemType} from "../../DragItemType.ts";
 import useCharacters from "../../hooks/useCharacters.ts";
@@ -20,8 +19,9 @@ import toast from "react-hot-toast";
 import {Spinner} from "@material-tailwind/react";
 import {GameItemType, setTabType} from "../tabs/selectTabsSlice.ts";
 import useBigScreenQuery from "../../hooks/useBigScreenQuery.ts";
-import AttributeIcon from "../../ui/AttributeIcon.tsx";
-import SenseIcon from "../../ui/SenseIcon.tsx";
+import clsx from "clsx";
+import GameItemIcon, {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
+import usePosters from "../../hooks/usePosters.ts";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
@@ -57,6 +57,15 @@ const Slot: FC<{
         }
     }, [characterId, characters]);
 
+    const {posters} = usePosters();
+    const [posterDetail, setPosterDetail] = useState<PosterDetail>();
+    useEffect(() => {
+        if (posterId !== 0 && posters) {
+            const poster = posters?.find(poster => poster.id === posterId) ?? {} as PosterDetail;
+            setPosterDetail(poster);
+        }
+    }, [posterId, posters]);
+
     // DnD Slot
     const [{isDragging}, drag, preview] = useDrag({
         type: DraggedItemType.SLOT,
@@ -65,20 +74,20 @@ const Slot: FC<{
         },
         collect: monitor => ({
             isDragging: monitor.isDragging(),
-        })
+        }),
     });
     const [{canDrop, isOver}, drop] = useDrop<{ index: SlotIndex }, void, { canDrop: boolean, isOver: boolean }>({
         accept: DraggedItemType.SLOT,
         drop: (item) => {
             dispatch(swapSlot({
                 to: item.index,
-                from: slotIndex
+                from: slotIndex,
             }));
         },
         collect: (monitor) => ({
             canDrop: monitor.canDrop(),
             isOver: monitor.isOver(),
-        })
+        }),
     });
     const dndRef = useRef<HTMLDivElement>(null);
     drag(drop(dndRef));
@@ -93,7 +102,7 @@ const Slot: FC<{
         },
         collect: (monitor) => ({
             canDropCharacter: monitor.canDrop(),
-        })
+        }),
     });
 
     // DnD Poster
@@ -112,45 +121,64 @@ const Slot: FC<{
     // Handler functions
     const handleSetLeader = () => {
         dispatch(setAsLeader(slotIndex));
-    }
+    };
     const handleFocus = (gameItem: GameItemType) => {
         dispatch(setFocusedItem({
             slotIndex,
-            itemType: gameItem
+            itemType: gameItem,
         }));
         dispatch(setTabType(gameItem));
-    }
+    };
 
     if (isLoading) {
         return (
             <div className={'flex h-20 w-[24rem] flex-row items-center justify-center rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4'}>
                 <Spinner className={'h-16 w-16'} />
             </div>
-        )
+        );
     }
 
     if (isError) {
-        toast.error('Fetching data wrong')
+        toast.error('Fetching data wrong');
         return null;
     }
 
-    // CT
+    // Character
     let bloom: number,
-        rarity: CharacterRarity,
-        attribute: AttributeType,
-        senseType: SenseType;
+        characterIconDetail: IconRenderDetails;
 
     if (!characterDetail) {
         bloom = 0;
-        rarity = 'Rare1';
-        attribute = 'Cute';
-        senseType = 'None';
+        characterIconDetail = {
+            type: 'character',
+            rarity: 'Rare1',
+            attribute: 'Cute',
+            sense: 'None',
+        };
     } else {
         bloom = characterDetail.sense.coolTime.bloom;
-        rarity = characterDetail.rarity;
-        attribute = characterDetail.attribute;
-        senseType = characterDetail.sense.type;
+        characterIconDetail = {
+            type: 'character',
+            rarity: characterDetail.rarity,
+            attribute: characterDetail.attribute,
+            sense: characterDetail.sense.type,
+        };
     }
+
+    // Poster
+    let posterIconDetail: IconRenderDetails;
+    if (!posterDetail) {
+        posterIconDetail = {
+            type: 'poster',
+            rarity: 'R',
+        };
+    } else {
+        posterIconDetail = {
+            type: 'poster',
+            rarity: posterDetail.rarity,
+        };
+    }
+
 
     return (
         <div
@@ -168,50 +196,28 @@ const Slot: FC<{
 
             {/* Character card display, can drop from tab and focus */}
             <div
-                className={'md:h-16 md:w-16 h-14 w-14 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] md:p-1 p-[3px] relative ' +
-                    `${currentSlotFocusedItem === 'character' ? 'ring-2 ring-red-500 ' : ' '}` +
-                    `${canDropCharacter ? 'ring-4 ring-orange-300 ' : ' '}`
-                }
+                // className={'md:h-16 md:w-16 h-14 w-14 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] md:p-1 p-[3px] relative ' +
+                //     `${currentSlotFocusedItem === 'character' ? 'ring-2 ring-red-500 ' : ' '}` +
+                //     `${canDropCharacter ? 'ring-4 ring-orange-300 ' : ' '}`
+                // }
+                className={clsx(currentSlotFocusedItem === 'character' && 'ring-2 ring-red-500', canDropCharacter && 'ring-4 ring-orange-300')}
                 onClick={() => handleFocus('character')}
                 ref={characterDrop}
             >
-                <img
-                    src={`/characterIcons/${characterId}_${rarity === 'Rare4' ? '1' : '0'}.png`}
-                    alt={characterId.toString()}
-                    className={'rounded-md'}
-                />
-                <div className={'absolute top-0 left-0 bg-stone-600 border-stone-300 border-2 rounded-full'}>
-                    <AttributeIcon attribute={attribute} />
-                </div>
-                <div className={'absolute bottom-0 left-0 bg-stone-600 border-stone-300 border-2 rounded-full'}>
-                    <SenseIcon senseType={senseType} />
-                </div>
+                <GameItemIcon id={characterId} detail={characterIconDetail} />
             </div>
 
             {/* Poster display, can drop from tab and focus */}
             <div
-                className={'md:h-16 md:w-16 h-14 w-14 rounded-full bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1 ' +
-                    `${currentSlotFocusedItem === 'poster' ? ' ring-2 ring-red-500 ' : ' '}` +
-                    `${canDropPoster && 'ring-4 ring-orange-300 '}`
-                }
+                // className={'md:h-16 md:w-16 h-14 w-14 rounded-full bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1 ' +
+                //     `${currentSlotFocusedItem === 'poster' ? ' ring-2 ring-red-500 ' : ' '}` +
+                //     `${canDropPoster && 'ring-4 ring-orange-300 '}`
+                // }
+                className={clsx(currentSlotFocusedItem === 'poster' && ' ring-2 ring-red-500', canDropPoster && 'ring-4 ring-orange-300')}
                 onClick={() => handleFocus('poster')}
                 ref={posterDrop}
             >
-                {posterId === 0
-                    ? (
-                        <div className={'w-full h-full bg-white rounded-full flex items-center justify-center'}>
-                            <BsFileImage size={isBigScreen ? 35 : 28} color={'#78909c'} />
-                        </div>
-                    )
-                    : (
-                        <img
-                            src={`/posterIcons/${posterId}.png`}
-                            alt={posterId.toString()}
-                            className={'rounded-full'}
-                        />
-                    )
-
-                }
+                <GameItemIcon id={posterId} detail={posterIconDetail} />
             </div>
 
             <div

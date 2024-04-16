@@ -7,8 +7,9 @@ import {
     selectCardNameFilterArray,
     selectCardRarityFilterArray,
     selectCardSenseTypeFilterArray,
-    selectCardSortAndFilter
+    selectCardSortAndFilter,
 } from "../selectTabsSlice.ts";
+import {CharacterNameOrder} from "../../../types/characterName.ts";
 
 const CharacterTabsContent: FC = () => {
     const {characters, isLoading, isError} = useCharacters();
@@ -22,15 +23,12 @@ const CharacterTabsContent: FC = () => {
         return null;
     }
 
-    // sorted by id first
-    let items = characters.sort((a, b) => {
-        return b.id - a.id;
-    });
+    let items: CharacterDetail[] = characters;
 
     // sorted by option next
     switch (sortBy) {
         case "rarity": {
-            items.sort((a,b) => {
+            items.sort((a, b) => {
                 const aRarity = Number(a.rarity[4]);
                 const bRarity = Number(b.rarity[4]);
                 return bRarity - aRarity;
@@ -38,9 +36,14 @@ const CharacterTabsContent: FC = () => {
             break;
         }
         case "time": {
-            items.sort((a, b) => b.displayStartAt.getTime() - a.displayStartAt.getTime()
-            );
+            items.sort((a, b) =>
+                b.displayStartAt.getTime() - a.displayStartAt.getTime());
             break;
+        }
+        case 'name': {
+            items.sort((a, b) =>
+                CharacterNameOrder[a.characterBase] - CharacterNameOrder[b.characterBase],
+            );
         }
     }
 
@@ -59,10 +62,17 @@ const CharacterTabsContent: FC = () => {
     return (
         <>
             {items.map(item => (
-                <GameItem id={item.id} key={item.id} type={'character'} characterBase={item.characterBase} attribute={item.attribute} sense={item.sense.type} rarity={item.rarity}/>
+                <GameItem
+                    id={item.id}
+                    key={item.id}
+                    characterBase={item.characterBase}
+                    detail={{
+                        type: 'character', attribute: item.attribute, rarity: item.rarity, sense: item.sense.type,
+                    }}
+                />
             ))}
         </>
-    )
-}
+    );
+};
 
 export default CharacterTabsContent;

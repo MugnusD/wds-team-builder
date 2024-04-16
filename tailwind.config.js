@@ -35,6 +35,12 @@ export default withMT({
                     900: "#701a75",
                     950: "#4a044e"
                 },
+                silver: {
+                    500: "#C0C0C0",
+                },
+                gold: {
+                    500: '#FFD700',
+                }
             }
         },
     },

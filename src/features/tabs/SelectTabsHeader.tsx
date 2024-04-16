@@ -4,6 +4,7 @@ import TabsOptions from "./tabsHeaderComponent/TabsOptions.tsx";
 import CharacterSortAndFilterButton from "./tabsHeaderComponent/CharacterSortAndFilterButton.tsx";
 import {useSelector} from "react-redux";
 import {selectGameItemType} from "./selectTabsSlice.ts";
+import PosterSortAndFilterButton from "./tabsHeaderComponent/PosterSortAndFilterButton.tsx";
 
 const SelectTabsHeader: FC = () => {
     const tabType = useSelector(selectGameItemType);
@@ -13,6 +14,7 @@ const SelectTabsHeader: FC = () => {
             <TabSelector />
             <TabsOptions />
             {tabType === 'character' && <CharacterSortAndFilterButton />}
+            {tabType === 'poster' && <PosterSortAndFilterButton />}
         </div>
     )
 }

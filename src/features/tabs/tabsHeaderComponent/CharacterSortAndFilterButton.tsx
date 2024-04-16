@@ -9,7 +9,7 @@ import {
 import {useDispatch, useSelector} from "react-redux";
 import {
     selectCardSortAndFilter, setCardSortFilter,
-    SortBy
+    CharacterSortBy
 } from "../selectTabsSlice.ts";
 import {allCharacterNames, characterNameFilterRecord} from "../../../types/characterName.ts";
 import {allCharacterRarities, characterRarityFilterRecord} from "../../../types/characterRarity.ts";
@@ -25,17 +25,20 @@ const CharacterSortAndFilterButton: FC = () => {
     const dispatch = useDispatch();
 
     const [isOpen, setIsOpen] = useState(false);
-    // const {sortBy} = useSelector(selectCardSortAndFilter);
 
+    // Global state
     const sortAndFilter = useSelector(selectCardSortAndFilter);
 
-    const [sortBy, setSortBy] = useState<SortBy>('time');
+    // Local states
+    const [sortBy, setSortBy] = useState<CharacterSortBy>('time');
     const [nameFilterRecord, updateNameFilterRecord] = useImmer(characterNameFilterRecord);
     const [rarityFilterRecord, updateRarityFilterRecord] = useImmer(characterRarityFilterRecord);
     const [senseTypeFilterRecord, updateSenseFilterRecord] = useImmer(characterSenseTypeFilterRecord);
     const [attributeFilterRecord, updateAttributeFilterRecord] = useImmer(characterAttributeFilterRecord);
 
+    // Mount local states from global state (when opening the dialog)
     useEffect(() => {
+        setSortBy(sortAndFilter.sortBy);
         updateNameFilterRecord(sortAndFilter.filterByCharacter);
         updateRarityFilterRecord(sortAndFilter.filterByRarity);
         updateSenseFilterRecord(sortAndFilter.filterBySenseType);
@@ -80,10 +83,11 @@ const CharacterSortAndFilterButton: FC = () => {
                     <Select
                         label="Sort By"
                         value={sortBy}
-                        onChange={(value) => setSortBy(value as SortBy)}
+                        onChange={(value) => setSortBy(value as CharacterSortBy)}
                     >
                         <Option value="time">Sort by time (descending)</Option>
                         <Option value="rarity">Sort by rarity (descending)</Option>
+                        <Option value="name">Sort by name of character</Option>
                     </Select>
                     <div className={'flex flex-col divide-y-2 divide-blue-gray-200'}>
                         <div className={'flex flex-row flex-wrap'}>

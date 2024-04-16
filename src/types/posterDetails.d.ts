@@ -1,7 +1,7 @@
 interface PosterDetail {
     id: number;
     name: string;
-    rarity: string;
+    rarity: PosterRarity;
     pronounceName: string;
     appearanceCharacterBases: string[];
     appearanceCharacterBasesChinese: string[];
@@ -12,6 +12,9 @@ interface PosterDetail {
     type: GachaType;
     stories: PosterStory[];
 }
+
+type PosterRarity = 'R' | 'SR' | 'SSR';
+
 interface PosterAbilityDetail {
     name: string;
     description: string;
