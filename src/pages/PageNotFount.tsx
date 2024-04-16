@@ -11,7 +11,7 @@ const PageNotFount: FC = () => {
                         <span className="sr-only">Error</span>404
                     </Typography>
                     <p className="text-2xl md:text-3xl dark:text-gray-300">Page Not Found</p>
-                    <img src={'/40204.png'} alt={'ei...'} />
+                    <img src={'/stamps/40204.png'} alt={'ei...'} />
                     <Link to={'/team-builder'} replace={true}>
                         <Button>
                             Back Home

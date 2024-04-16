@@ -17,7 +17,7 @@ const AttributeIcon: FC<{
             return  <GiChestnutLeaf color={'limegreen'} />;
         }
         case "Cheerful": {
-            return  <PiSunFill color={'orangered'} />;
+            return  <PiSunFill color={'#F1C40F'} />;
         }
         default: {
             return null;

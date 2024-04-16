@@ -9,7 +9,7 @@ const SelectTabsHeader: FC = () => {
     const tabType = useSelector(selectGameItemType);
 
     return (
-        <div className={'flex md:flex-row flex-col items-center gap-4'}>
+        <div className={'flex flex-row items-center gap-4 flex-wrap'}>
             <TabSelector />
             <TabsOptions />
             {tabType === 'character' && <CharacterSortAndFilterButton />}

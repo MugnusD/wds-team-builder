@@ -25,11 +25,11 @@ const SmallSidebar: FC = () => {
 
     if (!isSpanned)
         return (
-            <div className={'fixed bottom-4 left-3  flex content-center items-center'}>
+            <div className={'fixed bottom-4 left-3 flex content-center items-center z-10'}>
                 <HiOutlineChevronDoubleRight
                     className={'flex-1 bg-stone-200 rounded-md'}
                     size={40}
-                    onClick={() => setIsSpanned(state => !state)}
+                    onClick={() => setIsSpanned(true)}
                 />
             </div>
         );

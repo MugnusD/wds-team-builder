@@ -1,6 +1,6 @@
-import {FC, ReactNode, useEffect, useRef, useState} from 'react';
+import {FC, useEffect, useRef, useState} from 'react';
 import {IoMenu} from 'react-icons/io5';
-import {GiBowTieRibbon, GiChestnutLeaf, GiDiamondRing} from 'react-icons/gi';
+import {GiDiamondRing} from 'react-icons/gi';
 import {useDispatch, useSelector} from "react-redux";
 import {
     resetFocusItem,
@@ -20,11 +20,8 @@ import toast from "react-hot-toast";
 import {Spinner} from "@material-tailwind/react";
 import {GameItemType, setTabType} from "../tabs/selectTabsSlice.ts";
 import useBigScreenQuery from "../../hooks/useBigScreenQuery.ts";
-import {BiSolidMoon} from "react-icons/bi";
-import {PiStarFourFill, PiSunFill} from "react-icons/pi";
 import AttributeIcon from "../../ui/AttributeIcon.tsx";
 import SenseIcon from "../../ui/SenseIcon.tsx";
-import senseIcon from "../../ui/SenseIcon.tsx";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
