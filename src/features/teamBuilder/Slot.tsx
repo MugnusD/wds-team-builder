@@ -167,7 +167,7 @@ const Slot: FC<{
 
     // Poster
     let posterIconDetail: IconRenderDetails;
-    if (!posterDetail) {
+    if (!posterDetail || posterId === 0) {
         posterIconDetail = {
             type: 'poster',
             rarity: 'R',

@@ -68,7 +68,7 @@ const GameItem: FC<{
             onClick={isDetailMode ? handleGoToDetail : handleSwapToTeam}
             ref={drag}
         >
-            <GameItemIcon  id={id} detail={detail} />
+            <GameItemIcon id={id} detail={detail} />
         </div>
     )
 }

@@ -57,6 +57,9 @@ const CharacterTabsContent: FC = () => {
                     }}
                 />
             ))}
+            <div>
+                Count: {items.length}
+            </div>
         </>
     );
 };

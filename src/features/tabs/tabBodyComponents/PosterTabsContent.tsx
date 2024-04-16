@@ -31,9 +31,13 @@ const PosterTabsContent: FC = () => {
 
     return (
         <>
+            <GameItem id={0} detail={{type: 'poster', rarity: 'R'}}/>
             {items.map(item => (
                 <GameItem id={item.id} key={item.id} detail={{type: 'poster', rarity: item.rarity}} />
             ))}
+            <div>
+                Count: {items.length}
+            </div>
         </>
     );
 };

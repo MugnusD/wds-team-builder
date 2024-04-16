@@ -149,18 +149,24 @@ const teamSlice = createSlice({
                         break;
                     }
                     case 'poster': {
+                        // set to empty
+                        if (id === 0) {
+                            focusSlot.posterId = id;
+                            return;
+                        }
+
                         const index = slots.map(item => item.posterId).indexOf(id);
 
                         // swap between slots
                         if (index > -1) {
                             state.slots[index].posterId = focusSlot.posterId;
                             focusSlot.posterId = id;
-                            return
+                            return;
                         }
 
                         // swap from tabs
                         focusSlot.posterId = id;
-                        break;
+                        return;
                     }
                     case 'accessory': {
                         focusSlot.accessoryId = id;
