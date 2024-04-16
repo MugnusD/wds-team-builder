@@ -6,7 +6,7 @@ import {selectPosterSortAndFiler} from "../selectTabsSlice.ts";
 
 const PosterTabsContent: FC = () => {
     const {posters, isLoading, isError} = usePosters();
-    const {sortBy} = useSelector(selectPosterSortAndFiler);
+    const {sortBy, filterByRarity} = useSelector(selectPosterSortAndFiler);
 
     if (isLoading || isError || !posters) {
         return null;
@@ -26,6 +26,8 @@ const PosterTabsContent: FC = () => {
             break;
         }
     }
+
+    items = items.filter(poster => filterByRarity[poster.rarity]);
 
     return (
         <>

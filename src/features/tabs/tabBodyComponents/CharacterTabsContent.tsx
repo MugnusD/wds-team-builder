@@ -3,21 +3,13 @@ import useCharacters from "../../../hooks/useCharacters.ts";
 import GameItem from "./GameItem.tsx";
 import {useSelector} from "react-redux";
 import {
-    selectCardAttributeTypeFilterArray,
-    selectCardNameFilterArray,
-    selectCardRarityFilterArray,
-    selectCardSenseTypeFilterArray,
     selectCardSortAndFilter,
 } from "../selectTabsSlice.ts";
 import {CharacterNameOrder} from "../../../types/characterName.ts";
 
 const CharacterTabsContent: FC = () => {
     const {characters, isLoading, isError} = useCharacters();
-    const {sortBy} = useSelector(selectCardSortAndFilter);
-    const filteredNames = useSelector(selectCardNameFilterArray);
-    const filteredRarities = useSelector(selectCardRarityFilterArray);
-    const filteredSenseType = useSelector(selectCardSenseTypeFilterArray);
-    const filteredAttributeType = useSelector(selectCardAttributeTypeFilterArray);
+    const {sortBy, filterByCharacter, filterByRarity, filterByAttributeType, filterBySenseType} = useSelector(selectCardSortAndFilter);
 
     if (isLoading || isError || !characters) {
         return null;
@@ -47,17 +39,11 @@ const CharacterTabsContent: FC = () => {
         }
     }
 
-    // filtered by name
-    items = items.filter(character => filteredNames.includes(character.characterBase));
-
-    // filtered by rarity
-    items = items.filter(characters => filteredRarities.includes(characters.rarity));
-
-    // filtered by senseType
-    items = items.filter(characters => filteredSenseType.includes(characters.sense.type));
-
-    // filtered by attributeType
-    items = items.filter(characters => filteredAttributeType.includes(characters.attribute));
+    // filtered
+    items = items.filter(character => filterByCharacter[character.characterBase]);
+    items = items.filter(character => filterByRarity[character.rarity]);
+    items = items.filter(character => filterBySenseType[character.sense.type]);
+    items = items.filter(character => filterByAttributeType[character.attribute]);
 
     return (
         <>

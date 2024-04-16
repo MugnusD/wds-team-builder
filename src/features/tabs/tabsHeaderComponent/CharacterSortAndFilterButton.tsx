@@ -43,7 +43,7 @@ const CharacterSortAndFilterButton: FC = () => {
         updateRarityFilterRecord(sortAndFilter.filterByRarity);
         updateSenseFilterRecord(sortAndFilter.filterBySenseType);
         updateAttributeFilterRecord(sortAndFilter.filterByAttributeType);
-    }, [sortAndFilter.filterByAttributeType, sortAndFilter.filterByCharacter, sortAndFilter.filterByRarity, sortAndFilter.filterBySenseType, updateAttributeFilterRecord, updateNameFilterRecord, updateRarityFilterRecord, updateSenseFilterRecord, isOpen]);
+    }, [sortAndFilter.filterByAttributeType, sortAndFilter.filterByCharacter, sortAndFilter.filterByRarity, sortAndFilter.filterBySenseType, updateAttributeFilterRecord, updateNameFilterRecord, updateRarityFilterRecord, updateSenseFilterRecord, isOpen, sortAndFilter.sortBy]);
 
     const isSiriusAllChecked = allCharacterNames.slice(0, 6).reduce((previousValue, currentValue) => previousValue && nameFilterRecord[currentValue], true);
     const isEdenAllChecked = allCharacterNames.slice(6, 11).reduce((previousValue, currentValue) => previousValue && nameFilterRecord[currentValue], true);
@@ -219,7 +219,6 @@ const CharacterSortAndFilterButton: FC = () => {
                                 draft[rarity] = !draft[rarity]
                             })}
                         />)}
-
                     </div>
                     <div>
                         <Checkbox

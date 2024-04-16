@@ -1,7 +1,17 @@
 import {FC, useEffect, useState} from 'react';
-import {Button, Dialog, DialogBody, DialogFooter, DialogHeader, Option, Select} from "@material-tailwind/react";
+import {
+    Button,
+    Checkbox,
+    Dialog,
+    DialogBody,
+    DialogFooter,
+    DialogHeader,
+    Option,
+    Select,
+} from "@material-tailwind/react";
 import {PosterSortBy, selectPosterSortAndFiler, setPosterSortFilter} from "../selectTabsSlice.ts";
 import {useDispatch, useSelector} from "react-redux";
+import {useImmer} from "use-immer";
 
 const PosterSortAndFilterButton: FC = () => {
     const dispatch = useDispatch();
@@ -12,15 +22,22 @@ const PosterSortAndFilterButton: FC = () => {
 
     // Local states
     const [sortBy, setSortBy] = useState<PosterSortBy>('time');
+    const [rarityFilterRecord, updateRarityFilterRecord] = useImmer<Record<PosterRarity, boolean>>({
+        'R': true,
+        'SR': true,
+        'SSR': true,
+    });
 
     // Mount local states from global state (when opening the dialog)
     useEffect(() => {
         setSortBy(sortAndFilter.sortBy);
-    }, [sortAndFilter.sortBy, isOpen]);
+        updateRarityFilterRecord(sortAndFilter.filterByRarity);
+    }, [sortAndFilter.sortBy, isOpen, sortAndFilter.filterByRarity, updateRarityFilterRecord]);
 
     const handleSubmit = () => {
         dispatch(setPosterSortFilter({
             sortBy,
+            filterByRarity: rarityFilterRecord,
         }));
     };
 
@@ -48,6 +65,16 @@ const PosterSortAndFilterButton: FC = () => {
                         <Option value="time">Sort by time (descending)</Option>
                         <Option value="rarity">Sort by rarity (descending)</Option>
                     </Select>
+                    <div className={'flex flex-row flex-wrap'}>
+                        {(['SSR', 'SR', 'R'] as PosterRarity[]).map(rarity => <Checkbox
+                            label={rarity}
+                            key={rarity}
+                            checked={rarityFilterRecord[rarity]}
+                            onChange={() => updateRarityFilterRecord(draft => {
+                                draft[rarity] = !draft[rarity]
+                            })}
+                        />)}
+                    </div>
                 </DialogBody>
                 <DialogFooter>
                     <Button
