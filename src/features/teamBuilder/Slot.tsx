@@ -179,7 +179,6 @@ const Slot: FC<{
         };
     }
 
-
     return (
         <div
             ref={preview}
