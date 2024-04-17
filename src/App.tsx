@@ -3,7 +3,8 @@ import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 
 import {Provider} from "react-redux";
-import store from "./store.ts";
+import {store, persistor} from "./store.ts";
+import {PersistGate} from 'redux-persist/integration/react';
 
 import {DndProvider} from "react-dnd";
 import {HTML5Backend} from "react-dnd-html5-backend";
@@ -18,12 +19,13 @@ import TeamBuilder from "./pages/TeamBuilder.tsx";
 import Detail from "./pages/Detail.tsx";
 import CardDetail from "./features/detail/CardDetail.tsx";
 
+
 const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
             staleTime: Infinity,
-        }
-    }
+        },
+    },
 });
 
 const router = createBrowserRouter([
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Navigate to={`team-builder`} />
+                element: <Navigate to={`team-builder`} />,
             },
             {
                 path: 'home',
@@ -42,7 +44,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'team-builder',
-                element: <TeamBuilder />
+                element: <TeamBuilder />,
             },
             {
                 path: 'detail',
@@ -50,30 +52,32 @@ const router = createBrowserRouter([
                 children: [
                     {
                         path: ':id',
-                        element: <CardDetail />
-                    }
-                ]
-            }
-        ]
+                        element: <CardDetail />,
+                    },
+                ],
+            },
+        ],
     },
     {
         path: '*',
         element: <PageNotFount />,
-    }
-])
+    },
+]);
 
 function App() {
     return (
         <DndProvider backend={HTML5Backend}>
             <Provider store={store}>
-                <Toaster />
-                <QueryClientProvider client={queryClient}>
-                    <ReactQueryDevtools initialIsOpen={false} />
-                    <RouterProvider router={router} />
-                </QueryClientProvider>
+                <PersistGate loading={null} persistor={persistor}>
+                    <Toaster />
+                    <QueryClientProvider client={queryClient}>
+                        <ReactQueryDevtools initialIsOpen={false} />
+                        <RouterProvider router={router} />
+                    </QueryClientProvider>
+                </PersistGate>
             </Provider>
         </DndProvider>
-    )
+    );
 }
 
-export default App
+export default App;
