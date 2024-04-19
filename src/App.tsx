@@ -18,6 +18,7 @@ import PageNotFount from "./pages/PageNotFount.tsx";
 import TeamBuilder from "./pages/TeamBuilder.tsx";
 import Detail from "./pages/Detail.tsx";
 import CardDetail from "./features/detail/CardDetail.tsx";
+import CustomDragLayer from "./ui/CustomDragLayer.tsx";
 
 
 const queryClient = new QueryClient({
@@ -67,12 +68,17 @@ const router = createBrowserRouter([
 function App() {
     return (
         <DndProvider backend={HTML5Backend}>
+
             <Provider store={store}>
                 <PersistGate loading={null} persistor={persistor}>
-                    <Toaster />
+
                     <QueryClientProvider client={queryClient}>
                         <ReactQueryDevtools initialIsOpen={false} />
+
+                        <CustomDragLayer />
+                        <Toaster />
                         <RouterProvider router={router} />
+
                     </QueryClientProvider>
                 </PersistGate>
             </Provider>

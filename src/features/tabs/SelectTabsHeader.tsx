@@ -1,6 +1,5 @@
 import {FC} from 'react';
 import TabSelector from "./tabsHeaderComponent/TabSelector.tsx";
-import TabsOptions from "./tabsHeaderComponent/TabsOptions.tsx";
 import CharacterSortAndFilterButton from "./tabsHeaderComponent/CharacterSortAndFilterButton.tsx";
 import {useSelector} from "react-redux";
 import {selectGameItemType} from "./selectTabsSlice.ts";
@@ -12,7 +11,8 @@ const SelectTabsHeader: FC = () => {
     return (
         <div className={'flex flex-row items-center gap-4 flex-wrap'}>
             <TabSelector />
-            <TabsOptions />
+            {/*TODO remove detail option*/}
+            {/*<TabsOptions />*/}
             {tabType === 'character' && <CharacterSortAndFilterButton />}
             {tabType === 'poster' && <PosterSortAndFilterButton />}
         </div>

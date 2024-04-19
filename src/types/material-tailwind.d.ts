@@ -92,4 +92,10 @@ declare module '@material-tailwind/react' {
         onPointerEnterCapture?,
         onPointerLeaveCapture?,
     }
+
+    interface PopoverContentProps {
+        placeholder?
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+    }
 }

@@ -1,13 +1,14 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
+import {persistReducer, persistStore} from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+
 import {teamReducer} from "./features/teamBuilder/teamSlice.ts";
 import {selectedGameItemReducer} from "./features/tabs/selectTabsSlice.ts";
-import {persistReducer, persistStore} from 'redux-persist';
-import storage from 'redux-persist/lib/storage'
 
 const persistConfig = {
     key: 'root',
     storage: storage,
-    whitelist: ['team']
+    whitelist: ['team'],
 };
 
 const rootReducer = combineReducers({
@@ -15,10 +16,11 @@ const rootReducer = combineReducers({
     selectedGameItem: selectedGameItemReducer,
 });
 
+// persist team slice to local storage
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
-    reducer: persistedReducer
+    reducer: persistedReducer,
 });
 
-export const persistor = persistStore(store)
+export const persistor = persistStore(store);

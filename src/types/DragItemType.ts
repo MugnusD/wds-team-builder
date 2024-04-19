@@ -3,3 +3,4 @@ export const DraggedItemType = {
     POSTER: 'poster',
     SLOT: 'slot',
 };
+

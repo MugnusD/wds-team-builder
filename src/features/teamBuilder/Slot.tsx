@@ -13,7 +13,7 @@ import {
     swapSlot,
 } from "./teamSlice.ts";
 import {useDrag, useDrop} from "react-dnd";
-import {DraggedItemType} from "../../DragItemType.ts";
+import {DraggedItemType} from "../../types/DragItemType.ts";
 import useCharacters from "../../hooks/useCharacters.ts";
 import toast from "react-hot-toast";
 import {Spinner} from "@material-tailwind/react";
@@ -22,6 +22,7 @@ import useBigScreenQuery from "../../hooks/useBigScreenQuery.ts";
 import clsx from "clsx";
 import GameItemIcon, {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
 import usePosters from "../../hooks/usePosters.ts";
+import {getEmptyImage} from "react-dnd-html5-backend";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
@@ -66,11 +67,53 @@ const Slot: FC<{
         }
     }, [posterId, posters]);
 
+    // Character
+    let bloom: number,
+        characterIconDetail: IconRenderDetails;
+
+    if (!characterDetail) {
+        bloom = 0;
+        characterIconDetail = {
+            type: 'character',
+            rarity: 'Rare1',
+            attribute: 'Cute',
+            sense: 'None',
+        };
+    } else {
+        bloom = characterDetail.sense.coolTime.bloom;
+        characterIconDetail = {
+            type: 'character',
+            rarity: characterDetail.rarity,
+            attribute: characterDetail.attribute,
+            sense: characterDetail.sense.type,
+        };
+    }
+
+    // Poster
+    let posterIconDetail: IconRenderDetails;
+    if (!posterDetail || posterId === 0) {
+        posterIconDetail = {
+            type: 'poster',
+            rarity: 'R',
+        };
+    } else {
+        posterIconDetail = {
+            type: 'poster',
+            rarity: posterDetail.rarity,
+        };
+    }
+
     // DnD Slot
     const [{isDragging}, drag, preview] = useDrag({
         type: DraggedItemType.SLOT,
         item: {
             index: slotIndex,
+            characterId,
+            posterId,
+            characterIconDetail,
+            posterIconDetail,
+            ct: bloom,
+            isLeader: leaderIndex === slotIndex,
         },
         collect: monitor => ({
             isDragging: monitor.isDragging(),
@@ -91,6 +134,11 @@ const Slot: FC<{
     });
     const dndRef = useRef<HTMLDivElement>(null);
     drag(drop(dndRef));
+
+    // hide html preview
+    useEffect(() => {
+        preview(getEmptyImage(), {captureDraggingState: true});
+    }, [preview]);
 
     // DnD character
     const [{canDropCharacter}, characterDrop] = useDrop<SwapPayload, void, { canDropCharacter: boolean }>({
@@ -143,45 +191,8 @@ const Slot: FC<{
         return null;
     }
 
-    // Character
-    let bloom: number,
-        characterIconDetail: IconRenderDetails;
-
-    if (!characterDetail) {
-        bloom = 0;
-        characterIconDetail = {
-            type: 'character',
-            rarity: 'Rare1',
-            attribute: 'Cute',
-            sense: 'None',
-        };
-    } else {
-        bloom = characterDetail.sense.coolTime.bloom;
-        characterIconDetail = {
-            type: 'character',
-            rarity: characterDetail.rarity,
-            attribute: characterDetail.attribute,
-            sense: characterDetail.sense.type,
-        };
-    }
-
-    // Poster
-    let posterIconDetail: IconRenderDetails;
-    if (!posterDetail || posterId === 0) {
-        posterIconDetail = {
-            type: 'poster',
-            rarity: 'R',
-        };
-    } else {
-        posterIconDetail = {
-            type: 'poster',
-            rarity: posterDetail.rarity,
-        };
-    }
-
     return (
         <div
-            ref={preview}
             className={'flex h-20 md:w-[24rem] w-[20rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 '
                 + `${isDragging ? 'opacity-0' : ''}`}
         >

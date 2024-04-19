@@ -25,15 +25,34 @@ const PosterTabsContent: FC = () => {
             items.sort((a, b) => b.rarity.length - a.rarity.length);
             break;
         }
+        case "rarityAndTime": {
+            items.sort((a, b) => {
+                const rarityComp = b.rarity.length - a.rarity.length;
+                if (rarityComp !== 0) {
+                    return rarityComp;
+                } else {
+                    return b.displayStartAt.getTime() - a.displayStartAt.getTime();
+                }
+            });
+        }
     }
 
     items = items.filter(poster => filterByRarity[poster.rarity]);
 
     return (
         <>
-            <GameItem id={0} detail={{type: 'poster', rarity: 'R'}}/>
+            <GameItem id={0} detail={{type: 'poster', rarity: 'R'}} render={() => <div>Empty poster</div>} />
             {items.map(item => (
-                <GameItem id={item.id} key={item.id} detail={{type: 'poster', rarity: item.rarity}} />
+                <GameItem
+                    id={item.id}
+                    key={item.id}
+                    detail={{type: 'poster', rarity: item.rarity}}
+                    render={() => (
+                        <div>
+                            {item.name}
+                        </div>
+                    )}
+                />
             ))}
             <div>
                 Count: {items.length}

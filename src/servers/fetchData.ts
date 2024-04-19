@@ -10,9 +10,11 @@ export const getCharacters = async () => {
         throw new Error('Data fetching failed');
     }
 
-/*    (data as CharacterDetail[]).sort((a, b) => {
+    /*  Already sorted by id
+    (data as CharacterDetail[]).sort((a, b) => {
         return b.id - a.id;
-    });*/
+    });
+    */
 
     return data as CharacterDetail[];
 }
@@ -28,9 +30,11 @@ export const getPosters = async () => {
         throw new Error('Data fetching failed');
     }
 
-/*    (data as PosterDetail[]).sort((a, b) => {
+    /*
+    (data as PosterDetail[]).sort((a, b) => {
         return b.id - a.id;
-    });*/
+    });
+    */
 
     return data as PosterDetail[];
 }

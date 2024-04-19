@@ -5,11 +5,13 @@ import {useSelector} from "react-redux";
 import {
     selectCardSortAndFilter,
 } from "../selectTabsSlice.ts";
-import {CharacterNameOrder} from "../../../types/characterName.ts";
+import {CharacterNameOrder} from "../../../types/character/characterName.ts";
 
 const CharacterTabsContent: FC = () => {
     const {characters, isLoading, isError} = useCharacters();
-    const {sortBy, filterByCharacter, filterByRarity, filterByAttributeType, filterBySenseType} = useSelector(selectCardSortAndFilter);
+    const {
+              sortBy, filterByCharacter, filterByRarity, filterByAttributeType, filterBySenseType,
+          } = useSelector(selectCardSortAndFilter);
 
     if (isLoading || isError || !characters) {
         return null;
@@ -36,6 +38,18 @@ const CharacterTabsContent: FC = () => {
             items.sort((a, b) =>
                 CharacterNameOrder[a.characterBase] - CharacterNameOrder[b.characterBase],
             );
+            break;
+        }
+        case "rarityAndTime": {
+            items.sort((a, b) => {
+                const rarityComp = Number(b.rarity[4]) - Number(a.rarity[4]);
+                if (rarityComp !== 0) {
+                    return rarityComp;
+                } else {
+                    return b.displayStartAt.getTime() - a.displayStartAt.getTime();
+                }
+            });
+            break;
         }
     }
 
@@ -55,6 +69,10 @@ const CharacterTabsContent: FC = () => {
                     detail={{
                         type: 'character', attribute: item.attribute, rarity: item.rarity, sense: item.sense.type,
                     }}
+                    render={() => (
+                        <div>
+                            {item.name}
+                        </div>)}
                 />
             ))}
             <div>

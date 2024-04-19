@@ -1,12 +1,12 @@
 import { createSlice} from "@reduxjs/toolkit";
-import {characterNameFilterRecord} from "../../types/characterName.ts";
-import {characterRarityFilterRecord} from "../../types/characterRarity.ts";
-import {characterSenseTypeFilterRecord} from "../../types/characterSenseType.ts";
-import {characterAttributeFilterRecord} from "../../types/characterAttribute.ts";
+import {characterNameFilterRecord} from "../../types/character/characterName.ts";
+import {characterRarityFilterRecord} from "../../types/character/characterRarity.ts";
+import {characterSenseTypeFilterRecord} from "../../types/character/characterSenseType.ts";
+import {characterAttributeFilterRecord} from "../../types/character/characterAttribute.ts";
 
 export type GameItemType = 'character' | 'poster' | 'accessory';
 
-export type CharacterSortBy = 'time' | 'rarity' | 'name';
+export type CharacterSortBy = 'time' | 'rarity' | 'name' | 'rarityAndTime';
 
 type CardSortFilter = {
     sortBy: CharacterSortBy,
@@ -16,7 +16,7 @@ type CardSortFilter = {
     filterByAttributeType: Record<AttributeType, boolean>
 }
 
-export type PosterSortBy = 'time' | 'rarity';
+export type PosterSortBy = 'time' | 'rarity' | 'rarityAndTime';
 
 type PosterSortFilter = {
     sortBy: PosterSortBy,
@@ -34,14 +34,14 @@ const initialState: State = {
     type: 'character',
     isDetailMode: false,
     cardSortFilter: {
-        sortBy: 'rarity',
+        sortBy: 'rarityAndTime',
         filterByCharacter: characterNameFilterRecord,
         filterByRarity: characterRarityFilterRecord,
         filterBySenseType: characterSenseTypeFilterRecord,
         filterByAttributeType: characterAttributeFilterRecord,
     },
     posterSortFilter: {
-        sortBy: 'rarity',
+        sortBy: 'rarityAndTime',
         filterByRarity: {
             'R': true,
             'SR': true,

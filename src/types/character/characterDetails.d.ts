@@ -1,4 +1,4 @@
-interface CharacterDetail {
+declare interface CharacterDetail {
     id: number;
     name: string;
     rarity: CharacterRarity;
@@ -15,7 +15,7 @@ interface CharacterDetail {
     episodes: CharacterEpisodeDetail[];
 }
 
-type CharacterName =
+declare type CharacterName =
     | "鳳ここな"
     | "静香"
     | "カトリナ・グリーベル"
@@ -38,11 +38,11 @@ type CharacterName =
     | "猫足蕾"
     | "本巣叶羽";
 
-type CharacterRarity = 'Rare1' | 'Rare2' | 'Rare3' | 'Rare4';
+declare type CharacterRarity = 'Rare1' | 'Rare2' | 'Rare3' | 'Rare4';
 
-type SenseType = 'Support' | 'Amplification' | 'Special' | 'Control' | 'None' | 'Alternative';
+declare type SenseType = 'Support' | 'Amplification' | 'Special' | 'Control' | 'None' | 'Alternative';
 
-type AttributeType = 'Cute' | 'Cool' | 'Colorful' | 'Cheerful';
+declare type AttributeType = 'Cute' | 'Cool' | 'Colorful' | 'Cheerful';
 
 interface BloomBonusDetail {
     phase: number;

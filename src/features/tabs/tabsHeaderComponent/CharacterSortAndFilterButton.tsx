@@ -11,15 +11,15 @@ import {
     selectCardSortAndFilter, setCardSortFilter,
     CharacterSortBy
 } from "../selectTabsSlice.ts";
-import {allCharacterNames, characterNameFilterRecord} from "../../../types/characterName.ts";
-import {allCharacterRarities, characterRarityFilterRecord} from "../../../types/characterRarity.ts";
+import {allCharacterNames, characterNameFilterRecord} from "../../../types/character/characterName.ts";
+import {allCharacterRarities, characterRarityFilterRecord} from "../../../types/character/characterRarity.ts";
 import {IoIosStar} from "react-icons/io";
 import {PiStarFourFill, PiSunFill} from "react-icons/pi";
 import {GiBowTieRibbon, GiChestnutLeaf} from "react-icons/gi";
 import {BiSolidMoon} from "react-icons/bi";
 import {useImmer} from "use-immer";
-import {allCharacterSenseType, characterSenseTypeFilterRecord} from "../../../types/characterSenseType.ts";
-import {allCharacterAttributes, characterAttributeFilterRecord} from "../../../types/characterAttribute.ts";
+import {allCharacterSenseType, characterSenseTypeFilterRecord} from "../../../types/character/characterSenseType.ts";
+import {allCharacterAttributes, characterAttributeFilterRecord} from "../../../types/character/characterAttribute.ts";
 
 const CharacterSortAndFilterButton: FC = () => {
     const dispatch = useDispatch();
@@ -88,6 +88,7 @@ const CharacterSortAndFilterButton: FC = () => {
                         <Option value="time">Sort by time (descending)</Option>
                         <Option value="rarity">Sort by rarity (descending)</Option>
                         <Option value="name">Sort by name of character</Option>
+                        <Option value="rarityAndTime">Sort by rarity & time (dictionary descending)</Option>
                     </Select>
                     <div className={'flex flex-col divide-y-2 divide-blue-gray-200'}>
                         <div className={'flex flex-row flex-wrap'}>

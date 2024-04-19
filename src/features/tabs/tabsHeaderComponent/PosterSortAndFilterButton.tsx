@@ -64,6 +64,7 @@ const PosterSortAndFilterButton: FC = () => {
                     >
                         <Option value="time">Sort by time (descending)</Option>
                         <Option value="rarity">Sort by rarity (descending)</Option>
+                        <Option value="rarityAndTime">Sort by rarity & time (dictionary descending)</Option>
                     </Select>
                     <div className={'flex flex-row flex-wrap'}>
                         {(['SSR', 'SR', 'R'] as PosterRarity[]).map(rarity => <Checkbox
