@@ -23,20 +23,20 @@ const GameItem: FC<{
     const navigate = useNavigate();
     const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
-    let timer: NodeJS.Timeout;
+    // let timer: NodeJS.Timeout;
 
-    const handleMouseEnterIcon = () => {
-        // Delay display popover
-        timer = setTimeout(() => {
-            setIsPopoverOpen(true);
-        }, 300);
-    };
-
-    const handleMouseLeaveIcon = () => {
-        // Clear popover timer
-        clearTimeout(timer);
-        setIsPopoverOpen(false);
-    };
+    // const handleMouseEnterIcon = () => {
+    //     // Delay display popover
+    //     timer = setTimeout(() => {
+    //         setIsPopoverOpen(true);
+    //     }, 700);
+    // };
+    //
+    // const handleMouseLeaveIcon = () => {
+    //     // Clear popover timer
+    //     clearTimeout(timer);
+    //     setIsPopoverOpen(false);
+    // };
 
     // DnD
     const [{isDragging}, drag, preview] = useDrag<
@@ -91,14 +91,13 @@ const GameItem: FC<{
         <div ref={drag} onClick={handleSwapToTeam}>
             <Popover open={isPopoverOpen} handler={setIsPopoverOpen}>
                 <PopoverHandler
-                    onMouseEnter={handleMouseEnterIcon}
-                    onMouseLeave={handleMouseLeaveIcon}
+                    // onMouseEnter={handleMouseEnterIcon}
+                    onMouseLeave={() => setIsPopoverOpen(false)}
                 >
                     <div
                         className={`${isDragging ? 'opacity-0' : ''}`}
                         // TODO remove handleSwapToTeam & detail Mode
                         // onClick={isDetailMode ? handleGoToDetail : handleSwapToTeam}
-
                     >
                         <GameItemIcon id={id} detail={detail} />
                     </div>
@@ -109,9 +108,9 @@ const GameItem: FC<{
                         onMouseEnter={() => setIsPopoverOpen(true)}
                         onMouseLeave={() => setIsPopoverOpen(false)}
                     >
-                        <div>
+                        <>
                             {render && render()}
-                        </div>
+                        </>
                         <Button onClick={handleGoToDetail} size={"sm"} className={'w-20'}>
                             Detail
                         </Button>

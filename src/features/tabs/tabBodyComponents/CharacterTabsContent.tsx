@@ -6,6 +6,8 @@ import {
     selectCardSortAndFilter,
 } from "../selectTabsSlice.ts";
 import {CharacterNameOrder} from "../../../types/character/characterName.ts";
+import SenseIcon from "../../../ui/SenseIcon.tsx";
+import {Typography} from "@material-tailwind/react";
 
 const CharacterTabsContent: FC = () => {
     const {characters, isLoading, isError} = useCharacters();
@@ -69,10 +71,34 @@ const CharacterTabsContent: FC = () => {
                     detail={{
                         type: 'character', attribute: item.attribute, rarity: item.rarity, sense: item.sense.type,
                     }}
-                    render={() => (
-                        <div>
-                            {item.name}
-                        </div>)}
+                    render={() => {
+                        const [, support, control, amplification, special] = item.starAct.conditions;
+
+
+                        return (
+                            <div className={'flex flex-col gap-2 divide-y divide-blue-gray-200 *:pt-2'}>
+                                <div>
+                                    <Typography variant={'h5'}>
+                                        {item.name}
+                                    </Typography>
+                                </div>
+                                <div>
+                                    <div className={'*:inline-block'}>
+                                        {support.bloom} <SenseIcon senseType={'Support'} />
+                                        {control.bloom} <SenseIcon senseType={'Control'} />
+                                        {amplification.bloom} <SenseIcon senseType={'Amplification'} />
+                                        {special.bloom} <SenseIcon senseType={'Special'} />
+                                    </div>
+                                    <div>
+                                        {item.sense.descriptionsChinese}
+                                    </div>
+                                </div>
+                                <div>
+                                    CT: {item.sense.coolTime.origin}/{item.sense.coolTime.bloom}
+                                </div>
+                            </div>
+                        );
+                    }}
                 />
             ))}
             <div>

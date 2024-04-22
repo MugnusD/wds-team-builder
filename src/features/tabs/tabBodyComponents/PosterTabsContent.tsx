@@ -3,6 +3,8 @@ import GameItem from "./GameItem.tsx";
 import usePosters from "../../../hooks/usePosters.ts";
 import {useSelector} from "react-redux";
 import {selectPosterSortAndFiler} from "../selectTabsSlice.ts";
+import {Typography} from "@material-tailwind/react";
+import {convertUnityTag} from "../../../utils";
 
 const PosterTabsContent: FC = () => {
     const {posters, isLoading, isError} = usePosters();
@@ -47,11 +49,37 @@ const PosterTabsContent: FC = () => {
                     id={item.id}
                     key={item.id}
                     detail={{type: 'poster', rarity: item.rarity}}
-                    render={() => (
-                        <div>
-                            {item.name}
-                        </div>
-                    )}
+                    render={() => {
+                        const leaderAbilities = item.abilities.filter(el => el.type === 'Leader');
+                        const normalAbilities = item.abilities.filter(el => el.type !== 'Leader');
+
+                        return (
+                            <div className={'flex flex-col gap-2 divide-y divide-blue-gray-200 *:pt-2'}>
+                                <div>
+                                    <Typography variant={'h5'}>
+                                        {item.name}
+                                    </Typography>
+                                </div>
+                                <div className={'flex flex-col'}>
+                                    <Typography
+                                        color={'red'}
+                                        variant={'h6'}
+                                    >Leader {leaderAbilities.length === 1 ? 'ability' : 'abilities'}</Typography>
+                                    {leaderAbilities.map(el => <div key={el.name}>
+                                        <Typography color={'deep-orange'} variant={'small'}>{el.name}: </Typography>
+                                        <Typography variant={'small'}>{convertUnityTag(el.descriptionChinese)}</Typography>
+                                    </div>)}
+                                </div>
+                                <div className={'flex flex-col'}>
+                                    <Typography variant={'h6'}>Normal {normalAbilities.length === 1 ? 'ability' : 'abilities'}</Typography>
+                                    {normalAbilities.map(el => <div key={el.name}>
+                                        <Typography color={'deep-orange'} variant={'small'}>{el.name}: </Typography>
+                                        <Typography variant={'small'}>{convertUnityTag(el.descriptionChinese)}</Typography>
+                                    </div>)}
+                                </div>
+                            </div>
+                        );
+                    }}
                 />
             ))}
             <div>
