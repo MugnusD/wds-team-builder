@@ -83,17 +83,18 @@ const CharacterTabsContent: FC = () => {
                                     </Typography>
                                 </div>
                                 <div>
-                                    <div className={'*:inline-block'}>
-                                        {support.bloom} <SenseIcon senseType={'Support'} />
-                                        {control.bloom} <SenseIcon senseType={'Control'} />
-                                        {amplification.bloom} <SenseIcon senseType={'Amplification'} />
-                                        {special.bloom} <SenseIcon senseType={'Special'} />
+                                    <div className={'*:inline-block flex flex-row items-center gap-0.5'}>
+                                        <div className={'select-none'}>{support.bloom}</div> <SenseIcon senseType={'Support'} />
+                                        <div className={'select-none'}>{control.bloom}</div> <SenseIcon senseType={'Control'} />
+                                        <div className={'select-none'}>{amplification.bloom}</div> <SenseIcon senseType={'Amplification'} />
+                                        <div className={'select-none'}>{special.bloom}</div> <SenseIcon senseType={'Special'} />
                                     </div>
                                     <div>
-                                        {item.sense.descriptionsChinese}
+                                        {item.starAct.descriptionChinese}
                                     </div>
                                 </div>
                                 <div>
+                                    Sense: {item.sense.descriptionsChinese}<br />
                                     CT: {item.sense.coolTime.origin}/{item.sense.coolTime.bloom}
                                 </div>
                             </div>
