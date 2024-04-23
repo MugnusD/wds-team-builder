@@ -47,6 +47,8 @@ const GameItemIcon: FC<IconProps> = (props) => {
                 <img
                     src={sourcePath}
                     alt={id.toString()}
+                    draggable={false}
+                    className={'select-none'}
                 />
                 <div className={'absolute top-0 left-0 bg-stone-600 border-gold-500 border-2 rounded-full'}>
                     <AttributeIcon attribute={attribute} />
@@ -73,7 +75,8 @@ const GameItemIcon: FC<IconProps> = (props) => {
                 {id !== 0 && <img
                     src={`/${type}Icons/${id}.png`}
                     alt={id.toString()}
-                    className={'rounded-full'}
+                    className={'rounded-full select-none'}
+                    draggable={false}
                 />}
                 {id === 0 &&
                     <div className={'bg-white rounded-full w-full h-full flex items-center justify-center'}><BsFileImage
