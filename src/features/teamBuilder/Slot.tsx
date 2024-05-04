@@ -23,6 +23,7 @@ import clsx from "clsx";
 import GameItemIcon, {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
 import usePosters from "../../hooks/usePosters.ts";
 import {getEmptyImage} from "react-dnd-html5-backend";
+import {SlotItemType} from "../../ui/CustomDragLayer.tsx";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
@@ -104,7 +105,7 @@ const Slot: FC<{
     }
 
     // DnD Slot
-    const [{isDragging}, drag, preview] = useDrag({
+    const [{isDragging}, drag, preview] = useDrag<SlotItemType, void, {isDragging: boolean}>({
         type: DraggedItemType.SLOT,
         item: {
             index: slotIndex,

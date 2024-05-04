@@ -1,6 +1,5 @@
 import {FC, ReactNode, useState} from 'react';
 import {HiHome, HiMiniSquare3Stack3D, HiOutlineChevronDoubleRight} from "react-icons/hi2";
-import {TbError404} from "react-icons/tb";
 import {HiOutlineChevronDoubleLeft} from "react-icons/hi";
 import {NavLink} from "react-router-dom";
 import {GiCardPick} from "react-icons/gi";
@@ -12,10 +11,9 @@ const SmallSidebar: FC = () => {
         return (
             <div className={'flex flex-col justify-between h-full'}>
                 <ul className={'flex w-16 flex-col items-center pt-4 gap-4 divide-y-4'}>
-                    <SmallNavIcon icon={<HiHome size={40} />} to={'/home'} />
                     <SmallNavIcon icon={<HiMiniSquare3Stack3D size={40} />} to={'/team-builder'} />
                     <SmallNavIcon icon={<GiCardPick size={40} />} to={'/detail'} />
-                    <SmallNavIcon icon={<TbError404 size={40} />} to={'/404'} />
+                    <SmallNavIcon icon={<HiHome size={40} />} to={'/home'} />
                 </ul>
                 <div className={'flex w-16 justify-center pb-4'}>
                     <HiOutlineChevronDoubleLeft className={'bg-stone-200 rounded-md'} size={40} onClick={() => setIsSpanned(state => !state)} />

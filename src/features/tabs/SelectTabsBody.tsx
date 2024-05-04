@@ -11,7 +11,7 @@ const SelectTabsBody: FC = () => {
     // scroll to the top when change the tab
     useEffect(() => {
         if (ref.current) {
-            ref.current.scrollTop = 1;
+            ref.current.scrollTop = 0;
         }
     }, [gameItemType]);
 

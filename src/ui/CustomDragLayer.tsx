@@ -4,7 +4,7 @@ import GameItemIcon, {IconRenderDetails} from "./GameItemIcon.tsx";
 import {SlotIndex, SwapPayload} from "../features/teamBuilder/teamSlice.ts";
 import DraggedSlotPreview from "../features/teamBuilder/DraggedSlotPreview.tsx";
 
-type SlotItemType = {
+export type SlotItemType = {
     index: SlotIndex,
     characterId: number,
     posterId: number,

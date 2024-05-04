@@ -29,9 +29,9 @@ const GameItemIcon: FC<IconProps> = (props) => {
         let sourcePath;
 
         if (rarity === 'Rare4') {
-            sourcePath = `/${type}Icons/${id}_1.png`;
+            sourcePath = `/${type}Icons/${id}_1.webp`;
         } else {
-            sourcePath = `/${type}Icons/${id}_0.png`;
+            sourcePath = `/${type}Icons/${id}_0.webp`;
         }
 
 
@@ -73,7 +73,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
                 )}
             >
                 {id !== 0 && <img
-                    src={`/${type}Icons/${id}.png`}
+                    src={`/${type}Icons/${id}.webp`}
                     alt={id.toString()}
                     className={'rounded-full select-none'}
                     draggable={false}
