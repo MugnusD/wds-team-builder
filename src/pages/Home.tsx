@@ -12,10 +12,10 @@ const Home: FC = () => {
             </Typography>
             <Typography variant={'h5'}>
                 Powered By: &nbsp;
-                <a href={'https://react.dev/'} target="_blank">
+                <a href={'https://react.dev/?uwu=true'} target="_blank">
                     <img src={'/stamps/React.webp'} alt={'reactjs'} className={'h-[130px] inline-block'} />
                 </a>
-                <a href={'https://vitejs.dev/'} target="_blank">
+                <a href={'https://vitejs.dev/?uwu=true'} target="_blank">
                     <img src={'/stamps/Vite.webp'} alt={'vitejs'} className={'h-[170px] inline-block'} />
                 </a>
             </Typography>
@@ -33,7 +33,7 @@ const Home: FC = () => {
             </Typography>
 
             <footer className={'mt-auto'}>
-                图标由 <a href="https://github.com/SAWARATSUKI" target="_blank" className={'text-blue-500 hover:underline'}>@SAWARATSUKI</a> 创建，遵循 <a
+                Icons created by <a href="https://github.com/SAWARATSUKI" target="_blank" className={'text-blue-500 hover:underline'}>@SAWARATSUKI</a>. License: <a
                     href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
                     target="_blank"
                     className={'text-blue-500 hover:underline'}
