@@ -3,6 +3,8 @@ import AttributeIcon from "./AttributeIcon.tsx";
 import SenseIcon from "./SenseIcon.tsx";
 import clsx from "clsx";
 import {BsFileImage} from "react-icons/bs";
+import useCharacterIconPosition from "../hooks/useCharacterIconPosition.ts";
+import usePosterIconPosition from "../hooks/usePosterIconPosition.ts";
 
 export type IconRenderDetails = {
     type: 'character',
@@ -23,17 +25,24 @@ type IconProps = {
 
 const GameItemIcon: FC<IconProps> = (props) => {
     const {id, detail} = props;
+    const {characterIconPosition} = useCharacterIconPosition();
+    const {posterIconPosition} = usePosterIconPosition();
 
     if (detail.type === 'character') {
-        const {type, attribute, sense, rarity} = detail;
-        let sourcePath;
+        const {attribute, sense, rarity} = detail;
+        // let sourcePath;
+        let fullId: string;
 
         if (rarity === 'Rare4') {
-            sourcePath = `/${type}Icons/${id}_1.webp`;
+            // sourcePath = `/${type}Icons/${id}_1.webp`;
+            fullId = id.toString() + '_1';
         } else {
-            sourcePath = `/${type}Icons/${id}_0.webp`;
+            // sourcePath = `/${type}Icons/${id}_0.webp`;
+            fullId = id.toString() + '_0';
         }
 
+        const position = characterIconPosition ? `-${characterIconPosition[fullId].x}px -${characterIconPosition[fullId].y}px` : '';
+        const ratio = 56 / 188;
 
         return (
             <div
@@ -44,12 +53,26 @@ const GameItemIcon: FC<IconProps> = (props) => {
                     (rarity === 'Rare2' || rarity === 'Rare1') && 'bg-gray-600',
                 )}
             >
+                {/*
                 <img
                     src={sourcePath}
                     alt={id.toString()}
                     draggable={false}
                     className={'select-none'}
-                />
+                />*/}
+
+
+                <div
+                    style={{
+                        backgroundImage: 'url("/img/character_sprite.webp")',
+                        width: '188px',
+                        height: '188px',
+                        backgroundPosition: position,
+                        transform: `scale(${ratio}) translate(-223px, -223px)`,
+                    }}
+                ></div>
+
+
                 <div className={'absolute top-0 left-0 bg-stone-600 border-gold-500 border-2 rounded-full'}>
                     <AttributeIcon attribute={attribute} />
                 </div>
@@ -61,7 +84,9 @@ const GameItemIcon: FC<IconProps> = (props) => {
     }
 
     if (detail.type === 'poster') {
-        const {type, rarity} = detail;
+        const {rarity} = detail;
+        const position = posterIconPosition ? `-${posterIconPosition[id.toString()]?.x ?? '0'}px -${posterIconPosition[id.toString()]?.y ?? '0'}px` : '';
+        const ratio = 56 / 188;
 
         return (
             <div
@@ -72,17 +97,34 @@ const GameItemIcon: FC<IconProps> = (props) => {
                     rarity === 'R' && 'bg-gray-600',
                 )}
             >
-                {id !== 0 && <img
-                    src={`/${type}Icons/${id}.webp`}
-                    alt={id.toString()}
-                    className={'rounded-full select-none'}
-                    draggable={false}
-                />}
+                {id !== 0 &&
+                    /*                    <img
+                                            src={`/${type}Icons/${id}.webp`}
+                                            alt={id.toString()}
+                                            className={'rounded-full select-none'}
+                                            draggable={false}
+                                        />*/
+
+                    <div
+                        style={{
+                            backgroundImage: 'url("/img/poster_sprite.webp")',
+                            width: '188px',
+                            height: '188px',
+                            backgroundPosition: position,
+                            transform: `scale(${ratio}) translate(-223px, -223px)`,
+                            borderRadius: '50%',
+                        }}
+                    ></div>
+
+                }
                 {id === 0 &&
-                    <div className={'bg-white rounded-full w-full h-full flex items-center justify-center'}><BsFileImage
-                        size={35}
-                        color={'#78909c'}
-                    /></div>}
+                    <div className={'bg-white rounded-full w-full h-full flex items-center justify-center -z-10'}>
+                        <BsFileImage
+                            size={35}
+                            color={'#78909c'}
+                        />
+                    </div>
+                }
             </div>
         );
     }

@@ -105,7 +105,7 @@ const Slot: FC<{
     }
 
     // DnD Slot
-    const [{isDragging}, drag, preview] = useDrag<SlotItemType, void, {isDragging: boolean}>({
+    const [{isDragging}, drag, preview] = useDrag<SlotItemType, void, { isDragging: boolean }>({
         type: DraggedItemType.SLOT,
         item: {
             index: slotIndex,
@@ -197,11 +197,12 @@ const Slot: FC<{
             className={'flex h-20 md:w-[24rem] w-[20rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 '
                 + `${isDragging ? 'opacity-0' : ''}`}
         >
-            <div ref={dndRef} className={'flex h-20 md:w-16 w-12 items-center justify-center cursor-pointer '}>
+            <div ref={dndRef} className={'flex h-20 md:w-16 w-12 items-center justify-center cursor-pointer'}>
                 <IoMenu
                     size={isBigScreen ? 50 : 40}
                     color={'rgb(158 158 158'}
-                    className={'rounded-xl ' + `${canDrop && !isDragging ? 'bg-green-100 ' : ' '}` + `${isOver ? ' bg-fuchsia-200 ' : ' '}`}
+                    // className={'rounded-xl ' + `${canDrop && !isDragging ? 'bg-green-100 ' : ' '}` + `${isOver ? ' bg-fuchsia-200 ' : ' '}`}
+                    className={clsx('rounded-xl', (canDrop && !isDragging) && 'bg-green-100', isOver && 'bg-fuchsia-200')}
                 />
             </div>
 
@@ -211,7 +212,7 @@ const Slot: FC<{
                 //     `${currentSlotFocusedItem === 'character' ? 'ring-2 ring-red-500 ' : ' '}` +
                 //     `${canDropCharacter ? 'ring-4 ring-orange-300 ' : ' '}`
                 // }
-                className={clsx(currentSlotFocusedItem === 'character' && 'ring-2 ring-red-500', canDropCharacter && 'ring-4 ring-orange-300')}
+                className={clsx(currentSlotFocusedItem === 'character' && 'ring-2 ring-red-500', canDropCharacter && 'ring-4 ring-orange-300 rounded-xl')}
                 onClick={() => handleFocus('character')}
                 ref={characterDrop}
             >
@@ -224,7 +225,7 @@ const Slot: FC<{
                 //     `${currentSlotFocusedItem === 'poster' ? ' ring-2 ring-red-500 ' : ' '}` +
                 //     `${canDropPoster && 'ring-4 ring-orange-300 '}`
                 // }
-                className={clsx(currentSlotFocusedItem === 'poster' && ' ring-2 ring-red-500', canDropPoster && 'ring-4 ring-orange-300')}
+                className={clsx(currentSlotFocusedItem === 'poster' && ' ring-2 ring-red-500', canDropPoster && 'ring-4 ring-orange-300 rounded-full')}
                 onClick={() => handleFocus('poster')}
                 ref={posterDrop}
             >

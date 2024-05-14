@@ -4,6 +4,7 @@ import {selectGameItemType} from './selectTabsSlice.ts';
 import CharacterTabsContent from './tabBodyComponents/CharacterTabsContent.tsx';
 import PosterTabsContent from "./tabBodyComponents/PosterTabsContent.tsx";
 
+
 const SelectTabsBody: FC = () => {
     const gameItemType = useSelector(selectGameItemType);
     const ref = useRef<HTMLDivElement>(null);
@@ -22,8 +23,10 @@ const SelectTabsBody: FC = () => {
             }
             ref={ref}
         >
-            {gameItemType === 'character' && <CharacterTabsContent />}
-            {gameItemType === 'poster' && <PosterTabsContent />}
+
+            <CharacterTabsContent display={gameItemType === 'character'} />
+            <PosterTabsContent display={gameItemType === 'poster'}/>
+
             {gameItemType === 'accessory' && null}
         </div>
     );

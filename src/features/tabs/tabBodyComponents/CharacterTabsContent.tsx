@@ -8,12 +8,19 @@ import {
 import {CharacterNameOrder} from "../../../types/character/characterName.ts";
 import SenseIcon from "../../../ui/SenseIcon.tsx";
 import {Typography} from "@material-tailwind/react";
+import clsx from "clsx";
+import {selectTeamedCharacterIds} from "../../teamBuilder/teamSlice.ts";
 
-const CharacterTabsContent: FC = () => {
+const CharacterTabsContent: FC<{ display: boolean }> = ({display}) => {
     const {characters, isLoading, isError} = useCharacters();
     const {
-              sortBy, filterByCharacter, filterByRarity, filterByAttributeType, filterBySenseType,
+              sortBy,
+              filterByCharacter,
+              filterByRarity,
+              filterByAttributeType,
+              filterBySenseType,
           } = useSelector(selectCardSortAndFilter);
+    const teamedIds = useSelector(selectTeamedCharacterIds);
 
     if (isLoading || isError || !characters) {
         return null;
@@ -55,6 +62,25 @@ const CharacterTabsContent: FC = () => {
         }
     }
 
+    // Teamed items always on the top
+    items.sort((a, b) => {
+        const indexA = teamedIds.indexOf(a.id);
+        const indexB = teamedIds.indexOf(b.id);
+
+        if (indexA !== indexB) {
+            if (indexA === -1) {
+                return 1;
+            }
+            if (indexB === -1) {
+                return -1;
+            }
+
+            return indexA - indexB;
+        }
+
+        return 0;
+    });
+
     // filtered
     items = items.filter(character => filterByCharacter[character.characterBase]);
     items = items.filter(character => filterByRarity[character.rarity]);
@@ -64,45 +90,50 @@ const CharacterTabsContent: FC = () => {
     return (
         <>
             {items.map(item => (
-                <GameItem
-                    id={item.id}
-                    key={item.id}
-                    characterBase={item.characterBase}
-                    detail={{
-                        type: 'character', attribute: item.attribute, rarity: item.rarity, sense: item.sense.type,
-                    }}
-                    render={() => {
-                        const [, support, control, amplification, special] = item.starAct.conditions;
+                <div className={clsx(!display && 'hidden', teamedIds.includes(item.id) && 'ring-4 ring-red-500 rounded-xl')}>
+                    <GameItem
+                        id={item.id}
+                        key={item.id}
+                        characterBase={item.characterBase}
+                        detail={{
+                            type: 'character', attribute: item.attribute, rarity: item.rarity, sense: item.sense.type,
+                        }}
+                        render={() => {
+                            const [, support, control, amplification, special] = item.starAct.conditions;
 
-
-                        return (
-                            <div className={'flex flex-col gap-2 divide-y divide-blue-gray-200 *:pt-2'}>
-                                <div>
-                                    <Typography variant={'h5'}>
-                                        {item.name}
-                                    </Typography>
-                                </div>
-                                <div>
-                                    <div className={'*:inline-block flex flex-row items-center gap-0.5'}>
-                                        <div className={'select-none'}>{support.bloom}</div> <SenseIcon senseType={'Support'} />
-                                        <div className={'select-none'}>{control.bloom}</div> <SenseIcon senseType={'Control'} />
-                                        <div className={'select-none'}>{amplification.bloom}</div> <SenseIcon senseType={'Amplification'} />
-                                        <div className={'select-none'}>{special.bloom}</div> <SenseIcon senseType={'Special'} />
+                            return (
+                                <div className={'flex flex-col gap-2 divide-y divide-blue-gray-200 *:pt-2'}>
+                                    <div>
+                                        <Typography variant={'h5'}>
+                                            {item.name}
+                                        </Typography>
                                     </div>
                                     <div>
-                                        {item.starAct.descriptionChinese}
+                                        <div className={'*:inline-block flex flex-row items-center gap-0.5'}>
+                                            <div className={'select-none'}>{support.bloom}</div>
+                                            <SenseIcon senseType={'Support'} />
+                                            <div className={'select-none'}>{control.bloom}</div>
+                                            <SenseIcon senseType={'Control'} />
+                                            <div className={'select-none'}>{amplification.bloom}</div>
+                                            <SenseIcon senseType={'Amplification'} />
+                                            <div className={'select-none'}>{special.bloom}</div>
+                                            <SenseIcon senseType={'Special'} />
+                                        </div>
+                                        <div>
+                                            {item.starAct.descriptionChinese}
+                                        </div>
+                                    </div>
+                                    <div>
+                                        Sense: {item.sense.descriptionsChinese}<br />
+                                        CT: {item.sense.coolTime.origin}/{item.sense.coolTime.bloom}
                                     </div>
                                 </div>
-                                <div>
-                                    Sense: {item.sense.descriptionsChinese}<br />
-                                    CT: {item.sense.coolTime.origin}/{item.sense.coolTime.bloom}
-                                </div>
-                            </div>
-                        );
-                    }}
-                />
+                            );
+                        }}
+                    />
+                </div>
             ))}
-            <div>
+            <div className={clsx(!display && 'hidden')}>
                 Count: {items.length}
             </div>
         </>

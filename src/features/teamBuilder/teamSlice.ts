@@ -80,7 +80,7 @@ const initialState: State = {
             isLeader: false,
         }],
     focusedItem: null,
-}
+};
 
 const teamSlice = createSlice({
     name: 'team',
@@ -105,7 +105,7 @@ const teamSlice = createSlice({
             } else {
                 state.focusedItem = {
                     slotIndex,
-                    itemType
+                    itemType,
                 };
             }
         },
@@ -114,7 +114,7 @@ const teamSlice = createSlice({
         },
         swapFocusItemFromTab: (state, action: { payload: SwapPayload }) => {
             let characterBase = '';
-            const {id, type,} = action.payload;
+            const {id, type} = action.payload;
             // If it is a character, it's characterBase is needed
             if (type === 'character') {
                 characterBase = action.payload.characterBase;
@@ -141,7 +141,7 @@ const teamSlice = createSlice({
                             const temp = state.slots.at(index);
                             state.slots[index] = state.slots.at(focusedItem.slotIndex) as Slot;
                             state.slots[focusedItem.slotIndex] = temp as Slot;
-                            return
+                            return;
                         }
 
                         // swap from tabs
@@ -179,7 +179,7 @@ const teamSlice = createSlice({
     selectors: {
         selectSlots: sliceState => sliceState.slots,
         selectFocusedItem: sliceState => sliceState.focusedItem,
-    }
+    },
 });
 
 export const teamReducer = teamSlice.reducer;
@@ -188,23 +188,32 @@ export const {
                  swapSlot,
                  setFocusedItem,
                  resetFocusItem,
-                 swapFocusItemFromTab
+                 swapFocusItemFromTab,
              } = teamSlice.actions;
 export const {
                  selectSlots,
-                 selectFocusedItem
+                 selectFocusedItem,
              } = teamSlice.selectors;
 
 // Return slot message
 export const selectSlotByIndex = createSelector(
     [selectSlots, (_, index: SlotIndex) => index],
     (slots, index) => slots.at(index) as Slot,
-)
+);
 
 // Return leader index
 export const selectLeaderIndex = createSelector(
     [selectSlots],
     (slots) => slots.findIndex(item => item.isLeader),
-)
+);
 
+export const selectTeamedCharacterIds = createSelector(
+    [selectSlots],
+    (slots) => slots.map(slot => slot.character.characterId),
+);
+
+export const selectTeamedPosterIds = createSelector(
+    [selectSlots],
+    (slots) => slots.map(slot => slot.posterId),
+);
 

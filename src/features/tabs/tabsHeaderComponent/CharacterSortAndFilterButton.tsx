@@ -4,12 +4,12 @@ import {
     Dialog,
     DialogBody,
     DialogFooter,
-    DialogHeader, Option, Select
+    DialogHeader, Option, Select,
 } from "@material-tailwind/react";
 import {useDispatch, useSelector} from "react-redux";
 import {
     selectCardSortAndFilter, setCardSortFilter,
-    CharacterSortBy
+    CharacterSortBy,
 } from "../selectTabsSlice.ts";
 import {allCharacterNames, characterNameFilterRecord} from "../../../types/character/characterName.ts";
 import {allCharacterRarities, characterRarityFilterRecord} from "../../../types/character/characterRarity.ts";
@@ -64,9 +64,16 @@ const CharacterSortAndFilterButton: FC = () => {
         }));
     };
 
+    const handleReset = () => {
+        updateNameFilterRecord(characterNameFilterRecord);
+        updateRarityFilterRecord(characterRarityFilterRecord);
+        updateSenseFilterRecord(characterSenseTypeFilterRecord);
+        updateAttributeFilterRecord(characterAttributeFilterRecord);
+    };
+
     const handleOpen = () => {
         setIsOpen(open => !open);
-    }
+    };
 
     return (
         <>
@@ -98,11 +105,11 @@ const CharacterSortAndFilterButton: FC = () => {
                                 onChange={() => {
                                     if (isSiriusAllChecked) {
                                         allCharacterNames.slice(0, 6).forEach(name => updateNameFilterRecord(draft => {
-                                            draft[name] = false
+                                            draft[name] = false;
                                         }));
                                     } else {
                                         allCharacterNames.slice(0, 6).forEach(name => updateNameFilterRecord(draft => {
-                                            draft[name] = true
+                                            draft[name] = true;
                                         }));
                                     }
                                 }}
@@ -111,7 +118,7 @@ const CharacterSortAndFilterButton: FC = () => {
                                 <Checkbox
                                     checked={nameFilterRecord[name]}
                                     onChange={() => updateNameFilterRecord(draft => {
-                                        draft[name] = !draft[name]
+                                        draft[name] = !draft[name];
                                     })}
                                     label={name}
                                     key={name}
@@ -124,11 +131,11 @@ const CharacterSortAndFilterButton: FC = () => {
                                 onChange={() => {
                                     if (isEdenAllChecked) {
                                         allCharacterNames.slice(6, 11).forEach(name => updateNameFilterRecord(draft => {
-                                            draft[name] = false
+                                            draft[name] = false;
                                         }));
                                     } else {
                                         allCharacterNames.slice(6, 11).forEach(name => updateNameFilterRecord(draft => {
-                                            draft[name] = true
+                                            draft[name] = true;
                                         }));
                                     }
                                 }}
@@ -137,7 +144,7 @@ const CharacterSortAndFilterButton: FC = () => {
                                 <Checkbox
                                     checked={nameFilterRecord[name]}
                                     onChange={() => updateNameFilterRecord(draft => {
-                                        draft[name] = !draft[name]
+                                        draft[name] = !draft[name];
                                     })}
                                     label={name}
                                     key={name}
@@ -150,11 +157,11 @@ const CharacterSortAndFilterButton: FC = () => {
                                 onChange={() => {
                                     if (isGingazaAllChecked) {
                                         allCharacterNames.slice(11, 16).forEach(name => updateNameFilterRecord(draft => {
-                                            draft[name] = false
+                                            draft[name] = false;
                                         }));
                                     } else {
                                         allCharacterNames.slice(11, 16).forEach(name => updateNameFilterRecord(draft => {
-                                            draft[name] = true
+                                            draft[name] = true;
                                         }));
                                     }
                                 }}
@@ -163,7 +170,7 @@ const CharacterSortAndFilterButton: FC = () => {
                                 <Checkbox
                                     checked={nameFilterRecord[name]}
                                     onChange={() => updateNameFilterRecord(draft => {
-                                        draft[name] = !draft[name]
+                                        draft[name] = !draft[name];
                                     })}
                                     label={name}
                                     key={name}
@@ -176,11 +183,11 @@ const CharacterSortAndFilterButton: FC = () => {
                                 onChange={() => {
                                     if (isDenkiAllChecked) {
                                         allCharacterNames.slice(16, 21).forEach(name => updateNameFilterRecord(draft => {
-                                            draft[name] = false
+                                            draft[name] = false;
                                         }));
                                     } else {
                                         allCharacterNames.slice(16, 21).forEach(name => updateNameFilterRecord(draft => {
-                                            draft[name] = true
+                                            draft[name] = true;
                                         }));
                                     }
                                 }}
@@ -189,7 +196,7 @@ const CharacterSortAndFilterButton: FC = () => {
                                 <Checkbox
                                     checked={nameFilterRecord[name]}
                                     onChange={() => updateNameFilterRecord(draft => {
-                                        draft[name] = !draft[name]
+                                        draft[name] = !draft[name];
                                     })}
                                     label={name}
                                     key={name}
@@ -203,11 +210,11 @@ const CharacterSortAndFilterButton: FC = () => {
                             onChange={() => {
                                 if (isAllRarityChecked) {
                                     allCharacterRarities.forEach(rarity => updateRarityFilterRecord(draft => {
-                                        draft[rarity] = false
+                                        draft[rarity] = false;
                                     }));
                                 } else {
                                     allCharacterRarities.forEach(rarity => updateRarityFilterRecord(draft => {
-                                        draft[rarity] = true
+                                        draft[rarity] = true;
                                     }));
                                 }
                             }}
@@ -217,7 +224,7 @@ const CharacterSortAndFilterButton: FC = () => {
                             key={rarity}
                             checked={rarityFilterRecord[rarity]}
                             onChange={() => updateRarityFilterRecord(draft => {
-                                draft[rarity] = !draft[rarity]
+                                draft[rarity] = !draft[rarity];
                             })}
                         />)}
                     </div>
@@ -228,11 +235,11 @@ const CharacterSortAndFilterButton: FC = () => {
                             onChange={() => {
                                 if (isAllSenseTypeChecked) {
                                     allCharacterSenseType.forEach(senseType => updateSenseFilterRecord(draft => {
-                                        draft[senseType] = false
+                                        draft[senseType] = false;
                                     }));
                                 } else {
                                     allCharacterSenseType.forEach(senseType => updateSenseFilterRecord(draft => {
-                                        draft[senseType] = true
+                                        draft[senseType] = true;
                                     }));
                                 }
                             }}
@@ -285,11 +292,11 @@ const CharacterSortAndFilterButton: FC = () => {
                             onChange={() => {
                                 if (isAllAttributeChecked) {
                                     allCharacterAttributes.forEach(attribute => updateAttributeFilterRecord(draft => {
-                                        draft[attribute] = false
+                                        draft[attribute] = false;
                                     }));
                                 } else {
                                     allCharacterAttributes.forEach(attribute => updateAttributeFilterRecord(draft => {
-                                        draft[attribute] = true
+                                        draft[attribute] = true;
                                     }));
                                 }
                             }}
@@ -328,19 +335,28 @@ const CharacterSortAndFilterButton: FC = () => {
                         />
                     </div>
                 </DialogBody>
-                <DialogFooter>
+                <DialogFooter className={'space-x-4'}>
                     <Button
-                        variant="gradient" color="green" onClick={() => {
-                        handleOpen();
-                        handleSubmit();
-                    }}
+                        variant="gradient" color="black"
+                        onClick={() => {
+                            handleReset();
+                        }}
+                    >
+                        <span>Reset</span>
+                    </Button>
+                    <Button
+                        variant="gradient" color="green"
+                        onClick={() => {
+                            handleOpen();
+                            handleSubmit();
+                        }}
                     >
                         <span>Confirm</span>
                     </Button>
                 </DialogFooter>
             </Dialog>
         </>
-    )
-}
+    );
+};
 
 export default CharacterSortAndFilterButton;

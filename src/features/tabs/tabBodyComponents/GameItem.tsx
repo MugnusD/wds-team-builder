@@ -88,7 +88,7 @@ const GameItem: FC<{
     };
 
     return (
-        <div ref={drag} onClick={handleSwapToTeam}>
+        <div ref={drag} onClick={handleSwapToTeam} className={'hover:scale-110 duration-200 ease-out'}>
             <Popover open={isPopoverOpen} handler={setIsPopoverOpen}>
                 <PopoverHandler
                     // onMouseEnter={handleMouseEnterIcon}
