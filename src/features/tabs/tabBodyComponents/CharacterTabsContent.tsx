@@ -127,6 +127,11 @@ const CharacterTabsContent: FC<{ display: boolean }> = ({display}) => {
                                         Sense: {item.sense.descriptionsChinese}<br />
                                         CT: {item.sense.coolTime.origin}/{item.sense.coolTime.bloom}
                                     </div>
+                                    <div>
+                                        <Typography variant={'small'} color={'gray'} className={'-mt-2'}>
+                                            点击头像也可以打开和关闭悬浮窗
+                                        </Typography>
+                                    </div>
                                 </div>
                             );
                         }}

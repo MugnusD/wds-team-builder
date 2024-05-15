@@ -16,7 +16,7 @@ const TooltipWithHelperIcon: FC = () => {
                         className="font-normal opacity-80"
                     >
                         可以直接从下方选择框中拖动卡片放置到上方（建议使用鼠标）；或者点击上方卡片（可以看到高亮），此时点击下方卡片可以更换（移动端兼容使用方式）。<br /><br />
-                        点击下方卡片可以查看详情，一定程度上和点击交换有逻辑冲突（所以建议使用鼠标操作）<br /><br />
+                        <span className={'font-bold text-green-400'}>点击下方卡片</span>可以查看详情<br /><br />
                         点击 Leader 处标签可以更改队长，拖动可以改变角色位置。<br /><br />
                         现在 CT 等等都是占位的，现在还没有实现逻辑计算，这些显示没有实际意义！
                     </Typography>

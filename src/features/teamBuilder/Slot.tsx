@@ -179,6 +179,9 @@ const Slot: FC<{
         dispatch(setTabType(gameItem));
     };
 
+    // Mouse OVer
+    const [isMouseOver, setIsMouseOver] = useState(false);
+
     if (isLoading) {
         return (
             <div className={'flex h-20 w-[24rem] flex-row items-center justify-center rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4'}>
@@ -240,18 +243,26 @@ const Slot: FC<{
                 <GiDiamondRing size={isBigScreen ? 35 : 28} color={'#78909c'} />
             </div>
 
-            <div className={'w-16 flex h-16 flex-col gap-y-3 select-none cursor-pointer'} onClick={handleSetLeader}>
+            <div
+                className={'w-16 flex h-16 flex-col gap-y-3 select-none cursor-pointer'}
+                onClick={handleSetLeader}
+                onMouseEnter={() => setIsMouseOver(true)}
+                onMouseLeave={() => setIsMouseOver(false)}
+            >
                 {leaderIndex === slotIndex
                     ? (
                         <div className={'mt-2 rounded-md bg-red-500 text-center text-white'}>
                             Leader
                         </div>
                     )
-                    : (
-                        <div className={'mt-2 rounded-md bg-gray-300 text-center'}>
+                    : isMouseOver
+                        ? <div className={'mt-2 rounded-md bg-red-200 text-center text-white'}>
+                            Leader
+                        </div>
+                        : <div className={'mt-2 rounded-md bg-gray-300 text-center'}>
                             &mdash; &mdash;
                         </div>
-                    )}
+                }
                 <div className={'text-center relative bottom-2.5 text-nowrap'}>
                     CT <span className={'text-2xl w-6 inline-block'}>{bloom}</span> 秒
                 </div>

@@ -1,4 +1,4 @@
-import {FC, ReactElement, useEffect, useState} from 'react';
+import {FC, MouseEventHandler, ReactElement, useEffect, useState} from 'react';
 import {useDispatch} from "react-redux";
 import {resetFocusItem, swapFocusItemFromTab, SwapPayload} from "../../teamBuilder/teamSlice.ts";
 import {useNavigate} from "react-router-dom";
@@ -23,20 +23,20 @@ const GameItem: FC<{
     const navigate = useNavigate();
     const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
-    // let timer: NodeJS.Timeout;
+    let timer: NodeJS.Timeout;
 
-    // const handleMouseEnterIcon = () => {
-    //     // Delay display popover
-    //     timer = setTimeout(() => {
-    //         setIsPopoverOpen(true);
-    //     }, 700);
-    // };
-    //
-    // const handleMouseLeaveIcon = () => {
-    //     // Clear popover timer
-    //     clearTimeout(timer);
-    //     setIsPopoverOpen(false);
-    // };
+    const handleMouseEnterIcon: MouseEventHandler = () => {
+        // Delay display popover
+        timer = setTimeout(() => {
+            setIsPopoverOpen(true);
+        }, 700);
+    };
+
+    const handleMouseLeaveIcon: MouseEventHandler = () => {
+        // Clear popover timer
+        clearTimeout(timer);
+        setIsPopoverOpen(false);
+    };
 
     // DnD
     const [{isDragging}, drag, preview] = useDrag<
@@ -91,8 +91,8 @@ const GameItem: FC<{
         <div ref={drag} onClick={handleSwapToTeam} className={'hover:scale-110 duration-200 ease-out'}>
             <Popover open={isPopoverOpen} handler={setIsPopoverOpen}>
                 <PopoverHandler
-                    // onMouseEnter={handleMouseEnterIcon}
-                    onMouseLeave={() => setIsPopoverOpen(false)}
+                    onMouseEnter={handleMouseEnterIcon}
+                    onMouseLeave={handleMouseLeaveIcon}
                 >
                     <div
                         className={`${isDragging ? 'opacity-0' : ''}`}
