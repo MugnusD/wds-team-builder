@@ -217,3 +217,8 @@ export const selectTeamedPosterIds = createSelector(
     (slots) => slots.map(slot => slot.posterId),
 );
 
+export const selectTeamedAccessoryIds = createSelector(
+    [selectSlots],
+    (slots) => slots.map(slot => slot.accessoryId),
+);
+

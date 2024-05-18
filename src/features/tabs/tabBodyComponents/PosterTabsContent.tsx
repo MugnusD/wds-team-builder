@@ -69,10 +69,12 @@ const PosterTabsContent: FC<{ display: boolean }> = ({display}) => {
                 <GameItem id={0} detail={{type: 'poster', rarity: 'R'}} render={() => <div>Empty poster</div>} />
             </div>
             {items.map(item => (
-                <div className={clsx(!display && 'hidden', teamedIds.includes(item.id) && 'ring-4 ring-red-500 rounded-full')}>
+                <div
+                    className={clsx(!display && 'hidden', teamedIds.includes(item.id) && 'ring-4 ring-red-500 rounded-full')}
+                    key={item.id}
+                >
                     <GameItem
                         id={item.id}
-                        key={item.id}
                         detail={{type: 'poster', rarity: item.rarity}}
                         render={() => {
                             const leaderAbilities = item.abilities.filter(el => el.type === 'Leader');
@@ -101,6 +103,11 @@ const PosterTabsContent: FC<{ display: boolean }> = ({display}) => {
                                             <Typography color={'deep-orange'} variant={'small'}>{el.name}: </Typography>
                                             <Typography variant={'small'}>{convertUnityTag(el.descriptionChinese)}</Typography>
                                         </div>)}
+                                    </div>
+                                    <div>
+                                        <Typography variant={'small'} color={'gray'} className={'-mt-2'}>
+                                            点击头像也可以打开和关闭悬浮窗
+                                        </Typography>
                                     </div>
                                 </div>
                             );

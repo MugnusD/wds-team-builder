@@ -38,6 +38,17 @@ export const getPosters = async () => {
     return data as PosterDetail[];
 };
 
+export const getAccessories = async () => {
+    const response = await fetch('/json/all_accessory.json');
+    const data = await response.json();
+
+    if (!data) {
+        throw new Error('Data fetching failed');
+    }
+
+    return data as AccessoryDetail[];
+}
+
 export const getCharacterIconPosition = async () => {
     const response = await fetch('/json/character_sprite.json');
     const data: Record<string, { x: number, y: number }> = await response.json();
@@ -51,3 +62,10 @@ export const getPosterIconPosition = async () => {
 
     return data;
 };
+
+export const getAccessoryIconPosition = async () => {
+    const response = await fetch('/json/accessory_sprite.json');
+    const data: Record<string, { x: number, y: number }> = await response.json();
+
+    return data;
+}

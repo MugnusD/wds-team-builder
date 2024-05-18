@@ -3,7 +3,7 @@ import {getCharacterIconPosition} from "../servers/fetchData.ts";
 
 const useCharacterIconPosition = () => {
     const {isLoading, data: characterIconPosition, isError} = useQuery({
-        queryKey: ['characterIconPosition'],
+        queryKey: ['character-icon'],
         queryFn: getCharacterIconPosition,
     });
 

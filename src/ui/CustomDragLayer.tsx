@@ -8,8 +8,10 @@ export type SlotItemType = {
     index: SlotIndex,
     characterId: number,
     posterId: number,
+    accessoryId: number,
     characterIconDetail: IconRenderDetails,
     posterIconDetail: IconRenderDetails,
+    accessoryIconDetail: IconRenderDetails,
     ct: number,
     isLeader: boolean,
 }
@@ -34,7 +36,7 @@ const CustomDragLayer: FC = () => {
         slotItem: SlotItemType;
 
     const renderItem = () => {
-        if (itemType === 'poster' || itemType === 'character') {
+        if (itemType === 'poster' || itemType === 'character' || itemType === 'accessory') {
             gameItem = item as SwapPayload & { detail: IconRenderDetails };
             return <GameItemIcon id={gameItem.id} detail={gameItem.detail} />;
         }

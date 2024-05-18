@@ -1,6 +1,5 @@
 import {FC, useEffect, useRef, useState} from 'react';
 import {IoMenu} from 'react-icons/io5';
-import {GiDiamondRing} from 'react-icons/gi';
 import {useDispatch, useSelector} from "react-redux";
 import {
     resetFocusItem,
@@ -24,6 +23,7 @@ import GameItemIcon, {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
 import usePosters from "../../hooks/usePosters.ts";
 import {getEmptyImage} from "react-dnd-html5-backend";
 import {SlotItemType} from "../../ui/CustomDragLayer.tsx";
+import useAccessories from "../../hooks/useAccessories.ts";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
@@ -37,6 +37,7 @@ const Slot: FC<{
                   characterId,
               },
               posterId,
+              accessoryId,
           } = useSelector(state => selectSlotByIndex(state, slotIndex));
     const leaderIndex = useSelector(selectLeaderIndex);
     const selectedItem = useSelector(selectFocusedItem);
@@ -67,6 +68,15 @@ const Slot: FC<{
             setPosterDetail(poster);
         }
     }, [posterId, posters]);
+
+    const {accessories} = useAccessories();
+    const [accessoryDetail, setAccessoryDetail] = useState<AccessoryDetail>();
+    useEffect(() => {
+        if (accessoryId !== 0 && accessories) {
+            const accessory = accessories?.find(accessory => accessory.id === accessoryId) ?? {} as AccessoryDetail;
+            setAccessoryDetail(accessory);
+        }
+    }, [accessoryId, accessories]);
 
     // Character
     let bloom: number,
@@ -104,6 +114,20 @@ const Slot: FC<{
         };
     }
 
+    // Accessory
+    let accessoryIconDetail: IconRenderDetails;
+    if (!accessoryDetail || accessoryId === 0) {
+        accessoryIconDetail = {
+            type: 'accessory',
+            rarity: 'R',
+        };
+    } else {
+        accessoryIconDetail = {
+            type: 'accessory',
+            rarity: accessoryDetail.rarity,
+        };
+    }
+
     // DnD Slot
     const [{isDragging}, drag, preview] = useDrag<SlotItemType, void, { isDragging: boolean }>({
         type: DraggedItemType.SLOT,
@@ -111,8 +135,10 @@ const Slot: FC<{
             index: slotIndex,
             characterId,
             posterId,
+            accessoryId,
             characterIconDetail,
             posterIconDetail,
+            accessoryIconDetail,
             ct: bloom,
             isLeader: leaderIndex === slotIndex,
         },
@@ -164,6 +190,19 @@ const Slot: FC<{
         },
         collect: (monitor) => ({
             canDropPoster: monitor.canDrop(),
+        }),
+    });
+
+    // Dnd Accessory
+    const [{canDropAccessory}, accessoryDrop] = useDrop<SwapPayload, void, { canDropAccessory: boolean }>({
+        accept: DraggedItemType.ACCESSORY,
+        drop: (item) => {
+            dispatch(setFocusedItem({slotIndex, itemType: 'accessory'}));
+            dispatch(swapFocusItemFromTab(item));
+            dispatch(resetFocusItem());
+        },
+        collect: (monitor) => ({
+            canDropAccessory: monitor.canDrop(),
         }),
     });
 
@@ -236,11 +275,11 @@ const Slot: FC<{
             </div>
 
             <div
-                className={'flex md:h-16 md:w-16 h-14 w-14 items-center justify-center rounded-full border-2 border-gray-300' +
-                    `${currentSlotFocusedItem === 'accessory' ? ' ring-2 ring-red-500' : ''}`}
+                className={clsx(currentSlotFocusedItem === 'accessory' && ' ring-2 ring-red-500', canDropAccessory && 'ring-4 ring-orange-300 rounded-full')}
                 onClick={() => handleFocus('accessory')}
+                ref={accessoryDrop}
             >
-                <GiDiamondRing size={isBigScreen ? 35 : 28} color={'#78909c'} />
+                <GameItemIcon id={accessoryId} detail={accessoryIconDetail} />
             </div>
 
             <div

@@ -3,6 +3,7 @@ import {useSelector} from 'react-redux';
 import {selectGameItemType} from './selectTabsSlice.ts';
 import CharacterTabsContent from './tabBodyComponents/CharacterTabsContent.tsx';
 import PosterTabsContent from "./tabBodyComponents/PosterTabsContent.tsx";
+import AccessoryTabsContent from "./tabBodyComponents/AccessoryTabsContent.tsx";
 
 
 const SelectTabsBody: FC = () => {
@@ -26,6 +27,7 @@ const SelectTabsBody: FC = () => {
 
             <CharacterTabsContent display={gameItemType === 'character'} />
             <PosterTabsContent display={gameItemType === 'poster'}/>
+            <AccessoryTabsContent display={gameItemType === 'accessory'} />
 
             {gameItemType === 'accessory' && null}
         </div>

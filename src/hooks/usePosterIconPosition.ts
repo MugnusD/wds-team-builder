@@ -3,7 +3,7 @@ import {getPosterIconPosition} from "../servers/fetchData.ts";
 
 const usePosterIconPosition = () => {
     const {isLoading, data: posterIconPosition, isError} = useQuery({
-        queryKey: ['posterIconPosition'],
+        queryKey: ['position-icon'],
         queryFn: getPosterIconPosition,
     });
 

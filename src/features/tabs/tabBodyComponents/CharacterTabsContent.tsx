@@ -90,10 +90,12 @@ const CharacterTabsContent: FC<{ display: boolean }> = ({display}) => {
     return (
         <>
             {items.map(item => (
-                <div className={clsx(!display && 'hidden', teamedIds.includes(item.id) && 'ring-4 ring-red-500 rounded-xl')}>
+                <div
+                    className={clsx(!display && 'hidden', teamedIds.includes(item.id) && 'ring-4 ring-red-500 rounded-xl')}
+                    key={item.id}
+                >
                     <GameItem
                         id={item.id}
-                        key={item.id}
                         characterBase={item.characterBase}
                         detail={{
                             type: 'character', attribute: item.attribute, rarity: item.rarity, sense: item.sense.type,

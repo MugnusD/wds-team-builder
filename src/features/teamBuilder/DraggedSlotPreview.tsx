@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import {IoMenu} from "react-icons/io5";
-import GameItemIcon, {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
-import {GiDiamondRing} from "react-icons/gi";
+import GameItemIcon from "../../ui/GameItemIcon.tsx";
+import {SlotItemType} from "../../ui/CustomDragLayer.tsx";
 
 /**
  * Component to generate the preview of the dragged <Slot />, which is highly similar in code of <Slot />.
@@ -12,16 +12,11 @@ import {GiDiamondRing} from "react-icons/gi";
  * @param posterId
  * @param isLeader
  * @param ct
+ * @param accessoryIconDetail
+ * @param accessoryId
  * @constructor
  */
-const DraggedSlotPreview: FC<{
-    characterId: number,
-    characterIconDetail:  IconRenderDetails,
-    posterId: number,
-    posterIconDetail:  IconRenderDetails,
-    isLeader: boolean,
-    ct: number,
-}> = ({characterId,characterIconDetail ,posterIconDetail,posterId, isLeader, ct}) => {
+const DraggedSlotPreview: FC<SlotItemType> = ({characterId,characterIconDetail ,posterIconDetail,posterId, isLeader, ct, accessoryIconDetail, accessoryId}) => {
     return (
         <div
             className={'flex h-20 md:w-[24rem] w-[20rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 bg-white'}
@@ -45,7 +40,7 @@ const DraggedSlotPreview: FC<{
             </div>
 
             <div className={'flex md:h-16 md:w-16 h-14 w-14 items-center justify-center rounded-full border-2 border-gray-300'}>
-                <GiDiamondRing size={35} color={'#78909c'} />
+                <GameItemIcon id={accessoryId} detail={accessoryIconDetail} />
             </div>
 
             <div className={'w-16 flex h-16 flex-col gap-y-3 select-none cursor-pointer'} >

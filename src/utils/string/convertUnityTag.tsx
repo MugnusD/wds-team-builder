@@ -7,12 +7,12 @@ export const convertUnityTag = (input: string): React.ReactElement => {
     const processedParts = parts.map((part, index) => {
         switch (index % 3) {
             case 0: {
-                return part;
+                return <span key={index}>{part}</span>;
             }
             case 1: {
                     const color = parts[index];
                     const text = parts[index + 1];
-                    return <span style={{color}}>{text}</span>;
+                    return <span style={{color}} key={index}>{text}</span>;
             }
             case 2: {
                 return null;
