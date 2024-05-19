@@ -8,6 +8,7 @@ const AppLayout: FC = () => {
             {/* Keep sprite images from being unloaded */}
             <img src="/img/character_sprite.webp" alt="sprite" className={'hidden'} />
             <img src="/img/poster_sprite.webp" alt="sprite" className={'hidden'} />
+            <img src="/img/accessory_sprite.webp" alt="sprite" className={'hidden'} />
 
             <div className={'row-span-1'}>
                 <Sidebar />

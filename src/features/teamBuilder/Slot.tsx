@@ -250,10 +250,6 @@ const Slot: FC<{
 
             {/* Character card display, can drop from tab and focus */}
             <div
-                // className={'md:h-16 md:w-16 h-14 w-14 rounded-xl bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] md:p-1 p-[3px] relative ' +
-                //     `${currentSlotFocusedItem === 'character' ? 'ring-2 ring-red-500 ' : ' '}` +
-                //     `${canDropCharacter ? 'ring-4 ring-orange-300 ' : ' '}`
-                // }
                 className={clsx(currentSlotFocusedItem === 'character' && 'ring-2 ring-red-500', canDropCharacter && 'ring-4 ring-orange-300 rounded-xl')}
                 onClick={() => handleFocus('character')}
                 ref={characterDrop}
@@ -263,10 +259,6 @@ const Slot: FC<{
 
             {/* Poster display, can drop from tab and focus */}
             <div
-                // className={'md:h-16 md:w-16 h-14 w-14 rounded-full bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] p-1 ' +
-                //     `${currentSlotFocusedItem === 'poster' ? ' ring-2 ring-red-500 ' : ' '}` +
-                //     `${canDropPoster && 'ring-4 ring-orange-300 '}`
-                // }
                 className={clsx(currentSlotFocusedItem === 'poster' && ' ring-2 ring-red-500', canDropPoster && 'ring-4 ring-orange-300 rounded-full')}
                 onClick={() => handleFocus('poster')}
                 ref={posterDrop}
