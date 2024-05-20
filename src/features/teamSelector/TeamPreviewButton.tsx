@@ -11,7 +11,7 @@ const TeamPreviewButton: FC = () => {
             <Button onClick={handleOpen}>
                 Preview All Teams
             </Button>
-            <Dialog open={isOpen} handler={handleOpen} size={'sm'}>
+            <Dialog open={isOpen} handler={handleOpen} className={'md'}>
                 <DialogHeader>Its a simple dialog.</DialogHeader>
                 <DialogBody>
                     <div className={'flex-col overflow-auto h-[40em]'}>
