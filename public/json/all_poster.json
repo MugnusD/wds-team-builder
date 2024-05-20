@@ -78,7 +78,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21001001,
@@ -260,7 +260,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21002001,
@@ -482,7 +482,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21003001,
@@ -688,7 +688,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21004001,
@@ -902,7 +902,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21005001,
@@ -1084,7 +1084,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21006001,
@@ -1282,7 +1282,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21007001,
@@ -1504,7 +1504,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21008001,
@@ -1718,7 +1718,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21009001,
@@ -1884,7 +1884,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21010001,
@@ -2074,7 +2074,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21011001,
@@ -2256,7 +2256,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21012001,
@@ -2446,7 +2446,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21013001,
@@ -2692,7 +2692,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21014001,
@@ -2882,7 +2882,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21015001,
@@ -3072,7 +3072,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21016001,
@@ -3270,7 +3270,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21017001,
@@ -3476,7 +3476,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21018001,
@@ -3690,7 +3690,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21019001,
@@ -3880,7 +3880,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21020001,
@@ -4070,7 +4070,7 @@
     ],
     "event": "无",
     "gacha": "リリース記念ガチャ",
-    "type": "Normal",
+    "type": "StoryReward",
     "stories": [
       {
         "id": 21021001,
@@ -7670,7 +7670,7 @@
     ],
     "event": "god is no /w/ here",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -7760,7 +7760,7 @@
     ],
     "event": "エレクトリック・サマー・バカンス",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -7850,7 +7850,7 @@
     ],
     "event": "隠し味はひとさじのユーモア",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -7940,7 +7940,7 @@
     ],
     "event": "泡沫烟花",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8028,7 +8028,7 @@
     ],
     "event": "脚光が照らすこれから",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8116,7 +8116,7 @@
     ],
     "event": "歌川高校体育祭！　～応援団長の一日～",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8204,7 +8204,7 @@
     ],
     "event": "FAIR IS FOUL, AND FOUL IS FAIR",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8294,7 +8294,7 @@
     ],
     "event": "北天のアルビレオ",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8384,7 +8384,7 @@
     ],
     "event": "シリウスは日々是好日で",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8472,7 +8472,7 @@
     ],
     "event": "マジカルガール☆ハロウィン",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8560,7 +8560,7 @@
     ],
     "event": "ギムレットにお別れを",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8652,7 +8652,7 @@
     ],
     "event": "人には言えないアタシの叫び",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8740,7 +8740,7 @@
     ],
     "event": "bet on faith？",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8828,7 +8828,7 @@
     ],
     "event": "メモワールに約束を",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -8916,7 +8916,7 @@
     ],
     "event": "泡雪でありますように",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9004,7 +9004,7 @@
     ],
     "event": "星明かりのおくりもの",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9092,7 +9092,7 @@
     ],
     "event": "新年はあなたの手を取って",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9180,7 +9180,7 @@
     ],
     "event": "秒針の安息",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9268,7 +9268,7 @@
     ],
     "event": "14光年はなれた隣で",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9356,7 +9356,7 @@
     ],
     "event": "Valentine Cocktail Hour",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9444,7 +9444,7 @@
     ],
     "event": "トロイメライと悪魔",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9532,7 +9532,7 @@
     ],
     "event": "7番目のエトワールをさがして",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9620,7 +9620,7 @@
     ],
     "event": "#指先がつむぐ暗黒",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9710,7 +9710,7 @@
     ],
     "event": "アツアツまごころ料理道！",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9798,7 +9798,7 @@
     ],
     "event": "Bloom Time-Lapse",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9886,7 +9886,95 @@
     ],
     "event": "星雲の窓辺",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
+    "stories": []
+  },
+  {
+    "id": 220460,
+    "name": "Fashi∞nable！",
+    "rarity": "SR",
+    "pronounceName": "Fashi∞nable",
+    "appearanceCharacterBases": [
+      "阿岐留カミラ"
+    ],
+    "appearanceCharacterBasesChinese": [
+      "阿岐留卡米拉"
+    ],
+    "displayStartAt": "2024-05-20T08:00:00.000Z",
+    "abilities": [
+      {
+        "name": "Fashi∞nable！",
+        "description": "彩属性のアクターの演技力が13.6~40％上昇",
+        "descriptionChinese": "彩属性のアクターの演技力が13.6~40％上昇",
+        "effectDetails": [
+          [
+            13.6,
+            16,
+            18.4,
+            20.8,
+            23.2,
+            25.6,
+            28,
+            30.4,
+            32.8,
+            35.2,
+            37.6,
+            40
+          ]
+        ],
+        "type": "Leader",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "演技力アップ",
+        "description": "自身の演技力が6~17％上昇　◆発動条件：<color=#7AC940>彩属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升6~17%　◆发动条件：由<color=#7AC940>彩属性</color>的演员装备",
+        "effectDetails": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "スコアブースト・表現力",
+        "description": "センス発動直後、自身の表現力の2.4~6.8倍のスコアを獲得　◆発動条件：<color=#7AC940>彩属性</color>のアクターが装備",
+        "descriptionChinese": "Sense发动后，获得自身表现力2.4~6.8倍的分数　◆发动条件：由<color=#7AC940>彩属性</color>的演员装备",
+        "effectDetails": [
+          [
+            2.4,
+            2.8,
+            3.2,
+            3.6,
+            4,
+            4.4,
+            4.8,
+            5.2,
+            5.6,
+            6,
+            6.4,
+            6.8
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 7
+      }
+    ],
+    "event": "Fashi∞nable！",
+    "gacha": "无",
+    "type": "EventExchange",
     "stories": []
   },
   {
@@ -9976,7 +10064,7 @@
     ],
     "event": "サイレント・リフレクション",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "stories": []
   },
   {

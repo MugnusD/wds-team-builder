@@ -20,22 +20,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4330,
-          "expression": 5300,
-          "concentration": 4927
+          "vocal": 4490,
+          "expression": 5497,
+          "concentration": 5110
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -139,7 +143,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110011,
@@ -172,22 +176,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5625,
-          "expression": 4940,
-          "concentration": 4256
+          "vocal": 5833,
+          "expression": 5124,
+          "concentration": 4414
         }
       }
     ],
     "characterBase": "静香",
     "starAct": {
-      "description": "総演技力の0.8~1.3倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力0.8~1.3倍的分数",
+      "descriptions": [
+        "総演技力の0.8~1.3倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力0.8~1.3倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -290,7 +298,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110021,
@@ -323,22 +331,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5151,
-          "expression": 4852,
-          "concentration": 4554
+          "vocal": 5342,
+          "expression": 5032,
+          "concentration": 4723
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -442,7 +454,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110031,
@@ -475,22 +487,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4628,
-          "expression": 4927,
-          "concentration": 5002
+          "vocal": 4800,
+          "expression": 5110,
+          "concentration": 5187
         }
       }
     ],
     "characterBase": "新妻八恵",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -594,7 +610,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110041,
@@ -627,22 +643,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4703,
-          "expression": 4927,
-          "concentration": 4927
+          "vocal": 4878,
+          "expression": 5110,
+          "concentration": 5110
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -746,7 +766,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110051,
@@ -779,22 +799,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4927,
-          "expression": 4628,
-          "concentration": 5002
+          "vocal": 5110,
+          "expression": 4800,
+          "concentration": 5187
         }
       }
     ],
     "characterBase": "流石知冴",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -898,7 +922,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110061,
@@ -931,22 +955,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4554,
-          "expression": 4404,
-          "concentration": 5599
+          "vocal": 4723,
+          "expression": 4568,
+          "concentration": 5807
         }
       }
     ],
     "characterBase": "連尺野初魅",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -1050,7 +1078,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110071,
@@ -1083,22 +1111,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4778,
-          "expression": 6047,
-          "concentration": 3732
+          "vocal": 4955,
+          "expression": 6271,
+          "concentration": 3871
         }
       }
     ],
     "characterBase": "烏森大黒",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -1202,7 +1234,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110081,
@@ -1235,22 +1267,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4031,
-          "expression": 5076,
-          "concentration": 5449
+          "vocal": 4181,
+          "expression": 5265,
+          "concentration": 5652
         }
       }
     ],
     "characterBase": "舎人仁花子",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -1354,7 +1390,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110091,
@@ -1387,22 +1423,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5002,
-          "expression": 5002,
-          "concentration": 4554
+          "vocal": 5187,
+          "expression": 5187,
+          "concentration": 4723
         }
       }
     ],
     "characterBase": "萬容",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -1506,7 +1546,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110101,
@@ -1539,22 +1579,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4927,
-          "expression": 4330,
-          "concentration": 5300
+          "vocal": 5110,
+          "expression": 4490,
+          "concentration": 5497
         }
       }
     ],
     "characterBase": "筆島しぐれ",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -1658,7 +1702,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110111,
@@ -1691,22 +1735,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4255,
-          "expression": 5300,
-          "concentration": 5002
+          "vocal": 4413,
+          "expression": 5497,
+          "concentration": 5187
         }
       }
     ],
     "characterBase": "千寿暦",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -1810,7 +1858,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110121,
@@ -1843,22 +1891,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5225,
-          "expression": 4255,
-          "concentration": 5076
+          "vocal": 5420,
+          "expression": 4413,
+          "concentration": 5265
         }
       }
     ],
     "characterBase": "ラモーナ・ウォルフ",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -1962,7 +2014,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110131,
@@ -1995,22 +2047,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5823,
-          "expression": 4852,
-          "concentration": 3882
+          "vocal": 6039,
+          "expression": 5032,
+          "concentration": 4026
         }
       }
     ],
     "characterBase": "王雪",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -2114,7 +2170,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110141,
@@ -2147,22 +2203,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4180,
-          "expression": 4852,
-          "concentration": 5524
+          "vocal": 4336,
+          "expression": 5032,
+          "concentration": 5729
         }
       }
     ],
     "characterBase": "リリヤ・クルトベイ",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -2266,7 +2326,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110151,
@@ -2299,22 +2359,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5375,
-          "expression": 4404,
-          "concentration": 4778
+          "vocal": 5574,
+          "expression": 4568,
+          "concentration": 4955
         }
       }
     ],
     "characterBase": "与那国緋花里",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -2418,7 +2482,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110161,
@@ -2451,22 +2515,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7031,
-          "expression": 6271,
-          "concentration": 5225
+          "vocal": 7292,
+          "expression": 6504,
+          "concentration": 5420
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の1.6~3.1倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.6~3.1倍的分数",
+      "descriptions": [
+        "総演技力の1.6~3.1倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.6~3.1倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -2566,7 +2634,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110171,
@@ -2599,22 +2667,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4778,
-          "expression": 4703,
-          "concentration": 5076
+          "vocal": 4955,
+          "expression": 4878,
+          "concentration": 5265
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -2718,7 +2790,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110181,
@@ -2751,22 +2823,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4180,
-          "expression": 5076,
-          "concentration": 5300
+          "vocal": 4336,
+          "expression": 5265,
+          "concentration": 5497
         }
       }
     ],
     "characterBase": "阿岐留カミラ",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -2870,7 +2946,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110191,
@@ -2903,22 +2979,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4927,
-          "expression": 5599,
-          "concentration": 4031
+          "vocal": 5110,
+          "expression": 5807,
+          "concentration": 4181
         }
       }
     ],
     "characterBase": "猫足蕾",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -3022,7 +3102,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110201,
@@ -3055,22 +3135,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5449,
-          "expression": 3583,
-          "concentration": 5524
+          "vocal": 5652,
+          "expression": 3716,
+          "concentration": 5729
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の1.2~2.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.2~2.2倍的分数",
+      "descriptions": [
+        "総演技力の1.2~2.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.2~2.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -3174,7 +3258,7 @@
     "displayStartAt": "2022-12-31T15:00:00.000Z",
     "event": "无",
     "gacha": "无",
-    "type": "None",
+    "type": "Init",
     "episodes": [
       {
         "id": 110211,
@@ -3207,22 +3291,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5619,
-          "expression": 6478,
-          "concentration": 6634
+          "vocal": 5828,
+          "expression": 6718,
+          "concentration": 6880
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -3363,22 +3451,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7207,
-          "expression": 6647,
-          "concentration": 5365
+          "vocal": 7475,
+          "expression": 6893,
+          "concentration": 5565
         }
       }
     ],
     "characterBase": "静香",
     "starAct": {
-      "description": "総演技力の1.4~1.9倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力1.4~1.9倍的分数",
+      "descriptions": [
+        "総演技力の1.4~1.9倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力1.4~1.9倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -3514,22 +3606,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7102,
-          "expression": 6087,
-          "concentration": 5541
+          "vocal": 7366,
+          "expression": 6313,
+          "concentration": 5747
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -3668,22 +3764,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5775,
-          "expression": 6009,
-          "concentration": 6946
+          "vocal": 5990,
+          "expression": 6233,
+          "concentration": 7204
         }
       }
     ],
     "characterBase": "新妻八恵",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -3820,22 +3920,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6634,
-          "expression": 6165,
-          "concentration": 5931
+          "vocal": 6880,
+          "expression": 6394,
+          "concentration": 6152
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -3974,22 +4078,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6009,
-          "expression": 6478,
-          "concentration": 6244
+          "vocal": 6233,
+          "expression": 6718,
+          "concentration": 6475
         }
       }
     ],
     "characterBase": "流石知冴",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -4130,22 +4238,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6009,
-          "expression": 6009,
-          "concentration": 6712
+          "vocal": 6233,
+          "expression": 6233,
+          "concentration": 6961
         }
       }
     ],
     "characterBase": "連尺野初魅",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -4286,22 +4398,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5931,
-          "expression": 7180,
-          "concentration": 5619
+          "vocal": 6152,
+          "expression": 7447,
+          "concentration": 5828
         }
       }
     ],
     "characterBase": "烏森大黒",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -4442,22 +4558,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5931,
-          "expression": 6322,
-          "concentration": 6478
+          "vocal": 6152,
+          "expression": 6556,
+          "concentration": 6718
         }
       }
     ],
     "characterBase": "舎人仁花子",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -4596,22 +4716,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6946,
-          "expression": 6244,
-          "concentration": 5541
+          "vocal": 7204,
+          "expression": 6475,
+          "concentration": 5747
         }
       }
     ],
     "characterBase": "萬容",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -4750,22 +4874,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5931,
-          "expression": 5931,
-          "concentration": 6868
+          "vocal": 6152,
+          "expression": 6152,
+          "concentration": 7123
         }
       }
     ],
     "characterBase": "筆島しぐれ",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -4902,22 +5030,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5697,
-          "expression": 6946,
-          "concentration": 6087
+          "vocal": 5909,
+          "expression": 7204,
+          "concentration": 6313
         }
       }
     ],
     "characterBase": "千寿暦",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -5058,22 +5190,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6712,
-          "expression": 5853,
-          "concentration": 6165
+          "vocal": 6961,
+          "expression": 6071,
+          "concentration": 6394
         }
       }
     ],
     "characterBase": "ラモーナ・ウォルフ",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -5212,22 +5348,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6868,
-          "expression": 6478,
-          "concentration": 5385
+          "vocal": 7123,
+          "expression": 6718,
+          "concentration": 5585
         }
       }
     ],
     "characterBase": "王雪",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -5368,22 +5508,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5307,
-          "expression": 5931,
-          "concentration": 7492
+          "vocal": 5504,
+          "expression": 6152,
+          "concentration": 7771
         }
       }
     ],
     "characterBase": "リリヤ・クルトベイ",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -5520,22 +5664,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7336,
-          "expression": 5619,
-          "concentration": 5775
+          "vocal": 7609,
+          "expression": 5828,
+          "concentration": 5990
         }
       }
     ],
     "characterBase": "与那国緋花里",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -5676,22 +5824,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9121,
-          "expression": 9121,
-          "concentration": 7818
+          "vocal": 9460,
+          "expression": 9460,
+          "concentration": 8108
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の3~4.5倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力3~4.5倍的分数",
+      "descriptions": [
+        "総演技力の3~4.5倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力3~4.5倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -5824,22 +5976,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5931,
-          "expression": 5775,
-          "concentration": 7024
+          "vocal": 6152,
+          "expression": 5990,
+          "concentration": 7285
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -5980,22 +6136,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6087,
-          "expression": 6322,
-          "concentration": 6322
+          "vocal": 6313,
+          "expression": 6556,
+          "concentration": 6556
         }
       }
     ],
     "characterBase": "阿岐留カミラ",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -6134,22 +6294,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6400,
-          "expression": 7258,
-          "concentration": 5073
+          "vocal": 6637,
+          "expression": 7528,
+          "concentration": 5261
         }
       }
     ],
     "characterBase": "猫足蕾",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -6286,22 +6450,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6478,
-          "expression": 5151,
-          "concentration": 7102
+          "vocal": 6718,
+          "expression": 5342,
+          "concentration": 7366
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の2.2~3.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力2.2~3.2倍的分数",
+      "descriptions": [
+        "総演技力の2.2~3.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力2.2~3.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -6438,22 +6606,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7499,
-          "expression": 8558,
-          "concentration": 9087
+          "vocal": 7778,
+          "expression": 8876,
+          "concentration": 9425
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -6596,22 +6768,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9276,
-          "expression": 8548,
-          "concentration": 8094
+          "vocal": 9620,
+          "expression": 8866,
+          "concentration": 8394
         }
       }
     ],
     "characterBase": "静香",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -6749,22 +6925,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8911,
-          "expression": 8470,
-          "concentration": 7764
+          "vocal": 9242,
+          "expression": 8784,
+          "concentration": 8052
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -6905,22 +7085,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7852,
-          "expression": 8117,
-          "concentration": 9176
+          "vocal": 8144,
+          "expression": 8418,
+          "concentration": 9516
         }
       }
     ],
     "characterBase": "新妻八恵",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -7059,22 +7243,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8381,
-          "expression": 8558,
-          "concentration": 8205
+          "vocal": 8693,
+          "expression": 8876,
+          "concentration": 8510
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -7217,22 +7405,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8117,
-          "expression": 8646,
-          "concentration": 8381
+          "vocal": 8418,
+          "expression": 8967,
+          "concentration": 8693
         }
       }
     ],
     "characterBase": "流石知冴",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -7373,22 +7565,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7852,
-          "expression": 7764,
-          "concentration": 9528
+          "vocal": 8144,
+          "expression": 8052,
+          "concentration": 9882
         }
       }
     ],
     "characterBase": "連尺野初魅",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -7531,22 +7727,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8646,
-          "expression": 9264,
-          "concentration": 7234
+          "vocal": 8967,
+          "expression": 9608,
+          "concentration": 7503
         }
       }
     ],
     "characterBase": "烏森大黒",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -7689,22 +7889,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7676,
-          "expression": 8999,
-          "concentration": 8470
+          "vocal": 7961,
+          "expression": 9333,
+          "concentration": 8784
         }
       }
     ],
     "characterBase": "舎人仁花子",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -7845,22 +8049,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8734,
-          "expression": 8646,
-          "concentration": 7764
+          "vocal": 9059,
+          "expression": 8967,
+          "concentration": 8052
         }
       }
     ],
     "characterBase": "萬容",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -7999,22 +8207,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8470,
-          "expression": 7764,
-          "concentration": 8911
+          "vocal": 8784,
+          "expression": 8052,
+          "concentration": 9242
         }
       }
     ],
     "characterBase": "筆島しぐれ",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -8153,22 +8365,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7499,
-          "expression": 8823,
-          "concentration": 8823
+          "vocal": 7778,
+          "expression": 9150,
+          "concentration": 9150
         }
       }
     ],
     "characterBase": "千寿暦",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -8311,22 +8527,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8823,
-          "expression": 7676,
-          "concentration": 8646
+          "vocal": 9150,
+          "expression": 7961,
+          "concentration": 8967
         }
       }
     ],
     "characterBase": "ラモーナ・ウォルフ",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -8465,22 +8685,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9176,
-          "expression": 8911,
-          "concentration": 7058
+          "vocal": 9516,
+          "expression": 9242,
+          "concentration": 7320
         }
       }
     ],
     "characterBase": "王雪",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -8623,22 +8847,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7940,
-          "expression": 7852,
-          "concentration": 9352
+          "vocal": 8235,
+          "expression": 8144,
+          "concentration": 9699
         }
       }
     ],
     "characterBase": "リリヤ・クルトベイ",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -8777,22 +9005,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9176,
-          "expression": 7940,
-          "concentration": 8029
+          "vocal": 9516,
+          "expression": 8235,
+          "concentration": 8327
         }
       }
     ],
     "characterBase": "与那国緋花里",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -8933,22 +9165,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11809,
-          "expression": 12045,
-          "concentration": 9801
+          "vocal": 12247,
+          "expression": 12492,
+          "concentration": 10165
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の6~9倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力6~9倍的分数",
+      "descriptions": [
+        "総演技力の6~9倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力6~9倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -9083,22 +9319,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8646,
-          "expression": 7676,
-          "concentration": 8823
+          "vocal": 8967,
+          "expression": 7961,
+          "concentration": 9150
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -9241,22 +9481,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7764,
-          "expression": 8734,
-          "concentration": 8646
+          "vocal": 8052,
+          "expression": 9059,
+          "concentration": 8967
         }
       }
     ],
     "characterBase": "阿岐留カミラ",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -9399,22 +9643,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8293,
-          "expression": 9176,
-          "concentration": 7676
+          "vocal": 8601,
+          "expression": 9516,
+          "concentration": 7961
         }
       }
     ],
     "characterBase": "猫足蕾",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -9555,22 +9803,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8734,
-          "expression": 7411,
-          "concentration": 8999
+          "vocal": 9059,
+          "expression": 7686,
+          "concentration": 9333
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の4.7~7.2倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4.7~7.2倍的分数",
+      "descriptions": [
+        "総演技力の4.7~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4.7~7.2倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -9709,22 +9961,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8611,
-          "expression": 7866,
-          "concentration": 7120
+          "vocal": 8931,
+          "expression": 8158,
+          "concentration": 7385
         }
       }
     ],
     "characterBase": "萬容",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -9830,7 +10086,7 @@
     "displayStartAt": "2023-07-31T08:00:00.000Z",
     "event": "god is no /w/ here",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130221,
@@ -9863,22 +10119,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10616,
-          "expression": 10616,
-          "concentration": 9329
+          "vocal": 11010,
+          "expression": 11010,
+          "concentration": 9675
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の5~7.5倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力5~7.5倍的分数",
+      "descriptions": [
+        "総演技力の5~7.5倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力5~7.5倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -9980,7 +10240,7 @@
     "displayStartAt": "2023-08-10T08:00:00.000Z",
     "event": "エレクトリック・サマー・バカンス",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130231,
@@ -10013,22 +10273,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7534,
-          "expression": 7866,
-          "concentration": 8197
+          "vocal": 7814,
+          "expression": 8158,
+          "concentration": 8501
         }
       }
     ],
     "characterBase": "流石知冴",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -10132,7 +10396,7 @@
     "displayStartAt": "2023-08-20T08:00:00.000Z",
     "event": "隠し味はひとさじのユーモア",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130241,
@@ -10165,22 +10429,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8362,
-          "expression": 7452,
-          "concentration": 7783
+          "vocal": 8673,
+          "expression": 7728,
+          "concentration": 8072
         }
       }
     ],
     "characterBase": "ラモーナ・ウォルフ",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -10284,7 +10552,7 @@
     "displayStartAt": "2023-08-31T08:00:00.000Z",
     "event": "泡沫烟花",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130251,
@@ -10317,22 +10585,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8362,
-          "expression": 8445,
-          "concentration": 6789
+          "vocal": 8673,
+          "expression": 8759,
+          "concentration": 7041
         }
       }
     ],
     "characterBase": "猫足蕾",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -10438,7 +10710,7 @@
     "displayStartAt": "2023-09-10T08:00:00.000Z",
     "event": "脚光が照らすこれから",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130261,
@@ -10471,22 +10743,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7286,
-          "expression": 8362,
-          "concentration": 7948
+          "vocal": 7557,
+          "expression": 8673,
+          "concentration": 8244
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -10588,7 +10864,7 @@
     "displayStartAt": "2023-09-20T08:00:00.000Z",
     "event": "歌川高校体育祭！　～応援団長の一日～",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130271,
@@ -10621,22 +10897,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10401,
-          "expression": 12546,
-          "concentration": 7828
+          "vocal": 10787,
+          "expression": 13012,
+          "concentration": 8118
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の5~7.5倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力5~7.5倍的分数",
+      "descriptions": [
+        "総演技力の5~7.5倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力5~7.5倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -10738,7 +11018,7 @@
     "displayStartAt": "2023-09-30T08:00:00.000Z",
     "event": "FAIR IS FOUL, AND FOUL IS FAIR",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130281,
@@ -10771,22 +11051,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7286,
-          "expression": 8197,
-          "concentration": 8114
+          "vocal": 7557,
+          "expression": 8501,
+          "concentration": 8415
         }
       }
     ],
     "characterBase": "阿岐留カミラ",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -10888,7 +11172,7 @@
     "displayStartAt": "2023-10-10T08:00:00.000Z",
     "event": "北天のアルビレオ",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130291,
@@ -10921,22 +11205,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8280,
-          "expression": 7783,
-          "concentration": 7534
+          "vocal": 8587,
+          "expression": 8072,
+          "concentration": 7814
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -11038,7 +11326,7 @@
     "displayStartAt": "2023-10-31T08:00:00.000Z",
     "event": "シリウスは日々是好日で",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130301,
@@ -11071,22 +11359,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8197,
-          "expression": 6955,
-          "concentration": 8445
+          "vocal": 8501,
+          "expression": 7213,
+          "concentration": 8759
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -11190,7 +11482,7 @@
     "displayStartAt": "2023-10-20T08:00:00.000Z",
     "event": "マジカルガール☆ハロウィン",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130311,
@@ -11223,22 +11515,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8611,
-          "expression": 7452,
-          "concentration": 7534
+          "vocal": 8931,
+          "expression": 7728,
+          "concentration": 7814
         }
       }
     ],
     "characterBase": "与那国緋花里",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -11340,7 +11636,7 @@
     "displayStartAt": "2023-11-20T08:00:00.000Z",
     "event": "ギムレットにお別れを",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130321,
@@ -11373,22 +11669,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7369,
-          "expression": 7617,
-          "concentration": 8611
+          "vocal": 7642,
+          "expression": 7900,
+          "concentration": 8931
         }
       }
     ],
     "characterBase": "新妻八恵",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -11494,7 +11794,7 @@
     "displayStartAt": "2023-11-10T08:00:00.000Z",
     "event": "人には言えないアタシの叫び",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130331,
@@ -11527,22 +11827,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7617,
-          "expression": 7617,
-          "concentration": 8362
+          "vocal": 7900,
+          "expression": 7900,
+          "concentration": 8673
         }
       }
     ],
     "characterBase": "連尺野初魅",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -11648,7 +11952,7 @@
     "displayStartAt": "2023-11-30T08:00:00.000Z",
     "event": "bet on faith？",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130341,
@@ -11681,22 +11985,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8197,
-          "expression": 7866,
-          "concentration": 7534
+          "vocal": 8501,
+          "expression": 8158,
+          "concentration": 7814
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -11802,7 +12110,7 @@
     "displayStartAt": "2024-01-31T08:00:00.000Z",
     "event": "メモワールに約束を",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130351,
@@ -11835,22 +12143,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8114,
-          "expression": 7203,
-          "concentration": 8280
+          "vocal": 8415,
+          "expression": 7471,
+          "concentration": 8587
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -11952,7 +12264,7 @@
     "displayStartAt": "2023-12-10T08:00:00.000Z",
     "event": "泡雪でありますように",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130361,
@@ -11985,22 +12297,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7038,
-          "expression": 9853,
-          "concentration": 6706
+          "vocal": 7299,
+          "expression": 10219,
+          "concentration": 6955
         }
       }
     ],
     "characterBase": "千寿暦",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -12102,7 +12418,7 @@
     "displayStartAt": "2023-12-20T08:00:00.000Z",
     "event": "星明かりのおくりもの",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130371,
@@ -12135,22 +12451,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9913,
-          "expression": 8367,
-          "concentration": 7639
+          "vocal": 10281,
+          "expression": 8677,
+          "concentration": 7923
         }
       }
     ],
     "characterBase": "静香",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -12254,7 +12574,7 @@
     "displayStartAt": "2023-12-31T06:00:00.000Z",
     "event": "新年はあなたの手を取って",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130381,
@@ -12287,22 +12607,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7700,
-          "expression": 8942,
-          "concentration": 6955
+          "vocal": 7986,
+          "expression": 9274,
+          "concentration": 7213
         }
       }
     ],
     "characterBase": "烏森大黒",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -12406,7 +12730,7 @@
     "displayStartAt": "2024-01-10T08:00:00.000Z",
     "event": "秒針の安息",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130391,
@@ -12439,22 +12763,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7617,
-          "expression": 7948,
-          "concentration": 8031
+          "vocal": 7900,
+          "expression": 8244,
+          "concentration": 8329
         }
       }
     ],
     "characterBase": "新妻八恵",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -12558,7 +12886,7 @@
     "displayStartAt": "2024-01-20T08:00:00.000Z",
     "event": "14光年はなれた隣で",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130401,
@@ -12591,22 +12919,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7534,
-          "expression": 7534,
-          "concentration": 8528
+          "vocal": 7814,
+          "expression": 7814,
+          "concentration": 8845
         }
       }
     ],
     "characterBase": "筆島しぐれ",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -12708,7 +13040,7 @@
     "displayStartAt": "2024-02-09T08:00:00.000Z",
     "event": "Valentine Cocktail Hour",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130421,
@@ -12741,22 +13073,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6127,
-          "expression": 7369,
-          "concentration": 10350
+          "vocal": 6354,
+          "expression": 7642,
+          "concentration": 10734
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -12860,7 +13196,7 @@
     "displayStartAt": "2024-03-31T08:00:00.000Z",
     "event": "トロイメライと悪魔",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130431,
@@ -12893,22 +13229,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7866,
-          "expression": 9522,
-          "concentration": 6210
+          "vocal": 8158,
+          "expression": 9875,
+          "concentration": 6440
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -13010,7 +13350,7 @@
     "displayStartAt": "2024-03-21T08:00:00.000Z",
     "event": "7番目のエトワールをさがして",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130451,
@@ -13043,22 +13383,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7534,
-          "expression": 7948,
-          "concentration": 8114
+          "vocal": 7814,
+          "expression": 8244,
+          "concentration": 8415
         }
       }
     ],
     "characterBase": "舎人仁花子",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -13164,7 +13508,7 @@
     "displayStartAt": "2024-02-29T08:00:00.000Z",
     "event": "#指先がつむぐ暗黒",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130461,
@@ -13197,22 +13541,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8611,
-          "expression": 8362,
-          "concentration": 6624
+          "vocal": 8931,
+          "expression": 8673,
+          "concentration": 6870
         }
       }
     ],
     "characterBase": "王雪",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -13316,7 +13664,7 @@
     "displayStartAt": "2024-04-20T08:00:00.000Z",
     "event": "アツアツまごころ料理道！",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130471,
@@ -13349,22 +13697,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7120,
-          "expression": 7700,
-          "concentration": 8445
+          "vocal": 7385,
+          "expression": 7986,
+          "concentration": 8759
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -13466,7 +13818,7 @@
     "displayStartAt": "2024-04-10T08:00:00.000Z",
     "event": "Bloom Time-Lapse",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130481,
@@ -13499,22 +13851,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7120,
-          "expression": 7866,
-          "concentration": 8611
+          "vocal": 7385,
+          "expression": 8158,
+          "concentration": 8931
         }
       }
     ],
     "characterBase": "リリヤ・クルトベイ",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -13620,7 +13976,7 @@
     "displayStartAt": "2024-04-30T08:00:00.000Z",
     "event": "星雲の窓辺",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130491,
@@ -13628,6 +13984,163 @@
       },
       {
         "id": 130492,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
+    "id": 130510,
+    "name": "3分だけだからね！",
+    "rarity": "Rare3",
+    "attribute": "Colorful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 20,
+          "expression": 23,
+          "concentration": 23
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 8017,
+          "expression": 9243,
+          "concentration": 9149
+        }
+      }
+    ],
+    "characterBase": "静香",
+    "starAct": {
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 2,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "ここな編成時、ここなが代わりにセンスを発動し、ここなのスコア獲得量14~22％UP"
+      ],
+      "descriptionsChinese": [
+        "队伍中有凤心菜编成时，凤心菜代替发动Sense，同时使凤心菜的分数获得量提高14~22%"
+      ],
+      "type": "Alternative",
+      "lightCount": 0,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 0,
+        "bloom": 0
+      },
+      "effectTypes": [
+        "SenseScoreUp",
+        "SenseAlternative"
+      ]
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力4％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升4%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力4％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升4%"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力4％UP",
+          "スターアクト発動に必要な特殊の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升4%",
+          "Star Act发动所需要的特殊系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力4％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升4%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力8％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升8%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-05-20T08:00:00.000Z",
+    "event": "Fashi∞nable！",
+    "gacha": "无",
+    "type": "EventExchange",
+    "episodes": [
+      {
+        "id": 130511,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 130512,
         "episodeOrder": "Second"
       }
     ]
@@ -13653,22 +14166,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8942,
-          "expression": 6375,
-          "concentration": 8197
+          "vocal": 9274,
+          "expression": 6612,
+          "concentration": 8501
         }
       }
     ],
     "characterBase": "流石知冴",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -13774,7 +14291,7 @@
     "displayStartAt": "2024-05-10T08:00:00.000Z",
     "event": "サイレント・リフレクション",
     "gacha": "无",
-    "type": "None",
+    "type": "EventExchange",
     "episodes": [
       {
         "id": 130521,
@@ -13807,22 +14324,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7948,
-          "expression": 6624,
-          "concentration": 9025
+          "vocal": 8244,
+          "expression": 6870,
+          "concentration": 9360
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -13957,22 +14478,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8611,
-          "expression": 7452,
-          "concentration": 7534
+          "vocal": 8931,
+          "expression": 7728,
+          "concentration": 7814
         }
       }
     ],
     "characterBase": "与那国緋花里",
     "starAct": {
-      "description": "総演技力の4~6倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力4~6倍的分数",
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -14109,22 +14634,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10642,
-          "expression": 11687,
-          "concentration": 11877
+          "vocal": 11037,
+          "expression": 12121,
+          "concentration": 12318
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -14270,22 +14799,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11497,
-          "expression": 10927,
-          "concentration": 11782
+          "vocal": 11924,
+          "expression": 11332,
+          "concentration": 12219
         }
       }
     ],
     "characterBase": "新妻八恵",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -14424,22 +14957,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11212,
-          "expression": 11497,
-          "concentration": 11497
+          "vocal": 11628,
+          "expression": 11924,
+          "concentration": 11924
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -14582,22 +15119,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10832,
-          "expression": 11307,
-          "concentration": 12067
+          "vocal": 11234,
+          "expression": 11726,
+          "concentration": 12515
         }
       }
     ],
     "characterBase": "流石知冴",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -14738,22 +15279,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11022,
-          "expression": 11497,
-          "concentration": 11687
+          "vocal": 11431,
+          "expression": 11924,
+          "concentration": 12121
         }
       }
     ],
     "characterBase": "舎人仁花子",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -14896,22 +15441,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11782,
-          "expression": 11687,
-          "concentration": 10737
+          "vocal": 12219,
+          "expression": 12121,
+          "concentration": 11135
         }
       }
     ],
     "characterBase": "萬容",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -15050,22 +15599,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11117,
-          "expression": 11307,
-          "concentration": 11782
+          "vocal": 11529,
+          "expression": 11726,
+          "concentration": 12219
         }
       }
     ],
     "characterBase": "筆島しぐれ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -15206,22 +15759,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10642,
-          "expression": 11972,
-          "concentration": 11592
+          "vocal": 11037,
+          "expression": 12416,
+          "concentration": 12022
         }
       }
     ],
     "characterBase": "千寿暦",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -15364,22 +15921,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11687,
-          "expression": 10546,
-          "concentration": 11972
+          "vocal": 12121,
+          "expression": 10938,
+          "concentration": 12416
         }
       }
     ],
     "characterBase": "ラモーナ・ウォルフ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -15518,22 +16079,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10927,
-          "expression": 10832,
-          "concentration": 12447
+          "vocal": 11332,
+          "expression": 11234,
+          "concentration": 12909
         }
       }
     ],
     "characterBase": "リリヤ・クルトベイ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -15674,22 +16239,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 16063,
-          "expression": 16195,
-          "concentration": 15141
+          "vocal": 16659,
+          "expression": 16796,
+          "concentration": 15704
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -15828,22 +16397,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11307,
-          "expression": 11212,
-          "concentration": 11687
+          "vocal": 11726,
+          "expression": 11628,
+          "concentration": 12121
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -15986,22 +16559,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11687,
-          "expression": 10071,
-          "concentration": 12447
+          "vocal": 12121,
+          "expression": 10445,
+          "concentration": 12909
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -16140,22 +16717,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11782,
-          "expression": 11402,
-          "concentration": 11022
+          "vocal": 12219,
+          "expression": 11825,
+          "concentration": 11431
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -16298,22 +16879,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11687,
-          "expression": 12352,
-          "concentration": 10166
+          "vocal": 12121,
+          "expression": 12810,
+          "concentration": 10544
         }
       }
     ],
     "characterBase": "烏森大黒",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -16452,22 +17037,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11497,
-          "expression": 10546,
-          "concentration": 12162
+          "vocal": 11924,
+          "expression": 10938,
+          "concentration": 12613
         }
       }
     ],
     "characterBase": "連尺野初魅",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -16610,22 +17199,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11497,
-          "expression": 12352,
-          "concentration": 10356
+          "vocal": 11924,
+          "expression": 12810,
+          "concentration": 10741
         }
       }
     ],
     "characterBase": "猫足蕾",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -16764,22 +17357,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10737,
-          "expression": 11782,
-          "concentration": 11687
+          "vocal": 11135,
+          "expression": 12219,
+          "concentration": 12121
         }
       }
     ],
     "characterBase": "阿岐留カミラ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -16924,22 +17521,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13112,
-          "expression": 9026,
-          "concentration": 11972
+          "vocal": 13599,
+          "expression": 9361,
+          "concentration": 12416
         }
       }
     ],
     "characterBase": "新妻八恵",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -17080,22 +17681,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12782,
-          "expression": 11890,
-          "concentration": 10999
+          "vocal": 13257,
+          "expression": 12332,
+          "concentration": 11407
         }
       }
     ],
     "characterBase": "静香",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -17237,22 +17842,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12257,
-          "expression": 11972,
-          "concentration": 9976
+          "vocal": 12712,
+          "expression": 12416,
+          "concentration": 10347
         }
       }
     ],
     "characterBase": "王雪",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -17395,22 +18004,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10546,
-          "expression": 13587,
-          "concentration": 9881
+          "vocal": 10938,
+          "expression": 14092,
+          "concentration": 10248
         }
       }
     ],
     "characterBase": "リリヤ・クルトベイ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -17549,22 +18162,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9406,
-          "expression": 10642,
-          "concentration": 14157
+          "vocal": 9756,
+          "expression": 11037,
+          "concentration": 14683
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -17707,22 +18324,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 20276,
-          "expression": 12903,
-          "concentration": 14483
+          "vocal": 21029,
+          "expression": 13382,
+          "concentration": 15021
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -17861,22 +18482,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10642,
-          "expression": 14347,
-          "concentration": 9311
+          "vocal": 11037,
+          "expression": 14880,
+          "concentration": 9657
         }
       }
     ],
     "characterBase": "舎人仁花子",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -18017,22 +18642,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9786,
-          "expression": 11782,
-          "concentration": 12352
+          "vocal": 10150,
+          "expression": 12219,
+          "concentration": 12810
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -18171,22 +18800,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10451,
-          "expression": 14157,
-          "concentration": 9596
+          "vocal": 10840,
+          "expression": 14683,
+          "concentration": 9953
         }
       }
     ],
     "characterBase": "千寿暦",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -18329,22 +18962,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8741,
-          "expression": 10737,
-          "concentration": 15107
+          "vocal": 9066,
+          "expression": 11135,
+          "concentration": 15668
         }
       }
     ],
     "characterBase": "連尺野初魅",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -18483,22 +19120,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9216,
-          "expression": 11592,
-          "concentration": 13397
+          "vocal": 9558,
+          "expression": 12022,
+          "concentration": 13894
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -18637,22 +19278,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12257,
-          "expression": 10927,
-          "concentration": 11022
+          "vocal": 12712,
+          "expression": 11332,
+          "concentration": 11431
         }
       }
     ],
     "characterBase": "与那国緋花里",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -18797,22 +19442,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 18718,
-          "expression": 9216,
-          "concentration": 7221
+          "vocal": 19413,
+          "expression": 9558,
+          "concentration": 7489
         }
       }
     ],
     "characterBase": "王雪",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -18951,22 +19600,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7886,
-          "expression": 17293,
-          "concentration": 9216
+          "vocal": 8179,
+          "expression": 17935,
+          "concentration": 9558
         }
       }
     ],
     "characterBase": "千寿暦",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -19109,22 +19762,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9026,
-          "expression": 11402,
-          "concentration": 13967
+          "vocal": 9361,
+          "expression": 11825,
+          "concentration": 14486
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -19263,22 +19920,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11497,
-          "expression": 13207,
-          "concentration": 9406
+          "vocal": 11924,
+          "expression": 13697,
+          "concentration": 9756
         }
       }
     ],
     "characterBase": "流石知冴",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -19421,22 +20082,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13298,
-          "expression": 16721,
-          "concentration": 16985
+          "vocal": 13792,
+          "expression": 17342,
+          "concentration": 17615
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -19575,22 +20240,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9406,
-          "expression": 12637,
-          "concentration": 11877
+          "vocal": 9756,
+          "expression": 13106,
+          "concentration": 12318
         }
       }
     ],
     "characterBase": "猫足蕾",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -19731,22 +20400,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9596,
-          "expression": 10642,
-          "concentration": 13967
+          "vocal": 9953,
+          "expression": 11037,
+          "concentration": 14486
         }
       }
     ],
     "characterBase": "ラモーナ・ウォルフ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -19889,22 +20562,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 14537,
-          "expression": 9406,
-          "concentration": 10356
+          "vocal": 15077,
+          "expression": 9756,
+          "concentration": 10741
         }
       }
     ],
     "characterBase": "王雪",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -20043,22 +20720,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9311,
-          "expression": 9976,
-          "concentration": 15202
+          "vocal": 9657,
+          "expression": 10347,
+          "concentration": 15767
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -20197,22 +20878,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10832,
-          "expression": 13017,
-          "concentration": 10071
+          "vocal": 11234,
+          "expression": 13500,
+          "concentration": 10445
         }
       }
     ],
     "characterBase": "筆島しぐれ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -20351,22 +21036,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11877,
-          "expression": 11972,
-          "concentration": 10356
+          "vocal": 12318,
+          "expression": 12416,
+          "concentration": 10741
         }
       }
     ],
     "characterBase": "萬容",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -20511,22 +21200,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11307,
-          "expression": 15392,
-          "concentration": 8076
+          "vocal": 11726,
+          "expression": 15964,
+          "concentration": 8376
         }
       }
     ],
     "characterBase": "烏森大黒",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -20665,22 +21358,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12584,
-          "expression": 11791,
-          "concentration": 11296
+          "vocal": 13051,
+          "expression": 12229,
+          "concentration": 11715
         }
       }
     ],
     "characterBase": "静香",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -20822,22 +21519,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8456,
-          "expression": 11592,
-          "concentration": 14537
+          "vocal": 8770,
+          "expression": 12022,
+          "concentration": 15077
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -20983,22 +21684,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12732,
-          "expression": 12637,
-          "concentration": 8741
+          "vocal": 13205,
+          "expression": 13106,
+          "concentration": 9066
         }
       }
     ],
     "characterBase": "与那国緋花里",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -21137,22 +21842,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11212,
-          "expression": 11497,
-          "concentration": 11497
+          "vocal": 11628,
+          "expression": 11924,
+          "concentration": 11924
         }
       }
     ],
     "characterBase": "阿岐留カミラ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -21291,22 +22000,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10261,
-          "expression": 11022,
-          "concentration": 12922
+          "vocal": 10642,
+          "expression": 11431,
+          "concentration": 13402
         }
       }
     ],
     "characterBase": "リリヤ・クルトベイ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -21449,22 +22162,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11972,
-          "expression": 11592,
-          "concentration": 10642
+          "vocal": 12416,
+          "expression": 12022,
+          "concentration": 11037
         }
       }
     ],
     "characterBase": "王雪",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -21605,22 +22322,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 14822,
-          "expression": 9026,
-          "concentration": 10546
+          "vocal": 15373,
+          "expression": 9361,
+          "concentration": 10938
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -21763,22 +22484,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 14727,
-          "expression": 8361,
-          "concentration": 11497
+          "vocal": 15274,
+          "expression": 8672,
+          "concentration": 11924
         }
       }
     ],
     "characterBase": "ラモーナ・ウォルフ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -21921,22 +22646,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8361,
-          "expression": 15297,
-          "concentration": 9786
+          "vocal": 8672,
+          "expression": 15865,
+          "concentration": 10150
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -22079,22 +22808,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 24226,
-          "expression": 13166,
-          "concentration": 10533
+          "vocal": 25126,
+          "expression": 13655,
+          "concentration": 10924
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -22233,22 +22966,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13112,
-          "expression": 8931,
-          "concentration": 12162
+          "vocal": 13599,
+          "expression": 9263,
+          "concentration": 12613
         }
       }
     ],
     "characterBase": "筆島しぐれ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -22391,22 +23128,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8551,
-          "expression": 11782,
-          "concentration": 14157
+          "vocal": 8869,
+          "expression": 12219,
+          "concentration": 14683
         }
       }
     ],
     "characterBase": "舎人仁花子",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -22545,22 +23286,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9026,
-          "expression": 11687,
-          "concentration": 13587
+          "vocal": 9361,
+          "expression": 12121,
+          "concentration": 14092
         }
       }
     ],
     "characterBase": "流石知冴",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -22699,22 +23444,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11497,
-          "expression": 14157,
-          "concentration": 8741
+          "vocal": 11924,
+          "expression": 14683,
+          "concentration": 9066
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -22855,22 +23604,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11022,
-          "expression": 12922,
-          "concentration": 9976
+          "vocal": 11431,
+          "expression": 13402,
+          "concentration": 10347
         }
       }
     ],
     "characterBase": "連尺野初魅",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -23011,22 +23764,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 14062,
-          "expression": 9406,
-          "concentration": 10737
+          "vocal": 14584,
+          "expression": 9756,
+          "concentration": 11135
         }
       }
     ],
     "characterBase": "萬容",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -23169,22 +23926,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9121,
-          "expression": 12257,
-          "concentration": 12637
+          "vocal": 9460,
+          "expression": 12712,
+          "concentration": 13106
         }
       }
     ],
     "characterBase": "猫足蕾",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -23329,22 +24090,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 16063,
-          "expression": 19355,
-          "concentration": 12245
+          "vocal": 16659,
+          "expression": 20073,
+          "concentration": 12699
         }
       }
     ],
     "characterBase": "千寿いろは",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -23483,22 +24248,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8931,
-          "expression": 11212,
-          "concentration": 14252
+          "vocal": 9263,
+          "expression": 11628,
+          "concentration": 14781
         }
       }
     ],
     "characterBase": "新妻八恵",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -23641,22 +24410,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12637,
-          "expression": 9406,
-          "concentration": 11877
+          "vocal": 13106,
+          "expression": 9756,
+          "concentration": 12318
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -23795,22 +24568,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11687,
-          "expression": 14727,
-          "concentration": 8266
+          "vocal": 12121,
+          "expression": 15274,
+          "concentration": 8573
         }
       }
     ],
     "characterBase": "烏森大黒",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -23955,22 +24732,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9311,
-          "expression": 10737,
-          "concentration": 14252
+          "vocal": 9657,
+          "expression": 11135,
+          "concentration": 14781
         }
       }
     ],
     "characterBase": "筆島しぐれ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -24109,22 +24890,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11307,
-          "expression": 13397,
-          "concentration": 9406
+          "vocal": 11726,
+          "expression": 13894,
+          "concentration": 9756
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -24267,22 +25052,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 14727,
-          "expression": 9026,
-          "concentration": 10642
+          "vocal": 15274,
+          "expression": 9361,
+          "concentration": 11037
         }
       }
     ],
     "characterBase": "与那国緋花里",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -24425,22 +25214,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11117,
-          "expression": 13587,
-          "concentration": 9406
+          "vocal": 11529,
+          "expression": 14092,
+          "concentration": 9756
         }
       }
     ],
     "characterBase": "鳳ここな",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -24585,22 +25378,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9596,
-          "expression": 11307,
-          "concentration": 13112
+          "vocal": 9953,
+          "expression": 11726,
+          "concentration": 13599
         }
       }
     ],
     "characterBase": "柳場ぱんだ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -24743,22 +25540,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8646,
-          "expression": 12257,
-          "concentration": 13397
+          "vocal": 8967,
+          "expression": 12712,
+          "concentration": 13894
         }
       }
     ],
     "characterBase": "千寿暦",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -24903,22 +25704,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11972,
-          "expression": 13017,
-          "concentration": 9121
+          "vocal": 12416,
+          "expression": 13500,
+          "concentration": 9460
         }
       }
     ],
     "characterBase": "ラモーナ・ウォルフ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -25041,6 +25846,324 @@
     ]
   },
   {
+    "id": 140780,
+    "name": "LIVE YOUR STYLE",
+    "rarity": "Rare4",
+    "attribute": "Colorful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 27,
+          "expression": 36,
+          "concentration": 22
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 11234,
+          "expression": 14880,
+          "concentration": 9460
+        }
+      }
+    ],
+    "characterBase": "阿岐留カミラ",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 4,
+          "bloom": 3
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "2.5~4.9倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力2.5~4.9倍的分数"
+      ],
+      "type": "Support",
+      "lightCount": 2,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 50,
+        "bloom": 45
+      },
+      "effectTypes": []
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な支援の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的支援系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "基礎スコアが5％上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "基础分数提升5%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-05-20T08:00:00.000Z",
+    "event": "Fashi∞nable！",
+    "gacha": "Fashi∞nable！ガチャ",
+    "type": "Normal",
+    "episodes": [
+      {
+        "id": 140781,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140782,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
+    "id": 140790,
+    "name": "私だけの美学",
+    "rarity": "Rare4",
+    "attribute": "Colorful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 31,
+          "expression": 23,
+          "concentration": 31
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 13008,
+          "expression": 9558,
+          "concentration": 12712
+        }
+      }
+    ],
+    "characterBase": "リリヤ・クルトベイ",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 4,
+          "bloom": 3
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "1.8~4.2倍のスコアを獲得",
+        "100のプリンシパルゲージを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力1.8~4.2倍的分数",
+        "获得100点Principal Gauge"
+      ],
+      "type": "Control",
+      "lightCount": 2,
+      "acquirableGauge": 100,
+      "coolTime": {
+        "origin": 50,
+        "bloom": 45
+      },
+      "effectTypes": []
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な支配の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的支配系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "初期プリンシパルゲージが50上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "初始Principal Gauge上升50"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-05-20T08:00:00.000Z",
+    "event": "Fashi∞nable！",
+    "gacha": "Fashi∞nable！ガチャ",
+    "type": "Normal",
+    "episodes": [
+      {
+        "id": 140791,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140792,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
     "id": 140800,
     "name": "オートマタのテアトルにて",
     "rarity": "Rare4",
@@ -25061,22 +26184,28 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 15259,
-          "expression": 9611,
-          "concentration": 10999
+          "vocal": 15826,
+          "expression": 9968,
+          "concentration": 11407
         }
       }
     ],
     "characterBase": "静香",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得／ストックされている支援系の光1個につき総演技力の[:param11]倍のスコアを獲得(最大5個)",
-      "descriptionChinese": "総演技力の9.7~14.7倍のスコアを獲得／ストックされている支援系の光1個につき総演技力の[:param11]倍のスコアを獲得(最大5個)",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得",
+        "ストックされている支援系の光1個につき総演技力の3.5~6倍のスコアを獲得(最大5個)"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数",
+        "当前每储存1个支援系的光，获得总演技力3.5~6倍的分数（最多计入5个）"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -25218,22 +26347,28 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11972,
-          "expression": 13682,
-          "concentration": 8646
+          "vocal": 12416,
+          "expression": 14190,
+          "concentration": 8967
         }
       }
     ],
     "characterBase": "カトリナ・グリーベル",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得／ストックされている増幅系の光1個につき総演技力の[:param11]倍のスコアを獲得(最大5個)",
-      "descriptionChinese": "総演技力の9.7~14.7倍のスコアを獲得／ストックされている増幅系の光1個につき総演技力の[:param11]倍のスコアを獲得(最大5個)",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得",
+        "ストックされている増幅系の光1個につき総演技力の3.5~6倍のスコアを獲得(最大5個)"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数",
+        "当前每储存1个增幅系的光，获得总演技力3.5~6倍的分数（最多计入5个）"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -25372,22 +26507,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10546,
-          "expression": 11687,
-          "concentration": 11972
+          "vocal": 10938,
+          "expression": 12121,
+          "concentration": 12416
         }
       }
     ],
     "characterBase": "阿岐留カミラ",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -25530,22 +26669,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11022,
-          "expression": 10832,
-          "concentration": 12352
+          "vocal": 11431,
+          "expression": 11234,
+          "concentration": 12810
         }
       }
     ],
     "characterBase": "白丸美兎",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -25688,22 +26831,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8456,
-          "expression": 11117,
-          "concentration": 15107
+          "vocal": 8770,
+          "expression": 11529,
+          "concentration": 15668
         }
       }
     ],
     "characterBase": "リリヤ・クルトベイ",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力11.4~17.4倍的分数",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -25842,22 +26989,26 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13967,
-          "expression": 8171,
-          "concentration": 12447
+          "vocal": 14486,
+          "expression": 8474,
+          "concentration": 12909
         }
       }
     ],
     "characterBase": "本巣叶羽",
     "starAct": {
-      "description": "総演技力の9.7~14.7倍のスコアを獲得",
-      "descriptionChinese": "获得总演技力9.7~14.7倍的分数",
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -26002,22 +27153,28 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7886,
-          "expression": 18623,
-          "concentration": 8646
+          "vocal": 8179,
+          "expression": 19315,
+          "concentration": 8967
         }
       }
     ],
     "characterBase": "烏森大黒",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得／付与されているライフガード1回につきスコア獲得量10％上昇（最大＋100％）",
-      "descriptionChinese": "総演技力の11.4~17.4倍のスコアを獲得／付与されているライフガード1回につきスコア獲得量10％上昇（最大＋100％）",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得",
+        "付与されているライフガード1回につきスコア獲得量10％上昇（最大＋100％）"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数",
+        "付与されているライフガード1回につきスコア獲得量10％上昇（最大＋100％）"
+      ],
       "conditions": [
         {
           "type": "Alternative",
@@ -26160,22 +27317,28 @@
       },
       {
         "preset": {
-          "level": 135,
+          "level": 140,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7886,
-          "expression": 16438,
-          "concentration": 9691
+          "vocal": 8179,
+          "expression": 17048,
+          "concentration": 10051
         }
       }
     ],
     "characterBase": "連尺野初魅",
     "starAct": {
-      "description": "総演技力の11.4~17.4倍のスコアを獲得／付与されているライフガード1回につきスコア獲得量10％上昇（最大＋100％）",
-      "descriptionChinese": "総演技力の11.4~17.4倍のスコアを獲得／付与されているライフガード1回につきスコア獲得量10％上昇（最大＋100％）",
+      "descriptions": [
+        "総演技力の11.4~17.4倍のスコアを獲得",
+        "付与されているライフガード1回につきスコア獲得量10％上昇（最大＋100％）"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力11.4~17.4倍的分数",
+        "付与されているライフガード1回につきスコア獲得量10％上昇（最大＋100％）"
+      ],
       "conditions": [
         {
           "type": "Alternative",
