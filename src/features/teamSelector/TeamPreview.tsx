@@ -23,7 +23,7 @@ const TeamPreview: FC<{
     }
 
     const slotsRenderPropsArray = slots.map(slot => {
-        const {character: {characterId}, posterId, accessoryId, isLeader} = slot;
+        const {character: {characterId}, posterId, accessoryId} = slot;
 
         let characterRenderDetail: IconRenderDetails;
         const characterDetail = characters.find(character => character.id === characterId);
