@@ -13,13 +13,101 @@ type Slot = {
     isLeader: boolean,
 }
 
-type State = {
+type TeamState = {
     slots: Slot[],
+    title: string,
+}
+
+export type TeamIndex = 'team1' | 'team2' | 'team3' | 'team4' | 'team5' | 'team6';
+
+type TeamRecordState = Record<TeamIndex, TeamState>
+
+export type TeamSliceState = {
+    teams: TeamRecordState,
+    currentTeamIndex: TeamIndex,
     focusedItem: {
         slotIndex: SlotIndex,
         itemType: GameItemType
-    } | null;
+    } | null,
 }
+
+const slotsInitialState: Slot[] = [
+    {
+        character: {
+            characterId: 110010,
+            characterBase: '鳳ここな',
+        },
+        posterId: 0,
+        accessoryId: 0,
+        isLeader: true,
+    },
+    {
+        character: {
+            characterId: 110020,
+            characterBase: '静香',
+        },
+        posterId: 0,
+        accessoryId: 0,
+        isLeader: false,
+    },
+    {
+        character: {
+            characterId: 110030,
+            characterBase: 'カトリナ・グリーベル',
+        },
+        posterId: 0,
+        accessoryId: 0,
+        isLeader: false,
+    },
+    {
+        character: {
+            characterId: 110040,
+            characterBase: '新妻八恵',
+        },
+        posterId: 0,
+        accessoryId: 0,
+        isLeader: false,
+    },
+    {
+        character: {
+            characterId: 110050,
+            characterBase: '柳場ぱんだ',
+        },
+        posterId: 0,
+        accessoryId: 0,
+        isLeader: false,
+    }];
+
+const initialState: TeamSliceState = {
+    teams: {
+        'team1': {
+            title: 'Team 1',
+            slots: slotsInitialState,
+        },
+        'team2': {
+            title: 'Team 2',
+            slots: slotsInitialState,
+        },
+        'team3': {
+            title: 'Team 3',
+            slots: slotsInitialState,
+        },
+        'team4': {
+            title: 'Team 4',
+            slots: slotsInitialState,
+        },
+        'team5': {
+            title: 'Team 5',
+            slots: slotsInitialState,
+        },
+        'team6': {
+            title: 'Team 6',
+            slots: slotsInitialState,
+        },
+    },
+    currentTeamIndex: 'team1',
+    focusedItem: null,
+};
 
 export type SwapPayload =
     | {
@@ -32,70 +120,25 @@ export type SwapPayload =
     type: 'character'
 }
 
-const initialState: State = {
-    slots: [
-        {
-            character: {
-                characterId: 110010,
-                characterBase: '鳳ここな',
-            },
-            posterId: 0,
-            accessoryId: 0,
-            isLeader: true,
-        },
-        {
-            character: {
-                characterId: 110020,
-                characterBase: '静香',
-            },
-            posterId: 0,
-            accessoryId: 0,
-            isLeader: false,
-        },
-        {
-            character: {
-                characterId: 110030,
-                characterBase: 'カトリナ・グリーベル',
-            },
-            posterId: 0,
-            accessoryId: 0,
-            isLeader: false,
-        },
-        {
-            character: {
-                characterId: 110040,
-                characterBase: '新妻八恵',
-            },
-            posterId: 0,
-            accessoryId: 0,
-            isLeader: false,
-        },
-        {
-            character: {
-                characterId: 110050,
-                characterBase: '柳場ぱんだ',
-            },
-            posterId: 0,
-            accessoryId: 0,
-            isLeader: false,
-        }],
-    focusedItem: null,
-};
-
 const teamSlice = createSlice({
     name: 'team',
     initialState,
     reducers: {
         setAsLeader: (state, action: { payload: SlotIndex }) => {
-            state.slots.forEach(item => item.isLeader = false);
-            state.slots[action.payload].isLeader = true;
+            const currentTeam = state.currentTeamIndex;
+            state.teams[currentTeam].slots.forEach(item => item.isLeader = false);
+            state.teams[currentTeam].slots[action.payload].isLeader = true;
+        },
+        setTeamIndex: (state, action: {payload: TeamIndex}) => {
+            state.currentTeamIndex = action.payload;
         },
         swapSlot: (state, action: { payload: { from: SlotIndex, to: SlotIndex } }) => {
             const {from, to} = action.payload;
 
-            const temp = state.slots.at(from);
-            state.slots[from] = state.slots.at(to) as Slot;
-            state.slots[to] = temp as Slot;
+            const currentTeam = state.currentTeamIndex;
+            const temp = state.teams[currentTeam].slots.at(from);
+            state.teams[currentTeam].slots[from] = state.teams[currentTeam].slots.at(to) as Slot;
+            state.teams[currentTeam].slots[to] = temp as Slot;
         },
         setFocusedItem: (state, action: { payload: { slotIndex: SlotIndex, itemType: GameItemType } }) => {
             const {slotIndex, itemType} = action.payload;
@@ -119,7 +162,9 @@ const teamSlice = createSlice({
             if (type === 'character') {
                 characterBase = action.payload.characterBase;
             }
-            const {focusedItem, slots} = state;
+            const currentTeam = state.currentTeamIndex;
+            const focusedItem = state.focusedItem;
+            const slots = state.teams[currentTeam].slots;
 
             if (focusedItem && focusedItem.itemType === type) {
                 const focusSlot = slots.at(focusedItem.slotIndex) as Slot;
@@ -131,16 +176,16 @@ const teamSlice = createSlice({
 
                         // If same character is already in team, first replace the card of same character
                         if (sameCharIndex > -1) {
-                            state.slots[sameCharIndex].character.characterId = id;
+                            slots[sameCharIndex].character.characterId = id;
                         }
 
                         // then swap slots.
                         // OR if the card is already in another slot, also swap slots (without replacing card)
                         if (sameCardIndex > -1 || sameCharIndex > -1) {
                             const index = sameCardIndex > -1 ? sameCardIndex : sameCharIndex;
-                            const temp = state.slots.at(index);
-                            state.slots[index] = state.slots.at(focusedItem.slotIndex) as Slot;
-                            state.slots[focusedItem.slotIndex] = temp as Slot;
+                            const temp = slots.at(index);
+                            slots[index] = slots.at(focusedItem.slotIndex) as Slot;
+                            slots[focusedItem.slotIndex] = temp as Slot;
                             return;
                         }
 
@@ -159,7 +204,7 @@ const teamSlice = createSlice({
 
                         // swap between slots
                         if (index > -1) {
-                            state.slots[index].posterId = focusSlot.posterId;
+                            slots[index].posterId = focusSlot.posterId;
                             focusSlot.posterId = id;
                             return;
                         }
@@ -177,14 +222,19 @@ const teamSlice = createSlice({
         },
     },
     selectors: {
-        selectSlots: sliceState => sliceState.slots,
+        selectSlots: sliceState => {
+            const currentTeam = sliceState.currentTeamIndex;
+            return sliceState.teams[currentTeam].slots;
+        },
         selectFocusedItem: sliceState => sliceState.focusedItem,
+        selectTeams: sliceState => sliceState.teams,
     },
 });
 
 export const teamReducer = teamSlice.reducer;
 export const {
                  setAsLeader,
+                 setTeamIndex,
                  swapSlot,
                  setFocusedItem,
                  resetFocusItem,
@@ -193,6 +243,7 @@ export const {
 export const {
                  selectSlots,
                  selectFocusedItem,
+                 selectTeams,
              } = teamSlice.selectors;
 
 // Return slot message
@@ -221,4 +272,10 @@ export const selectTeamedAccessoryIds = createSelector(
     [selectSlots],
     (slots) => slots.map(slot => slot.accessoryId),
 );
+
+export const selectTeamByIndex = createSelector(
+    [selectTeams, (_, index: TeamIndex) => index],
+    (teams, index) => teams[index],
+)
+
 

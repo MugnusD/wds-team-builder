@@ -7,6 +7,7 @@ import useCharacterIconPosition from "../hooks/useCharacterIconPosition.ts";
 import usePosterIconPosition from "../hooks/usePosterIconPosition.ts";
 import useAccessoryIconPosition from "../hooks/useAccessoryIconPosition.ts";
 import {GiDiamondRing} from "react-icons/gi";
+import {Spinner} from "@material-tailwind/react";
 
 export type IconRenderDetails = {
     type: 'character',
@@ -24,13 +25,47 @@ export type IconRenderDetails = {
 type IconProps = {
     id: number,
     detail: IconRenderDetails,
+    size?: 'small' | 'normal' | 'big',
 }
 
 const GameItemIcon: FC<IconProps> = (props) => {
-    const {id, detail} = props;
-    const {characterIconPosition} = useCharacterIconPosition();
-    const {posterIconPosition} = usePosterIconPosition();
-    const {accessoryIconPosition} = useAccessoryIconPosition();
+    const {id, detail, size = 'normal'} = props;
+
+    const {characterIconPosition, isLoading: isLoadingCharacter} = useCharacterIconPosition();
+    const {posterIconPosition, isLoading: isLoadingPoster} = usePosterIconPosition();
+    const {accessoryIconPosition, isLoading: isLoadingAccessory} = useAccessoryIconPosition();
+
+    if (isLoadingAccessory || isLoadingCharacter|| isLoadingPoster || !characterIconPosition || !posterIconPosition || !accessoryIconPosition) {
+        return (
+            <div className={'h-16 w-16 flex justify-center items-center'}>
+                <Spinner />
+            </div>
+        );
+    }
+
+    let containerSize: string;
+    let ratio: number;
+    let translate: string;
+    switch (size) {
+        case 'normal': {
+            containerSize = 'h-16 w-16';
+            ratio = 56 / 188;
+            translate = 'translate(-223px, -223px)';
+            break;
+        }
+        case 'small': {
+            containerSize = 'h-12 w-12';
+            ratio = 40 / 188;
+            translate = 'translate(-348px, -348px)';
+            break;
+        }
+        case 'big': {
+            containerSize = 'h-24 w-24';
+            ratio = 88 / 188;
+            translate = 'translate(-106px, -106px)';
+            break;
+        }
+    }
 
     if (detail.type === 'character') {
         const {attribute, sense, rarity} = detail;
@@ -45,13 +80,12 @@ const GameItemIcon: FC<IconProps> = (props) => {
             fullId = id.toString() + '_0';
         }
 
-        const position = characterIconPosition ? `-${characterIconPosition[fullId].x}px -${characterIconPosition[fullId].y}px` : '';
-        const ratio = 56 / 188;
+        const position = (characterIconPosition[fullId]) ? `-${characterIconPosition[fullId].x }px -${characterIconPosition[fullId].y}px` : '';
 
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('h-16 w-16 relative p-1 rounded-xl',
+                className={clsx('relative p-1 rounded-xl', containerSize,
                     rarity === 'Rare4' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'Rare3' && 'bg-yellow-500',
                     (rarity === 'Rare2' || rarity === 'Rare1') && 'bg-gray-600',
@@ -72,7 +106,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
                         width: '188px',
                         height: '188px',
                         backgroundPosition: position,
-                        transform: `scale(${ratio}) translate(-223px, -223px)`,
+                        transform: `scale(${ratio}) ${translate}`,
                     }}
                 ></div>
 
@@ -89,12 +123,11 @@ const GameItemIcon: FC<IconProps> = (props) => {
     if (detail.type === 'poster') {
         const {rarity} = detail;
         const position = posterIconPosition ? `-${posterIconPosition[id.toString()]?.x ?? '0'}px -${posterIconPosition[id.toString()]?.y ?? '0'}px` : '';
-        const ratio = 56 / 188;
 
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('h-16 w-16 relative p-1 rounded-full',
+                className={clsx('relative p-1 rounded-full', containerSize,
                     rarity === 'SSR' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'SR' && 'bg-yellow-500',
                     rarity === 'R' && 'bg-gray-600',
@@ -114,7 +147,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
                             width: '188px',
                             height: '188px',
                             backgroundPosition: position,
-                            transform: `scale(${ratio}) translate(-223px, -223px)`,
+                            transform: `scale(${ratio}) ${translate}`,
                             borderRadius: '50%',
                         }}
                     ></div>
@@ -135,12 +168,11 @@ const GameItemIcon: FC<IconProps> = (props) => {
     if (detail.type === 'accessory') {
         const {rarity} = detail;
         const position = accessoryIconPosition ? `-${accessoryIconPosition[id.toString()]?.x ?? '0'}px -${accessoryIconPosition[id.toString()]?.y ?? '0'}px` : '';
-        const ratio = 56 / 188;
 
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('h-16 w-16 relative p-1 rounded-full',
+                className={clsx('relative p-1 rounded-full', containerSize,
                     rarity === 'SSR' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'SR' && 'bg-yellow-500',
                     rarity === 'R' && 'bg-gray-600',
@@ -160,7 +192,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
                             width: '188px',
                             height: '188px',
                             backgroundPosition: position,
-                            transform: `scale(${ratio}) translate(-223px, -223px)`,
+                            transform: `scale(${ratio}) ${translate}`,
                             borderRadius: '50%',
                         }}
                     ></div>

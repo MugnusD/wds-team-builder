@@ -6,7 +6,7 @@ import {teamReducer} from "./features/teamBuilder/teamSlice.ts";
 import {selectedGameItemReducer} from "./features/tabs/selectTabsSlice.ts";
 
 const persistConfig = {
-    key: 'root',
+    key: 'root-v1',
     storage: storage,
     whitelist: ['team'],
 };
