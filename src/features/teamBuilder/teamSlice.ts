@@ -3,7 +3,7 @@ import {GameItemType} from "../tabs/selectTabsSlice.ts";
 
 export type SlotIndex = 0 | 1 | 2 | 3 | 4;
 
-type Slot = {
+export type SlotType = {
     character: {
         characterId: number,
         characterBase: string,
@@ -14,7 +14,7 @@ type Slot = {
 }
 
 type TeamState = {
-    slots: Slot[],
+    slots: SlotType[],
     title: string,
 }
 
@@ -31,7 +31,7 @@ export type TeamSliceState = {
     } | null,
 }
 
-const slotsInitialState: Slot[] = [
+const slotsInitialState: SlotType[] = [
     {
         character: {
             characterId: 110010,
@@ -141,8 +141,8 @@ const teamSlice = createSlice({
 
             const currentTeam = state.currentTeamIndex;
             const temp = state.teams[currentTeam].slots.at(from);
-            state.teams[currentTeam].slots[from] = state.teams[currentTeam].slots.at(to) as Slot;
-            state.teams[currentTeam].slots[to] = temp as Slot;
+            state.teams[currentTeam].slots[from] = state.teams[currentTeam].slots.at(to) as SlotType;
+            state.teams[currentTeam].slots[to] = temp as SlotType;
         },
         setFocusedItem: (state, action: { payload: { slotIndex: SlotIndex, itemType: GameItemType } }) => {
             const {slotIndex, itemType} = action.payload;
@@ -171,7 +171,7 @@ const teamSlice = createSlice({
             const slots = state.teams[currentTeam].slots;
 
             if (focusedItem && focusedItem.itemType === type) {
-                const focusSlot = slots.at(focusedItem.slotIndex) as Slot;
+                const focusSlot = slots.at(focusedItem.slotIndex) as SlotType;
 
                 switch (type) {
                     case "character": {
@@ -188,8 +188,8 @@ const teamSlice = createSlice({
                         if (sameCardIndex > -1 || sameCharIndex > -1) {
                             const index = sameCardIndex > -1 ? sameCardIndex : sameCharIndex;
                             const temp = slots.at(index);
-                            slots[index] = slots.at(focusedItem.slotIndex) as Slot;
-                            slots[focusedItem.slotIndex] = temp as Slot;
+                            slots[index] = slots.at(focusedItem.slotIndex) as SlotType;
+                            slots[focusedItem.slotIndex] = temp as SlotType;
                             return;
                         }
 
@@ -231,6 +231,10 @@ const teamSlice = createSlice({
         resetTeamSlot: (state, action: { payload: TeamIndex }) => {
             state.teams[action.payload].slots = slotsInitialState;
         },
+        setSlots: (state, action: {payload: {slots: SlotType[], index: TeamIndex}}) => {
+            const {slots, index} = action.payload;
+            state.teams[index].slots = slots;
+        },
     },
     selectors: {
         selectSlots: sliceState => {
@@ -253,6 +257,7 @@ export const {
                  setTitleWithIndex,
                  copyTeam,
                  resetTeamSlot,
+                 setSlots,
              } = teamSlice.actions;
 export const {
                  selectSlots,
@@ -263,7 +268,7 @@ export const {
 // Return slot message
 export const selectSlotByIndex = createSelector(
     [selectSlots, (_, index: SlotIndex) => index],
-    (slots, index) => slots.at(index) as Slot,
+    (slots, index) => slots.at(index) as SlotType,
 );
 
 // Return leader index

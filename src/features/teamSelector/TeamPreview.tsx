@@ -2,12 +2,29 @@ import {ChangeEventHandler, FC, FocusEventHandler, useState} from 'react';
 import useCharacters from "../../hooks/useCharacters.ts";
 import usePosters from "../../hooks/usePosters.ts";
 import useAccessories from "../../hooks/useAccessories.ts";
-import {resetTeamSlot, selectTeamByIndex, setTitleWithIndex, TeamIndex} from "../teamBuilder/teamSlice.ts";
+import {
+    resetTeamSlot,
+    selectTeamByIndex,
+    setSlots,
+    setTitleWithIndex,
+    SlotType,
+    TeamIndex,
+} from "../teamBuilder/teamSlice.ts";
 import {useDispatch, useSelector} from "react-redux";
 import TeamCharacterPreview from "./TeamCharacterPreview.tsx";
-import {Button, Dialog, DialogBody, DialogFooter, DialogHeader, Input, Spinner} from "@material-tailwind/react";
+import {
+    Button,
+    Dialog,
+    DialogBody,
+    DialogFooter,
+    DialogHeader,
+    Input,
+    Spinner,
+} from "@material-tailwind/react";
 import {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
 import useCopiedTeamContext from "./useCopiedTeamContext.ts";
+import {compressSlots} from "../../utils";
+import {decompressSlots} from "../../utils/string/decompressSlots.ts";
 
 const TeamPreview: FC<{
     teamIndex: TeamIndex,
@@ -24,6 +41,10 @@ const TeamPreview: FC<{
     const dispatch = useDispatch();
 
     const [isOpenDialog, setIsOpenDialog] = useState(false);
+    const [isDisableCopyCode, setIsDisableCopyCode] = useState(false);
+    const [isDisablePasteCode, setIsDisablePasteCode] = useState(false);
+    const [isOpenPasteWrongDialog, setIsOpenPasteWrongDialog] = useState(false);
+    const [isPasteCodeSuccess, setIsPasteCodeSuccess] = useState(false);
 
     if (isLoadingAccessory || isLoadingCharacter || isLoadingPoster || !characters || !posters || !accessories) {
         return <Spinner />;
@@ -130,6 +151,37 @@ const TeamPreview: FC<{
         }
     };
 
+    const handleCopyCode = () => {
+        setIsDisableCopyCode(true);
+        const copyCode = compressSlots(slots);
+        navigator.clipboard.writeText(copyCode).then(() => {
+            setTimeout(() => {
+                setIsDisableCopyCode(false);
+            }, 1000);
+        });
+    };
+
+    const handlePasteCode = () => {
+        setIsDisablePasteCode(true);
+        let pasteSlots: SlotType[];
+        navigator.clipboard.readText()
+            .then(text => {
+                pasteSlots = decompressSlots(text);
+                dispatch(setSlots({index: teamIndex, slots: pasteSlots}));
+            })
+            .then(() => {
+                setIsPasteCodeSuccess(true);
+                setTimeout(() => {
+                    setIsPasteCodeSuccess(false);
+                    setIsDisablePasteCode(false);
+                }, 1000);
+            })
+            .catch(() => {
+                setIsOpenPasteWrongDialog(true);
+                setIsDisablePasteCode(false);
+            });
+    };
+
     // Reset Dialog
     const handleOpen = () => setIsOpenDialog(open => !open);
 
@@ -144,11 +196,11 @@ const TeamPreview: FC<{
                     label={'Team Title'}
                 />
             </div>
-            <div className={'flex gap-3'} key={teamIndex}>
+            <div className={'flex gap-1.5'} key={teamIndex}>
                 {slotsRenderPropsArray.map(slotsRenderProps => (
                     <TeamCharacterPreview {...slotsRenderProps} key={slotsRenderProps.characterId} />
                 ))}
-                <div className={'flex flex-col justify-between w-24'}>
+                <div className={'flex flex-col flex-wrap justify-between w-48 h-36 ml-3 gap-x-2'}>
                     <Button
                         variant={copiedTeamIndex === teamIndex ? 'filled' : 'outlined'}
                         color={copiedTeamIndex === teamIndex ? 'green' : 'gray'}
@@ -194,6 +246,25 @@ const TeamPreview: FC<{
                                 }}
                             >
                                 <span>Confirm</span>
+                            </Button>
+                        </DialogFooter>
+                    </Dialog>
+                    <Button disabled={isDisableCopyCode} onClick={handleCopyCode}>
+                        {isDisableCopyCode ? 'Copied!' : 'Copy Code'}
+                    </Button>
+                    <Button disabled={isDisablePasteCode} onClick={handlePasteCode} className={'w-[120px]'}>
+                        {isPasteCodeSuccess ? 'Paste!' : 'Paste Code'}
+                    </Button>
+                    <Dialog open={isOpenPasteWrongDialog} handler={() => setIsOpenPasteWrongDialog(open => !open)}>
+                        <DialogHeader>
+                            Paste Code Wrong!
+                        </DialogHeader>
+                        <DialogBody>
+                            The code from your clipboard is not valid, please check and try again.
+                        </DialogBody>
+                        <DialogFooter>
+                            <Button onClick={() => setIsOpenPasteWrongDialog(open => !open)} color={'green'}>
+                                Back
                             </Button>
                         </DialogFooter>
                     </Dialog>
