@@ -44,10 +44,12 @@ const AccessoryTabsContent: FC<{ display: boolean }> = ({display}) => {
                 <GameItem id={0} detail={{type: 'accessory', rarity: 'R'}} render={() => <div>Empty poster</div>} />
             </div>
             {items.map(item => (
-                <div className={clsx(!display && 'hidden', teamedIds.includes(item.id) && 'ring-4 ring-red-500 rounded-full')}>
+                <div
+                    className={clsx(!display && 'hidden', teamedIds.includes(item.id) && 'ring-4 ring-red-500 rounded-full')}
+                    key={item.id}
+                >
                     <GameItem
                         id={item.id}
-                        key={item.id}
                         detail={{type: 'accessory', rarity: item.rarity}}
                         render={() => {
                             return (

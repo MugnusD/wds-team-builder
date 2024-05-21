@@ -1,6 +1,7 @@
 import {FC, useState} from 'react';
-import {Button, Dialog, DialogBody, DialogFooter, DialogHeader} from "@material-tailwind/react";
+import {Button, Dialog, DialogBody, DialogHeader} from "@material-tailwind/react";
 import TeamPreview from "./TeamPreview.tsx";
+import {CopiedTeamProvider} from "./SelectedIndexContent.tsx";
 
 const TeamPreviewButton: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,31 +12,20 @@ const TeamPreviewButton: FC = () => {
             <Button onClick={handleOpen}>
                 Preview All Teams
             </Button>
-            <Dialog open={isOpen} handler={handleOpen} className={'md'}>
-                <DialogHeader>Its a simple dialog.</DialogHeader>
+            <Dialog open={isOpen} handler={handleOpen} size={'lg'}>
+                <DialogHeader className={'flex justify-center'}>Teams Preview</DialogHeader>
                 <DialogBody>
-                    <div className={'flex-col overflow-auto h-[40em]'}>
-                        <TeamPreview teamIndex={'team1'} />
-                        <TeamPreview teamIndex={'team2'} />
-                        <TeamPreview teamIndex={'team3'} />
-                        <TeamPreview teamIndex={'team4'} />
-                        <TeamPreview teamIndex={'team5'} />
-                        <TeamPreview teamIndex={'team6'} />
+                    <div className={'flex flex-col items-center overflow-auto h-[40em]'}>
+                        <CopiedTeamProvider>
+                            <TeamPreview teamIndex={'team1'} />
+                            <TeamPreview teamIndex={'team2'} />
+                            <TeamPreview teamIndex={'team3'} />
+                            <TeamPreview teamIndex={'team4'} />
+                            <TeamPreview teamIndex={'team5'} />
+                            <TeamPreview teamIndex={'team6'} />
+                        </CopiedTeamProvider>
                     </div>
                 </DialogBody>
-                <DialogFooter>
-                    <Button
-                        variant="text"
-                        color="red"
-                        onClick={handleOpen}
-                        className="mr-1"
-                    >
-                        <span>Cancel</span>
-                    </Button>
-                    <Button variant="gradient" color="green" onClick={handleOpen}>
-                        <span>Confirm</span>
-                    </Button>
-                </DialogFooter>
             </Dialog>
         </>
 

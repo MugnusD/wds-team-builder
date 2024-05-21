@@ -98,4 +98,10 @@ declare module '@material-tailwind/react' {
         onPointerEnterCapture?,
         onPointerLeaveCapture?,
     }
+
+    interface InputProps {
+        onPointerEnterCapture?,
+        onPointerLeaveCapture?,
+        crossOrigin?,
+    }
 }

@@ -26,10 +26,11 @@ type IconProps = {
     id: number,
     detail: IconRenderDetails,
     size?: 'small' | 'normal' | 'big',
+    isLeader?: boolean
 }
 
 const GameItemIcon: FC<IconProps> = (props) => {
-    const {id, detail, size = 'normal'} = props;
+    const {id, detail, size = 'normal', isLeader = false} = props;
 
     const {characterIconPosition, isLoading: isLoadingCharacter} = useCharacterIconPosition();
     const {posterIconPosition, isLoading: isLoadingPoster} = usePosterIconPosition();
@@ -85,7 +86,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('relative p-1 rounded-xl', containerSize,
+                className={clsx('relative p-1 rounded-xl overflow-hidden', containerSize,
                     rarity === 'Rare4' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'Rare3' && 'bg-yellow-500',
                     (rarity === 'Rare2' || rarity === 'Rare1') && 'bg-gray-600',
@@ -116,6 +117,11 @@ const GameItemIcon: FC<IconProps> = (props) => {
                 <div className={'absolute bottom-0 left-0 bg-stone-600 border-silver-500 border-2 rounded-full'}>
                     <SenseIcon senseType={sense} />
                 </div>
+                {isLeader && (
+                    <div className={'absolute rotate-45 -right-[22px] top-[10px] bg-red-600 text-white text-sm text-center w-20 '}>
+                        Leader
+                    </div>
+                )}
             </div>
         );
     }

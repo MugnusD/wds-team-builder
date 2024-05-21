@@ -124,13 +124,17 @@ const teamSlice = createSlice({
     name: 'team',
     initialState,
     reducers: {
+        setTeamIndex: (state, action: { payload: TeamIndex }) => {
+            state.currentTeamIndex = action.payload;
+        },
         setAsLeader: (state, action: { payload: SlotIndex }) => {
             const currentTeam = state.currentTeamIndex;
             state.teams[currentTeam].slots.forEach(item => item.isLeader = false);
             state.teams[currentTeam].slots[action.payload].isLeader = true;
         },
-        setTeamIndex: (state, action: {payload: TeamIndex}) => {
-            state.currentTeamIndex = action.payload;
+        setTitleWithIndex: (state, action: { payload: { name: string, index: TeamIndex } }) => {
+            const {payload: {name, index}} = action;
+            state.teams[index].title = name;
         },
         swapSlot: (state, action: { payload: { from: SlotIndex, to: SlotIndex } }) => {
             const {from, to} = action.payload;
@@ -220,6 +224,13 @@ const teamSlice = createSlice({
                 }
             }
         },
+        copyTeam: (state, action: { payload: { src: TeamIndex, desc: TeamIndex } }) => {
+            const {src, desc} = action.payload;
+            state.teams[desc].slots = state.teams[src].slots;
+        },
+        resetTeamSlot: (state, action: { payload: TeamIndex }) => {
+            state.teams[action.payload].slots = slotsInitialState;
+        },
     },
     selectors: {
         selectSlots: sliceState => {
@@ -239,6 +250,9 @@ export const {
                  setFocusedItem,
                  resetFocusItem,
                  swapFocusItemFromTab,
+                 setTitleWithIndex,
+                 copyTeam,
+                 resetTeamSlot,
              } = teamSlice.actions;
 export const {
                  selectSlots,
@@ -276,6 +290,4 @@ export const selectTeamedAccessoryIds = createSelector(
 export const selectTeamByIndex = createSelector(
     [selectTeams, (_, index: TeamIndex) => index],
     (teams, index) => teams[index],
-)
-
-
+);

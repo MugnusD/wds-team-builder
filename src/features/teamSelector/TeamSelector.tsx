@@ -1,11 +1,12 @@
 import {FC, useEffect, useState} from 'react';
 import {Select, Option} from "@material-tailwind/react";
-import {setTeamIndex, TeamIndex} from "../teamBuilder/teamSlice.ts";
-import {useDispatch} from "react-redux";
+import {selectTeams, setTeamIndex, TeamIndex} from "../teamBuilder/teamSlice.ts";
+import {useDispatch, useSelector} from "react-redux";
 
 const TeamSelector: FC = () => {
     const [value, setValue] = useState<TeamIndex>('team1');
     const dispatch = useDispatch();
+    const teams = useSelector(selectTeams);
 
     useEffect(() => {
         dispatch(setTeamIndex(value));
@@ -18,12 +19,12 @@ const TeamSelector: FC = () => {
                 value={value}
                 onChange={(val) => setValue(val as TeamIndex)}
             >
-                <Option value={'team1'}>Team 1</Option>
-                <Option value={'team2'}>Team 2</Option>
-                <Option value={'team3'}>Team 3</Option>
-                <Option value={'team4'}>Team 4</Option>
-                <Option value={'team5'}>Team 5</Option>
-                <Option value={'team6'}>Team 6</Option>
+                    <Option value={'team1'}>{teams['team1'].title}</Option>
+                    <Option value={'team2'}>{teams['team2'].title}</Option>
+                    <Option value={'team3'}>{teams['team3'].title}</Option>
+                    <Option value={'team4'}>{teams['team4'].title}</Option>
+                    <Option value={'team5'}>{teams['team5'].title}</Option>
+                    <Option value={'team6'}>{teams['team6'].title}</Option>
             </Select>
         </div>
     );

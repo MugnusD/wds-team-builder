@@ -8,12 +8,13 @@ const TeamCharacterPreview: FC<{
     posterDetail: IconRenderDetails,
     accessoryId: number,
     accessoryDetail: IconRenderDetails,
-}> = ({characterId, characterDetail, posterDetail, posterId, accessoryDetail, accessoryId}) => {
+    isLeader: boolean,
+}> = ({characterId, characterDetail, posterDetail, posterId, accessoryDetail, accessoryId, isLeader}) => {
     return (
         <div className={'flex flex-col'}>
-            <GameItemIcon id={characterId} detail={characterDetail} size={'big'}/>
+            <GameItemIcon id={characterId} detail={characterDetail} size={'big'} isLeader={isLeader} />
             <div className={'flex'}>
-                <GameItemIcon id={posterId} detail={posterDetail} size={'small'}/>
+                <GameItemIcon id={posterId} detail={posterDetail} size={'small'} />
                 <GameItemIcon id={accessoryId} detail={accessoryDetail} size={'small'} />
             </div>
         </div>
