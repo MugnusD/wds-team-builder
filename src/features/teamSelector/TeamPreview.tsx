@@ -250,10 +250,10 @@ const TeamPreview: FC<{
                         </DialogFooter>
                     </Dialog>
                     <Button disabled={isDisableCopyCode} onClick={handleCopyCode}>
-                        {isDisableCopyCode ? 'Copied!' : 'Copy Code'}
+                        {isDisableCopyCode ? 'Copied !' : 'Copy Code'}
                     </Button>
                     <Button disabled={isDisablePasteCode} onClick={handlePasteCode} className={'w-[120px]'}>
-                        {isPasteCodeSuccess ? 'Paste!' : 'Paste Code'}
+                        {isPasteCodeSuccess ? 'Paste !' : 'Paste Code'}
                     </Button>
                     <Dialog open={isOpenPasteWrongDialog} handler={() => setIsOpenPasteWrongDialog(open => !open)}>
                         <DialogHeader>
