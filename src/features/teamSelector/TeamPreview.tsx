@@ -190,8 +190,6 @@ const TeamPreview: FC<{
     const handleCopyImage = () => {
         setIsImageCopying(true);
 
-        // Use a setTimeout to wrap this function, otherwise there is a little bug: setIsImageCopying(true) seems that
-        // cannot trigger re-render.
         setTimeout(() => {
             if (!htmlImageRef.current) {
                 return;
@@ -218,7 +216,7 @@ const TeamPreview: FC<{
                 .catch(() => {
                     setIsImageCopying(false);
                 });
-        });
+        }, 50);
     };
 
     // Reset Dialog
