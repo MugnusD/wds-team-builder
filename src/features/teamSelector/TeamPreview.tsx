@@ -188,33 +188,37 @@ const TeamPreview: FC<{
     };
 
     const handleCopyImage = () => {
-        if (!htmlImageRef.current) {
-            return;
-        }
-
         setIsImageCopying(true);
 
-        toPng(htmlImageRef.current)
-            .then(url => {
-                return fetch(url);
-            })
-            .then(response => {
-                return response.blob();
-            })
-            .then(blob => {
-                const clipboardItem = new ClipboardItem({
-                    'image/png': blob,
+        // Use a setTimeout to wrap this function, otherwise there is a little bug: setIsImageCopying(true) seems that
+        // cannot trigger re-render.
+        setTimeout(() => {
+            if (!htmlImageRef.current) {
+                return;
+            }
+
+            toPng(htmlImageRef.current)
+                .then(url => {
+                    return fetch(url);
+                })
+                .then(response => {
+                    return response.blob();
+                })
+                .then(blob => {
+                    const clipboardItem = new ClipboardItem({
+                        'image/png': blob,
+                    });
+                    setIsImageCopying(false);
+                    setIsImageCopiedSuccessfully(true);
+                    setTimeout(() => {
+                        setIsImageCopiedSuccessfully(false);
+                    }, 1000);
+                    return navigator.clipboard.write([clipboardItem]);
+                })
+                .catch(() => {
+                    setIsImageCopying(false);
                 });
-                setIsImageCopying(false);
-                setIsImageCopiedSuccessfully(true);
-                setTimeout(() => {
-                    setIsImageCopiedSuccessfully(false);
-                }, 1000);
-                return navigator.clipboard.write([clipboardItem]);
-            })
-            .catch(() => {
-                setIsImageCopying(false);
-            });
+        });
     };
 
     // Reset Dialog
