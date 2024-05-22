@@ -1,4 +1,4 @@
-import {ChangeEventHandler, FC, FocusEventHandler, useState} from 'react';
+import {ChangeEventHandler, FC, FocusEventHandler, useRef, useState} from 'react';
 import useCharacters from "../../hooks/useCharacters.ts";
 import usePosters from "../../hooks/usePosters.ts";
 import useAccessories from "../../hooks/useAccessories.ts";
@@ -25,6 +25,7 @@ import {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
 import useCopiedTeamContext from "./useCopiedTeamContext.ts";
 import {compressSlots} from "../../utils";
 import {decompressSlots} from "../../utils/string/decompressSlots.ts";
+import {toPng} from "html-to-image";
 
 const TeamPreview: FC<{
     teamIndex: TeamIndex,
@@ -40,11 +41,15 @@ const TeamPreview: FC<{
 
     const dispatch = useDispatch();
 
+    const htmlImageRef = useRef(null);
+
     const [isOpenDialog, setIsOpenDialog] = useState(false);
     const [isDisableCopyCode, setIsDisableCopyCode] = useState(false);
     const [isDisablePasteCode, setIsDisablePasteCode] = useState(false);
     const [isOpenPasteWrongDialog, setIsOpenPasteWrongDialog] = useState(false);
     const [isPasteCodeSuccess, setIsPasteCodeSuccess] = useState(false);
+    const [isImageCopying, setIsImageCopying] = useState(false);
+    const [isImageCopiedSuccessfully, setIsImageCopiedSuccessfully] = useState(false);
 
     if (isLoadingAccessory || isLoadingCharacter || isLoadingPoster || !characters || !posters || !accessories) {
         return <Spinner />;
@@ -182,6 +187,36 @@ const TeamPreview: FC<{
             });
     };
 
+    const handleCopyImage = () => {
+        if (!htmlImageRef.current) {
+            return;
+        }
+
+        setIsImageCopying(true);
+
+        toPng(htmlImageRef.current)
+            .then(url => {
+                return fetch(url);
+            })
+            .then(response => {
+                return response.blob();
+            })
+            .then(blob => {
+                const clipboardItem = new ClipboardItem({
+                    'image/png': blob,
+                });
+                setIsImageCopying(false);
+                setIsImageCopiedSuccessfully(true);
+                setTimeout(() => {
+                    setIsImageCopiedSuccessfully(false);
+                }, 1000);
+                return navigator.clipboard.write([clipboardItem]);
+            })
+            .catch(() => {
+                setIsImageCopying(false);
+            });
+    };
+
     // Reset Dialog
     const handleOpen = () => setIsOpenDialog(open => !open);
 
@@ -196,17 +231,21 @@ const TeamPreview: FC<{
                     label={'Team Title'}
                 />
             </div>
-            <div className={'flex gap-1.5'} key={teamIndex}>
-                {slotsRenderPropsArray.map(slotsRenderProps => (
-                    <TeamCharacterPreview {...slotsRenderProps} key={slotsRenderProps.characterId} />
-                ))}
-                <div className={'flex flex-col flex-wrap justify-between w-48 h-36 ml-3 gap-x-2'}>
+            <div className={'flex gap-3'} key={teamIndex}>
+                <div className={'flex gap-1.5'} ref={htmlImageRef}>
+                    {slotsRenderPropsArray.map(slotsRenderProps => (
+                        <TeamCharacterPreview {...slotsRenderProps} key={slotsRenderProps.characterId} />
+                    ))}
+                </div>
+
+                <div className={'flex flex-col flex-wrap justify-between h-36 gap-x-2'}>
                     <Button
                         variant={copiedTeamIndex === teamIndex ? 'filled' : 'outlined'}
                         color={copiedTeamIndex === teamIndex ? 'green' : 'gray'}
                         onClick={handleSetCopied}
+                        className={'w-[88px]'}
                     >
-                        Copy
+                        {copiedTeamIndex === teamIndex ? 'Copied' : 'Copy'}
                     </Button>
                     <Button
                         variant={copiedTeamIndex === teamIndex || !copiedTeamIndex ? 'outlined' : 'filled'}
@@ -249,11 +288,28 @@ const TeamPreview: FC<{
                             </Button>
                         </DialogFooter>
                     </Dialog>
-                    <Button disabled={isDisableCopyCode} onClick={handleCopyCode}>
+                    <Button disabled={isDisableCopyCode} onClick={handleCopyCode} color={'blue'}>
                         {isDisableCopyCode ? 'Copied !' : 'Copy Code'}
                     </Button>
-                    <Button disabled={isDisablePasteCode} onClick={handlePasteCode} className={'w-[120px]'}>
+                    <Button
+                        disabled={isDisablePasteCode}
+                        onClick={handlePasteCode}
+                        className={'w-[120px]'}
+                        color={'blue'}
+                    >
                         {isPasteCodeSuccess ? 'Paste !' : 'Paste Code'}
+                    </Button>
+                    <Button
+                        color={'pink'}
+                        onClick={handleCopyImage}
+                        disabled={isImageCopying || isImageCopiedSuccessfully}
+                    >
+                        {isImageCopying ?
+                            'Waiting...' :
+                            isImageCopiedSuccessfully ?
+                                'Success !' :
+                                'Copy Image'
+                        }
                     </Button>
                     <Dialog open={isOpenPasteWrongDialog} handler={() => setIsOpenPasteWrongDialog(open => !open)}>
                         <DialogHeader>
