@@ -122,7 +122,7 @@ const CharacterTabsContent: FC<{ display: boolean }> = ({display}) => {
                                             <SenseIcon senseType={'Special'} />
                                         </div>
                                         <div>
-                                            {item.starAct.descriptionChinese}
+                                            {item.starAct.descriptionsChinese.join('。')}
                                         </div>
                                     </div>
                                     <div>

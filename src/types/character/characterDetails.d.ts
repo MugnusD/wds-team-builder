@@ -64,8 +64,8 @@ interface SenseDetail {
 }
 
 interface StarActDetail {
-    description: string;
-    descriptionChinese: string;
+    descriptions: string[];
+    descriptionsChinese: string[];
     conditions: StarActLightCondition[];
 }
 interface StarActLightCondition {
