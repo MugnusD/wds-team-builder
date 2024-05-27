@@ -9,13 +9,13 @@ const SenseIcon: FC<{
             return <PiStarFourFill color={'limegreen'} />;
         }
         case "Amplification": {
-            return <PiStarFourFill color={'#FF3838'} />;
-        }
-        case "Special": {
             return <PiStarFourFill color={'gold'} />;
         }
-        case "Control": {
+        case "Special": {
             return <PiStarFourFill color={'#3498DB'} />;
+        }
+        case "Control": {
+            return <PiStarFourFill color={'#FF3838'} />;
         }
         default: {
             return null;
