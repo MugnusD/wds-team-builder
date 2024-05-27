@@ -58,8 +58,8 @@ const GameItemIcon: FC<IconProps> = (props) => {
         }
         case 'small': {
             containerSize = 'h-12 w-12';
-            ratio = 40 / 188;
-            translate = 'translate(-330px, -330px)';
+            ratio = 44 / 188;
+            translate = 'translate(-299px, -299px)';
             padding = 'p-0.25';
             break;
         }
