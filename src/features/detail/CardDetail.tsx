@@ -33,7 +33,7 @@ const CardDetail: FC = () => {
     if (!characters || !character)
         return null;
 
-    const {name, characterBase, sense: {descriptionsChinese}, starAct: {descriptionChinese: SaDesc}} = character;
+    const {name, characterBase, sense: {descriptionsChinese}, starAct: {descriptionsChinese: SaDesc}} = character;
 
     return (
         <div className={'flex-col'}>
@@ -47,7 +47,7 @@ const CardDetail: FC = () => {
                 Card Name: {name}
             </Typography>
             <Typography>
-                Sense: {descriptionsChinese}
+                Sense: {descriptionsChinese.join(' ')}
             </Typography>
             <Typography>
                 Star Act: {SaDesc}
