@@ -47,23 +47,27 @@ const GameItemIcon: FC<IconProps> = (props) => {
     let containerSize: string;
     let ratio: number;
     let translate: string;
+    let padding: string;
     switch (size) {
         case 'normal': {
             containerSize = 'h-16 w-16';
             ratio = 56 / 188;
-            translate = 'translate(-223px, -223px)';
+            translate = 'translate(-222px, -222px)';
+            padding = 'p-1';
             break;
         }
         case 'small': {
             containerSize = 'h-12 w-12';
             ratio = 40 / 188;
-            translate = 'translate(-348px, -348px)';
+            translate = 'translate(-330px, -330px)';
+            padding = 'p-0.25';
             break;
         }
         case 'big': {
             containerSize = 'h-24 w-24';
             ratio = 88 / 188;
             translate = 'translate(-106px, -106px)';
+            padding = 'p-1';
             break;
         }
     }
@@ -86,7 +90,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('relative p-1 rounded-xl overflow-hidden', containerSize,
+                className={clsx('relative rounded-xl overflow-hidden', containerSize, padding,
                     rarity === 'Rare4' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'Rare3' && 'bg-yellow-500',
                     (rarity === 'Rare2' || rarity === 'Rare1') && 'bg-gray-600',
@@ -133,7 +137,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('relative p-1 rounded-full', containerSize,
+                className={clsx('relative rounded-full', containerSize, padding,
                     rarity === 'SSR' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'SR' && 'bg-yellow-500',
                     rarity === 'R' && 'bg-gray-600',
@@ -178,7 +182,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('relative p-1 rounded-full', containerSize,
+                className={clsx('relative rounded-full', containerSize, padding,
                     rarity === 'SSR' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'SR' && 'bg-yellow-500',
                     rarity === 'R' && 'bg-gray-600',
