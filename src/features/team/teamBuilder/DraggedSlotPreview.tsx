@@ -1,7 +1,7 @@
 import {FC} from 'react';
 import {IoMenu} from "react-icons/io5";
-import GameItemIcon from "../../ui/GameItemIcon.tsx";
-import {SlotItemType} from "../../ui/CustomDragLayer.tsx";
+import GameItemIcon from "../../../ui/GameItemIcon.tsx";
+import {SlotItemType} from "../../../ui/CustomDragLayer.tsx";
 
 /**
  * Component to generate the preview of the dragged <Slot />, which is highly similar in code of <Slot />.

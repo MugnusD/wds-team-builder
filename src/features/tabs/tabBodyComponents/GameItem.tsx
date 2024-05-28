@@ -1,6 +1,6 @@
 import {FC, MouseEventHandler, ReactElement, useEffect, useState} from 'react';
 import {useDispatch} from "react-redux";
-import {resetFocusItem, swapFocusItemFromTab, SwapPayload} from "../../teamBuilder/teamSlice.ts";
+import {resetFocusItem, swapFocusItemFromTab, SwapPayload} from "../../team/teamSlice.ts";
 import {useNavigate} from "react-router-dom";
 import {useDrag} from "react-dnd";
 import GameItemIcon, {IconRenderDetails} from "../../../ui/GameItemIcon.tsx";

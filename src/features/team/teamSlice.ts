@@ -18,7 +18,7 @@ type TeamState = {
     title: string,
 }
 
-export type TeamIndex = 'team1' | 'team2' | 'team3' | 'team4' | 'team5' | 'team6';
+export type TeamIndex = 'team1' | 'team2' | 'team3' | 'team4' | 'team5' | 'team6' | 'team7' | 'team8' | 'team9' | 'team10' | 'team11' | 'team12';
 
 type TeamRecordState = Record<TeamIndex, TeamState>
 
@@ -31,7 +31,7 @@ export type TeamSliceState = {
     } | null,
 }
 
-const slotsInitialState: SlotType[] = [
+export const slotsInitialState: SlotType[] = [
     {
         character: {
             characterId: 110010,
@@ -102,6 +102,30 @@ const initialState: TeamSliceState = {
         },
         'team6': {
             title: 'Team 6',
+            slots: slotsInitialState,
+        },
+        'team7': {
+            title: 'Team 7',
+            slots: slotsInitialState,
+        },
+        'team8': {
+            title: 'Team 8',
+            slots: slotsInitialState,
+        },
+        'team9': {
+            title: 'Team 9',
+            slots: slotsInitialState,
+        },
+        'team10': {
+            title: 'Team 10',
+            slots: slotsInitialState,
+        },
+        'team11': {
+            title: 'Team 11',
+            slots: slotsInitialState,
+        },
+        'team12': {
+            title: 'Team 12',
             slots: slotsInitialState,
         },
     },

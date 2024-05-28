@@ -4,7 +4,7 @@ import clsx from "clsx";
 import GameItem from "./GameItem.tsx";
 import {Typography} from "@material-tailwind/react";
 import {useSelector} from "react-redux";
-import {selectTeamedAccessoryIds} from "../../teamBuilder/teamSlice.ts";
+import {selectTeamedAccessoryIds} from "../../team/teamSlice.ts";
 import {convertUnityTag} from "../../../utils";
 
 

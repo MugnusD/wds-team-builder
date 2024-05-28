@@ -23,14 +23,14 @@ type PosterSortFilter = {
     filterByRarity: Record<PosterRarity, boolean>,
 }
 
-type State = {
+export type SelectTabsSliceState = {
     type: GameItemType,
     isDetailMode: boolean,
     cardSortFilter: CardSortFilter,
     posterSortFilter: PosterSortFilter,
 }
 
-const initialState: State = {
+const initialState: SelectTabsSliceState = {
     type: 'character',
     isDetailMode: false,
     cardSortFilter: {

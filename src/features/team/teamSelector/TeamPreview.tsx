@@ -1,7 +1,7 @@
 import {ChangeEventHandler, FC, FocusEventHandler, useRef, useState} from 'react';
-import useCharacters from "../../hooks/useCharacters.ts";
-import usePosters from "../../hooks/usePosters.ts";
-import useAccessories from "../../hooks/useAccessories.ts";
+import useCharacters from "../../../hooks/useCharacters.ts";
+import usePosters from "../../../hooks/usePosters.ts";
+import useAccessories from "../../../hooks/useAccessories.ts";
 import {
     resetTeamSlot,
     selectTeamByIndex,
@@ -9,7 +9,7 @@ import {
     setTitleWithIndex,
     SlotType,
     TeamIndex,
-} from "../teamBuilder/teamSlice.ts";
+} from "../teamSlice.ts";
 import {useDispatch, useSelector} from "react-redux";
 import TeamCharacterPreview from "./TeamCharacterPreview.tsx";
 import {
@@ -21,10 +21,10 @@ import {
     Input,
     Spinner,
 } from "@material-tailwind/react";
-import {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
+import {IconRenderDetails} from "../../../ui/GameItemIcon.tsx";
 import useCopiedTeamContext from "./useCopiedTeamContext.ts";
-import {compressSlots} from "../../utils";
-import {decompressSlots} from "../../utils/string/decompressSlots.ts";
+import {compressSlots} from "../../../utils";
+import {decompressSlots} from "../../../utils/string/decompressSlots.ts";
 import {toPng} from "html-to-image";
 
 const TeamPreview: FC<{

@@ -1,6 +1,6 @@
 import {FC, useEffect, useState} from 'react';
 import {Select, Option} from "@material-tailwind/react";
-import {selectTeams, setTeamIndex, TeamIndex} from "../teamBuilder/teamSlice.ts";
+import {selectTeams, setTeamIndex, TeamIndex} from "../teamSlice.ts";
 import {useDispatch, useSelector} from "react-redux";
 
 const TeamSelector: FC = () => {
@@ -25,6 +25,12 @@ const TeamSelector: FC = () => {
                     <Option value={'team4'}>{teams['team4'].title}</Option>
                     <Option value={'team5'}>{teams['team5'].title}</Option>
                     <Option value={'team6'}>{teams['team6'].title}</Option>
+                    <Option value={'team7'}>{teams['team7'].title}</Option>
+                    <Option value={'team8'}>{teams['team8'].title}</Option>
+                    <Option value={'team9'}>{teams['team9'].title}</Option>
+                    <Option value={'team10'}>{teams['team10'].title}</Option>
+                    <Option value={'team11'}>{teams['team11'].title}</Option>
+                    <Option value={'team12'}>{teams['team12'].title}</Option>
             </Select>
         </div>
     );

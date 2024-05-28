@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import GameItemIcon, {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
+import GameItemIcon, {IconRenderDetails} from "../../../ui/GameItemIcon.tsx";
 
 const TeamCharacterPreview: FC<{
     characterId: number,

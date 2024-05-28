@@ -9,7 +9,7 @@ import {CharacterNameOrder} from "../../../types/character/characterName.ts";
 import SenseIcon from "../../../ui/SenseIcon.tsx";
 import {Typography} from "@material-tailwind/react";
 import clsx from "clsx";
-import {selectTeamedCharacterIds} from "../../teamBuilder/teamSlice.ts";
+import {selectTeamedCharacterIds} from "../../team/teamSlice.ts";
 
 const CharacterTabsContent: FC<{ display: boolean }> = ({display}) => {
     const {characters, isLoading, isError} = useCharacters();

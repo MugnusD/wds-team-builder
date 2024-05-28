@@ -1,6 +1,6 @@
 import {ChangeEventHandler, FC} from 'react';
 import {GameItemType, selectGameItemType, setTabType} from "../selectTabsSlice.ts";
-import {resetFocusItem} from "../../teamBuilder/teamSlice.ts";
+import {resetFocusItem} from "../../team/teamSlice.ts";
 import {useDispatch, useSelector} from "react-redux";
 
 const TabSelector: FC = () => {

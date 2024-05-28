@@ -10,20 +10,20 @@ import {
     setFocusedItem,
     SlotIndex, swapFocusItemFromTab, SwapPayload,
     swapSlot,
-} from "./teamSlice.ts";
+} from "../teamSlice.ts";
 import {useDrag, useDrop} from "react-dnd";
-import {DraggedItemType} from "../../types/DragItemType.ts";
-import useCharacters from "../../hooks/useCharacters.ts";
+import {DraggedItemType} from "../../../types/DragItemType.ts";
+import useCharacters from "../../../hooks/useCharacters.ts";
 import toast from "react-hot-toast";
 import {Spinner} from "@material-tailwind/react";
-import {GameItemType, setTabType} from "../tabs/selectTabsSlice.ts";
-import useBigScreenQuery from "../../hooks/useBigScreenQuery.ts";
+import {GameItemType, setTabType} from "../../tabs/selectTabsSlice.ts";
+import useBigScreenQuery from "../../../hooks/useBigScreenQuery.ts";
 import clsx from "clsx";
-import GameItemIcon, {IconRenderDetails} from "../../ui/GameItemIcon.tsx";
-import usePosters from "../../hooks/usePosters.ts";
+import GameItemIcon, {IconRenderDetails} from "../../../ui/GameItemIcon.tsx";
+import usePosters from "../../../hooks/usePosters.ts";
 import {getEmptyImage} from "react-dnd-html5-backend";
-import {SlotItemType} from "../../ui/CustomDragLayer.tsx";
-import useAccessories from "../../hooks/useAccessories.ts";
+import {SlotItemType} from "../../../ui/CustomDragLayer.tsx";
+import useAccessories from "../../../hooks/useAccessories.ts";
 
 const Slot: FC<{
     slotIndex: SlotIndex,

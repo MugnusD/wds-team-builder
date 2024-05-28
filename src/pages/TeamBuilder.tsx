@@ -1,7 +1,7 @@
 import {FC} from 'react';
-import TimelineBox from "../features/teamBuilder/TimelineBox.tsx";
+import TimelineBox from "../features/team/teamBuilder/TimelineBox.tsx";
 import SelectTabs from "../features/tabs/SelectTabs.tsx";
-import TeamSelectorHead from "../features/teamSelector/TeamSelectorHead.tsx";
+import TeamSelectorHead from "../features/team/teamSelector/TeamSelectorHead.tsx";
 
 const TeamBuilder: FC = () => {
     return (

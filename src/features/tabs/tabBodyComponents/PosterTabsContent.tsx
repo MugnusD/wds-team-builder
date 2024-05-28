@@ -6,7 +6,7 @@ import {selectPosterSortAndFiler} from "../selectTabsSlice.ts";
 import {Typography} from "@material-tailwind/react";
 import {convertUnityTag} from "../../../utils";
 import clsx from "clsx";
-import {selectTeamedPosterIds} from "../../teamBuilder/teamSlice.ts";
+import {selectTeamedPosterIds} from "../../team/teamSlice.ts";
 
 const PosterTabsContent: FC<{ display: boolean }> = ({display}) => {
     const {posters, isLoading, isError} = usePosters();

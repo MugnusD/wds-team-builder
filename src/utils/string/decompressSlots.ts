@@ -1,4 +1,4 @@
-import {SlotType} from "../../features/teamBuilder/teamSlice.ts";
+import {SlotType} from "../../features/team/teamSlice.ts";
 import {characterBaseCodes} from "./characterBaseCode.ts";
 
 export const decompressSlots = (compressedString: string): SlotType[]  => {

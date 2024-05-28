@@ -1,5 +1,5 @@
 import {createContext, FC, PropsWithChildren, useState} from "react";
-import {copyTeam, TeamIndex} from "../teamBuilder/teamSlice.ts";
+import {copyTeam, TeamIndex} from "../teamSlice.ts";
 import {useDispatch} from "react-redux";
 
 type ContextProps = {
