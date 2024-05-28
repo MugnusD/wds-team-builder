@@ -23,6 +23,12 @@ const TeamPreviewButton: FC = () => {
                             <TeamPreview teamIndex={'team4'} />
                             <TeamPreview teamIndex={'team5'} />
                             <TeamPreview teamIndex={'team6'} />
+                            <TeamPreview teamIndex={'team7'} />
+                            <TeamPreview teamIndex={'team8'} />
+                            <TeamPreview teamIndex={'team9'} />
+                            <TeamPreview teamIndex={'team10'} />
+                            <TeamPreview teamIndex={'team11'} />
+                            <TeamPreview teamIndex={'team12'} />
                         </CopiedTeamProvider>
                     </div>
                 </DialogBody>
