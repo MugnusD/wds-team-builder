@@ -48,12 +48,14 @@ const GameItemIcon: FC<IconProps> = (props) => {
     let ratio: number;
     let translate: string;
     let padding: string;
+    let iconSize: number;
     switch (size) {
         case 'normal': {
             containerSize = 'h-16 w-16';
             ratio = 56 / 188;
             translate = 'translate(-222px, -222px)';
             padding = 'p-1';
+            iconSize = 35;
             break;
         }
         case 'small': {
@@ -61,6 +63,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
             ratio = 44 / 188;
             translate = 'translate(-299px, -299px)';
             padding = 'p-0.25';
+            iconSize = 25;
             break;
         }
         case 'big': {
@@ -68,6 +71,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
             ratio = 88 / 188;
             translate = 'translate(-106px, -106px)';
             padding = 'p-1';
+            iconSize = 35;
             break;
         }
     }
@@ -166,7 +170,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
                 {id === 0 &&
                     <div className={'bg-white rounded-full w-full h-full flex items-center justify-center -z-10'}>
                         <BsFileImage
-                            size={35}
+                            size={iconSize}
                             color={'#78909c'}
                         />
                     </div>
@@ -211,7 +215,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
                 {id === 0 &&
                     <div className={'bg-white rounded-full w-full h-full flex items-center justify-center -z-10'}>
                         <GiDiamondRing
-                            size={35}
+                            size={iconSize}
                             color={'#78909c'}
                         />
                     </div>
