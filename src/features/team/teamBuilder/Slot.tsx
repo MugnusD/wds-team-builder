@@ -15,7 +15,7 @@ import {useDrag, useDrop} from "react-dnd";
 import {DraggedItemType} from "../../../types/DragItemType.ts";
 import useCharacters from "../../../hooks/useCharacters.ts";
 import toast from "react-hot-toast";
-import {Spinner} from "@material-tailwind/react";
+import { Dialog, Spinner} from "@material-tailwind/react";
 import {GameItemType, setTabType} from "../../tabs/selectTabsSlice.ts";
 import useBigScreenQuery from "../../../hooks/useBigScreenQuery.ts";
 import clsx from "clsx";
@@ -24,6 +24,11 @@ import usePosters from "../../../hooks/usePosters.ts";
 import {getEmptyImage} from "react-dnd-html5-backend";
 import {SlotItemType} from "../../../ui/CustomDragLayer.tsx";
 import useAccessories from "../../../hooks/useAccessories.ts";
+import CharacterSortAndFilterButton from "../../tabs/tabsHeaderComponent/CharacterSortAndFilterButton.tsx";
+import PosterSortAndFilterButton from "../../tabs/tabsHeaderComponent/PosterSortAndFilterButton.tsx";
+import CharacterTabsContent from "../../tabs/tabBodyComponents/CharacterTabsContent.tsx";
+import PosterTabsContent from "../../tabs/tabBodyComponents/PosterTabsContent.tsx";
+import AccessoryTabsContent from "../../tabs/tabBodyComponents/AccessoryTabsContent.tsx";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
@@ -43,8 +48,17 @@ const Slot: FC<{
     const selectedItem = useSelector(selectFocusedItem);
     const dispatch = useDispatch();
 
+    // Small Screen Dialog
+    const [isOpen, setIsOpen] = useState(false);
+    const handlerOpen = () => setIsOpen(open => !open);
+    useEffect(() => {
+        if (!selectedItem) {
+            setIsOpen(false);
+        }
+    }, [selectedItem]);
+
     // Derive selected item
-    const currentSlotFocusedItem = selectedItem?.slotIndex === slotIndex ? selectedItem.itemType : 'none';
+    const currentSlotFocusedItem = selectedItem?.slotIndex === slotIndex ? selectedItem.itemType : null;
 
     // Fetch character data & find
     const {
@@ -215,6 +229,11 @@ const Slot: FC<{
             slotIndex,
             itemType: gameItem,
         }));
+
+        if (!isBigScreen) {
+            setIsOpen(true);
+        }
+
         dispatch(setTabType(gameItem));
     };
 
@@ -239,14 +258,15 @@ const Slot: FC<{
             className={'flex h-20 md:w-[24rem] w-[20rem] flex-row items-center justify-between rounded-2xl border-[3px] border-solid border-gray-500 pl-2 pr-4 '
                 + `${isDragging ? 'opacity-0' : ''}`}
         >
-            <div ref={dndRef} className={'flex h-20 md:w-16 w-12 items-center justify-center cursor-pointer'}>
-                <IoMenu
-                    size={isBigScreen ? 50 : 40}
-                    color={'rgb(158 158 158'}
-                    // className={'rounded-xl ' + `${canDrop && !isDragging ? 'bg-green-100 ' : ' '}` + `${isOver ? ' bg-fuchsia-200 ' : ' '}`}
-                    className={clsx('rounded-xl', (canDrop && !isDragging) && 'bg-green-100', isOver && 'bg-fuchsia-200')}
-                />
-            </div>
+            {isBigScreen &&
+                <div ref={dndRef} className={'flex h-20 md:w-16 w-12 items-center justify-center cursor-pointer'}>
+                    <IoMenu
+                        size={50}
+                        color={'rgb(158 158 158'}
+                        // className={'rounded-xl ' + `${canDrop && !isDragging ? 'bg-green-100 ' : ' '}` + `${isOver ? ' bg-fuchsia-200 ' : ' '}`}
+                        className={clsx('rounded-xl', (canDrop && !isDragging) && 'bg-green-100', isOver && 'bg-fuchsia-200')}
+                    />
+                </div>}
 
             {/* Character card display, can drop from tab and focus */}
             <div
@@ -298,6 +318,46 @@ const Slot: FC<{
                     CT <span className={'text-2xl w-6 inline-block'}>{bloom}</span> 秒
                 </div>
             </div>
+            {!isBigScreen && (
+                <Dialog open={isOpen} handler={() => {
+                    handlerOpen();
+                    if (isOpen) {
+                        dispatch(resetFocusItem());
+                    }
+                }} className={'flex flex-col gap-2'}>
+                    <div className={'mt-2 flex justify-between px-4'}>
+                        <div className={'flex gap-2'}>
+                            <div onClick={() => handleFocus('character')}>
+                                <GameItemIcon id={characterId} detail={characterIconDetail} size={'small'} />
+                            </div>
+                            <div onClick={() => handleFocus('poster')}>
+                                <GameItemIcon id={posterId} detail={posterIconDetail} size={'small'} />
+                            </div>
+                            <div onClick={() => handleFocus('accessory')}>
+                                <GameItemIcon id={accessoryId} detail={accessoryIconDetail} size={'small'} />
+                            </div>
+                        </div>
+
+                        {currentSlotFocusedItem === 'character' && <div className={'flex items-center'}>
+                            <CharacterSortAndFilterButton />
+                        </div>}
+                        {currentSlotFocusedItem === 'poster' && <div className={'flex items-center'}>
+                            <PosterSortAndFilterButton />
+                        </div>}
+                    </div>
+
+
+                    <div
+                        className={
+                            'flex flex-row flex-wrap justify-start gap-2 overflow-y-auto rounded-2xl border-2 border-light-blue-100 bg-light-blue-50 p-4 h-[70vh]'
+                        }
+                    >
+                        {currentSlotFocusedItem === 'character' && <CharacterTabsContent />}
+                        {currentSlotFocusedItem === 'poster' && <PosterTabsContent />}
+                        {currentSlotFocusedItem === 'accessory' && <AccessoryTabsContent />}
+                    </div>
+                </Dialog>
+            )}
         </div>
     );
 };

@@ -8,7 +8,7 @@ import {convertUnityTag} from "../../../utils";
 import clsx from "clsx";
 import {selectTeamedPosterIds} from "../../team/teamSlice.ts";
 
-const PosterTabsContent: FC<{ display: boolean }> = ({display}) => {
+const PosterTabsContent: FC<{ display?: boolean }> = ({display = true}) => {
     const {posters, isLoading, isError} = usePosters();
     const {sortBy, filterByRarity} = useSelector(selectPosterSortAndFiler);
     const teamedIds = useSelector(selectTeamedPosterIds);

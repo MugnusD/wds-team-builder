@@ -6,6 +6,7 @@ import {useDrag} from "react-dnd";
 import GameItemIcon, {IconRenderDetails} from "../../../ui/GameItemIcon.tsx";
 import {getEmptyImage} from "react-dnd-html5-backend";
 import {Button, Popover, PopoverContent, PopoverHandler} from "@material-tailwind/react";
+import useBigScreenQuery from "../../../hooks/useBigScreenQuery.ts";
 
 /**
  * Renders a game item. If it is a character, props must include characterBase (character's name)
@@ -73,6 +74,8 @@ const GameItem: FC<{
         preview(getEmptyImage(), {captureDraggingState: true});
     }, [preview]);
 
+    const isBigScreen = useBigScreenQuery();
+
     const handleSwapToTeam = () => {
         if (type === 'accessory' || type === 'poster') {
             dispatch(swapFocusItemFromTab({id, type}));
@@ -80,7 +83,9 @@ const GameItem: FC<{
             dispatch(swapFocusItemFromTab({id, type, characterBase}));
         }
 
-        dispatch(resetFocusItem());
+        if (isBigScreen) {
+            dispatch(resetFocusItem());
+        }
     };
 
     const handleGoToDetail = () => {

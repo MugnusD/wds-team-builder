@@ -8,7 +8,7 @@ import {selectTeamedAccessoryIds} from "../../team/teamSlice.ts";
 import {convertUnityTag} from "../../../utils";
 
 
-const AccessoryTabsContent: FC<{ display: boolean }> = ({display}) => {
+const AccessoryTabsContent: FC<{ display?: boolean }> = ({display = true}) => {
     const {accessories, isError, isLoading} = useAccessories();
     const teamedIds = useSelector(selectTeamedAccessoryIds);
 

@@ -11,8 +11,6 @@ const SelectTabsHeader: FC = () => {
     return (
         <div className={'flex flex-row items-center gap-4 flex-wrap'}>
             <TabSelector />
-            {/*TODO remove detail option*/}
-            {/*<TabsOptions />*/}
             {tabType === 'character' && <CharacterSortAndFilterButton />}
             {tabType === 'poster' && <PosterSortAndFilterButton />}
         </div>

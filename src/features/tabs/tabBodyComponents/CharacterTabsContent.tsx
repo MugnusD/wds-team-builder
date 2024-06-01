@@ -11,7 +11,7 @@ import {Typography} from "@material-tailwind/react";
 import clsx from "clsx";
 import {selectTeamedCharacterIds} from "../../team/teamSlice.ts";
 
-const CharacterTabsContent: FC<{ display: boolean }> = ({display}) => {
+const CharacterTabsContent: FC<{ display?: boolean }> = ({display = true}) => {
     const {characters, isLoading, isError} = useCharacters();
     const {
               sortBy,

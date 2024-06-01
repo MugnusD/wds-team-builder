@@ -2,15 +2,19 @@ import {FC, useState} from 'react';
 import {Button, Dialog, DialogBody, DialogHeader} from "@material-tailwind/react";
 import TeamPreview from "./TeamPreview.tsx";
 import {CopiedTeamProvider} from "./SelectedIndexContent.tsx";
+import useBigScreenQuery from "../../../hooks/useBigScreenQuery.ts";
 
 const TeamPreviewButton: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const handleOpen = () => setIsOpen(!isOpen);
+    const isBigScreen = useBigScreenQuery();
 
     return (
         <>
             <Button onClick={handleOpen}>
-                Preview All Teams
+                <div className={'text-nowrap md:w-32 w-12'}>
+                    {isBigScreen? 'Preview All Teams' : 'Teams'}
+                </div>
             </Button>
             <Dialog open={isOpen} handler={handleOpen} size={'lg'}>
                 <DialogHeader className={'flex justify-center'}>Teams Preview</DialogHeader>

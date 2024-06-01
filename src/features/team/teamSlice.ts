@@ -267,6 +267,7 @@ const teamSlice = createSlice({
         },
         selectFocusedItem: sliceState => sliceState.focusedItem,
         selectTeams: sliceState => sliceState.teams,
+        selectCurrentTeamIndex: sliceState => sliceState.currentTeamIndex,
     },
 });
 
@@ -287,6 +288,7 @@ export const {
                  selectSlots,
                  selectFocusedItem,
                  selectTeams,
+                 selectCurrentTeamIndex,
              } = teamSlice.selectors;
 
 // Return slot message

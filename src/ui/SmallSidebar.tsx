@@ -53,4 +53,5 @@ const SmallNavIcon: FC<{
     )
 }
 
+// TODO: unused
 export default SmallSidebar;

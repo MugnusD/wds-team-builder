@@ -13,7 +13,6 @@ const TeamSelector: FC = () => {
     }, [dispatch, value]);
 
     return (
-        <div className="w-72">
             <Select
                 label="Select Team"
                 value={value}
@@ -32,7 +31,6 @@ const TeamSelector: FC = () => {
                     <Option value={'team11'}>{teams['team11'].title}</Option>
                     <Option value={'team12'}>{teams['team12'].title}</Option>
             </Select>
-        </div>
     );
 };
 

@@ -84,9 +84,10 @@ const CharacterSortAndFilterButton: FC = () => {
                 handler={handleOpen}
                 open={isOpen}
                 size={'md'}
+                className={'h-[]'}
             >
                 <DialogHeader>Sort & Filter</DialogHeader>
-                <DialogBody className="flex flex-col divide-y-2 divide-blue-gray-200">
+                <DialogBody className="flex flex-col gap-4 h-[60vh] md:h-auto overflow-auto">
                     <Select
                         label="Sort By"
                         value={sortBy}
@@ -202,137 +203,137 @@ const CharacterSortAndFilterButton: FC = () => {
                                     key={name}
                                 />)}
                         </div>
-                    </div>
-                    <div className={'flex flex-row flex-wrap'}>
-                        <Checkbox
-                            label={'All'}
-                            checked={isAllRarityChecked}
-                            onChange={() => {
-                                if (isAllRarityChecked) {
-                                    allCharacterRarities.forEach(rarity => updateRarityFilterRecord(draft => {
-                                        draft[rarity] = false;
-                                    }));
-                                } else {
-                                    allCharacterRarities.forEach(rarity => updateRarityFilterRecord(draft => {
-                                        draft[rarity] = true;
-                                    }));
-                                }
-                            }}
-                        />
-                        {allCharacterRarities.map(rarity => <Checkbox
-                            label={<>{rarity[4]} <IoIosStar className={'inline-block'} /></>}
-                            key={rarity}
-                            checked={rarityFilterRecord[rarity]}
-                            onChange={() => updateRarityFilterRecord(draft => {
-                                draft[rarity] = !draft[rarity];
-                            })}
-                        />)}
-                    </div>
-                    <div>
-                        <Checkbox
-                            label={'All'}
-                            checked={isAllSenseTypeChecked}
-                            onChange={() => {
-                                if (isAllSenseTypeChecked) {
-                                    allCharacterSenseType.forEach(senseType => updateSenseFilterRecord(draft => {
-                                        draft[senseType] = false;
-                                    }));
-                                } else {
-                                    allCharacterSenseType.forEach(senseType => updateSenseFilterRecord(draft => {
-                                        draft[senseType] = true;
-                                    }));
-                                }
-                            }}
-                        />
-                        <Checkbox
-                            label={<PiStarFourFill color={'limegreen'} />}
-                            color={'green'}
-                            checked={senseTypeFilterRecord['Support']}
-                            onChange={() => updateSenseFilterRecord(draft => {
-                                draft['Support'] = !draft['Support'];
-                            })}
-                        />
-                        <Checkbox
-                            label={<PiStarFourFill color={'orangered'} />}
-                            color={'orange'}
-                            checked={senseTypeFilterRecord['Amplification']}
-                            onChange={() => updateSenseFilterRecord(draft => {
-                                draft['Amplification'] = !draft['Amplification'];
-                            })}
-                        />
-                        <Checkbox
-                            label={<PiStarFourFill color={'gold'} />}
-                            color={'yellow'}
-                            checked={senseTypeFilterRecord['Special']}
-                            onChange={() => updateSenseFilterRecord(draft => {
-                                draft['Special'] = !draft['Special'];
-                            })}
-                        />
-                        <Checkbox
-                            label={<PiStarFourFill color={'blue'} />}
-                            color={'blue'}
-                            checked={senseTypeFilterRecord['Control']}
-                            onChange={() => updateSenseFilterRecord(draft => {
-                                draft['Control'] = !draft['Control'];
-                            })}
-                        />
-                        <Checkbox
-                            label={<PiStarFourFill color={'black'} />}
-                            checked={senseTypeFilterRecord['None']}
-                            onChange={() => updateSenseFilterRecord(draft => {
-                                draft['None'] = !draft['None'];
-                                draft['Alternative'] = !draft['Alternative'];
-                            })}
-                        />
-                    </div>
-                    <div>
-                        <Checkbox
-                            label={'All'}
-                            checked={isAllAttributeChecked}
-                            onChange={() => {
-                                if (isAllAttributeChecked) {
-                                    allCharacterAttributes.forEach(attribute => updateAttributeFilterRecord(draft => {
-                                        draft[attribute] = false;
-                                    }));
-                                } else {
-                                    allCharacterAttributes.forEach(attribute => updateAttributeFilterRecord(draft => {
-                                        draft[attribute] = true;
-                                    }));
-                                }
-                            }}
-                        />
-                        <Checkbox
-                            label={<GiBowTieRibbon color={'deeppink'} />}
-                            color={'pink'}
-                            checked={attributeFilterRecord['Cute']}
-                            onChange={() => updateAttributeFilterRecord(draft => {
-                                draft['Cute'] = !draft['Cute'];
-                            })}
-                        />
-                        <Checkbox
-                            label={<BiSolidMoon color={'deepskyblue'} />}
-                            color={'blue'}
-                            checked={attributeFilterRecord['Cool']}
-                            onChange={() => updateAttributeFilterRecord(draft => {
-                                draft['Cool'] = !draft['Cool'];
-                            })}
-                        />
-                        <Checkbox
-                            label={<GiChestnutLeaf color={'limegreen'} />}
-                            color={"green"}
-                            checked={attributeFilterRecord['Colorful']}
-                            onChange={() => updateAttributeFilterRecord(draft => {
-                                draft['Colorful'] = !draft['Colorful'];
-                            })}
-                        />
-                        <Checkbox
-                            label={<PiSunFill color={'orangered'} />}
-                            color={'orange'}
-                            checked={attributeFilterRecord['Cheerful']}
-                            onChange={() => updateAttributeFilterRecord(draft => {
-                                draft['Cheerful'] = !draft['Cheerful'];
-                            })}
-                        />
+                        <div className={'flex flex-row flex-wrap'}>
+                            <Checkbox
+                                label={'All'}
+                                checked={isAllRarityChecked}
+                                onChange={() => {
+                                    if (isAllRarityChecked) {
+                                        allCharacterRarities.forEach(rarity => updateRarityFilterRecord(draft => {
+                                            draft[rarity] = false;
+                                        }));
+                                    } else {
+                                        allCharacterRarities.forEach(rarity => updateRarityFilterRecord(draft => {
+                                            draft[rarity] = true;
+                                        }));
+                                    }
+                                }}
+                            />
+                            {allCharacterRarities.map(rarity => <Checkbox
+                                label={<>{rarity[4]} <IoIosStar className={'inline-block'} /></>}
+                                key={rarity}
+                                checked={rarityFilterRecord[rarity]}
+                                onChange={() => updateRarityFilterRecord(draft => {
+                                    draft[rarity] = !draft[rarity];
+                                })}
+                            />)}
+                        </div>
+                        <div>
+                            <Checkbox
+                                label={'All'}
+                                checked={isAllSenseTypeChecked}
+                                onChange={() => {
+                                    if (isAllSenseTypeChecked) {
+                                        allCharacterSenseType.forEach(senseType => updateSenseFilterRecord(draft => {
+                                            draft[senseType] = false;
+                                        }));
+                                    } else {
+                                        allCharacterSenseType.forEach(senseType => updateSenseFilterRecord(draft => {
+                                            draft[senseType] = true;
+                                        }));
+                                    }
+                                }}
+                            />
+                            <Checkbox
+                                label={<PiStarFourFill color={'limegreen'} />}
+                                color={'green'}
+                                checked={senseTypeFilterRecord['Support']}
+                                onChange={() => updateSenseFilterRecord(draft => {
+                                    draft['Support'] = !draft['Support'];
+                                })}
+                            />
+                            <Checkbox
+                                label={<PiStarFourFill color={'orangered'} />}
+                                color={'orange'}
+                                checked={senseTypeFilterRecord['Amplification']}
+                                onChange={() => updateSenseFilterRecord(draft => {
+                                    draft['Amplification'] = !draft['Amplification'];
+                                })}
+                            />
+                            <Checkbox
+                                label={<PiStarFourFill color={'gold'} />}
+                                color={'yellow'}
+                                checked={senseTypeFilterRecord['Special']}
+                                onChange={() => updateSenseFilterRecord(draft => {
+                                    draft['Special'] = !draft['Special'];
+                                })}
+                            />
+                            <Checkbox
+                                label={<PiStarFourFill color={'blue'} />}
+                                color={'blue'}
+                                checked={senseTypeFilterRecord['Control']}
+                                onChange={() => updateSenseFilterRecord(draft => {
+                                    draft['Control'] = !draft['Control'];
+                                })}
+                            />
+                            <Checkbox
+                                label={<PiStarFourFill color={'black'} />}
+                                checked={senseTypeFilterRecord['None']}
+                                onChange={() => updateSenseFilterRecord(draft => {
+                                    draft['None'] = !draft['None'];
+                                    draft['Alternative'] = !draft['Alternative'];
+                                })}
+                            />
+                        </div>
+                        <div>
+                            <Checkbox
+                                label={'All'}
+                                checked={isAllAttributeChecked}
+                                onChange={() => {
+                                    if (isAllAttributeChecked) {
+                                        allCharacterAttributes.forEach(attribute => updateAttributeFilterRecord(draft => {
+                                            draft[attribute] = false;
+                                        }));
+                                    } else {
+                                        allCharacterAttributes.forEach(attribute => updateAttributeFilterRecord(draft => {
+                                            draft[attribute] = true;
+                                        }));
+                                    }
+                                }}
+                            />
+                            <Checkbox
+                                label={<GiBowTieRibbon color={'deeppink'} />}
+                                color={'pink'}
+                                checked={attributeFilterRecord['Cute']}
+                                onChange={() => updateAttributeFilterRecord(draft => {
+                                    draft['Cute'] = !draft['Cute'];
+                                })}
+                            />
+                            <Checkbox
+                                label={<BiSolidMoon color={'deepskyblue'} />}
+                                color={'blue'}
+                                checked={attributeFilterRecord['Cool']}
+                                onChange={() => updateAttributeFilterRecord(draft => {
+                                    draft['Cool'] = !draft['Cool'];
+                                })}
+                            />
+                            <Checkbox
+                                label={<GiChestnutLeaf color={'limegreen'} />}
+                                color={"green"}
+                                checked={attributeFilterRecord['Colorful']}
+                                onChange={() => updateAttributeFilterRecord(draft => {
+                                    draft['Colorful'] = !draft['Colorful'];
+                                })}
+                            />
+                            <Checkbox
+                                label={<PiSunFill color={'orangered'} />}
+                                color={'orange'}
+                                checked={attributeFilterRecord['Cheerful']}
+                                onChange={() => updateAttributeFilterRecord(draft => {
+                                    draft['Cheerful'] = !draft['Cheerful'];
+                                })}
+                            />
+                        </div>
                     </div>
                 </DialogBody>
                 <DialogFooter className={'space-x-4'}>

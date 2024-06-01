@@ -36,7 +36,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
     const {posterIconPosition, isLoading: isLoadingPoster} = usePosterIconPosition();
     const {accessoryIconPosition, isLoading: isLoadingAccessory} = useAccessoryIconPosition();
 
-    if (isLoadingAccessory || isLoadingCharacter|| isLoadingPoster || !characterIconPosition || !posterIconPosition || !accessoryIconPosition) {
+    if (isLoadingAccessory || isLoadingCharacter || isLoadingPoster || !characterIconPosition || !posterIconPosition || !accessoryIconPosition) {
         return (
             <div className={'h-16 w-16 flex justify-center items-center'}>
                 <Spinner />
@@ -89,12 +89,13 @@ const GameItemIcon: FC<IconProps> = (props) => {
             fullId = id.toString() + '_0';
         }
 
-        const position = (characterIconPosition[fullId]) ? `-${characterIconPosition[fullId].x }px -${characterIconPosition[fullId].y}px` : '';
+        const position = (characterIconPosition[fullId]) ? `-${characterIconPosition[fullId].x}px -${characterIconPosition[fullId].y}px` : '';
 
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('relative rounded-xl overflow-hidden', containerSize, padding,
+                className={clsx('relative overflow-hidden', containerSize, padding,
+                    size === 'small' ? 'rounded-[8px]' : 'rounded-xl',
                     rarity === 'Rare4' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'Rare3' && 'bg-yellow-500',
                     (rarity === 'Rare2' || rarity === 'Rare1') && 'bg-gray-600',
@@ -119,12 +120,16 @@ const GameItemIcon: FC<IconProps> = (props) => {
                     }}
                 ></div>
 
-                <div className={'absolute top-0 left-0 bg-stone-600 border-gold-500 border-2 rounded-full'}>
-                    <AttributeIcon attribute={attribute} />
-                </div>
-                <div className={'absolute bottom-0 left-0 bg-stone-600 border-silver-500 border-2 rounded-full'}>
-                    <SenseIcon senseType={sense} />
-                </div>
+                {size !== 'small' && (
+                    <>
+                        <div className={'absolute top-0 left-0 bg-stone-600 border-gold-500 border-2 rounded-full'}>
+                            <AttributeIcon attribute={attribute} />
+                        </div>
+                        <div className={'absolute bottom-0 left-0 bg-stone-600 border-silver-500 border-2 rounded-full'}>
+                            <SenseIcon senseType={sense} />
+                        </div>
+                    </>
+                )}
                 {isLeader && (
                     <div className={'absolute rotate-45 -right-[22px] top-[10px] bg-red-600 text-white text-sm text-center w-20 '}>
                         Leader
