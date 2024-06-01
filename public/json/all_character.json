@@ -13989,6 +13989,160 @@
     ]
   },
   {
+    "id": 130500,
+    "name": "勝手なことは許さない",
+    "rarity": "Rare3",
+    "attribute": "Cheerful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 21,
+          "expression": 20,
+          "concentration": 25
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 7642,
+          "expression": 7557,
+          "concentration": 9274
+        }
+      }
+    ],
+    "characterBase": "連尺野初魅",
+    "starAct": {
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 3,
+          "bloom": 2
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 0,
+          "bloom": 0
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "4.9~6.5倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力4.9~6.5倍的分数"
+      ],
+      "type": "Support",
+      "lightCount": 1,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 50,
+        "bloom": 50
+      },
+      "effectTypes": []
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力2％UP",
+          "スターアクト発動に必要な支援の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%",
+          "Star Act发动所需要的支援系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力4％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升4%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-05-31T08:00:00.000Z",
+    "event": "bet or fold？",
+    "gacha": "无",
+    "type": "EventExchange",
+    "episodes": [
+      {
+        "id": 130501,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 130502,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
     "id": 130510,
     "name": "3分だけだからね！",
     "rarity": "Rare3",
@@ -25846,6 +26000,332 @@
     ]
   },
   {
+    "id": 140760,
+    "name": "初めての恋は成就したか",
+    "rarity": "Rare4",
+    "attribute": "Cheerful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 29,
+          "expression": 35,
+          "concentration": 22
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 12022,
+          "expression": 14289,
+          "concentration": 9263
+        }
+      }
+    ],
+    "characterBase": "萬容",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得",
+        "ストックされている特殊系の光1個につき総演技力の5.5~8倍のスコアを追加で獲得(最大5個)"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数",
+        "ストックされている特殊系の光1個につき総演技力の5.5~8倍のスコアを追加で獲得(最大5個)"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 4,
+          "bloom": 3
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "1.5~3.1倍のスコアを獲得",
+        "80のプリンシパルゲージを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力1.5~3.1倍的分数",
+        "获得80点Principal Gauge"
+      ],
+      "type": "Special",
+      "lightCount": 1,
+      "acquirableGauge": 80,
+      "coolTime": {
+        "origin": 30,
+        "bloom": 25
+      },
+      "effectTypes": []
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な特殊の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的特殊系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "基礎スコアが5％上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "基础分数提升5%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-05-31T08:00:00.000Z",
+    "event": "bet or fold？",
+    "gacha": "bet or fold？ガチャ",
+    "type": "TimeLimited",
+    "episodes": [
+      {
+        "id": 140761,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140762,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
+    "id": 140770,
+    "name": "正しくあるべき人の道を説く",
+    "rarity": "Rare4",
+    "attribute": "Cheerful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 31,
+          "expression": 23,
+          "concentration": 30
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 12810,
+          "expression": 9756,
+          "concentration": 12613
+        }
+      }
+    ],
+    "characterBase": "舎人仁花子",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得",
+        "付与されているライフガード1回につきスコア獲得量10％上昇（最大＋50％）"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数",
+        "付与されているライフガード1回につきスコア獲得量10％上昇（最大＋50％）"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 4,
+          "bloom": 3
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "6.7~9.1倍のスコアを獲得",
+        "付与されているライフガード1回につきスコア獲得量10％上昇（最大＋50％）"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力6.7~9.1倍的分数",
+        "付与されているライフガード1回につきスコア獲得量10％上昇（最大＋50％）"
+      ],
+      "type": "Control",
+      "lightCount": 1,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 50,
+        "bloom": 45
+      },
+      "effectTypes": [
+        "SenseScoreUp"
+      ]
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な支配の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的支配系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "基礎スコアが5％上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "基础分数提升5%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-05-31T08:00:00.000Z",
+    "event": "bet or fold？",
+    "gacha": "bet or fold？ガチャ",
+    "type": "TimeLimited",
+    "episodes": [
+      {
+        "id": 140771,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140772,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
     "id": 140780,
     "name": "LIVE YOUR STYLE",
     "rarity": "Rare4",
@@ -25921,10 +26401,10 @@
     },
     "sense": {
       "descriptions": [
-        "2.5~4.9倍のスコアを獲得"
+        "6.7~9.1倍のスコアを獲得"
       ],
       "descriptionsChinese": [
-        "获得自身演技力2.5~4.9倍的分数"
+        "获得自身演技力6.7~9.1倍的分数"
       ],
       "type": "Support",
       "lightCount": 2,
@@ -26200,11 +26680,11 @@
     "starAct": {
       "descriptions": [
         "総演技力の9.7~14.7倍のスコアを獲得",
-        "ストックされている支援系の光1個につき総演技力の3.5~6倍のスコアを獲得(最大5個)"
+        "ストックされている支援系の光1個につき総演技力の3.5~6倍のスコアを追加で獲得(最大5個)"
       ],
       "descriptionsChinese": [
         "获得总演技力9.7~14.7倍的分数",
-        "当前每储存1个支援系的光，获得总演技力3.5~6倍的分数（最多计入5个）"
+        "ストックされている支援系の光1個につき総演技力の3.5~6倍のスコアを追加で獲得(最大5個)"
       ],
       "conditions": [
         {
@@ -26363,11 +26843,11 @@
     "starAct": {
       "descriptions": [
         "総演技力の9.7~14.7倍のスコアを獲得",
-        "ストックされている増幅系の光1個につき総演技力の3.5~6倍のスコアを獲得(最大5個)"
+        "ストックされている増幅系の光1個につき総演技力の3.5~6倍のスコアを追加で獲得(最大5個)"
       ],
       "descriptionsChinese": [
         "获得总演技力9.7~14.7倍的分数",
-        "当前每储存1个增幅系的光，获得总演技力3.5~6倍的分数（最多计入5个）"
+        "ストックされている増幅系の光1個につき総演技力の3.5~6倍のスコアを追加で獲得(最大5個)"
       ],
       "conditions": [
         {
