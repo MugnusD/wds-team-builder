@@ -8,7 +8,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {selectCurrentTeamIndex, selectSlots, setSlots, SlotType} from "../teamSlice.ts";
 import {decompressSlots} from "../../../utils/string/decompressSlots.ts";
 
-const TimelineBox: FC = () => {
+const TeamSlots: FC = () => {
     const isBigScreen = useBigScreenQuery();
     const slots = useSelector(selectSlots);
     const dispatch = useDispatch();
@@ -49,4 +49,4 @@ const TimelineBox: FC = () => {
     )
 }
 
-export default TimelineBox;
+export default TeamSlots;

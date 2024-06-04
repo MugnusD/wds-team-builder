@@ -46,14 +46,12 @@ const GameItemIcon: FC<IconProps> = (props) => {
 
     let containerSize: string;
     let ratio: number;
-    let translate: string;
     let padding: string;
     let iconSize: number;
     switch (size) {
         case 'normal': {
             containerSize = 'h-16 w-16';
             ratio = 56 / 188;
-            translate = 'translate(-222px, -222px)';
             padding = 'p-1';
             iconSize = 35;
             break;
@@ -61,15 +59,13 @@ const GameItemIcon: FC<IconProps> = (props) => {
         case 'small': {
             containerSize = 'h-12 w-12';
             ratio = 44 / 188;
-            translate = 'translate(-299px, -299px)';
-            padding = 'p-0.25';
+            padding = 'p-0.5';
             iconSize = 25;
             break;
         }
         case 'big': {
             containerSize = 'h-24 w-24';
             ratio = 88 / 188;
-            translate = 'translate(-106px, -106px)';
             padding = 'p-1';
             iconSize = 35;
             break;
@@ -116,7 +112,8 @@ const GameItemIcon: FC<IconProps> = (props) => {
                         width: '188px',
                         height: '188px',
                         backgroundPosition: position,
-                        transform: `scale(${ratio}) ${translate}`,
+                        transformOrigin: '0 0',
+                        transform: `scale(${ratio})`,
                     }}
                 ></div>
 
@@ -166,7 +163,8 @@ const GameItemIcon: FC<IconProps> = (props) => {
                             width: '188px',
                             height: '188px',
                             backgroundPosition: position,
-                            transform: `scale(${ratio}) ${translate}`,
+                            transformOrigin: '0 0',
+                            transform: `scale(${ratio})`,
                             borderRadius: '50%',
                         }}
                     ></div>
@@ -210,8 +208,9 @@ const GameItemIcon: FC<IconProps> = (props) => {
                             backgroundImage: 'url("/img/accessory_sprite.webp")',
                             width: '188px',
                             height: '188px',
+                            transformOrigin: '0 0',
                             backgroundPosition: position,
-                            transform: `scale(${ratio}) ${translate}`,
+                            transform: `scale(${ratio})`,
                             borderRadius: '50%',
                         }}
                     ></div>

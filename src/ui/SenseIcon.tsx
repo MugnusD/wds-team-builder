@@ -2,7 +2,7 @@ import {FC} from 'react';
 import {PiStarFourFill} from "react-icons/pi";
 
 const SenseIcon: FC<{
-    senseType: SenseType | undefined,
+    senseType: SenseType | undefined | 'SP',
 }> = ({senseType}) => {
     switch (senseType) {
         case "Support": {
@@ -16,6 +16,9 @@ const SenseIcon: FC<{
         }
         case "Control": {
             return <PiStarFourFill color={'#FF3838'} />;
+        }
+        case 'SP': {
+            return <PiStarFourFill color={'#BDC3C7'} />
         }
         default: {
             return null;

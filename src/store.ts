@@ -4,10 +4,12 @@ import storage from 'redux-persist/lib/storage';
 
 import {slotsInitialState, TeamIndex, teamReducer, TeamSliceState} from "./features/team/teamSlice.ts";
 import {selectedGameItemReducer, SelectTabsSliceState} from "./features/tabs/selectTabsSlice.ts";
+import {timelineReducer, TimelineSliceState} from "./features/team/teamTimeLine/timelineSlice.ts";
 
 interface RootState {
-    team: TeamSliceState;
-    selectedGameItem: SelectTabsSliceState;
+    team: TeamSliceState,
+    selectedGameItem: SelectTabsSliceState,
+    timeline: TimelineSliceState,
 }
 
 const teamTransform = createTransform<TeamSliceState, TeamSliceState>(
@@ -27,8 +29,6 @@ const teamTransform = createTransform<TeamSliceState, TeamSliceState>(
             }
         });
 
-        console.log(teams);
-
         return {...outboundState, teams};
     },
     {whitelist: ['team']},
@@ -37,13 +37,14 @@ const teamTransform = createTransform<TeamSliceState, TeamSliceState>(
 const persistConfig = {
     key: 'root-v1',
     storage: storage,
-    whitelist: ['team'],
+    whitelist: ['team', 'timeline'],
     transforms: [teamTransform],
 };
 
 const rootReducer = combineReducers({
     team: teamReducer,
     selectedGameItem: selectedGameItemReducer,
+    timeline: timelineReducer,
 });
 
 // persist team slice to local storage

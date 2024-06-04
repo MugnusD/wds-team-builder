@@ -1,7 +1,7 @@
 import {FC, useState} from 'react';
 import {Button, Dialog, DialogBody, DialogHeader} from "@material-tailwind/react";
 import TeamPreview from "./TeamPreview.tsx";
-import {CopiedTeamProvider} from "./SelectedIndexContent.tsx";
+import {CopiedTeamProvider} from "./CopiedTeamContext.tsx";
 
 const TeamPreviewButton: FC = () => {
     const [isOpen, setIsOpen] = useState(false);

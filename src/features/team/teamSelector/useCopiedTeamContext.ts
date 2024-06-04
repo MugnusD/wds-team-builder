@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import {CopiedTeamContext} from "./SelectedIndexContent.tsx";
+import {CopiedTeamContext} from "./CopiedTeamContext.tsx";
 
 const useCopiedTeamContext = () => {
     return useContext(CopiedTeamContext);

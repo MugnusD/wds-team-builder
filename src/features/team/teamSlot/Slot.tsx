@@ -13,28 +13,31 @@ import {
 } from "../teamSlice.ts";
 import {useDrag, useDrop} from "react-dnd";
 import {DraggedItemType} from "../../../types/DragItemType.ts";
-import useCharacters from "../../../hooks/useCharacters.ts";
 import toast from "react-hot-toast";
 import { Dialog, Spinner} from "@material-tailwind/react";
 import {GameItemType, setTabType} from "../../tabs/selectTabsSlice.ts";
 import useBigScreenQuery from "../../../hooks/useBigScreenQuery.ts";
 import clsx from "clsx";
 import GameItemIcon, {IconRenderDetails} from "../../../ui/GameItemIcon.tsx";
-import usePosters from "../../../hooks/usePosters.ts";
 import {getEmptyImage} from "react-dnd-html5-backend";
 import {SlotItemType} from "../../../ui/CustomDragLayer.tsx";
-import useAccessories from "../../../hooks/useAccessories.ts";
 import CharacterSortAndFilterButton from "../../tabs/tabsHeaderComponent/CharacterSortAndFilterButton.tsx";
 import PosterSortAndFilterButton from "../../tabs/tabsHeaderComponent/PosterSortAndFilterButton.tsx";
 import CharacterTabsContent from "../../tabs/tabBodyComponents/CharacterTabsContent.tsx";
 import PosterTabsContent from "../../tabs/tabBodyComponents/PosterTabsContent.tsx";
 import AccessoryTabsContent from "../../tabs/tabBodyComponents/AccessoryTabsContent.tsx";
+import useCurrentTeamContext from "../useCurrentTeamContext.ts";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
 }> = ({slotIndex}) => {
     // Media Query
     const isBigScreen = useBigScreenQuery();
+
+    // details
+    const context = useCurrentTeamContext();
+    const {characterDetail, posterDetail, accessoryDetail} = context[slotIndex];
+    const {isLoading, isError} = context;
 
     // Redux
     const {
@@ -44,6 +47,7 @@ const Slot: FC<{
               posterId,
               accessoryId,
           } = useSelector(state => selectSlotByIndex(state, slotIndex));
+
     const leaderIndex = useSelector(selectLeaderIndex);
     const selectedItem = useSelector(selectFocusedItem);
     const dispatch = useDispatch();
@@ -61,36 +65,36 @@ const Slot: FC<{
     const currentSlotFocusedItem = selectedItem?.slotIndex === slotIndex ? selectedItem.itemType : null;
 
     // Fetch character data & find
-    const {
-              isLoading,
-              isError,
-              characters,
-          } = useCharacters();
-    const [characterDetail, setCharacterDetail] = useState<CharacterDetail>();
-    useEffect(() => {
-        if (characterId && characters) {
-            const character = characters?.find(character => character.id === characterId) ?? {} as CharacterDetail;
-            setCharacterDetail(character);
-        }
-    }, [characterId, characters]);
-
-    const {posters} = usePosters();
-    const [posterDetail, setPosterDetail] = useState<PosterDetail>();
-    useEffect(() => {
-        if (posterId !== 0 && posters) {
-            const poster = posters?.find(poster => poster.id === posterId) ?? {} as PosterDetail;
-            setPosterDetail(poster);
-        }
-    }, [posterId, posters]);
-
-    const {accessories} = useAccessories();
-    const [accessoryDetail, setAccessoryDetail] = useState<AccessoryDetail>();
-    useEffect(() => {
-        if (accessoryId !== 0 && accessories) {
-            const accessory = accessories?.find(accessory => accessory.id === accessoryId) ?? {} as AccessoryDetail;
-            setAccessoryDetail(accessory);
-        }
-    }, [accessoryId, accessories]);
+    // const {
+    //           isLoading,
+    //           isError,
+    //           characters,
+    //       } = useCharacters();
+    // const [characterDetail, setCharacterDetail] = useState<CharacterDetail>();
+    // useEffect(() => {
+    //     if (characterId && characters) {
+    //         const character = characters?.find(character => character.id === characterId) ?? {} as CharacterDetail;
+    //         setCharacterDetail(character);
+    //     }
+    // }, [characterId, characters]);
+    //
+    // const {posters} = usePosters();
+    // const [posterDetail, setPosterDetail] = useState<PosterDetail>();
+    // useEffect(() => {
+    //     if (posterId !== 0 && posters) {
+    //         const poster = posters?.find(poster => poster.id === posterId) ?? {} as PosterDetail;
+    //         setPosterDetail(poster);
+    //     }
+    // }, [posterId, posters]);
+    //
+    // const {accessories} = useAccessories();
+    // const [accessoryDetail, setAccessoryDetail] = useState<AccessoryDetail>();
+    // useEffect(() => {
+    //     if (accessoryId !== 0 && accessories) {
+    //         const accessory = accessories?.find(accessory => accessory.id === accessoryId) ?? {} as AccessoryDetail;
+    //         setAccessoryDetail(accessory);
+    //     }
+    // }, [accessoryId, accessories]);
 
     // Character
     let bloom: number,

@@ -69,7 +69,7 @@ interface StarActDetail {
     conditions: StarActLightCondition[];
 }
 interface StarActLightCondition {
-    type: string;
+    type: 'Alternative' | 'Support' | 'Control' | 'Amplification' | 'Special';
     typeChinese: string;
     origin: number;
     bloom: number;

@@ -2,7 +2,7 @@ import {FC} from 'react';
 import {useDragLayer} from "react-dnd";
 import GameItemIcon, {IconRenderDetails} from "./GameItemIcon.tsx";
 import {SlotIndex, SwapPayload} from "../features/team/teamSlice.ts";
-import DraggedSlotPreview from "../features/team/teamBuilder/DraggedSlotPreview.tsx";
+import DraggedSlotPreview from "../features/team/teamSlot/DraggedSlotPreview.tsx";
 
 export type SlotItemType = {
     index: SlotIndex,
