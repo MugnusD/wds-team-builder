@@ -127,7 +127,7 @@ const TimelineSettingButton: FC = () => {
                 <DialogBody className={'flex flex-col gap-4'}>
                     <div className={'flex flex-col gap-2'}>
                         <Typography>
-                            Input the total length of the music(number of seconds with up to 3 digits).
+                            Input the total length of the music(number of seconds up to 3 digits).
                         </Typography>
                         <Input label={'Length'} value={lengthInput} onChange={handleLengthInputChange} />
                     </div>
