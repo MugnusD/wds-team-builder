@@ -142,7 +142,7 @@ const TimelineSettingButton: FC = () => {
                         <Input label={'Slot 5'} value={timeline4} onChange={handleTimeline4Change} />
                         {showWarning && (
                             <Typography variant={'small'} color={'red'}>
-                                Sense times should not be should not be greater than total length!
+                                Sense times should not be greater than total length!
                             </Typography>
                         )}
                     </div>
