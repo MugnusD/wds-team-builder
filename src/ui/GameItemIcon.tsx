@@ -25,9 +25,10 @@ export type IconRenderDetails = {
 type IconProps = {
     id: number,
     detail: IconRenderDetails,
-    size?: 'small' | 'normal' | 'big',
-    isLeader?: boolean
+    size?: 'small' | 'normal' | 'large' | 'max' ,
+    isLeader?: boolean,
 }
+
 
 const GameItemIcon: FC<IconProps> = (props) => {
     const {id, detail, size = 'normal', isLeader = false} = props;
@@ -48,12 +49,14 @@ const GameItemIcon: FC<IconProps> = (props) => {
     let ratio: number;
     let padding: string;
     let iconSize: number;
+    let rounded: string;
     switch (size) {
         case 'normal': {
             containerSize = 'h-16 w-16';
             ratio = 56 / 188;
             padding = 'p-1';
             iconSize = 35;
+            rounded = 'rounded-xl'
             break;
         }
         case 'small': {
@@ -61,13 +64,23 @@ const GameItemIcon: FC<IconProps> = (props) => {
             ratio = 44 / 188;
             padding = 'p-0.5';
             iconSize = 25;
+            rounded = 'rounded-[8px]';
             break;
         }
-        case 'big': {
+        case 'large': {
             containerSize = 'h-24 w-24';
             ratio = 88 / 188;
             padding = 'p-1';
             iconSize = 35;
+            rounded = 'rounded-xl'
+            break;
+        }
+        case 'max': {
+            containerSize = 'h-[204px] w-[204px]';
+            ratio = 188 / 188;
+            padding = 'p-2';
+            iconSize = 50;
+            rounded = 'rounded-3xl'
             break;
         }
     }
@@ -90,8 +103,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
         return (
             <div
                 // className={'h-16 w-16 relative p-1 rounded-xl ' + (rarity === 'Rare4' && ' bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77] ')}
-                className={clsx('relative overflow-hidden', containerSize, padding,
-                    size === 'small' ? 'rounded-[8px]' : 'rounded-xl',
+                className={clsx('relative overflow-hidden', containerSize, padding, rounded,
                     rarity === 'Rare4' && 'bg-gradient-to-br from-[#62e2f9] via-[#aa77ee] to-[#fedd77]',
                     rarity === 'Rare3' && 'bg-yellow-500',
                     (rarity === 'Rare2' || rarity === 'Rare1') && 'bg-gray-600',
@@ -105,8 +117,7 @@ const GameItemIcon: FC<IconProps> = (props) => {
                     className={'select-none'}
                 />*/}
 
-
-                <div
+                {<div
                     style={{
                         backgroundImage: 'url("/img/character_sprite.webp")',
                         width: '188px',
@@ -115,22 +126,27 @@ const GameItemIcon: FC<IconProps> = (props) => {
                         transformOrigin: '0 0',
                         transform: `scale(${ratio})`,
                     }}
-                ></div>
+                ></div>}
 
                 {size !== 'small' && (
                     <>
                         <div className={'absolute top-0 left-0 bg-stone-600 border-gold-500 border-2 rounded-full'}>
-                            <AttributeIcon attribute={attribute} />
+                            <AttributeIcon attribute={attribute} size={size === 'max' ? 'large' : 'normal'} />
                         </div>
                         <div className={'absolute bottom-0 left-0 bg-stone-600 border-silver-500 border-2 rounded-full'}>
-                            <SenseIcon senseType={sense} />
+                            <SenseIcon senseType={sense} size={size === 'max' ? 'large' : 'normal'} />
                         </div>
                     </>
                 )}
-                {isLeader && (
-                    <div className={'absolute rotate-45 -right-[22px] top-[10px] bg-red-600 text-white text-sm text-center w-20 '}>
-                        Leader
-                    </div>
+                {isLeader && (size === 'max'
+                    ? (
+                        <div className={'absolute rotate-45 -right-[45px] top-[20px] bg-red-600 text-white text-lg text-center font-bold w-40 py-0.5 tracking-wider'}>
+                            Leader
+                        </div>)
+                    : (
+                        <div className={'absolute rotate-45 -right-[22px] top-[10px] bg-red-600 text-white text-sm text-center w-20 '}>
+                            Leader
+                        </div>)
                 )}
             </div>
         );
@@ -214,7 +230,6 @@ const GameItemIcon: FC<IconProps> = (props) => {
                             borderRadius: '50%',
                         }}
                     ></div>
-
                 }
                 {id === 0 &&
                     <div className={'bg-white rounded-full w-full h-full flex items-center justify-center -z-10'}>

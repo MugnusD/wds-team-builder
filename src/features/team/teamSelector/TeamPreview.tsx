@@ -48,8 +48,10 @@ const TeamPreview: FC<{
     const [isDisablePasteCode, setIsDisablePasteCode] = useState(false);
     const [isOpenPasteWrongDialog, setIsOpenPasteWrongDialog] = useState(false);
     const [isPasteCodeSuccess, setIsPasteCodeSuccess] = useState(false);
+
     const [isImageCopying, setIsImageCopying] = useState(false);
     const [isImageCopiedSuccessfully, setIsImageCopiedSuccessfully] = useState(false);
+    const [isCopyImageDialogOpen, setIsCopyImageDialogOpen] = useState(false);
 
     if (isLoadingAccessory || isLoadingCharacter || isLoadingPoster || !characters || !posters || !accessories) {
         return <Spinner />;
@@ -208,15 +210,19 @@ const TeamPreview: FC<{
                     });
                     setIsImageCopying(false);
                     setIsImageCopiedSuccessfully(true);
+                    setIsCopyImageDialogOpen(false);
                     setTimeout(() => {
                         setIsImageCopiedSuccessfully(false);
-                    }, 1000);
+                    }, 3000);
                     return navigator.clipboard.write([clipboardItem]);
                 })
                 .catch(() => {
                     setIsImageCopying(false);
                 });
         }, 50);
+    };
+    const handleOpenCopyImageDialog = () => {
+        setIsCopyImageDialogOpen(isOpen => !isOpen);
     };
 
     // Reset Dialog
@@ -234,7 +240,7 @@ const TeamPreview: FC<{
                 />
             </div>
             <div className={'flex gap-3'} key={teamIndex}>
-                <div className={'flex gap-1.5'} ref={htmlImageRef}>
+                <div className={'flex gap-1.5'}>
                     {slotsRenderPropsArray.map(slotsRenderProps => (
                         <TeamCharacterPreview {...slotsRenderProps} key={slotsRenderProps.characterId} />
                     ))}
@@ -293,6 +299,8 @@ const TeamPreview: FC<{
                     <Button disabled={isDisableCopyCode} onClick={handleCopyCode} color={'blue'}>
                         {isDisableCopyCode ? 'Copied !' : 'Copy Code'}
                     </Button>
+
+                    {/* Paste Code */}
                     <Button
                         disabled={isDisablePasteCode}
                         onClick={handlePasteCode}
@@ -300,18 +308,6 @@ const TeamPreview: FC<{
                         color={'blue'}
                     >
                         {isPasteCodeSuccess ? 'Paste !' : 'Paste Code'}
-                    </Button>
-                    <Button
-                        color={'pink'}
-                        onClick={handleCopyImage}
-                        disabled={isImageCopying || isImageCopiedSuccessfully}
-                    >
-                        {isImageCopying ?
-                            'Waiting...' :
-                            isImageCopiedSuccessfully ?
-                                'Success !' :
-                                'Copy Image'
-                        }
                     </Button>
                     <Dialog open={isOpenPasteWrongDialog} handler={() => setIsOpenPasteWrongDialog(open => !open)}>
                         <DialogHeader>
@@ -323,6 +319,44 @@ const TeamPreview: FC<{
                         <DialogFooter>
                             <Button onClick={() => setIsOpenPasteWrongDialog(open => !open)} color={'green'}>
                                 Back
+                            </Button>
+                        </DialogFooter>
+                    </Dialog>
+
+                    <Button
+                        color={'pink'}
+                        onClick={handleOpenCopyImageDialog}
+                        disabled={isImageCopiedSuccessfully}
+                    >
+                        {isImageCopiedSuccessfully ? 'Success !' : 'Copy Image'}
+                    </Button>
+                    <Dialog open={isCopyImageDialogOpen} handler={handleOpenCopyImageDialog} size={'xl'}>
+                        <DialogHeader>
+                            Copy Image
+                        </DialogHeader>
+                        <DialogBody className={'flex justify-center'}>
+                            <div className={'flex gap-1.5'} ref={htmlImageRef}>
+                                {slotsRenderPropsArray.map(slotsRenderProps => (
+                                    <TeamCharacterPreview
+                                        {...slotsRenderProps}
+                                        key={slotsRenderProps.characterId}
+                                        size={'large'}
+                                    />
+                                ))}
+                            </div>
+                        </DialogBody>
+                        <DialogFooter>
+                            <Button
+                                variant={'text'}
+                                color={'red'}
+                                onClick={handleOpenCopyImageDialog}
+                                className={'mr-1'}
+                                disabled={isImageCopying}
+                            >
+                                Cancel
+                            </Button>
+                            <Button color={'green'} onClick={handleCopyImage} disabled={isImageCopying}>
+                                Copy to Clipboard
                             </Button>
                         </DialogFooter>
                     </Dialog>
