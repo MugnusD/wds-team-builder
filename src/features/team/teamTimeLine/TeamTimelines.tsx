@@ -47,6 +47,10 @@ const TeamTimelines: FC = () => {
             const characterSenseType = characterDetail?.sense.type ?? 'None';
             lightArray.push(characterSenseType);
 
+            if (characterDetail?.sense.lightCount && characterDetail?.sense.lightCount > 1) {
+                extraLightArray[index][characterSenseType] += 1;
+            }
+
             const characterCt = characterDetail?.sense.coolTime.bloom ?? 0;
             ctArray.push(characterCt - 1);
 

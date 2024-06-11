@@ -14458,6 +14458,160 @@
     ]
   },
   {
+    "id": 130550,
+    "name": "踏みにじられた者の怒り",
+    "rarity": "Rare3",
+    "attribute": "Cute",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 22,
+          "expression": 24,
+          "concentration": 20
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 8072,
+          "expression": 8931,
+          "concentration": 7471
+        }
+      }
+    ],
+    "characterBase": "猫足蕾",
+    "starAct": {
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 3,
+          "bloom": 2
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "5.2~7.2倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力5.2~7.2倍的分数"
+      ],
+      "type": "Special",
+      "lightCount": 1,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 60,
+        "bloom": 60
+      },
+      "effectTypes": []
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力2％UP",
+          "スターアクト発動に必要な特殊の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%",
+          "Star Act发动所需要的特殊系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力4％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升4%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-06-10T08:00:00.000Z",
+    "event": "反逆、すべては目指す舞台のために",
+    "gacha": "无",
+    "type": "None",
+    "episodes": [
+      {
+        "id": 130551,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 130552,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
     "id": 130560,
     "name": "フラワー・テンペスト",
     "rarity": "Rare3",
@@ -26962,6 +27116,330 @@
       },
       {
         "id": 140812,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
+    "id": 140860,
+    "name": "連なる薔薇の懐かしき香り",
+    "rarity": "Rare4",
+    "attribute": "Cute",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 37,
+          "expression": 19,
+          "concentration": 31
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 15077,
+          "expression": 8179,
+          "concentration": 12712
+        }
+      }
+    ],
+    "characterBase": "本巣叶羽",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 4,
+          "bloom": 3
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "6.1~8.5倍のスコアを獲得",
+        "センス発動直後、自身の歌唱力の3.6~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力6.1~8.5倍的分数",
+        "Sense发动后，获得自身歌唱力3.6~6倍的分数"
+      ],
+      "type": "Control",
+      "lightCount": 2,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 45,
+        "bloom": 40
+      },
+      "effectTypes": [
+        "ScoreGainOnVocal"
+      ]
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な支配の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的支配系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "基礎スコアが5％上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "基础分数提升5%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-06-10T08:00:00.000Z",
+    "event": "反逆、すべては目指す舞台のために",
+    "gacha": "反逆、すべては目指す舞台のためにガチャ",
+    "type": "ClubLimited",
+    "episodes": [
+      {
+        "id": 140861,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140862,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
+    "id": 140870,
+    "name": "白き死神は戦場を駆け",
+    "rarity": "Rare4",
+    "attribute": "Cute",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 29,
+          "expression": 32,
+          "concentration": 24
+        }
+      },
+      {
+        "preset": {
+          "level": 140,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 12121,
+          "expression": 13106,
+          "concentration": 9953
+        }
+      }
+    ],
+    "characterBase": "白丸美兎",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得",
+        "ストックされている増幅系の光1個につき総演技力の5.5~8倍のスコアを追加で獲得(最大5個)"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数",
+        "ストックされている増幅系の光1個につき総演技力の5.5~8倍のスコアを追加で獲得(最大5個)"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 4,
+          "bloom": 3
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "1.7~3.7倍のスコアを獲得",
+        "90のプリンシパルゲージを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力1.7~3.7倍的分数",
+        "获得90点Principal Gauge"
+      ],
+      "type": "Amplification",
+      "lightCount": 1,
+      "acquirableGauge": 90,
+      "coolTime": {
+        "origin": 40,
+        "bloom": 35
+      },
+      "effectTypes": []
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な増幅の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的增幅系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "初期プリンシパルゲージが50上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "初始Principal Gauge上升50"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-06-10T08:00:00.000Z",
+    "event": "反逆、すべては目指す舞台のために",
+    "gacha": "反逆、すべては目指す舞台のためにガチャ",
+    "type": "ClubLimited",
+    "episodes": [
+      {
+        "id": 140871,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140872,
         "episodeOrder": "Second"
       }
     ]

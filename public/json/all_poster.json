@@ -20195,6 +20195,96 @@
     "stories": []
   },
   {
+    "id": 320070,
+    "name": "反逆、すべては目指す舞台のために",
+    "rarity": "SR",
+    "pronounceName": "はんぎゃくすべてはめざすぶたいのために",
+    "appearanceCharacterBases": [
+      "白丸美兎",
+      "本巣叶羽"
+    ],
+    "appearanceCharacterBasesChinese": [
+      "白丸美兔",
+      "本巢叶羽"
+    ],
+    "displayStartAt": "2024-06-10T08:00:00.000Z",
+    "abilities": [
+      {
+        "name": "正しいやり方を探して",
+        "description": "劇団電姫に所属するアクターの演技力が13.6~40％上昇",
+        "descriptionChinese": "剧团电姬的演员的演技力提升13.6~40%",
+        "effectDetails": [
+          [
+            13.6,
+            16,
+            18.4,
+            20.8,
+            23.2,
+            25.6,
+            28,
+            30.4,
+            32.8,
+            35.2,
+            37.6,
+            40
+          ]
+        ],
+        "type": "Leader",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "演技力アップ",
+        "description": "自身の演技力が6~17％上昇　◆発動条件：劇団電姫に所属するアクターが装備",
+        "descriptionChinese": "自身的演技力提升6~17%　◆发动条件：由剧团电姬的演员装备",
+        "effectDetails": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "P.ゲージ獲得量アップ",
+        "description": "センスによるP.ゲージの獲得量が48~136%UP　◆発動条件：劇団電姫に所属するアクターが装備",
+        "descriptionChinese": "Sense中的Principal Gauge获得量提升48~136%　◆发动条件：由剧团电姬的演员装备",
+        "effectDetails": [
+          [
+            48,
+            56,
+            64,
+            72,
+            80,
+            88,
+            96,
+            104,
+            112,
+            120,
+            128,
+            136
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 7
+      }
+    ],
+    "event": "反逆、すべては目指す舞台のために",
+    "gacha": "无",
+    "type": "None",
+    "stories": []
+  },
+  {
     "id": 330010,
     "name": "結ぶぞ！その契約！",
     "rarity": "SSR",
@@ -20816,6 +20906,256 @@
     ],
     "event": "ステラリズムシューターズ！",
     "gacha": "オンゲキコラボガチャ",
+    "type": "ClubLimited",
+    "stories": []
+  },
+  {
+    "id": 330060,
+    "name": "暴虐を極めし帝国に反逆を",
+    "rarity": "SSR",
+    "pronounceName": "ぼうぎゃくをきわめしていこくにはんぎゃくを",
+    "appearanceCharacterBases": [
+      "千寿いろは",
+      "阿岐留カミラ",
+      "猫足蕾"
+    ],
+    "appearanceCharacterBasesChinese": [
+      "千寿伊吕波",
+      "阿岐留卡米拉",
+      "猫足蕾"
+    ],
+    "displayStartAt": "2024-06-10T08:00:00.000Z",
+    "abilities": [
+      {
+        "name": "反逆の幕を上げよう",
+        "description": "劇団電姫に所属するアクターの演技力が28~80％上昇",
+        "descriptionChinese": "剧团电姬的演员的演技力提升28~80%",
+        "effectDetails": [
+          [
+            28,
+            32,
+            36,
+            40,
+            44,
+            48,
+            52,
+            56,
+            60,
+            64,
+            68,
+            72,
+            76,
+            80
+          ]
+        ],
+        "type": "Leader",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "演技力アップⅢ＋",
+        "description": "自身の演技力が17.5~63%上昇",
+        "descriptionChinese": "自身的演技力提升17.5~63%",
+        "effectDetails": [
+          [
+            17.5,
+            21,
+            24.5,
+            28,
+            31.5,
+            35,
+            38.5,
+            42,
+            45.5,
+            49,
+            52.5,
+            56,
+            59.5,
+            63
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "CTダウンⅡ",
+        "description": "自身のセンスのCTが1~4秒短縮　◆発動条件：劇団電姫に所属するアクターが装備",
+        "descriptionChinese": "自身Sense的CT缩短1~4秒　◆发动条件：由剧团电姬的演员装备",
+        "effectDetails": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 5
+      },
+      {
+        "name": "「光」追加（SP）Ⅱ",
+        "description": "公演開始時、SP光を1~2付与（効果は公演開始時1回のみ発動する）　◆発動条件：劇団電姫に所属するアクターが装備",
+        "descriptionChinese": "公演开始时，给予1~2个SP光（效果只在公演开始时发动1次）　◆发动条件：由剧团电姬的演员装备",
+        "effectDetails": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 8
+      }
+    ],
+    "event": "反逆、すべては目指す舞台のために",
+    "gacha": "暴虐を極めし帝国に反逆をガチャ",
+    "type": "ClubLimited",
+    "stories": []
+  },
+  {
+    "id": 330070,
+    "name": "コードギアス反逆のルルーシュコラボ",
+    "rarity": "SSR",
+    "pronounceName": "こーどぎあすはんぎゃくのるるーしゅこらぼ",
+    "appearanceCharacterBases": [
+      "千寿いろは",
+      "白丸美兎",
+      "阿岐留カミラ",
+      "猫足蕾",
+      "本巣叶羽"
+    ],
+    "appearanceCharacterBasesChinese": [
+      "千寿伊吕波",
+      "白丸美兔",
+      "阿岐留卡米拉",
+      "猫足蕾",
+      "本巢叶羽"
+    ],
+    "displayStartAt": "2024-06-10T08:00:00.000Z",
+    "abilities": [
+      {
+        "name": "絶対遵守の力",
+        "description": "全アクターの演技力が20~72%上昇",
+        "descriptionChinese": "所有演员的演技力提升20~72%",
+        "effectDetails": [
+          [
+            20,
+            24,
+            28,
+            32,
+            36,
+            40,
+            44,
+            48,
+            52,
+            56,
+            60,
+            64,
+            68,
+            72
+          ]
+        ],
+        "type": "Leader",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "演技力アップⅢ",
+        "description": "自身の演技力が17.5~50%上昇",
+        "descriptionChinese": "自身的演技力提升17.5~50%",
+        "effectDetails": [
+          [
+            17.5,
+            20,
+            22.5,
+            25,
+            27.5,
+            30,
+            32.5,
+            35,
+            37.5,
+            40,
+            42.5,
+            45,
+            47.5,
+            50
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "初期P.ゲージ上昇Ⅱ",
+        "description": "公演開始時、P.ゲージが54~132上昇",
+        "descriptionChinese": "公演开始时，获得54~132点Principal Gauge",
+        "effectDetails": [
+          [
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90,
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 5
+      },
+      {
+        "name": "P.ゲージ上限上昇",
+        "description": "公演開始時、Pゲージの上限が60~190上昇",
+        "descriptionChinese": "公演開始時、Pゲージの上限が60~190上昇",
+        "effectDetails": [
+          [
+            60,
+            70,
+            80,
+            90,
+            100,
+            110,
+            120,
+            130,
+            140,
+            150,
+            160,
+            170,
+            180,
+            190
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 8
+      }
+    ],
+    "event": "反逆、すべては目指す舞台のために",
+    "gacha": "コードギアス反逆のルルーシュコラボガチャ",
     "type": "ClubLimited",
     "stories": []
   }
