@@ -64,6 +64,8 @@ const TeamTimelines: FC = () => {
                 } else if (characterDetail?.characterBase === '千寿暦') {
                     startLightArray[index].Special += 1;
                     extraLightArray[index][characterSenseType] += 1;
+                } else if (["烏森大黒" , "舎人仁花子", "萬容" , "筆島しぐれ", "ラモーナ・ウォルフ", "王雪", "リリヤ・クルトベイ", "与那国緋花里"].includes(characterDetail?.characterBase ?? '静香')) {
+                    extraLightArray[index][characterSenseType] += 1;
                 }
             } else if (posterAbilityArray) {
                 const startRegex = /给予(.*)个(.*)光/;
