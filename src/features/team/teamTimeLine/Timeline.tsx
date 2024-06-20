@@ -2,6 +2,17 @@ import {FC, ReactElement} from 'react';
 import {PiStarFourDuotone} from "react-icons/pi";
 import SenseIcon from "../../../ui/SenseIcon.tsx";
 
+/**
+ *
+ * @param positionArray sa 发动的时间
+ * @param length        歌曲总长度
+ * @param extraLight    每次发动 sense 的额外光，比如 “绿色光角色装备了生日饰品，那么这里就类似 {Support: 1} 这样
+ * @param startLight    角色开始时候的光
+ * @param senseType     角色的主要光类型
+ * @param ct            技能真实 CT，算上了各种减少 CT 效果后的
+ * @param failedPositionArray  技能发动失败的时机们，这些会使得光上被画上一道灰色斜杠
+ * @constructor
+ */
 const Timeline: FC<{
     positionArray: number[],
     length: number,

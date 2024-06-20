@@ -20,15 +20,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4490,
-          "expression": 5497,
-          "concentration": 5110
+          "vocal": 4651,
+          "expression": 5693,
+          "concentration": 5292
         }
       }
     ],
@@ -176,15 +176,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5833,
-          "expression": 5124,
-          "concentration": 4414
+          "vocal": 6041,
+          "expression": 5307,
+          "concentration": 4572
         }
       }
     ],
@@ -331,15 +331,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5342,
-          "expression": 5032,
-          "concentration": 4723
+          "vocal": 5533,
+          "expression": 5212,
+          "concentration": 4891
         }
       }
     ],
@@ -487,15 +487,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4800,
-          "expression": 5110,
-          "concentration": 5187
+          "vocal": 4971,
+          "expression": 5292,
+          "concentration": 5372
         }
       }
     ],
@@ -643,15 +643,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4878,
-          "expression": 5110,
-          "concentration": 5110
+          "vocal": 5051,
+          "expression": 5292,
+          "concentration": 5292
         }
       }
     ],
@@ -799,15 +799,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5110,
-          "expression": 4800,
-          "concentration": 5187
+          "vocal": 5292,
+          "expression": 4971,
+          "concentration": 5372
         }
       }
     ],
@@ -955,15 +955,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4723,
-          "expression": 4568,
-          "concentration": 5807
+          "vocal": 4891,
+          "expression": 4731,
+          "concentration": 6014
         }
       }
     ],
@@ -1111,15 +1111,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4955,
-          "expression": 6271,
-          "concentration": 3871
+          "vocal": 5132,
+          "expression": 6495,
+          "concentration": 4009
         }
       }
     ],
@@ -1267,15 +1267,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4181,
-          "expression": 5265,
-          "concentration": 5652
+          "vocal": 4330,
+          "expression": 5452,
+          "concentration": 5853
         }
       }
     ],
@@ -1423,15 +1423,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5187,
-          "expression": 5187,
-          "concentration": 4723
+          "vocal": 5372,
+          "expression": 5372,
+          "concentration": 4891
         }
       }
     ],
@@ -1579,15 +1579,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5110,
-          "expression": 4490,
-          "concentration": 5497
+          "vocal": 5292,
+          "expression": 4651,
+          "concentration": 5693
         }
       }
     ],
@@ -1735,15 +1735,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4413,
-          "expression": 5497,
-          "concentration": 5187
+          "vocal": 4570,
+          "expression": 5693,
+          "concentration": 5372
         }
       }
     ],
@@ -1891,15 +1891,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5420,
-          "expression": 4413,
-          "concentration": 5265
+          "vocal": 5613,
+          "expression": 4570,
+          "concentration": 5452
         }
       }
     ],
@@ -2047,15 +2047,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6039,
-          "expression": 5032,
-          "concentration": 4026
+          "vocal": 6254,
+          "expression": 5212,
+          "concentration": 4169
         }
       }
     ],
@@ -2203,15 +2203,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4336,
-          "expression": 5032,
-          "concentration": 5729
+          "vocal": 4490,
+          "expression": 5212,
+          "concentration": 5934
         }
       }
     ],
@@ -2359,15 +2359,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5574,
-          "expression": 4568,
-          "concentration": 4955
+          "vocal": 5773,
+          "expression": 4731,
+          "concentration": 5132
         }
       }
     ],
@@ -2515,15 +2515,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7292,
-          "expression": 6504,
-          "concentration": 5420
+          "vocal": 7552,
+          "expression": 6735,
+          "concentration": 5613
         }
       }
     ],
@@ -2667,15 +2667,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4955,
-          "expression": 4878,
-          "concentration": 5265
+          "vocal": 5132,
+          "expression": 5051,
+          "concentration": 5452
         }
       }
     ],
@@ -2823,15 +2823,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 4336,
-          "expression": 5265,
-          "concentration": 5497
+          "vocal": 4490,
+          "expression": 5452,
+          "concentration": 5693
         }
       }
     ],
@@ -2979,15 +2979,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5110,
-          "expression": 5807,
-          "concentration": 4181
+          "vocal": 5292,
+          "expression": 6014,
+          "concentration": 4330
         }
       }
     ],
@@ -3135,15 +3135,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5652,
-          "expression": 3716,
-          "concentration": 5729
+          "vocal": 5853,
+          "expression": 3849,
+          "concentration": 5934
         }
       }
     ],
@@ -3291,15 +3291,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5828,
-          "expression": 6718,
-          "concentration": 6880
+          "vocal": 6036,
+          "expression": 6958,
+          "concentration": 7125
         }
       }
     ],
@@ -3451,15 +3451,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7475,
-          "expression": 6893,
-          "concentration": 5565
+          "vocal": 7741,
+          "expression": 7139,
+          "concentration": 5763
         }
       }
     ],
@@ -3606,15 +3606,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7366,
-          "expression": 6313,
-          "concentration": 5747
+          "vocal": 7628,
+          "expression": 6539,
+          "concentration": 5952
         }
       }
     ],
@@ -3764,15 +3764,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5990,
-          "expression": 6233,
-          "concentration": 7204
+          "vocal": 6203,
+          "expression": 6455,
+          "concentration": 7461
         }
       }
     ],
@@ -3920,15 +3920,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6880,
-          "expression": 6394,
-          "concentration": 6152
+          "vocal": 7125,
+          "expression": 6622,
+          "concentration": 6371
         }
       }
     ],
@@ -4078,15 +4078,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6233,
-          "expression": 6718,
-          "concentration": 6475
+          "vocal": 6455,
+          "expression": 6958,
+          "concentration": 6706
         }
       }
     ],
@@ -4238,15 +4238,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6233,
-          "expression": 6233,
-          "concentration": 6961
+          "vocal": 6455,
+          "expression": 6455,
+          "concentration": 7209
         }
       }
     ],
@@ -4398,15 +4398,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6152,
-          "expression": 7447,
-          "concentration": 5828
+          "vocal": 6371,
+          "expression": 7712,
+          "concentration": 6036
         }
       }
     ],
@@ -4558,15 +4558,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6152,
-          "expression": 6556,
-          "concentration": 6718
+          "vocal": 6371,
+          "expression": 6790,
+          "concentration": 6958
         }
       }
     ],
@@ -4716,15 +4716,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7204,
-          "expression": 6475,
-          "concentration": 5747
+          "vocal": 7461,
+          "expression": 6706,
+          "concentration": 5952
         }
       }
     ],
@@ -4874,15 +4874,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6152,
-          "expression": 6152,
-          "concentration": 7123
+          "vocal": 6371,
+          "expression": 6371,
+          "concentration": 7377
         }
       }
     ],
@@ -5030,15 +5030,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5909,
-          "expression": 7204,
-          "concentration": 6313
+          "vocal": 6119,
+          "expression": 7461,
+          "concentration": 6539
         }
       }
     ],
@@ -5190,15 +5190,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6961,
-          "expression": 6071,
-          "concentration": 6394
+          "vocal": 7209,
+          "expression": 6287,
+          "concentration": 6622
         }
       }
     ],
@@ -5348,15 +5348,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7123,
-          "expression": 6718,
-          "concentration": 5585
+          "vocal": 7377,
+          "expression": 6958,
+          "concentration": 5784
         }
       }
     ],
@@ -5508,15 +5508,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 5504,
-          "expression": 6152,
-          "concentration": 7771
+          "vocal": 5700,
+          "expression": 6371,
+          "concentration": 8048
         }
       }
     ],
@@ -5664,15 +5664,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7609,
-          "expression": 5828,
-          "concentration": 5990
+          "vocal": 7880,
+          "expression": 6036,
+          "concentration": 6203
         }
       }
     ],
@@ -5824,15 +5824,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9460,
-          "expression": 9460,
-          "concentration": 8108
+          "vocal": 9797,
+          "expression": 9797,
+          "concentration": 8398
         }
       }
     ],
@@ -5976,15 +5976,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6152,
-          "expression": 5990,
-          "concentration": 7285
+          "vocal": 6371,
+          "expression": 6203,
+          "concentration": 7545
         }
       }
     ],
@@ -6136,15 +6136,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6313,
-          "expression": 6556,
-          "concentration": 6556
+          "vocal": 6539,
+          "expression": 6790,
+          "concentration": 6790
         }
       }
     ],
@@ -6294,15 +6294,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6637,
-          "expression": 7528,
-          "concentration": 5261
+          "vocal": 6874,
+          "expression": 7796,
+          "concentration": 5449
         }
       }
     ],
@@ -6450,15 +6450,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": false,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6718,
-          "expression": 5342,
-          "concentration": 7366
+          "vocal": 6958,
+          "expression": 5533,
+          "concentration": 7628
         }
       }
     ],
@@ -6606,15 +6606,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7778,
-          "expression": 8876,
-          "concentration": 9425
+          "vocal": 8055,
+          "expression": 9192,
+          "concentration": 9761
         }
       }
     ],
@@ -6768,15 +6768,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9620,
-          "expression": 8866,
-          "concentration": 8394
+          "vocal": 9963,
+          "expression": 9182,
+          "concentration": 8694
         }
       }
     ],
@@ -6925,15 +6925,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9242,
-          "expression": 8784,
-          "concentration": 8052
+          "vocal": 9571,
+          "expression": 9097,
+          "concentration": 8339
         }
       }
     ],
@@ -7085,15 +7085,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8144,
-          "expression": 8418,
-          "concentration": 9516
+          "vocal": 8434,
+          "expression": 8718,
+          "concentration": 9856
         }
       }
     ],
@@ -7243,15 +7243,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8693,
-          "expression": 8876,
-          "concentration": 8510
+          "vocal": 9003,
+          "expression": 9192,
+          "concentration": 8813
         }
       }
     ],
@@ -7405,15 +7405,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8418,
-          "expression": 8967,
-          "concentration": 8693
+          "vocal": 8718,
+          "expression": 9287,
+          "concentration": 9003
         }
       }
     ],
@@ -7565,15 +7565,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8144,
-          "expression": 8052,
-          "concentration": 9882
+          "vocal": 8434,
+          "expression": 8339,
+          "concentration": 10235
         }
       }
     ],
@@ -7727,15 +7727,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8967,
-          "expression": 9608,
-          "concentration": 7503
+          "vocal": 9287,
+          "expression": 9950,
+          "concentration": 7771
         }
       }
     ],
@@ -7889,15 +7889,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7961,
-          "expression": 9333,
-          "concentration": 8784
+          "vocal": 8244,
+          "expression": 9666,
+          "concentration": 9097
         }
       }
     ],
@@ -8049,15 +8049,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9059,
-          "expression": 8967,
-          "concentration": 8052
+          "vocal": 9382,
+          "expression": 9287,
+          "concentration": 8339
         }
       }
     ],
@@ -8207,15 +8207,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8784,
-          "expression": 8052,
-          "concentration": 9242
+          "vocal": 9097,
+          "expression": 8339,
+          "concentration": 9571
         }
       }
     ],
@@ -8365,15 +8365,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7778,
-          "expression": 9150,
-          "concentration": 9150
+          "vocal": 8055,
+          "expression": 9477,
+          "concentration": 9477
         }
       }
     ],
@@ -8527,15 +8527,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9150,
-          "expression": 7961,
-          "concentration": 8967
+          "vocal": 9477,
+          "expression": 8244,
+          "concentration": 9287
         }
       }
     ],
@@ -8685,15 +8685,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9516,
-          "expression": 9242,
-          "concentration": 7320
+          "vocal": 9856,
+          "expression": 9571,
+          "concentration": 7581
         }
       }
     ],
@@ -8847,15 +8847,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8235,
-          "expression": 8144,
-          "concentration": 9699
+          "vocal": 8529,
+          "expression": 8434,
+          "concentration": 10045
         }
       }
     ],
@@ -9005,15 +9005,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9516,
-          "expression": 8235,
-          "concentration": 8327
+          "vocal": 9856,
+          "expression": 8529,
+          "concentration": 8624
         }
       }
     ],
@@ -9165,15 +9165,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12247,
-          "expression": 12492,
-          "concentration": 10165
+          "vocal": 12684,
+          "expression": 12938,
+          "concentration": 10528
         }
       }
     ],
@@ -9319,15 +9319,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8967,
-          "expression": 7961,
-          "concentration": 9150
+          "vocal": 9287,
+          "expression": 8244,
+          "concentration": 9477
         }
       }
     ],
@@ -9481,15 +9481,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8052,
-          "expression": 9059,
-          "concentration": 8967
+          "vocal": 8339,
+          "expression": 9382,
+          "concentration": 9287
         }
       }
     ],
@@ -9643,15 +9643,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8601,
-          "expression": 9516,
-          "concentration": 7961
+          "vocal": 8908,
+          "expression": 9856,
+          "concentration": 8244
         }
       }
     ],
@@ -9803,15 +9803,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9059,
-          "expression": 7686,
-          "concentration": 9333
+          "vocal": 9382,
+          "expression": 7960,
+          "concentration": 9666
         }
       }
     ],
@@ -9961,15 +9961,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8931,
-          "expression": 8158,
-          "concentration": 7385
+          "vocal": 9249,
+          "expression": 8449,
+          "concentration": 7648
         }
       }
     ],
@@ -10119,15 +10119,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11010,
-          "expression": 11010,
-          "concentration": 9675
+          "vocal": 11403,
+          "expression": 11403,
+          "concentration": 10020
         }
       }
     ],
@@ -10273,15 +10273,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7814,
-          "expression": 8158,
-          "concentration": 8501
+          "vocal": 8093,
+          "expression": 8449,
+          "concentration": 8804
         }
       }
     ],
@@ -10429,15 +10429,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8673,
-          "expression": 7728,
-          "concentration": 8072
+          "vocal": 8982,
+          "expression": 8004,
+          "concentration": 8360
         }
       }
     ],
@@ -10585,15 +10585,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8673,
-          "expression": 8759,
-          "concentration": 7041
+          "vocal": 8982,
+          "expression": 9071,
+          "concentration": 7292
         }
       }
     ],
@@ -10743,15 +10743,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7557,
-          "expression": 8673,
-          "concentration": 8244
+          "vocal": 7826,
+          "expression": 8982,
+          "concentration": 8538
         }
       }
     ],
@@ -10897,15 +10897,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10787,
-          "expression": 13012,
-          "concentration": 8118
+          "vocal": 11172,
+          "expression": 13476,
+          "concentration": 8408
         }
       }
     ],
@@ -11051,15 +11051,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7557,
-          "expression": 8501,
-          "concentration": 8415
+          "vocal": 7826,
+          "expression": 8804,
+          "concentration": 8715
         }
       }
     ],
@@ -11205,15 +11205,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8587,
-          "expression": 8072,
-          "concentration": 7814
+          "vocal": 8893,
+          "expression": 8360,
+          "concentration": 8093
         }
       }
     ],
@@ -11359,15 +11359,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8501,
-          "expression": 7213,
-          "concentration": 8759
+          "vocal": 8804,
+          "expression": 7470,
+          "concentration": 9071
         }
       }
     ],
@@ -11515,15 +11515,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8931,
-          "expression": 7728,
-          "concentration": 7814
+          "vocal": 9249,
+          "expression": 8004,
+          "concentration": 8093
         }
       }
     ],
@@ -11669,15 +11669,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7642,
-          "expression": 7900,
-          "concentration": 8931
+          "vocal": 7915,
+          "expression": 8182,
+          "concentration": 9249
         }
       }
     ],
@@ -11827,15 +11827,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7900,
-          "expression": 7900,
-          "concentration": 8673
+          "vocal": 8182,
+          "expression": 8182,
+          "concentration": 8982
         }
       }
     ],
@@ -11985,15 +11985,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8501,
-          "expression": 8158,
-          "concentration": 7814
+          "vocal": 8804,
+          "expression": 8449,
+          "concentration": 8093
         }
       }
     ],
@@ -12143,15 +12143,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8415,
-          "expression": 7471,
-          "concentration": 8587
+          "vocal": 8715,
+          "expression": 7737,
+          "concentration": 8893
         }
       }
     ],
@@ -12297,15 +12297,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7299,
-          "expression": 10219,
-          "concentration": 6955
+          "vocal": 7559,
+          "expression": 10583,
+          "concentration": 7203
         }
       }
     ],
@@ -12451,15 +12451,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10281,
-          "expression": 8677,
-          "concentration": 7923
+          "vocal": 10647,
+          "expression": 8987,
+          "concentration": 8205
         }
       }
     ],
@@ -12607,15 +12607,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7986,
-          "expression": 9274,
-          "concentration": 7213
+          "vocal": 8271,
+          "expression": 9605,
+          "concentration": 7470
         }
       }
     ],
@@ -12763,15 +12763,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7900,
-          "expression": 8244,
-          "concentration": 8329
+          "vocal": 8182,
+          "expression": 8538,
+          "concentration": 8626
         }
       }
     ],
@@ -12919,15 +12919,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7814,
-          "expression": 7814,
-          "concentration": 8845
+          "vocal": 8093,
+          "expression": 8093,
+          "concentration": 9160
         }
       }
     ],
@@ -13073,15 +13073,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 6354,
-          "expression": 7642,
-          "concentration": 10734
+          "vocal": 6581,
+          "expression": 7915,
+          "concentration": 11117
         }
       }
     ],
@@ -13229,15 +13229,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8158,
-          "expression": 9875,
-          "concentration": 6440
+          "vocal": 8449,
+          "expression": 10227,
+          "concentration": 6670
         }
       }
     ],
@@ -13383,15 +13383,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7814,
-          "expression": 8244,
-          "concentration": 8415
+          "vocal": 8093,
+          "expression": 8538,
+          "concentration": 8715
         }
       }
     ],
@@ -13541,15 +13541,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8931,
-          "expression": 8673,
-          "concentration": 6870
+          "vocal": 9249,
+          "expression": 8982,
+          "concentration": 7115
         }
       }
     ],
@@ -13697,15 +13697,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7385,
-          "expression": 7986,
-          "concentration": 8759
+          "vocal": 7648,
+          "expression": 8271,
+          "concentration": 9071
         }
       }
     ],
@@ -13851,15 +13851,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7385,
-          "expression": 8158,
-          "concentration": 8931
+          "vocal": 7648,
+          "expression": 8449,
+          "concentration": 9249
         }
       }
     ],
@@ -14009,15 +14009,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 7642,
-          "expression": 7557,
-          "concentration": 9274
+          "vocal": 7915,
+          "expression": 7826,
+          "concentration": 9605
         }
       }
     ],
@@ -14163,15 +14163,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8017,
-          "expression": 9243,
-          "concentration": 9149
+          "vocal": 8303,
+          "expression": 9573,
+          "concentration": 9475
         }
       }
     ],
@@ -14320,15 +14320,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9274,
-          "expression": 6612,
-          "concentration": 8501
+          "vocal": 9605,
+          "expression": 6848,
+          "concentration": 8804
         }
       }
     ],
@@ -14458,6 +14458,162 @@
     ]
   },
   {
+    "id": 130540,
+    "name": "友達なのに／だから",
+    "rarity": "Rare3",
+    "attribute": "Cheerful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 20,
+          "expression": 23,
+          "concentration": 24
+        }
+      },
+      {
+        "preset": {
+          "level": 145,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 7648,
+          "expression": 8715,
+          "concentration": 8982
+        }
+      }
+    ],
+    "characterBase": "阿岐留カミラ",
+    "starAct": {
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 3,
+          "bloom": 2
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 0,
+          "bloom": 0
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "1.4~3倍のスコアを獲得",
+        "80のプリンシパルゲージを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力1.4~3倍的分数",
+        "获得80点Principal Gauge"
+      ],
+      "type": "Support",
+      "lightCount": 1,
+      "acquirableGauge": 80,
+      "coolTime": {
+        "origin": 50,
+        "bloom": 50
+      },
+      "effectTypes": []
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力2％UP",
+          "スターアクト発動に必要な支援の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%",
+          "Star Act发动所需要的支援系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力4％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升4%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-06-20T08:00:00.000Z",
+    "event": "沫雪がとけたら",
+    "gacha": "无",
+    "type": "EventExchange",
+    "episodes": [
+      {
+        "id": 130541,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 130542,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
     "id": 130550,
     "name": "踏みにじられた者の怒り",
     "rarity": "Rare3",
@@ -14478,15 +14634,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8072,
-          "expression": 8931,
-          "concentration": 7471
+          "vocal": 8360,
+          "expression": 9249,
+          "concentration": 7737
         }
       }
     ],
@@ -14632,15 +14788,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8244,
-          "expression": 6870,
-          "concentration": 9360
+          "vocal": 8538,
+          "expression": 7115,
+          "concentration": 9694
         }
       }
     ],
@@ -14786,15 +14942,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8931,
-          "expression": 7728,
-          "concentration": 7814
+          "vocal": 9249,
+          "expression": 8004,
+          "concentration": 8093
         }
       }
     ],
@@ -14942,15 +15098,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11037,
-          "expression": 12121,
-          "concentration": 12318
+          "vocal": 11430,
+          "expression": 12553,
+          "concentration": 12757
         }
       }
     ],
@@ -15107,15 +15263,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11924,
-          "expression": 11332,
-          "concentration": 12219
+          "vocal": 12349,
+          "expression": 11736,
+          "concentration": 12655
         }
       }
     ],
@@ -15265,15 +15421,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11628,
-          "expression": 11924,
-          "concentration": 11924
+          "vocal": 12043,
+          "expression": 12349,
+          "concentration": 12349
         }
       }
     ],
@@ -15427,15 +15583,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11234,
-          "expression": 11726,
-          "concentration": 12515
+          "vocal": 11634,
+          "expression": 12145,
+          "concentration": 12961
         }
       }
     ],
@@ -15587,15 +15743,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11431,
-          "expression": 11924,
-          "concentration": 12121
+          "vocal": 11838,
+          "expression": 12349,
+          "concentration": 12553
         }
       }
     ],
@@ -15749,15 +15905,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12219,
-          "expression": 12121,
-          "concentration": 11135
+          "vocal": 12655,
+          "expression": 12553,
+          "concentration": 11532
         }
       }
     ],
@@ -15907,15 +16063,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11529,
-          "expression": 11726,
-          "concentration": 12219
+          "vocal": 11941,
+          "expression": 12145,
+          "concentration": 12655
         }
       }
     ],
@@ -16067,15 +16223,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11037,
-          "expression": 12416,
-          "concentration": 12022
+          "vocal": 11430,
+          "expression": 12859,
+          "concentration": 12451
         }
       }
     ],
@@ -16229,15 +16385,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12121,
-          "expression": 10938,
-          "concentration": 12416
+          "vocal": 12553,
+          "expression": 11328,
+          "concentration": 12859
         }
       }
     ],
@@ -16387,15 +16543,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11332,
-          "expression": 11234,
-          "concentration": 12909
+          "vocal": 11736,
+          "expression": 11634,
+          "concentration": 13369
         }
       }
     ],
@@ -16547,15 +16703,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 16659,
-          "expression": 16796,
-          "concentration": 15704
+          "vocal": 17253,
+          "expression": 17395,
+          "concentration": 16263
         }
       }
     ],
@@ -16705,15 +16861,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11726,
-          "expression": 11628,
-          "concentration": 12121
+          "vocal": 12145,
+          "expression": 12043,
+          "concentration": 12553
         }
       }
     ],
@@ -16867,15 +17023,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12121,
-          "expression": 10445,
-          "concentration": 12909
+          "vocal": 12553,
+          "expression": 10818,
+          "concentration": 13369
         }
       }
     ],
@@ -17025,15 +17181,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12219,
-          "expression": 11825,
-          "concentration": 11431
+          "vocal": 12655,
+          "expression": 12247,
+          "concentration": 11838
         }
       }
     ],
@@ -17187,15 +17343,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12121,
-          "expression": 12810,
-          "concentration": 10544
+          "vocal": 12553,
+          "expression": 13267,
+          "concentration": 10920
         }
       }
     ],
@@ -17345,15 +17501,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11924,
-          "expression": 10938,
-          "concentration": 12613
+          "vocal": 12349,
+          "expression": 11328,
+          "concentration": 13063
         }
       }
     ],
@@ -17507,15 +17663,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11924,
-          "expression": 12810,
-          "concentration": 10741
+          "vocal": 12349,
+          "expression": 13267,
+          "concentration": 11124
         }
       }
     ],
@@ -17665,15 +17821,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11135,
-          "expression": 12219,
-          "concentration": 12121
+          "vocal": 11532,
+          "expression": 12655,
+          "concentration": 12553
         }
       }
     ],
@@ -17829,15 +17985,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13599,
-          "expression": 9361,
-          "concentration": 12416
+          "vocal": 14084,
+          "expression": 9695,
+          "concentration": 12859
         }
       }
     ],
@@ -17989,15 +18145,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13257,
-          "expression": 12332,
-          "concentration": 11407
+          "vocal": 13729,
+          "expression": 12772,
+          "concentration": 11814
         }
       }
     ],
@@ -18150,15 +18306,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12712,
-          "expression": 12416,
-          "concentration": 10347
+          "vocal": 13165,
+          "expression": 12859,
+          "concentration": 10716
         }
       }
     ],
@@ -18312,15 +18468,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10938,
-          "expression": 14092,
-          "concentration": 10248
+          "vocal": 11328,
+          "expression": 14594,
+          "concentration": 10614
         }
       }
     ],
@@ -18470,15 +18626,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9756,
-          "expression": 11037,
-          "concentration": 14683
+          "vocal": 10103,
+          "expression": 11430,
+          "concentration": 15206
         }
       }
     ],
@@ -18632,15 +18788,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 21029,
-          "expression": 13382,
-          "concentration": 15021
+          "vocal": 21779,
+          "expression": 13859,
+          "concentration": 15556
         }
       }
     ],
@@ -18790,15 +18946,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11037,
-          "expression": 14880,
-          "concentration": 9657
+          "vocal": 11430,
+          "expression": 15411,
+          "concentration": 10001
         }
       }
     ],
@@ -18950,15 +19106,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10150,
-          "expression": 12219,
-          "concentration": 12810
+          "vocal": 10512,
+          "expression": 12655,
+          "concentration": 13267
         }
       }
     ],
@@ -19108,15 +19264,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10840,
-          "expression": 14683,
-          "concentration": 9953
+          "vocal": 11226,
+          "expression": 15206,
+          "concentration": 10308
         }
       }
     ],
@@ -19270,15 +19426,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9066,
-          "expression": 11135,
-          "concentration": 15668
+          "vocal": 9389,
+          "expression": 11532,
+          "concentration": 16227
         }
       }
     ],
@@ -19428,15 +19584,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9558,
-          "expression": 12022,
-          "concentration": 13894
+          "vocal": 9899,
+          "expression": 12451,
+          "concentration": 14390
         }
       }
     ],
@@ -19586,15 +19742,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12712,
-          "expression": 11332,
-          "concentration": 11431
+          "vocal": 13165,
+          "expression": 11736,
+          "concentration": 11838
         }
       }
     ],
@@ -19750,15 +19906,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 19413,
-          "expression": 9558,
-          "concentration": 7489
+          "vocal": 20105,
+          "expression": 9899,
+          "concentration": 7756
         }
       }
     ],
@@ -19908,15 +20064,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8179,
-          "expression": 17935,
-          "concentration": 9558
+          "vocal": 8470,
+          "expression": 18574,
+          "concentration": 9899
         }
       }
     ],
@@ -20070,15 +20226,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9361,
-          "expression": 11825,
-          "concentration": 14486
+          "vocal": 9695,
+          "expression": 12247,
+          "concentration": 15002
         }
       }
     ],
@@ -20228,15 +20384,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11924,
-          "expression": 13697,
-          "concentration": 9756
+          "vocal": 12349,
+          "expression": 14186,
+          "concentration": 10103
         }
       }
     ],
@@ -20390,15 +20546,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13792,
-          "expression": 17342,
-          "concentration": 17615
+          "vocal": 14284,
+          "expression": 17961,
+          "concentration": 18243
         }
       }
     ],
@@ -20548,15 +20704,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9756,
-          "expression": 13106,
-          "concentration": 12318
+          "vocal": 10103,
+          "expression": 13573,
+          "concentration": 12757
         }
       }
     ],
@@ -20708,15 +20864,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9953,
-          "expression": 11037,
-          "concentration": 14486
+          "vocal": 10308,
+          "expression": 11430,
+          "concentration": 15002
         }
       }
     ],
@@ -20870,15 +21026,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 15077,
-          "expression": 9756,
-          "concentration": 10741
+          "vocal": 15615,
+          "expression": 10103,
+          "concentration": 11124
         }
       }
     ],
@@ -21028,15 +21184,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9657,
-          "expression": 10347,
-          "concentration": 15767
+          "vocal": 10001,
+          "expression": 10716,
+          "concentration": 16329
         }
       }
     ],
@@ -21186,15 +21342,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11234,
-          "expression": 13500,
-          "concentration": 10445
+          "vocal": 11634,
+          "expression": 13982,
+          "concentration": 10818
         }
       }
     ],
@@ -21344,15 +21500,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12318,
-          "expression": 12416,
-          "concentration": 10741
+          "vocal": 12757,
+          "expression": 12859,
+          "concentration": 11124
         }
       }
     ],
@@ -21508,15 +21664,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11726,
-          "expression": 15964,
-          "concentration": 8376
+          "vocal": 12145,
+          "expression": 16533,
+          "concentration": 8675
         }
       }
     ],
@@ -21666,15 +21822,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13051,
-          "expression": 12229,
-          "concentration": 11715
+          "vocal": 13517,
+          "expression": 12665,
+          "concentration": 12133
         }
       }
     ],
@@ -21827,15 +21983,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8770,
-          "expression": 12022,
-          "concentration": 15077
+          "vocal": 9083,
+          "expression": 12451,
+          "concentration": 15615
         }
       }
     ],
@@ -21992,15 +22148,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13205,
-          "expression": 13106,
-          "concentration": 9066
+          "vocal": 13676,
+          "expression": 13573,
+          "concentration": 9389
         }
       }
     ],
@@ -22150,15 +22306,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11628,
-          "expression": 11924,
-          "concentration": 11924
+          "vocal": 12043,
+          "expression": 12349,
+          "concentration": 12349
         }
       }
     ],
@@ -22308,15 +22464,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10642,
-          "expression": 11431,
-          "concentration": 13402
+          "vocal": 11022,
+          "expression": 11838,
+          "concentration": 13880
         }
       }
     ],
@@ -22470,15 +22626,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12416,
-          "expression": 12022,
-          "concentration": 11037
+          "vocal": 12859,
+          "expression": 12451,
+          "concentration": 11430
         }
       }
     ],
@@ -22630,15 +22786,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 15373,
-          "expression": 9361,
-          "concentration": 10938
+          "vocal": 15921,
+          "expression": 9695,
+          "concentration": 11328
         }
       }
     ],
@@ -22792,15 +22948,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 15274,
-          "expression": 8672,
-          "concentration": 11924
+          "vocal": 15819,
+          "expression": 8981,
+          "concentration": 12349
         }
       }
     ],
@@ -22954,15 +23110,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8672,
-          "expression": 15865,
-          "concentration": 10150
+          "vocal": 8981,
+          "expression": 16431,
+          "concentration": 10512
         }
       }
     ],
@@ -23116,15 +23272,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 25126,
-          "expression": 13655,
-          "concentration": 10924
+          "vocal": 26022,
+          "expression": 14142,
+          "concentration": 11314
         }
       }
     ],
@@ -23274,15 +23430,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13599,
-          "expression": 9263,
-          "concentration": 12613
+          "vocal": 14084,
+          "expression": 9593,
+          "concentration": 13063
         }
       }
     ],
@@ -23436,15 +23592,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8869,
-          "expression": 12219,
-          "concentration": 14683
+          "vocal": 9185,
+          "expression": 12655,
+          "concentration": 15206
         }
       }
     ],
@@ -23594,15 +23750,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9361,
-          "expression": 12121,
-          "concentration": 14092
+          "vocal": 9695,
+          "expression": 12553,
+          "concentration": 14594
         }
       }
     ],
@@ -23752,15 +23908,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11924,
-          "expression": 14683,
-          "concentration": 9066
+          "vocal": 12349,
+          "expression": 15206,
+          "concentration": 9389
         }
       }
     ],
@@ -23912,15 +24068,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11431,
-          "expression": 13402,
-          "concentration": 10347
+          "vocal": 11838,
+          "expression": 13880,
+          "concentration": 10716
         }
       }
     ],
@@ -24072,15 +24228,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 14584,
-          "expression": 9756,
-          "concentration": 11135
+          "vocal": 15104,
+          "expression": 10103,
+          "concentration": 11532
         }
       }
     ],
@@ -24234,15 +24390,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9460,
-          "expression": 12712,
-          "concentration": 13106
+          "vocal": 9797,
+          "expression": 13165,
+          "concentration": 13573
         }
       }
     ],
@@ -24398,15 +24554,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 16659,
-          "expression": 20073,
-          "concentration": 12699
+          "vocal": 17253,
+          "expression": 20789,
+          "concentration": 13152
         }
       }
     ],
@@ -24556,15 +24712,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9263,
-          "expression": 11628,
-          "concentration": 14781
+          "vocal": 9593,
+          "expression": 12043,
+          "concentration": 15308
         }
       }
     ],
@@ -24718,15 +24874,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13106,
-          "expression": 9756,
-          "concentration": 12318
+          "vocal": 13573,
+          "expression": 10103,
+          "concentration": 12757
         }
       }
     ],
@@ -24876,15 +25032,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12121,
-          "expression": 15274,
-          "concentration": 8573
+          "vocal": 12553,
+          "expression": 15819,
+          "concentration": 8879
         }
       }
     ],
@@ -25040,15 +25196,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9657,
-          "expression": 11135,
-          "concentration": 14781
+          "vocal": 10001,
+          "expression": 11532,
+          "concentration": 15308
         }
       }
     ],
@@ -25198,15 +25354,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11726,
-          "expression": 13894,
-          "concentration": 9756
+          "vocal": 12145,
+          "expression": 14390,
+          "concentration": 10103
         }
       }
     ],
@@ -25360,15 +25516,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 15274,
-          "expression": 9361,
-          "concentration": 11037
+          "vocal": 15819,
+          "expression": 9695,
+          "concentration": 11430
         }
       }
     ],
@@ -25522,15 +25678,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11529,
-          "expression": 14092,
-          "concentration": 9756
+          "vocal": 11941,
+          "expression": 14594,
+          "concentration": 10103
         }
       }
     ],
@@ -25686,15 +25842,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 9953,
-          "expression": 11726,
-          "concentration": 13599
+          "vocal": 10308,
+          "expression": 12145,
+          "concentration": 14084
         }
       }
     ],
@@ -25848,15 +26004,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8967,
-          "expression": 12712,
-          "concentration": 13894
+          "vocal": 9287,
+          "expression": 13165,
+          "concentration": 14390
         }
       }
     ],
@@ -26012,15 +26168,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12416,
-          "expression": 13500,
-          "concentration": 9460
+          "vocal": 12859,
+          "expression": 13982,
+          "concentration": 9797
         }
       }
     ],
@@ -26174,15 +26330,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12022,
-          "expression": 14289,
-          "concentration": 9263
+          "vocal": 12451,
+          "expression": 14798,
+          "concentration": 9593
         }
       }
     ],
@@ -26336,15 +26492,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12810,
-          "expression": 9756,
-          "concentration": 12613
+          "vocal": 13267,
+          "expression": 10103,
+          "concentration": 13063
         }
       }
     ],
@@ -26500,15 +26656,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11234,
-          "expression": 14880,
-          "concentration": 9460
+          "vocal": 11634,
+          "expression": 15411,
+          "concentration": 9797
         }
       }
     ],
@@ -26658,15 +26814,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 13008,
-          "expression": 9558,
-          "concentration": 12712
+          "vocal": 13471,
+          "expression": 9899,
+          "concentration": 13165
         }
       }
     ],
@@ -26818,15 +26974,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 15826,
-          "expression": 9968,
-          "concentration": 11407
+          "vocal": 16390,
+          "expression": 10324,
+          "concentration": 11814
         }
       }
     ],
@@ -26981,15 +27137,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12416,
-          "expression": 14190,
-          "concentration": 8967
+          "vocal": 12859,
+          "expression": 14696,
+          "concentration": 9287
         }
       }
     ],
@@ -27121,6 +27277,334 @@
     ]
   },
   {
+    "id": 140840,
+    "name": "雨上がりには特大スクープ！",
+    "rarity": "Rare4",
+    "attribute": "Cheerful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 36,
+          "expression": 21,
+          "concentration": 28
+        }
+      },
+      {
+        "preset": {
+          "level": 145,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 15411,
+          "expression": 9389,
+          "concentration": 12145
+        }
+      }
+    ],
+    "characterBase": "与那国緋花里",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得",
+        "ストックされている支配系の光1個につき総演技力の3.5~6倍のスコアを追加で獲得(最大5個)"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数",
+        "ストックされている支配系の光1個につき総演技力の3.5~6倍のスコアを追加で獲得(最大5個)"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 4,
+          "bloom": 3
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "1.8~4.2倍のスコアを獲得",
+        "100のプリンシパルゲージを獲得",
+        "センス発動直後、自身の歌唱力の3.6~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力1.8~4.2倍的分数",
+        "获得100点Principal Gauge",
+        "Sense发动后，获得自身歌唱力3.6~6倍的分数"
+      ],
+      "type": "Amplification",
+      "lightCount": 1,
+      "acquirableGauge": 100,
+      "coolTime": {
+        "origin": 50,
+        "bloom": 45
+      },
+      "effectTypes": [
+        "ScoreGainOnVocal"
+      ]
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な増幅の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的增幅系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "初期プリンシパルゲージが50上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "初始Principal Gauge上升50"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-06-20T08:00:00.000Z",
+    "event": "沫雪がとけたら",
+    "gacha": "沫雪がとけたらガチャ",
+    "type": "Normal",
+    "episodes": [
+      {
+        "id": 140841,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140842,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
+    "id": 140850,
+    "name": "雨上がりの君を待って",
+    "rarity": "Rare4",
+    "attribute": "Cheerful",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 30,
+          "expression": 35,
+          "concentration": 21
+        }
+      },
+      {
+        "preset": {
+          "level": 145,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 12859,
+          "expression": 14798,
+          "concentration": 9287
+        }
+      }
+    ],
+    "characterBase": "王雪",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 4,
+          "bloom": 3
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "1.9~3.9倍のスコアを獲得",
+        "20秒間、銀河座のアクターにスターアクトスコア12~20％UP効果"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力1.9~3.9倍的分数",
+        "20秒内，银河座的演员Star Act中获得的分数提升12~20%"
+      ],
+      "type": "Amplification",
+      "lightCount": 1,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 35,
+        "bloom": 30
+      },
+      "effectTypes": [
+        "StarActScoreUp"
+      ]
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な増幅の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的增幅系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "基礎スコアが5％上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "基础分数提升5%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-06-20T08:00:00.000Z",
+    "event": "沫雪がとけたら",
+    "gacha": "沫雪がとけたらガチャ",
+    "type": "Normal",
+    "episodes": [
+      {
+        "id": 140851,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140852,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
     "id": 140860,
     "name": "連なる薔薇の懐かしき香り",
     "rarity": "Rare4",
@@ -27141,15 +27625,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 15077,
-          "expression": 8179,
-          "concentration": 12712
+          "vocal": 15615,
+          "expression": 8470,
+          "concentration": 13165
         }
       }
     ],
@@ -27303,15 +27787,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 12121,
-          "expression": 13106,
-          "concentration": 9953
+          "vocal": 12553,
+          "expression": 13573,
+          "concentration": 10308
         }
       }
     ],
@@ -27465,15 +27949,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 10938,
-          "expression": 12121,
-          "concentration": 12416
+          "vocal": 11328,
+          "expression": 12553,
+          "concentration": 12859
         }
       }
     ],
@@ -27627,15 +28111,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 11431,
-          "expression": 11234,
-          "concentration": 12810
+          "vocal": 11838,
+          "expression": 11634,
+          "concentration": 13267
         }
       }
     ],
@@ -27789,15 +28273,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8770,
-          "expression": 11529,
-          "concentration": 15668
+          "vocal": 9083,
+          "expression": 11941,
+          "concentration": 16227
         }
       }
     ],
@@ -27947,15 +28431,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 14486,
-          "expression": 8474,
-          "concentration": 12909
+          "vocal": 15002,
+          "expression": 8777,
+          "concentration": 13369
         }
       }
     ],
@@ -28111,15 +28595,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8179,
-          "expression": 19315,
-          "concentration": 8967
+          "vocal": 8470,
+          "expression": 20003,
+          "concentration": 9287
         }
       }
     ],
@@ -28275,15 +28759,15 @@
       },
       {
         "preset": {
-          "level": 140,
+          "level": 145,
           "awakening": true,
           "episode": "Second",
           "bloom": 5
         },
         "status": {
-          "vocal": 8179,
-          "expression": 17048,
-          "concentration": 10051
+          "vocal": 8470,
+          "expression": 17656,
+          "concentration": 10410
         }
       }
     ],

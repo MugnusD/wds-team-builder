@@ -1,366 +1,5 @@
 [
   {
-    "id": 310010,
-    "name": "光る竹",
-    "rarity": "R",
-    "effects": [
-      {
-        "name": "三寸の兒",
-        "description": "自身の演技力が3~10%上昇　◆発動条件：<color=#ff679d>憐属性</color>のアクターが装備",
-        "descriptionChinese": "自身的演技力提升3~10%　◆发动条件：由<color=#ff679d>怜属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 310020,
-    "name": "りんご",
-    "rarity": "R",
-    "effects": [
-      {
-        "name": "飢えを凌ぐ果実",
-        "description": "自身の演技力が3~10%上昇　◆発動条件：<color=#33B4DF>凛属性</color>のアクターが装備",
-        "descriptionChinese": "自身的演技力提升3~10%　◆发动条件：由<color=#33B4DF>凛属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 310030,
-    "name": "人魚姫の鏡",
-    "rarity": "R",
-    "effects": [
-      {
-        "name": "地上の落とし物",
-        "description": "自身の演技力が3~10%上昇　◆発動条件：<color=#7AC940>彩属性</color>のアクターが装備",
-        "descriptionChinese": "自身的演技力提升3~10%　◆发动条件：由<color=#7AC940>彩属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 310040,
-    "name": "灰かぶりの箒",
-    "rarity": "R",
-    "effects": [
-      {
-        "name": "サンドリヨン",
-        "description": "自身の演技力が3~10%上昇　◆発動条件：<color=#FF9314>陽属性</color>のアクターが装備",
-        "descriptionChinese": "自身的演技力提升3~10%　◆发动条件：由<color=#FF9314>阳属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320010,
-    "name": "シャムシール",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "路地裏に潜む闇",
-        "description": "自身の演技力が4.5~15%上昇　◆発動条件：<color=#ff679d>憐属性</color>のアクターが装備",
-        "descriptionChinese": "自身的演技力提升4.5~15%　◆发动条件：由<color=#ff679d>怜属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320020,
-    "name": "真っ赤なバラ",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "真実の愛が魅せる深紅",
-        "description": "自身の演技力が4.5~15%上昇　◆発動条件：<color=#33B4DF>凛属性</color>のアクターが装備",
-        "descriptionChinese": "自身的演技力提升4.5~15%　◆发动条件：由<color=#33B4DF>凛属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320030,
-    "name": "如意棒",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "伸縮自在８トン",
-        "description": "自身の演技力が4.5~15%上昇　◆発動条件：<color=#7AC940>彩属性</color>のアクターが装備",
-        "descriptionChinese": "自身的演技力提升4.5~15%　◆发动条件：由<color=#7AC940>彩属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320040,
-    "name": "魔法の杖",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "ビビディ・バビディ・ブー",
-        "description": "自身の演技力が4.5~15%上昇　◆発動条件：<color=#FF9314>陽属性</color>のアクターが装備",
-        "descriptionChinese": "自身的演技力提升4.5~15%　◆发动条件：由<color=#FF9314>阳属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320050,
-    "name": "黄金の鉢",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "贈り物と引き換えに望むものは",
-        "description": "自身の演技力が5.4~18%上昇　◆発動条件：劇団電姫に所属するアクターが装備",
-        "descriptionChinese": "自身的演技力提升5.4~18%　◆发动条件：由剧团电姬的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320060,
-    "name": "ファントムの楽譜",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "音楽の天使",
-        "description": "自身の演技力が5.4~18％上昇　◆発動条件：シリウスに所属するアクターが装備",
-        "descriptionChinese": "自身的演技力提升5.4~18%　◆发动条件：由天狼星的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320070,
-    "name": "マッチ箱",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "胸にともる復讐の火",
-        "description": "自身の演技力が5.4~18％上昇　◆発動条件：Edenに所属するアクターが装備",
-        "descriptionChinese": "自身的演技力提升5.4~18%　◆发动条件：由Eden的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320080,
-    "name": "チーズ",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "友情のはじまり",
-        "description": "自身の演技力が5.4~18％上昇　◆発動条件：銀河座に所属するアクターが装備",
-        "descriptionChinese": "自身的演技力提升5.4~18%　◆发动条件：由银河座的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320090,
-    "name": "狩人のナイフ",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "復讐と未来のため",
-        "description": "初期プリンシパルゲージが10~36上昇　◆発動条件：<color=#ff679d>憐属性</color>のアクターが装備",
-        "descriptionChinese": "初始Principal Gauge上升10~36点　◆发动条件：由<color=#ff679d>怜属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320100,
-    "name": "ガリバーの旅日記",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "さあ、次の戦場に行こう",
-        "description": "初期プリンシパルゲージが10~36上昇　◆発動条件：<color=#33B4DF>凛属性</color>のアクターが装備",
-        "descriptionChinese": "初始Principal Gauge上升10~36点　◆发动条件：由<color=#33B4DF>凛属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320110,
-    "name": "アンカー",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "水天一碧の航路",
-        "description": "初期プリンシパルゲージが10~36上昇　◆発動条件：<color=#7AC940>彩属性</color>のアクターが装備",
-        "descriptionChinese": "初始Principal Gauge上升10~36点　◆发动条件：由<color=#7AC940>彩属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320120,
-    "name": "魔法少女カリューのチョーカー",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "君がいれば百人力で完全無欠",
-        "description": "初期プリンシパルゲージが10~36上昇　◆発動条件：<color=#FF9314>陽属性</color>のアクターが装備",
-        "descriptionChinese": "初始Principal Gauge上升10~36点　◆发动条件：由<color=#FF9314>阳属性</color>的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320130,
-    "name": "マクベスの短剣",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "野望と罪の証",
-        "description": "初期プリンシパルゲージが12~43上昇　◆発動条件：Edenに所属するアクターが装備",
-        "descriptionChinese": "初始Principal Gauge上升12~43点　◆发动条件：由Eden的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320140,
-    "name": "調査ファイル",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "善と悪を分かつとき",
-        "description": "初期プリンシパルゲージが12~43上昇　◆発動条件：劇団電姫に所属するアクターが装備",
-        "descriptionChinese": "初始Principal Gauge上升12~43点　◆发动条件：由剧团电姬的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
-    "id": 320150,
-    "name": "菊の髪飾り",
-    "rarity": "SR",
-    "effects": [
-      {
-        "name": "隠されし献身",
-        "description": "初期プリンシパルゲージが12~43上昇　◆発動条件：シリウスに所属するアクターが装備",
-        "descriptionChinese": "初始Principal Gauge上升12~43点　◆发动条件：由天狼星的演员装备"
-      }
-    ],
-    "randomEffects": [
-      {
-        "name": "歌唱力/集中力/表现力上升 +1~6",
-        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
-        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
-      }
-    ]
-  },
-  {
     "id": 330010,
     "name": "星のペンダント",
     "rarity": "SSR",
@@ -1731,5 +1370,366 @@
       }
     ],
     "randomEffects": []
+  },
+  {
+    "id": 320010,
+    "name": "シャムシール",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "路地裏に潜む闇",
+        "description": "自身の演技力が4.5~15%上昇　◆発動条件：<color=#ff679d>憐属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升4.5~15%　◆发动条件：由<color=#ff679d>怜属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320020,
+    "name": "真っ赤なバラ",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "真実の愛が魅せる深紅",
+        "description": "自身の演技力が4.5~15%上昇　◆発動条件：<color=#33B4DF>凛属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升4.5~15%　◆发动条件：由<color=#33B4DF>凛属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320030,
+    "name": "如意棒",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "伸縮自在８トン",
+        "description": "自身の演技力が4.5~15%上昇　◆発動条件：<color=#7AC940>彩属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升4.5~15%　◆发动条件：由<color=#7AC940>彩属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320040,
+    "name": "魔法の杖",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "ビビディ・バビディ・ブー",
+        "description": "自身の演技力が4.5~15%上昇　◆発動条件：<color=#FF9314>陽属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升4.5~15%　◆发动条件：由<color=#FF9314>阳属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320050,
+    "name": "黄金の鉢",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "贈り物と引き換えに望むものは",
+        "description": "自身の演技力が5.4~18%上昇　◆発動条件：劇団電姫に所属するアクターが装備",
+        "descriptionChinese": "自身的演技力提升5.4~18%　◆发动条件：由剧团电姬的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320060,
+    "name": "ファントムの楽譜",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "音楽の天使",
+        "description": "自身の演技力が5.4~18％上昇　◆発動条件：シリウスに所属するアクターが装備",
+        "descriptionChinese": "自身的演技力提升5.4~18%　◆发动条件：由天狼星的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320070,
+    "name": "マッチ箱",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "胸にともる復讐の火",
+        "description": "自身の演技力が5.4~18％上昇　◆発動条件：Edenに所属するアクターが装備",
+        "descriptionChinese": "自身的演技力提升5.4~18%　◆发动条件：由Eden的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320080,
+    "name": "チーズ",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "友情のはじまり",
+        "description": "自身の演技力が5.4~18％上昇　◆発動条件：銀河座に所属するアクターが装備",
+        "descriptionChinese": "自身的演技力提升5.4~18%　◆发动条件：由银河座的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320090,
+    "name": "狩人のナイフ",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "復讐と未来のため",
+        "description": "初期プリンシパルゲージが10~36上昇　◆発動条件：<color=#ff679d>憐属性</color>のアクターが装備",
+        "descriptionChinese": "初始Principal Gauge上升10~36点　◆发动条件：由<color=#ff679d>怜属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320100,
+    "name": "ガリバーの旅日記",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "さあ、次の戦場に行こう",
+        "description": "初期プリンシパルゲージが10~36上昇　◆発動条件：<color=#33B4DF>凛属性</color>のアクターが装備",
+        "descriptionChinese": "初始Principal Gauge上升10~36点　◆发动条件：由<color=#33B4DF>凛属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320110,
+    "name": "アンカー",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "水天一碧の航路",
+        "description": "初期プリンシパルゲージが10~36上昇　◆発動条件：<color=#7AC940>彩属性</color>のアクターが装備",
+        "descriptionChinese": "初始Principal Gauge上升10~36点　◆发动条件：由<color=#7AC940>彩属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320120,
+    "name": "魔法少女カリューのチョーカー",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "君がいれば百人力で完全無欠",
+        "description": "初期プリンシパルゲージが10~36上昇　◆発動条件：<color=#FF9314>陽属性</color>のアクターが装備",
+        "descriptionChinese": "初始Principal Gauge上升10~36点　◆发动条件：由<color=#FF9314>阳属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320130,
+    "name": "マクベスの短剣",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "野望と罪の証",
+        "description": "初期プリンシパルゲージが12~43上昇　◆発動条件：Edenに所属するアクターが装備",
+        "descriptionChinese": "初始Principal Gauge上升12~43点　◆发动条件：由Eden的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320140,
+    "name": "調査ファイル",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "善と悪を分かつとき",
+        "description": "初期プリンシパルゲージが12~43上昇　◆発動条件：劇団電姫に所属するアクターが装備",
+        "descriptionChinese": "初始Principal Gauge上升12~43点　◆发动条件：由剧团电姬的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 320150,
+    "name": "菊の髪飾り",
+    "rarity": "SR",
+    "effects": [
+      {
+        "name": "隠されし献身",
+        "description": "初期プリンシパルゲージが12~43上昇　◆発動条件：シリウスに所属するアクターが装備",
+        "descriptionChinese": "初始Principal Gauge上升12~43点　◆发动条件：由天狼星的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 310010,
+    "name": "光る竹",
+    "rarity": "R",
+    "effects": [
+      {
+        "name": "三寸の兒",
+        "description": "自身の演技力が3~10%上昇　◆発動条件：<color=#ff679d>憐属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升3~10%　◆发动条件：由<color=#ff679d>怜属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 310020,
+    "name": "りんご",
+    "rarity": "R",
+    "effects": [
+      {
+        "name": "飢えを凌ぐ果実",
+        "description": "自身の演技力が3~10%上昇　◆発動条件：<color=#33B4DF>凛属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升3~10%　◆发动条件：由<color=#33B4DF>凛属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 310030,
+    "name": "人魚姫の鏡",
+    "rarity": "R",
+    "effects": [
+      {
+        "name": "地上の落とし物",
+        "description": "自身の演技力が3~10%上昇　◆発動条件：<color=#7AC940>彩属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升3~10%　◆发动条件：由<color=#7AC940>彩属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
+  },
+  {
+    "id": 310040,
+    "name": "灰かぶりの箒",
+    "rarity": "R",
+    "effects": [
+      {
+        "name": "サンドリヨン",
+        "description": "自身の演技力が3~10%上昇　◆発動条件：<color=#FF9314>陽属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升3~10%　◆发动条件：由<color=#FF9314>阳属性</color>的演员装备"
+      }
+    ],
+    "randomEffects": [
+      {
+        "name": "歌唱力/集中力/表现力上升 +1~6",
+        "description": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点",
+        "descriptionChinese": "自身的歌唱力/集中力/表现力上升(40~400)~(80~800)点"
+      }
+    ]
   }
 ]

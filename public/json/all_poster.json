@@ -9640,8 +9640,8 @@
     "abilities": [
       {
         "name": "アツアツまごころ料理道！",
-        "description": "彩属性のアクターの演技力が13.6~40％上昇",
-        "descriptionChinese": "彩属性のアクターの演技力が13.6~40％上昇",
+        "description": "<color=#7AC940>彩属性</color>のアクターの演技力が13.6~40%上昇",
+        "descriptionChinese": "<color=#7AC940>彩属性</color>演员的演技力提升13.6~40%",
         "effectDetails": [
           [
             13.6,
@@ -9992,8 +9992,8 @@
     "abilities": [
       {
         "name": "Fashi∞nable！",
-        "description": "彩属性のアクターの演技力が13.6~40％上昇",
-        "descriptionChinese": "彩属性のアクターの演技力が13.6~40％上昇",
+        "description": "<color=#7AC940>彩属性</color>のアクターの演技力が13.6~40%上昇",
+        "descriptionChinese": "<color=#7AC940>彩属性</color>演员的演技力提升13.6~40%",
         "effectDetails": [
           [
             13.6,
@@ -10151,6 +10151,94 @@
       }
     ],
     "event": "サイレント・リフレクション",
+    "gacha": "无",
+    "type": "EventExchange",
+    "stories": []
+  },
+  {
+    "id": 220490,
+    "name": "沫雪がとけたら",
+    "rarity": "SR",
+    "pronounceName": "あわゆきがとけたら",
+    "appearanceCharacterBases": [
+      "与那国緋花里"
+    ],
+    "appearanceCharacterBasesChinese": [
+      "与那国绯花里"
+    ],
+    "displayStartAt": "2024-06-20T08:00:00.000Z",
+    "abilities": [
+      {
+        "name": "沫雪がとけたら",
+        "description": "<color=#FF9314>陽属性</color>のアクターの演技力が13.6~40%上昇",
+        "descriptionChinese": "<color=#FF9314>阳属性</color>演员的演技力提升13.6~40%",
+        "effectDetails": [
+          [
+            13.6,
+            16,
+            18.4,
+            20.8,
+            23.2,
+            25.6,
+            28,
+            30.4,
+            32.8,
+            35.2,
+            37.6,
+            40
+          ]
+        ],
+        "type": "Leader",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "演技力アップ",
+        "description": "自身の演技力が6~17％上昇　◆発動条件：<color=#FF9314>陽属性</color>のアクターが装備",
+        "descriptionChinese": "自身的演技力提升6~17%　◆发动条件：由<color=#FF9314>阳属性</color>的演员装备",
+        "effectDetails": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "スコアブースト・集中力",
+        "description": "センス発動直後、自身の集中力の2.4~6.8倍のスコアを獲得　◆発動条件：<color=#FF9314>陽属性</color>のアクターが装備",
+        "descriptionChinese": "Sense发动后，获得自身集中力2.4~6.8倍的分数　◆发动条件：由<color=#FF9314>阳属性</color>的演员装备",
+        "effectDetails": [
+          [
+            2.4,
+            2.8,
+            3.2,
+            3.6,
+            4,
+            4.4,
+            4.8,
+            5.2,
+            5.6,
+            6,
+            6.4,
+            6.8
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 7
+      }
+    ],
+    "event": "沫雪がとけたら",
     "gacha": "无",
     "type": "EventExchange",
     "stories": []
