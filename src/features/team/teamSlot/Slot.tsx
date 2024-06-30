@@ -318,8 +318,8 @@ const Slot: FC<{
                             &mdash; &mdash;
                         </div>
                 }
-                <div className={'text-center relative bottom-2.5 text-nowrap'}>
-                    CT <span className={'text-2xl w-6 inline-block'}>{bloom}</span> 秒
+                <div className={'text-center relative bottom-2.5 flex items-baseline justify-center flex-nowrap'}>
+                    CT <span className={'text-2xl w-9 inline-block'}>{bloom}</span> 秒
                 </div>
             </div>
             {!isBigScreen && (
