@@ -27,6 +27,7 @@ import CharacterTabsContent from "../../tabs/tabBodyComponents/CharacterTabsCont
 import PosterTabsContent from "../../tabs/tabBodyComponents/PosterTabsContent.tsx";
 import AccessoryTabsContent from "../../tabs/tabBodyComponents/AccessoryTabsContent.tsx";
 import useCurrentTeamContext from "../useCurrentTeamContext.ts";
+import {selectCoolTime} from "../teamTimeLine/coolTimeSlice.ts";
 
 const Slot: FC<{
     slotIndex: SlotIndex,
@@ -51,6 +52,9 @@ const Slot: FC<{
     const leaderIndex = useSelector(selectLeaderIndex);
     const selectedItem = useSelector(selectFocusedItem);
     const dispatch = useDispatch();
+
+    // Todo: delete this temp code
+    const coolTime = useSelector(selectCoolTime)[slotIndex];
 
     // Small Screen Dialog
     const [isOpen, setIsOpen] = useState(false);
@@ -97,11 +101,9 @@ const Slot: FC<{
     // }, [accessoryId, accessories]);
 
     // Character
-    let bloom: number,
-        characterIconDetail: IconRenderDetails;
+    let characterIconDetail: IconRenderDetails;
 
     if (!characterDetail) {
-        bloom = 0;
         characterIconDetail = {
             type: 'character',
             rarity: 'Rare1',
@@ -109,7 +111,6 @@ const Slot: FC<{
             sense: 'None',
         };
     } else {
-        bloom = characterDetail.sense.coolTime.bloom;
         characterIconDetail = {
             type: 'character',
             rarity: characterDetail.rarity,
@@ -157,7 +158,7 @@ const Slot: FC<{
             characterIconDetail,
             posterIconDetail,
             accessoryIconDetail,
-            ct: bloom,
+            ct: coolTime,
             isLeader: leaderIndex === slotIndex,
         },
         collect: monitor => ({
@@ -319,7 +320,7 @@ const Slot: FC<{
                         </div>
                 }
                 <div className={'text-center relative bottom-2.5 flex items-baseline justify-center flex-nowrap'}>
-                    CT <span className={'text-2xl w-9 inline-block'}>{bloom}</span> 秒
+                    CT <span className={'text-2xl w-9 inline-block'}>{coolTime}</span> 秒
                 </div>
             </div>
             {!isBigScreen && (

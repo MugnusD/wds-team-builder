@@ -1,10 +1,11 @@
-import {FC} from 'react';
+import {FC, useEffect} from 'react';
 import Timeline from "./Timeline.tsx";
 import useCurrentTeamContext from "../useCurrentTeamContext.ts";
 import {selectLeaderIndex, SlotIndex} from "../teamSlice.ts";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import GradientLine from "./GradientLine.tsx";
 import {selectLength, selectSensePosition} from "./timelineSlice.ts";
+import {setCoolTime} from "./coolTimeSlice.ts";
 
 const typeMapping: Record<string, SenseType | 'SP'> = {
     '特殊系的': 'Special',
@@ -17,6 +18,7 @@ const typeMapping: Record<string, SenseType | 'SP'> = {
 const TeamTimelines: FC = () => {
     const context = useCurrentTeamContext();
     const {isLoading, isError} = context;
+    const dispatch = useDispatch();
 
     const defaultExtraLight: Record<SenseType | 'SP', number> = {
         'Support': 0,
@@ -231,6 +233,10 @@ const TeamTimelines: FC = () => {
                 'SP': 0,
             });
     }
+
+    useEffect(() => {
+        dispatch(setCoolTime(ctArray));
+    }, [ctArray, dispatch]);
 
     return (
         <div className={'w-full h-full grow flex flex-col ml-10 relative'}>
