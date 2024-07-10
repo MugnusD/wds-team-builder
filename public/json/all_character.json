@@ -15234,6 +15234,160 @@
     ]
   },
   {
+    "id": 130580,
+    "name": "私よりふさわしい人",
+    "rarity": "Rare3",
+    "attribute": "Cute",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 23,
+          "expression": 25,
+          "concentration": 19
+        }
+      },
+      {
+        "preset": {
+          "level": 145,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 8715,
+          "expression": 9338,
+          "concentration": 7292
+        }
+      }
+    ],
+    "characterBase": "烏森大黒",
+    "starAct": {
+      "descriptions": [
+        "総演技力の4~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力4~6倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 3,
+          "bloom": 2
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "4.1~5.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力4.1~5.7倍的分数"
+      ],
+      "type": "Amplification",
+      "lightCount": 1,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 40,
+        "bloom": 40
+      },
+      "effectTypes": []
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力2％UP",
+          "スターアクト発動に必要な増幅の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%",
+          "Star Act发动所需要的增幅系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力2％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升2%"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力4％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升4%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-07-10T08:00:00.000Z",
+    "event": "go all out",
+    "gacha": "无",
+    "type": "EventExchange",
+    "episodes": [
+      {
+        "id": 130581,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 130582,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
     "id": 140010,
     "name": "悲哀と恋慕の旋律",
     "rarity": "Rare4",
@@ -27509,10 +27663,12 @@
     "sense": {
       "descriptions": [
         "2.2~4.2倍のスコアを獲得",
+        "ライフを320~510回復",
         "ライフが多いほどぱんだのスコア獲得量UP（最大＋100％）"
       ],
       "descriptionsChinese": [
         "获得自身演技力2.2~4.2倍的分数",
+        "回复320~510点血量",
         "血量越多，柳场潘达的分数获得量越高（最大+100％）"
       ],
       "type": "Amplification",
@@ -27523,7 +27679,8 @@
         "bloom": 35
       },
       "effectTypes": [
-        "ScoreUpByHighLife"
+        "ScoreUpByHighLife",
+        "LifeHealing"
       ]
     },
     "bloomBonuses": [
@@ -29378,6 +29535,330 @@
       },
       {
         "id": 140932,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
+    "id": 140940,
+    "name": "プレイス・ユア・ベット",
+    "rarity": "Rare4",
+    "attribute": "Cute",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 27,
+          "expression": 34,
+          "concentration": 23
+        }
+      },
+      {
+        "preset": {
+          "level": 145,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 11838,
+          "expression": 14696,
+          "concentration": 10103
+        }
+      }
+    ],
+    "characterBase": "舎人仁花子",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 4,
+          "bloom": 3
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 1,
+          "bloom": 1
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "2.2~4.2倍のスコアを獲得",
+        "20秒間、Edenのアクターにスターアクトスコア12~20％UP効果"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力2.2~4.2倍的分数",
+        "20秒内，Eden的演员Star Act中获得的分数提升12~20%"
+      ],
+      "type": "Control",
+      "lightCount": 1,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 40,
+        "bloom": 35
+      },
+      "effectTypes": [
+        "StarActScoreUp"
+      ]
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な支配の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的支配系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "初期プリンシパルゲージが50上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "初始Principal Gauge上升50"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-07-10T08:00:00.000Z",
+    "event": "go all out",
+    "gacha": "go all outガチャ",
+    "type": "Normal",
+    "episodes": [
+      {
+        "id": 140941,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140942,
+        "episodeOrder": "Second"
+      }
+    ]
+  },
+  {
+    "id": 140950,
+    "name": "オール・オア・ナッシング",
+    "rarity": "Rare4",
+    "attribute": "Cute",
+    "status": [
+      {
+        "preset": {
+          "level": 1,
+          "awakening": false,
+          "episode": "None",
+          "bloom": 0
+        },
+        "status": {
+          "vocal": 31,
+          "expression": 34,
+          "concentration": 21
+        }
+      },
+      {
+        "preset": {
+          "level": 145,
+          "awakening": true,
+          "episode": "Second",
+          "bloom": 5
+        },
+        "status": {
+          "vocal": 13165,
+          "expression": 14594,
+          "concentration": 9185
+        }
+      }
+    ],
+    "characterBase": "萬容",
+    "starAct": {
+      "descriptions": [
+        "総演技力の9.7~14.7倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得总演技力9.7~14.7倍的分数"
+      ],
+      "conditions": [
+        {
+          "type": "Alternative",
+          "typeChinese": "任意系",
+          "origin": 0,
+          "bloom": 0
+        },
+        {
+          "type": "Support",
+          "typeChinese": "支援系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Control",
+          "typeChinese": "支配系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Amplification",
+          "typeChinese": "增幅系",
+          "origin": 1,
+          "bloom": 1
+        },
+        {
+          "type": "Special",
+          "typeChinese": "特殊系",
+          "origin": 4,
+          "bloom": 3
+        }
+      ]
+    },
+    "sense": {
+      "descriptions": [
+        "6~8倍のスコアを獲得",
+        "センス発動直後、自身の表現力の3.6~6倍のスコアを獲得"
+      ],
+      "descriptionsChinese": [
+        "获得自身演技力6~8倍的分数",
+        "Sense发动后，获得自身表现力3.6~6倍的分数"
+      ],
+      "type": "Special",
+      "lightCount": 2,
+      "acquirableGauge": 0,
+      "coolTime": {
+        "origin": 40,
+        "bloom": 35
+      },
+      "effectTypes": [
+        "ScoreGainOnExpression"
+      ]
+    },
+    "bloomBonuses": [
+      {
+        "phase": 1,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      },
+      {
+        "phase": 2,
+        "descriptions": [
+          "演技力6％UP",
+          "センスのCTが5秒減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Sense的CT缩短5秒"
+        ]
+      },
+      {
+        "phase": 3,
+        "descriptions": [
+          "演技力6％UP",
+          "スターアクト発動に必要な特殊の光の個数が1個減少"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "Star Act发动所需要的特殊系光个数减1"
+        ]
+      },
+      {
+        "phase": 4,
+        "descriptions": [
+          "演技力6％UP",
+          "初期ライフが100上昇"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%",
+          "初始血量上升100"
+        ]
+      },
+      {
+        "phase": 5,
+        "descriptions": [
+          "演技力6％UP"
+        ],
+        "descriptionsChinese": [
+          "演技力上升6%"
+        ]
+      }
+    ],
+    "displayStartAt": "2024-07-10T08:00:00.000Z",
+    "event": "go all out",
+    "gacha": "go all outガチャ",
+    "type": "Normal",
+    "episodes": [
+      {
+        "id": 140951,
+        "episodeOrder": "First"
+      },
+      {
+        "id": 140952,
         "episodeOrder": "Second"
       }
     ]

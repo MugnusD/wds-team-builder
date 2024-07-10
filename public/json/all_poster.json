@@ -10332,6 +10332,94 @@
     "stories": []
   },
   {
+    "id": 220500,
+    "name": "go all out",
+    "rarity": "SR",
+    "pronounceName": "go all out",
+    "appearanceCharacterBases": [
+      "舎人仁花子"
+    ],
+    "appearanceCharacterBasesChinese": [
+      "舍人仁花子"
+    ],
+    "displayStartAt": "2024-07-10T08:00:00.000Z",
+    "abilities": [
+      {
+        "name": "go all out",
+        "description": "Edenに所属するアクターの演技力が13.6~40％上昇",
+        "descriptionChinese": "Eden的演员的演技力提升13.6~40%",
+        "effectDetails": [
+          [
+            13.6,
+            16,
+            18.4,
+            20.8,
+            23.2,
+            25.6,
+            28,
+            30.4,
+            32.8,
+            35.2,
+            37.6,
+            40
+          ]
+        ],
+        "type": "Leader",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "演技力アップ",
+        "description": "自身の演技力が6~17％上昇　◆発動条件：Edenに所属するアクターが装備",
+        "descriptionChinese": "自身的演技力提升6~17%　◆发动条件：由Eden的演员装备",
+        "effectDetails": [
+          [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 0
+      },
+      {
+        "name": "P.ゲージ獲得量アップ",
+        "description": "センスによるP.ゲージの獲得量が48~136%UP　◆発動条件：Edenに所属するアクターが装備",
+        "descriptionChinese": "Sense中的Principal Gauge获得量提升48~136%　◆发动条件：由Eden的演员装备",
+        "effectDetails": [
+          [
+            48,
+            56,
+            64,
+            72,
+            80,
+            88,
+            96,
+            104,
+            112,
+            120,
+            128,
+            136
+          ]
+        ],
+        "type": "Normal",
+        "releaseLevelAt": 7
+      }
+    ],
+    "event": "go all out",
+    "gacha": "无",
+    "type": "EventExchange",
+    "stories": []
+  },
+  {
     "id": 229010,
     "name": "【SIRIUS】竹取物語",
     "rarity": "SSR",

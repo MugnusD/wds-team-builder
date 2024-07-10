@@ -347,6 +347,24 @@
     "randomEffects": []
   },
   {
+    "id": 330210,
+    "name": "天使のオーブ",
+    "rarity": "SSR",
+    "effects": [
+      {
+        "name": "明日から本気出す",
+        "description": "自身の演技力が9~30％上昇　◆発動条件：叶羽が装備",
+        "descriptionChinese": "自身的演技力提升9~30%　◆发动条件：由本巢叶羽装备"
+      },
+      {
+        "name": "おやすみ～",
+        "description": "センス発動により光を付与するとき、同系統の光を追加で1個付与する。　◆発動条件：叶羽が装備",
+        "descriptionChinese": "在Sense发动给予光时，追加给予1个同系统的光　◆发动条件：由本巢叶羽装备"
+      }
+    ],
+    "randomEffects": []
+  },
+  {
     "id": 331010,
     "name": "竹の花",
     "rarity": "SSR",
