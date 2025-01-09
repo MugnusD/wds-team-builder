@@ -1,15 +1,15 @@
-import {FC} from 'react';
-import useAccessories from "../../../hooks/useAccessories.ts";
-import clsx from "clsx";
-import GameItem from "./GameItem.tsx";
-import {Typography} from "@material-tailwind/react";
-import {useSelector} from "react-redux";
-import {selectTeamedAccessoryIds} from "../../team/teamSlice.ts";
-import {convertUnityTag} from "../../../utils";
+import { FC } from 'react';
+import useAccessories from '../../../hooks/useAccessories.ts';
+import clsx from 'clsx';
+import GameItem from './GameItem.tsx';
+import { Typography } from '@material-tailwind/react';
+import { useSelector } from 'react-redux';
+import { selectTeamedAccessoryIds } from '../../team/teamSlice.ts';
+import { convertUnityTag } from '../../../utils';
 
 
-const AccessoryTabsContent: FC<{ display?: boolean }> = ({display = true}) => {
-    const {accessories, isError, isLoading} = useAccessories();
+const AccessoryTabsContent: FC<{ display?: boolean }> = ({ display = true }) => {
+    const { accessories, isError, isLoading } = useAccessories();
     const teamedIds = useSelector(selectTeamedAccessoryIds);
 
     if (isLoading || isError || !accessories) {
@@ -41,7 +41,7 @@ const AccessoryTabsContent: FC<{ display?: boolean }> = ({display = true}) => {
     return (
         <>
             <div className={clsx(!display && 'hidden')}>
-                <GameItem id={0} detail={{type: 'accessory', rarity: 'R'}} render={() => <div>Empty poster</div>} />
+                <GameItem id={0} detail={{ type: 'accessory', rarity: 'R' }} render={() => <div>Empty poster</div>} />
             </div>
             {items.map(item => (
                 <div
@@ -50,7 +50,7 @@ const AccessoryTabsContent: FC<{ display?: boolean }> = ({display = true}) => {
                 >
                     <GameItem
                         id={item.id}
-                        detail={{type: 'accessory', rarity: item.rarity}}
+                        detail={{ type: 'accessory', rarity: item.rarity }}
                         render={() => {
                             return (
                                 <div className={'flex flex-col gap-2 divide-y divide-blue-gray-200 *:pt-2'}>
